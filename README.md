@@ -282,15 +282,15 @@ I tested it in Laptop without GPU and only 8GB RAM and worked, but a little bit 
 
 ## Running as 'client' only
 
-Ideal for running on other machines that may be *slow* or *outdated* (such as my laptop and my Vitual Machine in Virtual Box).
+ Ideal for running on other machines that may be *slow* or *outdated* (such as my laptop).
 
-The `server\main_inference.py` file is designed to **offload all graphical processing**. This means that whether you’re using an older laptop or running from a virtual machine, you can simply run the following command on your main (powerful) machine:
+ The `server\main_inference.py` file is designed to **offload all graphical processing**. This means that whether you’re using an older laptop, you can simply run the following command on your main (powerful) machine:
 
 ```bash
 uvicorn server.main_inference:app --host 0.0.0.0 --port 8001
 ```
 
-Then, from your laptop or virtual machine (on the same network), you just need to enable the **Use external processor** option in the Web UI (set it to `True`) and provide your host URL (e.g., `http://192.168.1.5:8001`).
+ Then, from your laptop (on the same network), you just need to enable the **Use external processor** option in the Web UI (set it to `True`) and provide your host URL (e.g., `http://192.168.1.5:8001`).
 
 On the *client* side, you only need the dependencies listed in `requirements_client_only.txt`—no need to install heavy libraries like Torch or YOLO—because all processing is redirected to the `server.main_inference:app` backend running on a separate machine.
 
@@ -299,17 +299,6 @@ This feature is still experimental, but in my experience, it works quite well.
 
 ## Running in GPU
 Follow the instructions in [README.gpu.md](docs/README.gpu.md)
-
----
-
-## Running inside Virtual Box
-
-When running inside a **virtual machine** (in the background so you can still use your mouse on the host), it is recommended to limit resources for smoother performance.
-
-Follow the instructions in [README.virtual_machine.md](docs/README.virtual_machine.md)
-
-![VM Screenshot](assets/doc/VM.png)
-
 
 ---
 
