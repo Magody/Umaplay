@@ -1,0 +1,102 @@
+[
+  {
+    "type": "support",
+    "name": "Dream Journey SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Dream Journey SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "親切丁寧で思慮深く",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "用意周到で妹想い",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202902 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "202882",
+        "name": "Skill ID: 202882"
+      },
+      {
+        "id": "202902",
+        "name": "Skill ID: 202902"
+      },
+      {
+        "id": "202922",
+        "name": "Skill ID: 202922"
+      },
+      {
+        "id": "202932",
+        "name": "Skill ID: 202932"
+      },
+      {
+        "id": "203582",
+        "name": "Skill ID: 203582"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202902",
+        "name": "Skill ID: 202902"
+      }
+    ]
+  }
+]

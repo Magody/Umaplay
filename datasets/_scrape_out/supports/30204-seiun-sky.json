@@ -1,0 +1,172 @@
+[
+  {
+    "type": "support",
+    "name": "Seiun Sky PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Seiun Sky PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Recruiting Cat Catchers",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 15,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Recruiting Advisors",
+        "options": {
+          "1": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Keeping the Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "どうぞ、お気になさらず",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 10,
+              "bond": 15
+            },
+            {
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "そぶりも、見せず",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 202692 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202691 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "誰にも、悟られず",
+        "options": {
+          "1": [
+            {
+              "power": 30,
+              "stamina": 15,
+              "hints": [
+                "Skill ID: 202691 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "power": 20,
+              "stamina": 10,
+              "hints": [
+                "Skill ID: 202691 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "202132",
+        "name": "With All My Soul"
+      },
+      {
+        "id": "202462",
+        "name": "Skill ID: 202462"
+      },
+      {
+        "id": "201262",
+        "name": "Dodging Danger"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202692",
+        "name": "Skill ID: 202692"
+      },
+      {
+        "id": "202691",
+        "name": "Skill ID: 202691"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "type": "support",
+    "name": "Gold City SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Gold City SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "08:36 / Crap, I Overslept",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "13:12 / Lunch Break, Gotta Get Myself Together",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "A Small Breather (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200082",
+        "name": "Sapporo Racecourse ○"
+      },
+      {
+        "id": "200692",
+        "name": "Watchful Eye"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      }
+    ]
+  }
+]

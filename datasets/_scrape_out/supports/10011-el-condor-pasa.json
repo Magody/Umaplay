@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "El Condor Pasa PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "El Condor Pasa PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Blazing Fire!",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "power": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Secret Notebook!",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Sunny Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      }
+    ]
+  }
+]

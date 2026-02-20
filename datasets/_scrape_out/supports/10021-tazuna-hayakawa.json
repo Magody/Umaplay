@@ -1,0 +1,237 @@
+[
+  {
+    "type": "support",
+    "name": "Tazuna Hayakawa PAL R",
+    "rarity": "R",
+    "attribute": "PAL",
+    "id": "Tazuna Hayakawa PAL R_PAL_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Chosen Way of Life",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enthusiastic Pair",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": -1,
+              "bond": -5,
+              "hints": [
+                "Watchful Eye (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Milk with a Chance of Apples",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "speed": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Inexplicable Speed",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Memories of Cinema",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "stamina": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "guts": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Sigh and a Bandage",
+        "options": {
+          "1": [
+            {
+              "energy": 35,
+              "wit": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Surprise Breather",
+        "options": {
+          "1": [
+            {
+              "energy": 35,
+              "skill_pts": 15,
+              "mood": 2,
+              "bond": 5,
+              "hints": [
+                "Focus (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Tazuna, the Director's Secretary",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Good Job! ♪",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 3,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "From Just a Little Closer",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Usual, Please!",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Bond with Tazuna: Aspirations Entrusted",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 15,
+              "mood": 1,
+              "bond": 5,
+              "hints": [
+                "Tail Held High (+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200692",
+        "name": "Watchful Eye"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      }
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "support",
+    "name": "Yaeno Muteki STA SR",
+    "rarity": "SR",
+    "attribute": "STA",
+    "id": "Yaeno Muteki STA SR_STA_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Firm and Plain, Yet Close to Virtue",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "power": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Will to Protect!",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 10
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Corners ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "燃える心と、心強さと",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 15
+            },
+            {
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "萌ゆる心を忍ぶれど",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202762 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202762",
+        "name": "Skill ID: 202762"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Palmer GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Mejiro Palmer GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "An Inescapable Choice?",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "guts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Optimistic Escapism",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Wet Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Run Away to First Base",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "stamina": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -15,
+              "guts": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Runaway Romance",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "hints": [
+                "Front Runner Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Optimistic Escapism: Never Give Up!",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "stamina": 5,
+              "guts": 5,
+              "hints": [
+                "Vanguard Spirit (+3)",
+                "Keeping the Lead (+1",
+                "+3)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "hints": [
+                "Lone Wolf (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "200042",
+        "name": "Nakayama Racecourse ○"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200871",
+        "name": "Flustered Pace Chasers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      },
+      {
+        "id": "201191",
+        "name": "Vanguard Spirit"
+      },
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      }
+    ]
+  }
+]

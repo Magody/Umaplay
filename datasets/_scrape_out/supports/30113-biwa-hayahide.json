@@ -1,0 +1,171 @@
+[
+  {
+    "type": "support",
+    "name": "Biwa Hayahide STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Biwa Hayahide STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Last-Minute Modal Theory",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Step-Out-of-Your-Comfort-Zone Theory",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "hints": [
+                "Inside Scoop (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "実家業務において生じる諸問題について",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "仮想空間を活用した認知の修正について",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "hints": [
+                "Prepared to Pass (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "幹事の特性が宴会に与える影響について",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "hints": [
+                "VIP Pass (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200262",
+        "name": "Outer Post Proficiency ○"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "201202",
+        "name": "Passing Pro"
+      },
+      {
+        "id": "202192",
+        "name": "Skill ID: 202192"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "201902",
+        "name": "Head-On"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "201201",
+        "name": "VIP Pass"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      }
+    ]
+  }
+]

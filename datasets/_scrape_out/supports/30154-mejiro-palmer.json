@@ -1,0 +1,176 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Palmer SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Mejiro Palmer SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "An Inescapable Choice?",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "guts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Optimistic Escapism",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Wet Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "気楽に、冷静に",
+        "options": {
+          "1": [
+            {
+              "speed": 7,
+              "stamina": 7,
+              "power": 7,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ほどよく、コスパよく",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 3,
+              "stamina": 3,
+              "power": 3,
+              "hints": [
+                "Skill ID: 202681 (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "サイコーに、テンアゲで！！",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 10,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202681 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 5,
+              "stamina": 5,
+              "power": 5,
+              "hints": [
+                "Skill ID: 202681 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202392",
+        "name": "Skill ID: 202392"
+      },
+      {
+        "id": "202682",
+        "name": "Skill ID: 202682"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202681",
+        "name": "Skill ID: 202681"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      }
+    ]
+  }
+]

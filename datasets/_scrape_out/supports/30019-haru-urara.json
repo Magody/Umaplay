@@ -1,0 +1,112 @@
+[
+  {
+    "type": "support",
+    "name": "Haru Urara GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Haru Urara GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Urara's ☆ Study Review",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Urara's ☆ Long Shot Dash!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Long Shot ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Trying Hard with Rice!",
+        "options": {
+          "1": [
+            {
+              "energy": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Trying Hard with King!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "bond": 5,
+              "energy": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Trying Hard with Everyone's Support!",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5,
+              "hints": [
+                "Unruffled (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200481",
+        "name": "Unruffled"
+      },
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      }
+    ]
+  }
+]

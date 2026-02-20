@@ -1,0 +1,155 @@
+[
+  {
+    "type": "support",
+    "name": "Satono Diamond WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Satono Diamond WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I Love New Things!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I Love Complicated Things!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hesitant Front Runners (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Unseen Assistance",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "hints": [
+                "Sympathy (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Words Aren't Enough",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "The Dream We All Share",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "hints": [
+                "Be Still (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "wit": 30,
+              "hints": [
+                "Lie in Wait (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "201692",
+        "name": "Be Still"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "201692",
+        "name": "Be Still"
+      },
+      {
+        "id": "201691",
+        "name": "Lie in Wait"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "type": "support",
+    "name": "Air Groove PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Air Groove PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Strict but Gracious",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Go with the Flow (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Agile but Strong",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "My Source of Admiration",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "power": 10,
+              "hints": [
+                "Fearless (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "You Make Me Who I Am",
+        "options": {
+          "1": [
+            {
+              "power": 7,
+              "wit": 7,
+              "hints": [
+                "Take the Chance (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "hints": [
+                "Updrafters (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Dynamic Duo",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "wit": 10,
+              "hints": [
+                "Lie in Wait (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201692",
+        "name": "Be Still"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "200941",
+        "name": "Hesitant End Closers"
+      },
+      {
+        "id": "200931",
+        "name": "Flustered End Closers"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "201691",
+        "name": "Lie in Wait"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "type": "support",
+    "name": "Tsurumaru Tsuyoshi PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Tsurumaru Tsuyoshi PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Preparing to the MAX!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Helping Out to the MAX!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Fighter (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "過去からの忘れ物",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "hints": [
+                "Pace Strategy (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "skill_pts": 45,
+              "hints": [
+                "Full Throttle (+5)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "今に繋げて",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "hints": [
+                "Flash Forward (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "未来は私がつくります！",
+        "options": {
+          "1": [
+            {
+              "power": 40,
+              "hints": [
+                "Flash Forward (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "power": 20,
+              "hints": [
+                "Flash Forward (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      },
+      {
+        "id": "201103",
+        "name": "Flash Forward"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ]
+  }
+]

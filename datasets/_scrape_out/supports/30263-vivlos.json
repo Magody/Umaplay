@@ -1,0 +1,145 @@
+[
+  {
+    "type": "support",
+    "name": "Vivlos PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Vivlos PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつの間にかあまーい時間♪",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "power": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつの日にかキラキラセレブ♪",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Late Surger Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "超セレブなウマ娘との出会い！？",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ドキドキ☆無人島サバイバル！",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "激闘！ガチココナッツ！",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "hints": [
+                "Full of Vigor (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "202172",
+        "name": "Downhill Speedster"
+      },
+      {
+        "id": "202642",
+        "name": "Skill ID: 202642"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202111",
+        "name": "Full of Vigor"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "type": "support",
+    "name": "Meisho Doto GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "id": "Meisho Doto GUTS SR_GUTS_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I... Will Change",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Please... Buy Some Carrots",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Pace Chaser Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "What I'm Destined For...",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "wit": 5
+            },
+            {
+              "energy_max": 4,
+              "mood": 1,
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "What I'm Looking For...",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "skill_pts": 15,
+              "hints": [
+                "Prepared to Pass (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200252",
+        "name": "Inner Post Proficiency ○"
+      },
+      {
+        "id": "201621",
+        "name": "Shake It Out"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      }
+    ]
+  }
+]

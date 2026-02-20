@@ -1,0 +1,183 @@
+[
+  {
+    "type": "support",
+    "name": "Sakura Laurel STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Sakura Laurel STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつだって前向きに！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "なんだって前向きに！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Subdued Pace Chasers (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "みんなはひとりのために！",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "hints": [
+                "Skill ID: 202612 (+2)"
+              ],
+              "bond": 10
+            },
+            {
+              "stamina": 5,
+              "hints": [
+                "Skill ID: 202612 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "いつかの桜餅の味は",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 10,
+              "guts": 10,
+              "status": "Practice Perfect ○",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "wit": 15,
+              "status": "Hot Topic",
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 20,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 3
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ひとりはみんなのために！",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "skill_pts": 10,
+              "hints": [
+                "On Your Left! (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "stamina": 10,
+              "skill_pts": 5,
+              "hints": [
+                "On Your Left! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200172",
+        "name": "Spring Runner ○"
+      },
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "202072",
+        "name": "Free-Spirited"
+      },
+      {
+        "id": "202592",
+        "name": "Skill ID: 202592"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "200601",
+        "name": "On Your Left!"
+      },
+      {
+        "id": "200861",
+        "name": "Subdued Pace Chasers"
+      }
+    ]
+  }
+]

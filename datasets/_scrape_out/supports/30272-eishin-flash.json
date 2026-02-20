@@ -1,0 +1,194 @@
+[
+  {
+    "type": "support",
+    "name": "Eishin Flash SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Eishin Flash SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Unforeseen Lunch",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Responding to the Unforeseen",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Target in Sight ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "美しき憧憬",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "speed": 20,
+              "bond": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "美しきトライ",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Skill ID: 203332 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "美しき結実",
+        "options": {
+          "1": [
+            {
+              "speed": 25,
+              "hints": [
+                "Skill ID: 202641 (+1)",
+                "Skill ID: 203671 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 210091 (+5)",
+                "Skill ID: 210082 (+5)",
+                "Glittering Star (+5)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202642",
+        "name": "Skill ID: 202642"
+      },
+      {
+        "id": "203672",
+        "name": "Skill ID: 203672"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203332",
+        "name": "Skill ID: 203332"
+      },
+      {
+        "id": "202641",
+        "name": "Skill ID: 202641"
+      },
+      {
+        "id": "203671",
+        "name": "Skill ID: 203671"
+      },
+      {
+        "id": "210091",
+        "name": "Skill ID: 210091"
+      },
+      {
+        "id": "210082",
+        "name": "Skill ID: 210082"
+      },
+      {
+        "id": "210062",
+        "name": "Glittering Star"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      }
+    ]
+  }
+]

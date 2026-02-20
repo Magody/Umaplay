@@ -1,0 +1,91 @@
+[
+  {
+    "type": "support",
+    "name": "Jungle Pocket SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Jungle Pocket SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“闘叫”（トーキョー）の鬼",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 15,
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“魔術”（マジック）みてぇに",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202422 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "202452",
+        "name": "Skill ID: 202452"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      },
+      {
+        "id": "202492",
+        "name": "Skill ID: 202492"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202422",
+        "name": "Skill ID: 202422"
+      }
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro McQueen SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Mejiro McQueen SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Maintain My Weight",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Reach the Greatest Heights",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "グレイッシュ倶楽部、結成",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "グレイな釣り日和",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "グレイなカラオケ大会",
+        "options": {
+          "1": [
+            {
+              "speed": 20,
+              "hints": [
+                "Skill ID: 203301 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "202762",
+        "name": "Skill ID: 202762"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203301",
+        "name": "Skill ID: 203301"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

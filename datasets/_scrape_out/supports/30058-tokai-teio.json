@@ -1,0 +1,146 @@
+[
+  {
+    "type": "support",
+    "name": "Tokai Teio PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Tokai Teio PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Way, Or...",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Weapon",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Pace Chaser Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "A Model Rivalry",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Rhapsody of Rumors",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "power": 15,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "A Shining Path Toward the Future",
+        "options": {
+          "1": [
+            {
+              "stamina": 7,
+              "power": 7,
+              "hints": [
+                "Adrenaline Rush (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "201332",
+        "name": "Shrewd Step"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "201132",
+        "name": "Thunderbolt Step"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200761",
+        "name": "Adrenaline Rush"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      }
+    ]
+  }
+]

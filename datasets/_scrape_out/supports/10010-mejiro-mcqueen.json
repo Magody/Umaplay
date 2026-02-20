@@ -1,0 +1,96 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro McQueen STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Mejiro McQueen STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Maintain My Weight",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Reach the Greatest Heights",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200172",
+        "name": "Spring Runner ○"
+      },
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

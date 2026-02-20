@@ -1,0 +1,159 @@
+[
+  {
+    "type": "support",
+    "name": "Hishi Amazon GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Hishi Amazon GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hishiama's Struggles: Problem Children",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hishiama's Struggles: Final Stretch",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Hesitant End Closers (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "姉御は怯まず",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 10,
+              "guts": 10,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "姉御はこだわらず",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 10,
+              "hints": [
+                "Early Start (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ただ力で喰らいあう",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 10,
+              "power": 10,
+              "guts": 10,
+              "hints": [
+                "Daring Strike (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202882",
+        "name": "Skill ID: 202882"
+      },
+      {
+        "id": "202912",
+        "name": "Skill ID: 202912"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "202872",
+        "name": "Skill ID: 202872"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "202021",
+        "name": "Daring Strike"
+      },
+      {
+        "id": "200941",
+        "name": "Hesitant End Closers"
+      }
+    ]
+  }
+]

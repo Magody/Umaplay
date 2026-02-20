@@ -1,0 +1,194 @@
+[
+  {
+    "type": "support",
+    "name": "Neo Universe PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Neo Universe PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“観察者”との放課後",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -5,
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“観測者”との遭遇",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202622 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Present “CHOI”",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "power": 15,
+              "bond": 10
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 10
+            }
+          ],
+          "3": [
+            {
+              "energy": 15,
+              "status": "Unknown Status 26",
+              "bond": 20
+            }
+          ]
+        },
+        "default_preference": 3
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "For “シグナル”100％",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "mood": 1,
+              "power": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 203362 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "You Are “クルーメイト”",
+        "options": {
+          "1": [
+            {
+              "power": 35,
+              "hints": [
+                "Skill ID: 202601 (+1)",
+                "Skill ID: 203141 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "202552",
+        "name": "Skill ID: 202552"
+      },
+      {
+        "id": "202602",
+        "name": "Skill ID: 202602"
+      },
+      {
+        "id": "203142",
+        "name": "Skill ID: 203142"
+      },
+      {
+        "id": "203572",
+        "name": "Skill ID: 203572"
+      },
+      {
+        "id": "203632",
+        "name": "Skill ID: 203632"
+      },
+      {
+        "id": "203652",
+        "name": "Skill ID: 203652"
+      },
+      {
+        "id": "204052",
+        "name": "Skill ID: 204052"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203362",
+        "name": "Skill ID: 203362"
+      },
+      {
+        "id": "202601",
+        "name": "Skill ID: 202601"
+      },
+      {
+        "id": "203141",
+        "name": "Skill ID: 203141"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      }
+    ]
+  }
+]

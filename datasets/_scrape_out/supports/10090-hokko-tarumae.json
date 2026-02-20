@@ -1,0 +1,86 @@
+[
+  {
+    "type": "support",
+    "name": "Hokko Tarumae STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Hokko Tarumae STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "あなたに響け、とまこまい",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "みんなに届け、とまこまい",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Top Pick (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202842",
+        "name": "Skill ID: 202842"
+      },
+      {
+        "id": "202262",
+        "name": "Skill ID: 202262"
+      },
+      {
+        "id": "202282",
+        "name": "Skill ID: 202282"
+      },
+      {
+        "id": "202832",
+        "name": "Skill ID: 202832"
+      },
+      {
+        "id": "202312",
+        "name": "Skill ID: 202312"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201672",
+        "name": "Top Pick"
+      }
+    ]
+  }
+]

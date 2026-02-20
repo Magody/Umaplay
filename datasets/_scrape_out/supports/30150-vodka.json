@@ -1,0 +1,146 @@
+[
+  {
+    "type": "support",
+    "name": "Vodka STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Vodka STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Coolest Line",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enemies on Main Street",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Nimble Navigator (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "俺のGreat！！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "俺のGreatest！！！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Sharp Gaze (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "俺のGOAT！！！！",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "15,000,000 CC (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      },
+      {
+        "id": "201411",
+        "name": "15,000,000 CC"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ]
+  }
+]

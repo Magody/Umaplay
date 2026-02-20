@@ -1,0 +1,146 @@
+[
+  {
+    "type": "support",
+    "name": "Ikuno Dictus GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Ikuno Dictus GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Flawless Method",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Management",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Trick (Rear) (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "That's How U Solve the Case",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "stamina": 10,
+              "wit": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Are U the Problem?",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "hints": [
+                "Go with the Flow (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "speed": 10,
+              "skill_pts": 10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Just U and I",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "guts": 10,
+              "skill_pts": 10,
+              "hints": [
+                "The Bigger Picture (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      },
+      {
+        "id": "201432",
+        "name": "Studious"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "201431",
+        "name": "The Bigger Picture"
+      },
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "type": "support",
+    "name": "King Halo SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "King Halo SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "You May Socialize With Me!",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "speed": 10,
+              "power": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": -1,
+              "guts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "You May Advise Me!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Homestretch Haste (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "First-Rate Coaching",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "First-Rate Advice",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200262",
+        "name": "Outer Post Proficiency ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200662",
+        "name": "Wait-and-See"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      }
+    ]
+  }
+]

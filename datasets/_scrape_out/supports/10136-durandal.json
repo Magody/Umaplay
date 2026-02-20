@@ -1,0 +1,102 @@
+[
+  {
+    "type": "support",
+    "name": "Durandal WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Durandal WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "聖剣の一撃",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "聖剣の輝き",
+        "options": {
+          "1": [
+            {
+              "power": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 203582 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "202922",
+        "name": "Skill ID: 202922"
+      },
+      {
+        "id": "203152",
+        "name": "Skill ID: 203152"
+      },
+      {
+        "id": "203762",
+        "name": "Skill ID: 203762"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "203892",
+        "name": "Skill ID: 203892"
+      },
+      {
+        "id": "203902",
+        "name": "Skill ID: 203902"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203582",
+        "name": "Skill ID: 203582"
+      }
+    ]
+  }
+]

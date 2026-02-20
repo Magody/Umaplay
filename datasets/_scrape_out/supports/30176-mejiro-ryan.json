@@ -1,0 +1,143 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Ryan GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Mejiro Ryan GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Muscles and Me, Onward to Tomorrow!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "It's Not Like I Like Romance!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Pace Strategy (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "あたしとあなたの距離",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "あたしでも",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "一歩ずつ、あなたとの距離を",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "guts": 10,
+              "hints": [
+                "Hard Worker (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200202",
+        "name": "Winter Runner ○"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201401",
+        "name": "Hard Worker"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      }
+    ]
+  }
+]

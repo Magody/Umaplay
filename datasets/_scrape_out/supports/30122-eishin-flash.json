@@ -1,0 +1,172 @@
+[
+  {
+    "type": "support",
+    "name": "Eishin Flash SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Eishin Flash SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Unforeseen Lunch",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Responding to the Unforeseen",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Target in Sight ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "汝、ギャルの守護者たるべし",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "汝、ウマドルとなりて盛り上げるべし",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "wit": 10,
+              "hints": [
+                "Position Pilfer (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 30,
+              "power": 10,
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "汝、苫小牧を愛す友を愛すべし",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "skill_pts": 5,
+              "hints": [
+                "Skill ID: 201383 (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 20,
+              "speed": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 201383 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "201383",
+        "name": "Skill ID: 201383"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      }
+    ]
+  }
+]

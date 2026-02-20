@@ -1,0 +1,188 @@
+[
+  {
+    "type": "support",
+    "name": "Oguri Cap WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Oguri Cap WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "How Should I Respond?",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "guts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Conquering the Crowds",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Nakayama Racecourse ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ありがとうが聞きたくて",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "喜ぶ顔に変えたくて",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "speed": 10,
+              "hints": [
+                "Triple 7s (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 7,
+              "wit": 7,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "みんなと笑顔になりたくて",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "skill_pts": 20,
+              "hints": [
+                "Skill ID: 202431 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 7,
+              "wit": 7,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 202431 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202432",
+        "name": "Skill ID: 202432"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "201342",
+        "name": "Straight Descent"
+      },
+      {
+        "id": "201902",
+        "name": "Head-On"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201571",
+        "name": "Triple 7s"
+      },
+      {
+        "id": "202431",
+        "name": "Skill ID: 202431"
+      },
+      {
+        "id": "200042",
+        "name": "Nakayama Racecourse ○"
+      }
+    ]
+  }
+]

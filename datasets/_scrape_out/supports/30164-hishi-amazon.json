@@ -1,0 +1,174 @@
+[
+  {
+    "type": "support",
+    "name": "Hishi Amazon PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Hishi Amazon PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hishiama's Struggles: Problem Children",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hishiama's Struggles: Final Stretch",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Hesitant End Closers (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "タイマン禁止令、発令中",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "hints": [
+                "End Closer Corners ○ (+3)"
+              ],
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "タイマンの原風景",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "hints": [
+                "Straightaway Spurt (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "guts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "戦友と書いて『マブダチ』と読む",
+        "options": {
+          "1": [
+            {
+              "energy": 20,
+              "power": 15,
+              "hints": [
+                "Skill ID: 201463 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 25,
+              "guts": 10,
+              "hints": [
+                "Encroaching Shadow (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200622",
+        "name": "Standing By"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "201463",
+        "name": "Skill ID: 201463"
+      },
+      {
+        "id": "200641",
+        "name": "Encroaching Shadow"
+      },
+      {
+        "id": "200941",
+        "name": "Hesitant End Closers"
+      }
+    ]
+  }
+]

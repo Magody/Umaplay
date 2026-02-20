@@ -1,0 +1,166 @@
+[
+  {
+    "type": "support",
+    "name": "Vodka PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Vodka PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Coolest Line",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enemies on Main Street",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Nimble Navigator (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ひもとけ灰色のディクショナリー",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "魂に憩いもたらす賛歌よ",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "見せつけよ暗き眩き閃光を",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 15,
+              "hints": [
+                "Skill ID: 201383 (+1)",
+                "Skill ID: 203571 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "202452",
+        "name": "Skill ID: 202452"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "203312",
+        "name": "Skill ID: 203312"
+      },
+      {
+        "id": "203572",
+        "name": "Skill ID: 203572"
+      },
+      {
+        "id": "202712",
+        "name": "Skill ID: 202712"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201383",
+        "name": "Skill ID: 201383"
+      },
+      {
+        "id": "203571",
+        "name": "Skill ID: 203571"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ]
+  }
+]

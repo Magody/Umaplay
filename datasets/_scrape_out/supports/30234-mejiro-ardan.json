@@ -1,0 +1,176 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Ardan PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Mejiro Ardan PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Glass Girl Wants to Study",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Glass Girl Wants to Play",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hesitant Pace Chasers (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "いつもそこにいる優しさ",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "笑顔の贈り物",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "stamina": 10,
+              "power": 10,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "夜空、刹那に輝き",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "power": 20,
+              "hints": [
+                "Skill ID: 202741 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 25,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 203131 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 25,
+              "guts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 3
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "202742",
+        "name": "Skill ID: 202742"
+      },
+      {
+        "id": "202982",
+        "name": "Skill ID: 202982"
+      },
+      {
+        "id": "203032",
+        "name": "Skill ID: 203032"
+      },
+      {
+        "id": "203132",
+        "name": "Skill ID: 203132"
+      },
+      {
+        "id": "203232",
+        "name": "Skill ID: 203232"
+      },
+      {
+        "id": "203442",
+        "name": "Skill ID: 203442"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202741",
+        "name": "Skill ID: 202741"
+      },
+      {
+        "id": "203131",
+        "name": "Skill ID: 203131"
+      },
+      {
+        "id": "200881",
+        "name": "Hesitant Pace Chasers"
+      }
+    ]
+  }
+]

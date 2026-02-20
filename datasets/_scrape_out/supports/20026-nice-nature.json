@@ -1,0 +1,137 @@
+[
+  {
+    "type": "support",
+    "name": "Nice Nature WIT SR",
+    "rarity": "SR",
+    "attribute": "WIT",
+    "id": "Nice Nature WIT SR_WIT_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Not like Meow",
+        "options": {
+          "1": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "(Delicious) Burden",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Ramp Up (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Chasing Their Backs",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "wit": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "bond": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Wind at My Back",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "hints": [
+                "Long Shot ○ (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200122",
+        "name": "Kokura Racecourse ○"
+      },
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "200911",
+        "name": "Hesitant Late Surgers"
+      },
+      {
+        "id": "201162",
+        "name": "Murmur"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      }
+    ]
+  }
+]

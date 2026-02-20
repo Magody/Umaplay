@@ -1,0 +1,158 @@
+[
+  {
+    "type": "support",
+    "name": "Bubble Gum Fellow GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Bubble Gum Fellow GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "レッツトライ！",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -5,
+              "guts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ドゥイット！",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Head-On (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "意志あるところに道は開ける",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "夢を追うということ",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "夢はどこまでも膨らんで",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 201313 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      },
+      {
+        "id": "203222",
+        "name": "Skill ID: 203222"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201313",
+        "name": "Skill ID: 201313"
+      },
+      {
+        "id": "201902",
+        "name": "Head-On"
+      }
+    ]
+  }
+]

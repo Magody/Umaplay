@@ -1,0 +1,180 @@
+[
+  {
+    "type": "support",
+    "name": "Dream Journey SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Dream Journey SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "親切丁寧で思慮深く",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "用意周到で妹想い",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202902 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "綺麗な花には毒がある？",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 5,
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "それはただただ咲き誇る",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 15,
+              "power": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "hints": [
+                "Skill ID: 202382 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "そして今日も花が咲く",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 20,
+              "hints": [
+                "Skill ID: 202881 (+1)",
+                "Skill ID: 202931 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "202882",
+        "name": "Skill ID: 202882"
+      },
+      {
+        "id": "202902",
+        "name": "Skill ID: 202902"
+      },
+      {
+        "id": "202922",
+        "name": "Skill ID: 202922"
+      },
+      {
+        "id": "202932",
+        "name": "Skill ID: 202932"
+      },
+      {
+        "id": "203582",
+        "name": "Skill ID: 203582"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "202881",
+        "name": "Skill ID: 202881"
+      },
+      {
+        "id": "202931",
+        "name": "Skill ID: 202931"
+      },
+      {
+        "id": "202902",
+        "name": "Skill ID: 202902"
+      }
+    ]
+  }
+]

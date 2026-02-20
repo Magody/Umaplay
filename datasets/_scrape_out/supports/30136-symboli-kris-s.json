@@ -1,0 +1,151 @@
+[
+  {
+    "type": "support",
+    "name": "Symboli Kris S GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Symboli Kris S GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心情",
+        "options": {
+          "1": [
+            {
+              "guts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心得",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Cloudy Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "トレセン学園の奇妙な日常",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "トレセン学園の非日常",
+        "options": {
+          "1": [
+            {
+              "stamina": 7,
+              "guts": 7,
+              "hints": [
+                "Hawkeye (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ようこそトレセン学園へ",
+        "options": {
+          "1": [
+            {
+              "stamina": 7,
+              "guts": 7,
+              "skill_pts": 10,
+              "hints": [
+                "Burning Soul (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      },
+      {
+        "id": "202091",
+        "name": "Burning Soul"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      }
+    ]
+  }
+]

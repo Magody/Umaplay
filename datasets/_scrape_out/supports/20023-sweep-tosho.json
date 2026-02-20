@@ -1,0 +1,158 @@
+[
+  {
+    "type": "support",
+    "name": "Sweep Tosho SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Sweep Tosho SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Miracle ☆ Escape!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Wonderful ☆ Mistake!",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "skill_pts": 40
+            },
+            {
+              "energy": -20,
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Charming ○",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Some Very Green Friends",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "skill_pts": 10,
+              "hints": [
+                "Lucky Seven (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": -1,
+              "hints": [
+                "Maverick ○ (+5)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Premeditated Mischief",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "skill_pts": 20,
+              "hints": [
+                "Levelheaded (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": -1,
+              "hints": [
+                "Lone Wolf (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "201472",
+        "name": "I Can See Right Through You"
+      },
+      {
+        "id": "200771",
+        "name": "Trick (Front)"
+      },
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      },
+      {
+        "id": "201162",
+        "name": "Murmur"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201562",
+        "name": "Lucky Seven"
+      },
+      {
+        "id": "200272",
+        "name": "Maverick ○"
+      },
+      {
+        "id": "201492",
+        "name": "Levelheaded"
+      },
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      }
+    ]
+  }
+]

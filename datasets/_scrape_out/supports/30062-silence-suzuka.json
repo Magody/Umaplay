@@ -1,0 +1,167 @@
+[
+  {
+    "type": "support",
+    "name": "Silence Suzuka STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Silence Suzuka STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "On and On",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "What Should I Do?",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Left-Handed ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "A Winning Vocalist",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "hints": [
+                "Hydrate (+1)"
+              ]
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "hints": [
+                "Soft Step (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Dream Dance",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "skill_pts": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "A Stage to Remember",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "hints": [
+                "Concentration (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "200712",
+        "name": "Rosy Outlook"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200552",
+        "name": "Final Push"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "200431",
+        "name": "Concentration"
+      },
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      }
+    ]
+  }
+]

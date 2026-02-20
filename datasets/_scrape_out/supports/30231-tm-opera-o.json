@@ -1,0 +1,143 @@
+[
+  {
+    "type": "support",
+    "name": "TM Opera O PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "TM Opera O PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Etude to Victory",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "speed": 5,
+              "skill_pts": 30
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Beyond Our Limited Time",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 15
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Non-Standard Distance ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "創造のために必要なのは",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "覇王に退却はない",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "太陽の役割",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 10,
+              "hints": [
+                "Speed Star (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "202762",
+        "name": "Skill ID: 202762"
+      },
+      {
+        "id": "201332",
+        "name": "Shrewd Step"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200581",
+        "name": "Speed Star"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      }
+    ]
+  }
+]

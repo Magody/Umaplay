@@ -1,0 +1,100 @@
+[
+  {
+    "type": "support",
+    "name": "Yamanin Zephyr GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Yamanin Zephyr GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、自由",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、果てなく",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "power": 3,
+              "guts": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202412 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      }
+    ]
+  }
+]

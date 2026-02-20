@@ -1,0 +1,95 @@
+[
+  {
+    "type": "support",
+    "name": "Inari One PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Inari One PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Let's Tussle! Booyah!",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Mikoshi, Heave Ho!",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Kyoto Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200172",
+        "name": "Spring Runner ○"
+      },
+      {
+        "id": "200202",
+        "name": "Winter Runner ○"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      },
+      {
+        "id": "202002",
+        "name": "Familiar Ground"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "type": "support",
+    "name": "Durandal WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Durandal WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "聖剣の一撃",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "聖剣の輝き",
+        "options": {
+          "1": [
+            {
+              "power": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 203582 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "忠誠はいまだ眠らず",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "忠誠の足跡を辿って",
+        "options": {
+          "1": [
+            {
+              "wit": 15,
+              "hints": [
+                "Skill ID: 202402 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "hints": [
+                "Skill ID: 203762 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "忠誠は己が道に",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "hints": [
+                "Moonlit Flash (+1)",
+                "Skill ID: 202401 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "hints": [
+                "Moonlit Flash (+1)",
+                "Skill ID: 203761 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "202922",
+        "name": "Skill ID: 202922"
+      },
+      {
+        "id": "203152",
+        "name": "Skill ID: 203152"
+      },
+      {
+        "id": "203762",
+        "name": "Skill ID: 203762"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "203892",
+        "name": "Skill ID: 203892"
+      },
+      {
+        "id": "203902",
+        "name": "Skill ID: 203902"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "203762",
+        "name": "Skill ID: 203762"
+      },
+      {
+        "id": "201453",
+        "name": "Moonlit Flash"
+      },
+      {
+        "id": "202401",
+        "name": "Skill ID: 202401"
+      },
+      {
+        "id": "203761",
+        "name": "Skill ID: 203761"
+      },
+      {
+        "id": "203582",
+        "name": "Skill ID: 203582"
+      }
+    ]
+  }
+]

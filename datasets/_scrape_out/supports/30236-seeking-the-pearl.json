@@ -1,0 +1,170 @@
+[
+  {
+    "type": "support",
+    "name": "Seeking the Pearl SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Seeking the Pearl SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Passion!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202992 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Thinking!",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "hints": [
+                "Uma Stan (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ハロー、ディス地球！",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "speed": 10,
+              "power": 5,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "夢と友情のディス地球",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "speed": 10,
+              "power": 5,
+              "hints": [
+                "Skill ID: 202752 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 5,
+              "hints": [
+                "Skill ID: 202751 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ディス地球、それは……",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "power": 15,
+              "hints": [
+                "Skill ID: 202751 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "203012",
+        "name": "Skill ID: 203012"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "203452",
+        "name": "Skill ID: 203452"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202752",
+        "name": "Skill ID: 202752"
+      },
+      {
+        "id": "202751",
+        "name": "Skill ID: 202751"
+      },
+      {
+        "id": "202992",
+        "name": "Skill ID: 202992"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      }
+    ]
+  }
+]

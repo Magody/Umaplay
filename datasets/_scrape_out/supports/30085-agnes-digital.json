@@ -1,0 +1,189 @@
+[
+  {
+    "type": "support",
+    "name": "Agnes Digital PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Agnes Digital PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Umamusume Deficiency!",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Heavy Romance",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Rainy Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Wet Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "A Simp's Aesthetics",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Simp's Burdens",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Hydrate (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "hints": [
+                "Focus (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "A Simp's Lifestyle",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "skill_pts": 20,
+              "hints": [
+                "Lead the Charge! (+3)"
+              ]
+            },
+            {
+              "power": 10,
+              "skill_pts": 15,
+              "hints": [
+                "Lead the Charge! (+1)"
+              ]
+            }
+          ],
+          "2": [
+            {
+              "speed": 35,
+              "hints": [
+                "Uma Stan (+5)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 35,
+              "hints": [
+                "Uma Stan (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      },
+      {
+        "id": "201681",
+        "name": "Lead the Charge!"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "200232",
+        "name": "Rainy Days ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "type": "support",
+    "name": "Taiki Shuttle SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Taiki Shuttle SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Yes! Let's Hug ☆",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "power": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Yeehaw! Party Tonight ☆",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "power": 10
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Prepared to Pass (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202992",
+        "name": "Skill ID: 202992"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      }
+    ]
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "type": "support",
+    "name": "Jungle Pocket GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Jungle Pocket GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“闘叫”（トーキョー）の鬼",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 15,
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "“魔術”（マジック）みてぇに",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202422 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "マブダチ3人、最強屋台",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "guts": 10,
+              "bond": 15
+            },
+            {
+              "energy": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "仲間ってのは……",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "skill_pts": 15,
+              "bond": 15
+            },
+            {
+              "energy": -10,
+              "guts": 20,
+              "hints": [
+                "Skill ID: 202621 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "頂上作戦",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 30,
+              "hints": [
+                "Skill ID: 202621 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "guts": 20,
+              "hints": [
+                "Skill ID: 202621 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "power": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202621",
+        "name": "Skill ID: 202621"
+      },
+      {
+        "id": "202422",
+        "name": "Skill ID: 202422"
+      }
+    ]
+  }
+]

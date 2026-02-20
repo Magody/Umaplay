@@ -1,0 +1,81 @@
+[
+  {
+    "type": "support",
+    "name": "Ikuno Dictus WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Ikuno Dictus WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Flawless Method",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Management",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Trick (Rear) (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      },
+      {
+        "id": "201432",
+        "name": "Studious"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      }
+    ]
+  }
+]

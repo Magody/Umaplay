@@ -1,0 +1,232 @@
+[
+  {
+    "type": "support",
+    "name": "Air Groove SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Air Groove SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Strict but Gracious",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Go with the Flow (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Agile but Strong",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "心を飾るは",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 10,
+              "speed": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "skill_pts": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "そのアイシャドウは繋がって",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 15,
+              "speed": 10,
+              "hints": [
+                "Skill ID: 203632 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 20,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 203422 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "speed": 10,
+              "power": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 203332 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "そのメイクは誰がために",
+        "options": {
+          "1": [
+            {
+              "speed": 25,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 202711 (+2)",
+                "Skill ID: 204031 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "speed": 20,
+              "hints": [
+                "Skill ID: 204031 (+2)",
+                "Skill ID: 204041 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      },
+      {
+        "id": "203312",
+        "name": "Skill ID: 203312"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "204032",
+        "name": "Skill ID: 204032"
+      },
+      {
+        "id": "204042",
+        "name": "Skill ID: 204042"
+      },
+      {
+        "id": "204112",
+        "name": "Skill ID: 204112"
+      },
+      {
+        "id": "202712",
+        "name": "Skill ID: 202712"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203632",
+        "name": "Skill ID: 203632"
+      },
+      {
+        "id": "203422",
+        "name": "Skill ID: 203422"
+      },
+      {
+        "id": "203332",
+        "name": "Skill ID: 203332"
+      },
+      {
+        "id": "202711",
+        "name": "Skill ID: 202711"
+      },
+      {
+        "id": "204031",
+        "name": "Skill ID: 204031"
+      },
+      {
+        "id": "204041",
+        "name": "Skill ID: 204041"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ]
+  }
+]

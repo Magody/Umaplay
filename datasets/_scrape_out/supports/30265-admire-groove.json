@@ -1,0 +1,178 @@
+[
+  {
+    "type": "support",
+    "name": "Admire Groove SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Admire Groove SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "窓側が好きなお客さん",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "wit": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ひとりが好きなクラスメイトさん",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Take the Chance (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "孤高の麗人",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "speed": 10,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "孤高の休日",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "hints": [
+                "Skill ID: 202612 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "孤高の証明",
+        "options": {
+          "1": [
+            {
+              "speed": 25,
+              "hints": [
+                "Skill ID: 203831 (+1)",
+                "Skill ID: 203841 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "203572",
+        "name": "Skill ID: 203572"
+      },
+      {
+        "id": "203672",
+        "name": "Skill ID: 203672"
+      },
+      {
+        "id": "203842",
+        "name": "Skill ID: 203842"
+      },
+      {
+        "id": "203322",
+        "name": "Skill ID: 203322"
+      },
+      {
+        "id": "203832",
+        "name": "Skill ID: 203832"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "203831",
+        "name": "Skill ID: 203831"
+      },
+      {
+        "id": "203841",
+        "name": "Skill ID: 203841"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ]
+  }
+]

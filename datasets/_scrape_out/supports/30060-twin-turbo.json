@@ -1,0 +1,156 @@
+[
+  {
+    "type": "support",
+    "name": "Twin Turbo GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Twin Turbo GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just Start Running!",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "speed": 20
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "power": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I'm All Fired Up!",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Ad Squad, Go!",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": -5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Ad Squad, Full Throttle!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 7,
+              "power": 7,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Ad Squad Rocks!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 15,
+              "hints": [
+                "Killer Tunes (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "guts": 10,
+              "hints": [
+                "Up-Tempo (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200721",
+        "name": "Killer Tunes"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

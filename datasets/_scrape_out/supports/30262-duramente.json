@@ -1,0 +1,175 @@
+[
+  {
+    "type": "support",
+    "name": "Duramente STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Duramente STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "流すべきこの汗",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "追うべき背中",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202602 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "可愛いが最強？",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "可愛いを実践！",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 10,
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 20,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "可愛いの真の力！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 202901 (+1)",
+                "Skill ID: 203751 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "stamina": 20,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202892",
+        "name": "Skill ID: 202892"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "203152",
+        "name": "Skill ID: 203152"
+      },
+      {
+        "id": "203512",
+        "name": "Skill ID: 203512"
+      },
+      {
+        "id": "203752",
+        "name": "Skill ID: 203752"
+      },
+      {
+        "id": "203762",
+        "name": "Skill ID: 203762"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202901",
+        "name": "Skill ID: 202901"
+      },
+      {
+        "id": "203751",
+        "name": "Skill ID: 203751"
+      },
+      {
+        "id": "202602",
+        "name": "Skill ID: 202602"
+      }
+    ]
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "type": "support",
+    "name": "Light Hello PAL SSR",
+    "rarity": "SSR",
+    "attribute": "PAL",
+    "id": "Light Hello PAL SSR_PAL_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ちゃっかりリサーチ♪",
+        "options": {
+          "1": [
+            {
+              "speed": 7,
+              "guts": 7,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "想いの力、受け止めて……！",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "mood": 1,
+              "speed": 7,
+              "guts": 7,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 30,
+              "skill_pts": 30,
+              "hints": [
+                "Maverick ○ (+5)"
+              ],
+              "bond": -5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "嵐の大洋で、まどろみ",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 25,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ティコの輝き",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "mood": 1,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "レゴリスで隠して",
+        "options": {
+          "1": [
+            {
+              "energy": 50,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 15,
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ホイヘンス山、越えし君",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "虹の入り江にて",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 30,
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "See Ya Later! (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "mood": 1,
+              "energy": 20,
+              "speed": 5,
+              "guts": 5,
+              "hints": [
+                "See Ya Later! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "イベント企画のライトハロー",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 10,
+              "guts": 10,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "お疲れ様です……！",
+        "options": {
+          "1": [
+            {
+              "guts": 3,
+              "mood": 1,
+              "skill_pts": 3,
+              "bond": 7
+            },
+            {
+              "guts": 3,
+              "skill_pts": 3,
+              "bond": 7
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "有明を共に歩む",
+        "options": {
+          "1": [
+            {
+              "speed": 20,
+              "guts": 20,
+              "skill_pts": 30
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "満ちる時まで",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "guts": 15,
+              "skill_pts": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ハローとの絆・きょうはぶれいこー",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "speed": 10,
+              "hints": [
+                "Front Runner Savvy ○ (+1)",
+                "Pace Chaser Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200272",
+        "name": "Maverick ○"
+      },
+      {
+        "id": "201662",
+        "name": "See Ya Later!"
+      },
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      }
+    ]
+  }
+]

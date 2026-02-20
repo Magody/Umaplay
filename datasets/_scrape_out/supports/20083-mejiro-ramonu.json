@@ -1,0 +1,128 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Ramonu STA SR",
+    "rarity": "SR",
+    "attribute": "STA",
+    "id": "Mejiro Ramonu STA SR_STA_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "一瞥にて",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "傅いて",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "全ては愛しいものがため",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "愛は遍く",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 203112 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "203312",
+        "name": "Skill ID: 203312"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203112",
+        "name": "Skill ID: 203112"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      }
+    ]
+  }
+]

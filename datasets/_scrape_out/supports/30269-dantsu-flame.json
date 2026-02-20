@@ -1,0 +1,151 @@
+[
+  {
+    "type": "support",
+    "name": "Dantsu Flame SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Dantsu Flame SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつものわたしは",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202472 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつかのわたしは",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "平和主義者たちの仁義なき戦い",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "晴れ。時々しょんぼりのんびり",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "今日も明日も一緒にゆっくり",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Come What May (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      },
+      {
+        "id": "202742",
+        "name": "Skill ID: 202742"
+      },
+      {
+        "id": "203122",
+        "name": "Skill ID: 203122"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201701",
+        "name": "Come What May"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      }
+    ]
+  }
+]

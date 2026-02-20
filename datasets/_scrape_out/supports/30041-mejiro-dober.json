@@ -1,0 +1,141 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Dober WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Mejiro Dober WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Give It a Try",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hope She'll Like It...",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Unyielding Spirit (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "One Step Forward",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "skill_pts": "+15/+45",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Two Steps Up",
+        "options": {
+          "1": [
+            {
+              "guts": 3,
+              "wit": 3,
+              "skill_pts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Three Steps Forward, Two Steps Back",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 5,
+              "wit": 5,
+              "hints": [
+                "The Bigger Picture (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201431",
+        "name": "The Bigger Picture"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      }
+    ]
+  }
+]

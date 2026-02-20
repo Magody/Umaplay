@@ -1,0 +1,151 @@
+[
+  {
+    "type": "support",
+    "name": "Yamanin Zephyr SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Yamanin Zephyr SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、自由",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、果てなく",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "power": 3,
+              "guts": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202412 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "憧憬の風",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "本音を聞かせて",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 15,
+              "hints": [
+                "Skill ID: 202502 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "あなたの止まり木",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 25,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202501 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202502",
+        "name": "Skill ID: 202502"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "201902",
+        "name": "Head-On"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202502",
+        "name": "Skill ID: 202502"
+      },
+      {
+        "id": "202501",
+        "name": "Skill ID: 202501"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      }
+    ]
+  }
+]

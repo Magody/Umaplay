@@ -1,0 +1,155 @@
+[
+  {
+    "type": "support",
+    "name": "Yaeno Muteki PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Yaeno Muteki PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Firm and Plain, Yet Close to Virtue",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "power": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Will to Protect!",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 10
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Corners ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Yaeno's Off-Site Training",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "skill_pts": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Reasonable Diet vs. an Explosive Diet",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Playtime's Over! (+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Yaeno Muteki's Love Song Nightmare",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "power": 10,
+              "hints": [
+                "It's On! (+1",
+                "+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200891",
+        "name": "Subdued Late Surgers"
+      },
+      {
+        "id": "200911",
+        "name": "Hesitant Late Surgers"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "200461",
+        "name": "It's On!"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "type": "support",
+    "name": "Katsuragi Ace SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Katsuragi Ace SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "エースVSスピーチ！",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "エースVSクレーマー！",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Groundwork (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "By the People",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "No Way Home",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "hints": [
+                "Final Push (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -5,
+              "guts": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Through Telepathy",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "Unyielding (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      },
+      {
+        "id": "202432",
+        "name": "Skill ID: 202432"
+      },
+      {
+        "id": "202462",
+        "name": "Skill ID: 202462"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200552",
+        "name": "Final Push"
+      },
+      {
+        "id": "200731",
+        "name": "Unyielding"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      }
+    ]
+  }
+]

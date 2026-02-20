@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "No Reason GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "No Reason GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "甘味争奪合戦之巻",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "All I've Got (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "昼休、避球試合之巻",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "speed": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      },
+      {
+        "id": "200372",
+        "name": "Straightaway Acceleration"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      }
+    ]
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "type": "support",
+    "name": "Biko Pegasus WIT SR",
+    "rarity": "SR",
+    "attribute": "WIT",
+    "id": "Biko Pegasus WIT SR_WIT_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Hero's Woes",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Preparing My Special Move!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Sprint Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ヒーローのお仕事",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ワンモア・ヒーロー",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 15,
+              "hints": [
+                "Skill ID: 203042 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      },
+      {
+        "id": "203012",
+        "name": "Skill ID: 203012"
+      },
+      {
+        "id": "203152",
+        "name": "Skill ID: 203152"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      }
+    ]
+  }
+]

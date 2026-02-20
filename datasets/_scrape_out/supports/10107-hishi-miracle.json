@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "Hishi Miracle STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Hishi Miracle STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "まあ普通にめんどいけど",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "まあ普通にがんばります",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Free-Spirited (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      },
+      {
+        "id": "202562",
+        "name": "Skill ID: 202562"
+      },
+      {
+        "id": "202592",
+        "name": "Skill ID: 202592"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202072",
+        "name": "Free-Spirited"
+      }
+    ]
+  }
+]

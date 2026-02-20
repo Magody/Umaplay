@@ -1,0 +1,294 @@
+[
+  {
+    "type": "support",
+    "name": "Embodiment of Legends GROUP SSR",
+    "rarity": "SSR",
+    "attribute": "GROUP",
+    "id": "Embodiment of Legends GROUP SSR_GROUP_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "三栄冠の寄与",
+        "options": {
+          "1": [
+            {
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "三栄冠のお散歩",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "hints": [
+                "Slipstream (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "開拓者の奮励",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "開拓者のショーダウン",
+        "options": {
+          "1": [
+            {
+              "guts": 5,
+              "hints": [
+                "Corner Adept ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "アイドルの答え",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "アイドルの遭遇報告",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "hints": [
+                "Skill ID: 202802 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "その歓声は誰のもの？",
+        "options": {
+          "1": [
+            {
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "交差する軌跡",
+        "options": {
+          "1": [
+            {
+              "energy": 35,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 202792 (+3)"
+              ],
+              "status": "Unknown Status 104",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "伝説級のお食事会！？",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "status": "Unknown Status 104",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 3,
+              "skill_pts": 3,
+              "status": "Unknown Status 104",
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "wit": 3,
+              "status": "Unknown Status 104",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "次に導く“光”は、",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 12
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "あの日々は今も、未来にも",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 8
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "新たな年に、祈りを",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "mood": 1,
+              "skill_pts": 5,
+              "hints": [
+                "Skill ID: 203502 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "202802",
+        "name": "Skill ID: 202802"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      },
+      {
+        "id": "203502",
+        "name": "Skill ID: 203502"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "203501",
+        "name": "Skill ID: 203501"
+      }
+    ]
+  }
+]

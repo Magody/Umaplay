@@ -1,0 +1,185 @@
+[
+  {
+    "type": "support",
+    "name": "Symboli Kris S PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Symboli Kris S PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心情",
+        "options": {
+          "1": [
+            {
+              "guts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心得",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Cloudy Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "適切なDistance",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 45,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "The Best Partner",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Skill ID: 202422 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "hints": [
+                "Skill ID: 202642 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "WOTAGEI",
+        "options": {
+          "1": [
+            {
+              "stamina": 30,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202421 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 25,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 202641 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202452",
+        "name": "Skill ID: 202452"
+      },
+      {
+        "id": "202542",
+        "name": "Skill ID: 202542"
+      },
+      {
+        "id": "202592",
+        "name": "Skill ID: 202592"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202422",
+        "name": "Skill ID: 202422"
+      },
+      {
+        "id": "202642",
+        "name": "Skill ID: 202642"
+      },
+      {
+        "id": "202421",
+        "name": "Skill ID: 202421"
+      },
+      {
+        "id": "202641",
+        "name": "Skill ID: 202641"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      }
+    ]
+  }
+]

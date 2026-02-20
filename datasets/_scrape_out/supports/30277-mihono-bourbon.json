@@ -1,0 +1,182 @@
+[
+  {
+    "type": "support",
+    "name": "Mihono Bourbon PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Mihono Bourbon PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Do No Harm",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Orders Must Be Followed",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Focus (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "火種：静かにくすぶる",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "発火：熱を帯びて",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "power": 5,
+              "hints": [
+                "Prudent Positioning (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "火炎：夢焦がれ",
+        "options": {
+          "1": [
+            {
+              "power": 25,
+              "hints": [
+                "Taking the Lead (+1)",
+                "Skill ID: 203461 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "202161",
+        "name": "Restraint"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "203272",
+        "name": "Skill ID: 203272"
+      },
+      {
+        "id": "203462",
+        "name": "Skill ID: 203462"
+      },
+      {
+        "id": "204092",
+        "name": "Skill ID: 204092"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "200531",
+        "name": "Taking the Lead"
+      },
+      {
+        "id": "203461",
+        "name": "Skill ID: 203461"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "type": "support",
+    "name": "Fine Motion GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Fine Motion GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Wonderful New Shoes",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Reminiscent Clover",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Corner Adept ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "この一撃は我が決意",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "hints": [
+                "Sapporo Racecourse ○ (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "この眼差しは我が切望",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 203112 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "全て、我が愛のため",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 203111 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 15,
+              "hints": [
+                "Skill ID: 203111 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200182",
+        "name": "Summer Runner ○"
+      },
+      {
+        "id": "202702",
+        "name": "Skill ID: 202702"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "202982",
+        "name": "Skill ID: 202982"
+      },
+      {
+        "id": "203052",
+        "name": "Skill ID: 203052"
+      },
+      {
+        "id": "203112",
+        "name": "Skill ID: 203112"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200082",
+        "name": "Sapporo Racecourse ○"
+      },
+      {
+        "id": "203112",
+        "name": "Skill ID: 203112"
+      },
+      {
+        "id": "203111",
+        "name": "Skill ID: 203111"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      }
+    ]
+  }
+]

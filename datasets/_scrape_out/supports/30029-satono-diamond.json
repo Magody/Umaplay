@@ -1,0 +1,168 @@
+[
+  {
+    "type": "support",
+    "name": "Satono Diamond STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Satono Diamond STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I Love New Things!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I Love Complicated Things!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hesitant Front Runners (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Hope Bearer",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "stamina": 2,
+              "guts": 2,
+              "wit": 2
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Diamond Fixation",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "stamina": 10,
+              "bond": 5
+            },
+            {
+              "mood": -1,
+              "guts": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Only for You",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "stamina": 30,
+              "hints": [
+                "Iron Will (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "guts": 5,
+              "hints": [
+                "Iron Will (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201432",
+        "name": "Studious"
+      },
+      {
+        "id": "201152",
+        "name": "Tether"
+      },
+      {
+        "id": "200841",
+        "name": "Flustered Front Runners"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "200441",
+        "name": "Iron Will"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      }
+    ]
+  }
+]

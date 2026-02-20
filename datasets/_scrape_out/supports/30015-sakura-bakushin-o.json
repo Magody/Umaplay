@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Sakura Bakushin O SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Sakura Bakushin O SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Genius Efficiency!",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enough to Break into a Dash!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Gap Closer (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Bakushin's Cooking!",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Bakushin's Love!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Bakushin's Huge Success!",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "power": 5,
+              "hints": [
+                "Turbo Sprint (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "200982",
+        "name": "Huge Lead"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "200992",
+        "name": "Countermeasure"
+      },
+      {
+        "id": "201012",
+        "name": "Intimidate"
+      },
+      {
+        "id": "200791",
+        "name": "Frenzied Front Runners"
+      },
+      {
+        "id": "200841",
+        "name": "Flustered Front Runners"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200651",
+        "name": "Turbo Sprint"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      }
+    ]
+  }
+]

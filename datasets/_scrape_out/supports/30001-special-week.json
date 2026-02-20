@@ -1,0 +1,176 @@
+[
+  {
+    "type": "support",
+    "name": "Special Week GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Special Week GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Watch Where You're Going!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Extra Tank (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "So Many Options!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Dance in Cleats!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Roller Coaster of Feelings!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Our Audience",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "guts": 5,
+              "hints": [
+                "Homestretch Haste (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "speed": 15,
+              "stamina": 15,
+              "guts": 15,
+              "hints": [
+                "In Body and Mind (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200232",
+        "name": "Rainy Days ○"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200612",
+        "name": "Outer Swell"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201342",
+        "name": "Straight Descent"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200511",
+        "name": "In Body and Mind"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      }
+    ]
+  }
+]

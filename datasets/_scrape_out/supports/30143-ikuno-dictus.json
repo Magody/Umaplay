@@ -1,0 +1,146 @@
+[
+  {
+    "type": "support",
+    "name": "Ikuno Dictus PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Ikuno Dictus PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Flawless Method",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ikuno-Style Management",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Trick (Rear) (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ひとつひとつに、真心を",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "hints": [
+                "Studious (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "誠心誠意、感謝をこめて",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "stamina": 7,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "wit": 7,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "心づかいは、巡り巡って",
+        "options": {
+          "1": [
+            {
+              "power": 7,
+              "wit": 7,
+              "hints": [
+                "Hard Worker (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201442",
+        "name": "Sharp Gaze"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201432",
+        "name": "Studious"
+      },
+      {
+        "id": "201401",
+        "name": "Hard Worker"
+      },
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      }
+    ]
+  }
+]

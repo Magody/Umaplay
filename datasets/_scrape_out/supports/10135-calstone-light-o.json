@@ -1,0 +1,121 @@
+[
+  {
+    "type": "support",
+    "name": "Calstone Light O SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Calstone Light O SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "『真っ直ぐ』はすばらしい",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Straightaway Adept (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "『最速』はすばらしい",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "hints": [
+                "Skill ID: 202992 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "203032",
+        "name": "Skill ID: 203032"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "203061",
+        "name": "Skill ID: 203061"
+      },
+      {
+        "id": "203071",
+        "name": "Skill ID: 203071"
+      },
+      {
+        "id": "203882",
+        "name": "Skill ID: 203882"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "202862",
+        "name": "Skill ID: 202862"
+      },
+      {
+        "id": "203482",
+        "name": "Skill ID: 203482"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "202992",
+        "name": "Skill ID: 202992"
+      }
+    ]
+  }
+]

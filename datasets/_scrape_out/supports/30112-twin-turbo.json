@@ -1,0 +1,181 @@
+[
+  {
+    "type": "support",
+    "name": "Twin Turbo GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Twin Turbo GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just Start Running!",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "speed": 20
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "power": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I'm All Fired Up!",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ターボを追っかけて！",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "guts": 15,
+              "bond": 5
+            },
+            {
+              "energy": -20,
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "Playtime's Over! (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ターボとゲームして！",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "speed": 15,
+              "guts": 15,
+              "skill_pts": 15,
+              "bond": 5
+            },
+            {
+              "energy": -20,
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 202391 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ターボが最強！",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 202391 (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": -5,
+              "speed": 15,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 202391 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "202392",
+        "name": "Skill ID: 202392"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202391",
+        "name": "Skill ID: 202391"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

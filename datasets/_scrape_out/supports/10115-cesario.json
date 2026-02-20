@@ -1,0 +1,86 @@
+[
+  {
+    "type": "support",
+    "name": "Cesario WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Cesario WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "オンステージ",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "オフステージ",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202712 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202712",
+        "name": "Skill ID: 202712"
+      }
+    ]
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "type": "support",
+    "name": "Gold City WIT SR",
+    "rarity": "SR",
+    "attribute": "WIT",
+    "id": "Gold City WIT SR_WIT_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "08:36 / Crap, I Overslept",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "13:12 / Lunch Break, Gotta Get Myself Together",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "A Small Breather (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "I Can Do It Myself",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Relying On Others",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Straightaway Recovery (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Snowy Days ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "200232",
+        "name": "Rainy Days ○"
+      },
+      {
+        "id": "200692",
+        "name": "Watchful Eye"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200242",
+        "name": "Snowy Days ○"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      }
+    ]
+  }
+]

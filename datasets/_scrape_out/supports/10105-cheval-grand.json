@@ -1,0 +1,93 @@
+[
+  {
+    "type": "support",
+    "name": "Cheval Grand STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Cheval Grand STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "僕だって、いつか……",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202762 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "釣りは静かに……",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "202482",
+        "name": "Skill ID: 202482"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202762",
+        "name": "Skill ID: 202762"
+      }
+    ]
+  }
+]

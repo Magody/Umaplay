@@ -1,0 +1,160 @@
+[
+  {
+    "type": "support",
+    "name": "Duramente SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Duramente SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "流すべきこの汗",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "追うべき背中",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202602 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Vol.1 『ストイックの向こう側』",
+        "options": {
+          "1": [
+            {
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Vol.2 『脈々と』",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 7,
+              "power": 7,
+              "hints": [
+                "Skill ID: 202721 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Vol.3 『その名はドゥラメンテ』",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "speed": 20,
+              "power": 20,
+              "hints": [
+                "Skill ID: 202721 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "speed": 10,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202721 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202552",
+        "name": "Skill ID: 202552"
+      },
+      {
+        "id": "202662",
+        "name": "Skill ID: 202662"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202721",
+        "name": "Skill ID: 202721"
+      },
+      {
+        "id": "202602",
+        "name": "Skill ID: 202602"
+      }
+    ]
+  }
+]

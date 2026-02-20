@@ -1,0 +1,87 @@
+[
+  {
+    "type": "support",
+    "name": "Manhattan Cafe STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Manhattan Cafe STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Solo Nighttime Run",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Taste of Silence",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Non-Standard Distance ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200232",
+        "name": "Rainy Days ○"
+      },
+      {
+        "id": "201202",
+        "name": "Passing Pro"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201581",
+        "name": "Highlander"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      }
+    ]
+  }
+]

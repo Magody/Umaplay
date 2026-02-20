@@ -1,0 +1,80 @@
+[
+  {
+    "type": "support",
+    "name": "Maruzensky SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Maruzensky SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "For an Adorable Younger Student",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ]
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "speed": 10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Drive Destination",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "wit": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

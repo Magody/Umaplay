@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "Lucky Lilac WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Lucky Lilac WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ほな、気張っていこか（A面）",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ほな、気張っていこか（B面）",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 203142 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "203312",
+        "name": "Skill ID: 203312"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203142",
+        "name": "Skill ID: 203142"
+      }
+    ]
+  }
+]

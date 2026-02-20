@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Fine Motion SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Fine Motion SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Wonderful New Shoes",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Reminiscent Clover",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Corner Adept ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "トレセン学園のPsychic?",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Psychicは何を見る？",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "キミは私のPsychic",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Calm and Collected (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200561",
+        "name": "Calm and Collected"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "type": "support",
+    "name": "Marvelous Sunday WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Marvelous Sunday WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Marvelous, No Question ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "How To Be More Marvelous ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      },
+      {
+        "id": "200881",
+        "name": "Hesitant Pace Chasers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

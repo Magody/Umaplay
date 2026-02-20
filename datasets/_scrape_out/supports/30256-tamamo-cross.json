@@ -1,0 +1,189 @@
+[
+  {
+    "type": "support",
+    "name": "Tamamo Cross PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Tamamo Cross PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Tamamo's School Tour",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Battle I Can't Lose!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Calm in a Crowd (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "背中でうなるは浪花節",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "誰かの道を照らすなら",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "stamina": 10,
+              "power": 15,
+              "hints": [
+                "Slipstream (+1)"
+              ],
+              "bond": 7
+            }
+          ],
+          "2": [
+            {
+              "power": 20,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 202802 (+1)"
+              ],
+              "bond": 7
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "遠くで光るその走り",
+        "options": {
+          "1": [
+            {
+              "power": 35,
+              "hints": [
+                "Skill ID: 202551 (+2)",
+                "Skill ID: 203361 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "power": 20,
+              "hints": [
+                "Skill ID: 202551 (+2)",
+                "Skill ID: 203661 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "202522",
+        "name": "Skill ID: 202522"
+      },
+      {
+        "id": "202552",
+        "name": "Skill ID: 202552"
+      },
+      {
+        "id": "203362",
+        "name": "Skill ID: 203362"
+      },
+      {
+        "id": "203502",
+        "name": "Skill ID: 203502"
+      },
+      {
+        "id": "203662",
+        "name": "Skill ID: 203662"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202802",
+        "name": "Skill ID: 202802"
+      },
+      {
+        "id": "202551",
+        "name": "Skill ID: 202551"
+      },
+      {
+        "id": "203361",
+        "name": "Skill ID: 203361"
+      },
+      {
+        "id": "203661",
+        "name": "Skill ID: 203661"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Ardan SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Mejiro Ardan SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Glass Girl Wants to Study",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Glass Girl Wants to Play",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hesitant Pace Chasers (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "空想してみましょう",
+        "options": {
+          "1": [
+            {
+              "energy": 15
+            }
+          ],
+          "2": [
+            {
+              "speed": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "きかせてあげましょう",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "skill_pts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "体験してみましょう",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "hints": [
+                "Race Planner (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200571",
+        "name": "Race Planner"
+      },
+      {
+        "id": "200881",
+        "name": "Hesitant Pace Chasers"
+      }
+    ]
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "type": "support",
+    "name": "Gold Ship SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Gold Ship SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Adventurer Gold Ship",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Revive the Brand! Golshi's Yakisoba",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Raising the Uma Lord's Castle",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Plotting the Uma Lord's Dungeon",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "speed": 5,
+              "stamina": 5,
+              "hints": [
+                "Long Straightaways ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Assembling the Uma Lord's Minions",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "hints": [
+                "Inside Scoop (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "speed": 10,
+              "stamina": 10,
+              "hints": [
+                "Innate Experience (+3)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "hints": [
+                "Maverick ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      },
+      {
+        "id": "200622",
+        "name": "Standing By"
+      },
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "201581",
+        "name": "Highlander"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "201472",
+        "name": "I Can See Right Through You"
+      },
+      {
+        "id": "201502",
+        "name": "Strategist"
+      },
+      {
+        "id": "201512",
+        "name": "Intense Gaze"
+      },
+      {
+        "id": "201232",
+        "name": "Smoke Screen"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "200751",
+        "name": "Innate Experience"
+      },
+      {
+        "id": "200272",
+        "name": "Maverick ○"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

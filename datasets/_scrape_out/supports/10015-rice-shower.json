@@ -1,0 +1,98 @@
+[
+  {
+    "type": "support",
+    "name": "Rice Shower STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Rice Shower STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page of Flower Shop Assistance",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page About Cloudy Weather",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Firm Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200272",
+        "name": "Maverick ○"
+      },
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201342",
+        "name": "Straight Descent"
+      },
+      {
+        "id": "201581",
+        "name": "Highlander"
+      },
+      {
+        "id": "200801",
+        "name": "Frenzied Pace Chasers"
+      },
+      {
+        "id": "200861",
+        "name": "Subdued Pace Chasers"
+      },
+      {
+        "id": "200871",
+        "name": "Flustered Pace Chasers"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "type": "support",
+    "name": "Sirius Symboli WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Sirius Symboli WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Want Me to Teach You?",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Want Me to Help You?",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "hints": [
+                "Disorient (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Those with the Name of Symboli",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "hints": [
+                "Playtime's Over! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "To Set Oneself Free",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "hints": [
+                "Late Surger Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Tipped Scales",
+        "options": {
+          "1": [
+            {
+              "wit": 15,
+              "hints": [
+                "Take the Chance (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "wit": 30,
+              "hints": [
+                "From the Brink (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "201692",
+        "name": "Be Still"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      },
+      {
+        "id": "202081",
+        "name": "From the Brink"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ]
+  }
+]

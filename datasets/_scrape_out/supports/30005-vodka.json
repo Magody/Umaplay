@@ -1,0 +1,152 @@
+[
+  {
+    "type": "support",
+    "name": "Vodka PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Vodka PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Coolest Line",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enemies on Main Street",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Nimble Navigator (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Gotta Follow My Heart",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Vow to the Setting Sun",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Put That on the Record, Okay?",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 30,
+              "hints": [
+                "Breath of Fresh Air (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "200372",
+        "name": "Straightaway Acceleration"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "200381",
+        "name": "Breath of Fresh Air"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ]
+  }
+]

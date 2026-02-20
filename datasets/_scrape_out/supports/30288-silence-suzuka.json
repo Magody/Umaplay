@@ -1,0 +1,100 @@
+[
+  {
+    "type": "support",
+    "name": "Silence Suzuka WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Silence Suzuka WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "On and On",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "What Should I Do?",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Left-Handed ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "203022",
+        "name": "Skill ID: 203022"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "201262",
+        "name": "Dodging Danger"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      },
+      {
+        "id": "201302",
+        "name": "Restart"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      }
+    ]
+  }
+]

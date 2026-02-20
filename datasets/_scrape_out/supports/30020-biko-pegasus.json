@@ -1,0 +1,140 @@
+[
+  {
+    "type": "support",
+    "name": "Biko Pegasus SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Biko Pegasus SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Hero's Woes",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Preparing My Special Move!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Sprint Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Passionate Promises, Heroic Ambitions!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Brace Yourself: Training with Carrot Ranger!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Showdown! Glorious Victory!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Plan X (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200262",
+        "name": "Outer Post Proficiency ○"
+      },
+      {
+        "id": "200662",
+        "name": "Wait-and-See"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      },
+      {
+        "id": "201022",
+        "name": "Stop Right There!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200991",
+        "name": "Plan X"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      }
+    ]
+  }
+]

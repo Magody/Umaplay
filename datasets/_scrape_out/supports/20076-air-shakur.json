@@ -1,0 +1,133 @@
+[
+  {
+    "type": "support",
+    "name": "Air Shakur PWR SR",
+    "rarity": "SR",
+    "attribute": "PWR",
+    "id": "Air Shakur PWR SR_PWR_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Verification Required",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Absolute Desire",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Pace Strategy (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "well-behavedの変化",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ill-behavedの感化",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202882 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201492",
+        "name": "Levelheaded"
+      },
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "202942",
+        "name": "Skill ID: 202942"
+      },
+      {
+        "id": "200372",
+        "name": "Straightaway Acceleration"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202882",
+        "name": "Skill ID: 202882"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      }
+    ]
+  }
+]

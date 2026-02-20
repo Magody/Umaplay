@@ -1,0 +1,167 @@
+[
+  {
+    "type": "support",
+    "name": "Tanino Gimlet STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Tanino Gimlet STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "破壊の喜びを……！！",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "鮮烈なる今を……！！",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "skill_pts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "End Closer Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "デカメロンの神託",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 25,
+              "hints": [
+                "Lone Wolf (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "破壊と再生のフォースタス",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "stamina": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 30,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "顕現せし我がユートピア",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "guts": 15,
+              "skill_pts": 15,
+              "hints": [
+                "Elated (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "202102",
+        "name": "Eager"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "202101",
+        "name": "Elated"
+      },
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      }
+    ]
+  }
+]

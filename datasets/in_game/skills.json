@@ -4,7 +4,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Certain Victory",
-    "description": "Increase velocity with an indomitable fighting spirit when on the heels of another runner toward the front on the final straight.",
+    "description": "Greatly increase velocity with an indomitable fighting spirit on the final straight after being on the heels of another runner toward the front on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -14,7 +14,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Legacy of the Strong",
-    "description": "Increase velocity when pressured by another runner and running out of energy toward the front on the final corner or later.",
+    "description": "Increase velocity continuously when pressured by another runner and running out of energy toward the front on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -44,7 +44,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Red Ace",
-    "description": "Slightly swell with the determination to stay number one in the second half of the race.",
+    "description": "Slightly swell with the determination to be number one when positioned toward the front in the second half of the race.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -74,7 +74,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Empress's Pride",
-    "description": "Moderately increase velocity with the stride of an empress when passing another runner toward the back on the final corner.",
+    "description": "Moderately increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -84,7 +84,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "1st Place Kiss☆",
-    "description": "Slightly increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner.",
+    "description": "Slightly increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -104,7 +104,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "Introduction to Physiology",
-    "description": "Moderately recover endurance when conserving energy on a corner in the second half of the race.",
+    "description": "Moderately recover endurance and slightly increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -114,7 +114,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "V Is for Victory!",
-    "description": "Refuse to back down from a challenge, moderately increasing velocity on the final straight.",
+    "description": "Moderately increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -134,7 +134,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "Clear Heart",
-    "description": "Moderately recover endurance when well-positioned mid-race.",
+    "description": "Recover endurance when well-positioned mid-race.",
     "color_class": "bhlwbP",
     "rarity": "unique",
     "grade_symbol": null
@@ -184,7 +184,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Shooting Star",
-    "description": "Ride the momentum and increase velocity after passing another runner toward the front late-race.",
+    "description": "Ride the momentum to increase velocity and very slightly increase acceleration after passing another runner toward the front late-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -194,7 +194,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "The View from the Lead Is Mine!",
-    "description": "Increase velocity by drawing on all remaining strength when in the lead by a fair margin on the final straight.",
+    "description": "Increase velocity by drawing on all remaining strength when in the lead by a fair margin in the second half of the race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -254,7 +254,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Resplendent Red Ace",
-    "description": "Swell with the determination to stay number one in the second half of the race.",
+    "description": "Swell with the determination to be number one when positioned toward the front in the second half of the race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -264,7 +264,7 @@
     "icon_filename": "utx_ico_skill_20043.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20043.png",
     "name": "Shooting for Victory!",
-    "description": "Increase acceleration with a pow, a wow, and a bang when well-positioned on the final corner.",
+    "description": "Increase acceleration with a pow, a wow, and a bang when well-positioned upon approaching the final straight.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -304,7 +304,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "This Dance Is for Vittoria!",
-    "description": "Increase velocity with royal brilliance when engaged in a challenge toward the front on the final corner.",
+    "description": "Increase velocity with royal brilliance when positioned toward the front and close to the runner ahead or behind on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -324,7 +324,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Blazing Pride",
-    "description": "Increase velocity with the stride of an empress when passing another runner toward the back on the final corner.",
+    "description": "Increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -334,7 +334,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "∴win Q.E.D.",
-    "description": "Increase velocity by deriving the winning equation when passing another runner toward the front on the final corner.",
+    "description": "Increase velocity by deriving the winning equation when passing another runner toward the front on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -344,7 +344,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Flashy☆Landing",
-    "description": "Increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner.",
+    "description": "Increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -374,7 +374,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Blue Rose Closer",
-    "description": "Increase velocity with strong willpower when breaking out of the pack on the final straight.",
+    "description": "Increase velocity with strong willpower on the final straight after passing another runner in the front part of the pack on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -384,7 +384,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "U=ma2",
-    "description": "Recover endurance when conserving energy on a corner in the second half of the race.",
+    "description": "Recover endurance and moderately increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -394,7 +394,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Our Ticket to Win!",
-    "description": "Refuse to back down from a challenge, increasing velocity on the final straight.",
+    "description": "Increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -414,7 +414,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "Pure Heart",
-    "description": "Recover endurance when well-positioned mid-race.",
+    "description": "Greatly recover endurance when well-positioned mid-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1214,7 +1214,7 @@
     "icon_filename": "utx_ico_skill_10011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png",
     "name": "Maverick ◎",
-    "description": "Increase performance when no other runners are using the same strategy.",
+    "description": "Greatly increase performance when no other runners are using the same strategy.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": "◎"
@@ -1224,7 +1224,7 @@
     "icon_filename": "utx_ico_skill_10011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png",
     "name": "Maverick ○",
-    "description": "Moderately increase performance when no other runners are using the same strategy.",
+    "description": "Increase performance when no other runners are using the same strategy.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": "○"
@@ -1234,7 +1234,7 @@
     "icon_filename": "utx_ico_skill_10031.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10031.png",
     "name": "Competitive Spirit ◎",
-    "description": "Increase performance when at least 5 other runners are using the same strategy.",
+    "description": "Increase performance when many other runners are using the same strategy.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": "◎"
@@ -1244,7 +1244,7 @@
     "icon_filename": "utx_ico_skill_10031.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10031.png",
     "name": "Competitive Spirit ○",
-    "description": "Moderately increase performance when at least 5 other runners are using the same strategy.",
+    "description": "Moderately increase performance when many other runners are using the same strategy.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": "○"
@@ -1254,7 +1254,7 @@
     "icon_filename": "utx_ico_skill_10034.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10034.png",
     "name": "Wallflower",
-    "description": "Moderately decrease performance when at least 5 other runners are using the same strategy.",
+    "description": "Moderately decrease performance when many other runners are using the same strategy.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1544,7 +1544,7 @@
     "icon_filename": "utx_ico_skill_20022.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
     "name": "Iron Will",
-    "description": "Recover endurance when the way ahead is jammed early-race.",
+    "description": "Recover endurance when the way ahead is jammed early-race or mid-race.",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -1554,7 +1554,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Lay Low",
-    "description": "Slightly recover endurance when the way ahead is jammed early-race.",
+    "description": "Slightly recover endurance when the way ahead is jammed early-race or mid-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1564,7 +1564,7 @@
     "icon_filename": "utx_ico_skill_20052.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20052.png",
     "name": "Center Stage",
-    "description": "Increase navigation early-race.",
+    "description": "Greatly increase navigation early-race.",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -1574,7 +1574,7 @@
     "icon_filename": "utx_ico_skill_20051.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20051.png",
     "name": "Prudent Positioning",
-    "description": "Moderately increase navigation early-race.",
+    "description": "Increase navigation early-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1774,7 +1774,7 @@
     "icon_filename": "utx_ico_skill_20022.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
     "name": "Calm and Collected",
-    "description": "Decrease fatigue early-race. (Pace Chaser)",
+    "description": "Decrease fatigue upon approaching mid-race. (Pace Chaser)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -1784,7 +1784,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Stamina to Spare",
-    "description": "Slightly decrease fatigue early-race. (Pace Chaser)",
+    "description": "Slightly decrease fatigue upon approaching mid-race. (Pace Chaser)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1914,7 +1914,7 @@
     "icon_filename": "utx_ico_skill_20012.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
     "name": "Sturm und Drang",
-    "description": "Move up in preparation to close the gap late-race. (End Closer)",
+    "description": "Move up in preparation to close the gap when positioned toward the back late-race. (End Closer)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -1924,7 +1924,7 @@
     "icon_filename": "utx_ico_skill_20011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
     "name": "Masterful Gambit",
-    "description": "Slightly move up in preparation to close the gap late-race. (End Closer)",
+    "description": "Slightly move up in preparation to close the gap when positioned toward the back late-race. (End Closer)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -1974,7 +1974,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Wait-and-See",
-    "description": "Slightly decrease fatigue when positioned toward the back mid-race. (Sprint)",
+    "description": "Slightly decrease fatigue and very slightly increase acceleration when positioned toward the back mid-race. (Sprint)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2004,7 +2004,7 @@
     "icon_filename": "utx_ico_skill_20012.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
     "name": "Mile Maven",
-    "description": "Widen the margin when in the lead early-race. (Mile)",
+    "description": "Widen the margin when positioned toward the front early-race. (Mile)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2014,7 +2014,7 @@
     "icon_filename": "utx_ico_skill_20011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
     "name": "Productive Plan",
-    "description": "Slightly widen the margin when in the lead early-race. (Mile)",
+    "description": "Slightly widen the margin when positioned toward the front early-race. (Mile)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2024,7 +2024,7 @@
     "icon_filename": "utx_ico_skill_20022.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
     "name": "Keen Eye",
-    "description": "Decrease fatigue when positioned toward the back early-race. (Mile)",
+    "description": "Decrease fatigue, then moderately decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. (Mile)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2034,7 +2034,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Watchful Eye",
-    "description": "Slightly decrease fatigue when positioned toward the back early-race. (Mile)",
+    "description": "Slightly decrease fatigue, then very slightly decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. (Mile)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2064,7 +2064,7 @@
     "icon_filename": "utx_ico_skill_20022.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
     "name": "Trackblazer",
-    "description": "Decrease fatigue when in the lead mid-race. (Medium)",
+    "description": "Decrease fatigue when positioned toward the front mid-race. (Medium)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2074,7 +2074,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Rosy Outlook",
-    "description": "Slightly decrease fatigue when in the lead mid-race. (Medium)",
+    "description": "Slightly decrease fatigue when positioned toward the front mid-race. (Medium)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2164,7 +2164,7 @@
     "icon_filename": "utx_ico_skill_20022.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
     "name": "Adrenaline Rush",
-    "description": "Regain the energy to run after exhausting strength. (Long)",
+    "description": "Regain the energy to run when close to exhausting strength. (Long)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2174,7 +2174,7 @@
     "icon_filename": "utx_ico_skill_20021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
     "name": "Extra Tank",
-    "description": "Slightly regain the energy to run after exhausting strength. (Long)",
+    "description": "Slightly regain the energy to run when close to exhausting strength. (Long)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2454,7 +2454,7 @@
     "icon_filename": "utx_ico_skill_20042.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png",
     "name": "Plan X",
-    "description": "Increase passing ability when positioned toward the front mid-race. (Sprint)",
+    "description": "Increase passing ability when positioned toward the front upon approaching late-race. (Sprint)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2464,7 +2464,7 @@
     "icon_filename": "utx_ico_skill_20041.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png",
     "name": "Countermeasure",
-    "description": "Slightly increase passing ability when positioned toward the front mid-race. (Sprint)",
+    "description": "Slightly increase passing ability when positioned toward the front upon approaching late-race. (Sprint)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2474,7 +2474,7 @@
     "icon_filename": "utx_ico_skill_20052.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20052.png",
     "name": "Perfect Prep!",
-    "description": "Prepare to make for the finish line mid-race. (Sprint)",
+    "description": "Prepare to make for the finish line for a medium duration mid-race. (Sprint)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2484,7 +2484,7 @@
     "icon_filename": "utx_ico_skill_20051.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20051.png",
     "name": "Meticulous Measures",
-    "description": "Moderately prepare to make for the finish line mid-race. (Sprint)",
+    "description": "Moderately prepare to make for the finish line for a medium duration mid-race. (Sprint)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2504,7 +2504,7 @@
     "icon_filename": "utx_ico_skill_30052.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30052.png",
     "name": "You've Got No Shot",
-    "description": "Cause panic in runners ahead when positioned toward the back early-race. (Sprint)",
+    "description": "Cause panic in and moderately dull movement for runners ahead when positioned toward the back early-race. (Sprint)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2514,7 +2514,7 @@
     "icon_filename": "utx_ico_skill_30051.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30051.png",
     "name": "Stop Right There!",
-    "description": "Slightly cause panic in runners ahead when positioned toward the back early-race. (Sprint)",
+    "description": "Slightly cause panic in and very slightly dull movement for runners ahead when positioned toward the back early-race. (Sprint)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2624,7 +2624,7 @@
     "icon_filename": "utx_ico_skill_30012.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30012.png",
     "name": "Greed for Speed",
-    "description": "Moderately steal velocity from runners behind when in the lead mid-race. (Mile)",
+    "description": "Moderately steal velocity from runners behind when positioned toward the front mid-race. (Mile)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2634,7 +2634,7 @@
     "icon_filename": "utx_ico_skill_30011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30011.png",
     "name": "Speed Eater",
-    "description": "Slightly steal velocity from runners behind when in the lead mid-race. (Mile)",
+    "description": "Slightly steal velocity from runners behind when positioned toward the front mid-race. (Mile)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2724,7 +2724,7 @@
     "icon_filename": "utx_ico_skill_20052.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20052.png",
     "name": "Lightning Step",
-    "description": "Avoid becoming surrounded when positioned toward the back mid-race. (Medium)",
+    "description": "Avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2734,7 +2734,7 @@
     "icon_filename": "utx_ico_skill_20051.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20051.png",
     "name": "Thunderbolt Step",
-    "description": "Moderately avoid becoming surrounded when positioned toward the back mid-race. (Medium)",
+    "description": "Moderately avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2844,7 +2844,7 @@
     "icon_filename": "utx_ico_skill_20012.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
     "name": "Vanguard Spirit",
-    "description": "Increase ability to maintain the lead when leading by a large margin mid-race. (Long)",
+    "description": "Increase ability to maintain the lead when leading by a fair margin mid-race. (Long)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2854,7 +2854,7 @@
     "icon_filename": "utx_ico_skill_20011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
     "name": "Keeping the Lead",
-    "description": "Slightly increase ability to maintain the lead when leading by a large margin mid-race. (Long)",
+    "description": "Slightly increase ability to maintain the lead when leading by a fair margin mid-race. (Long)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -2894,7 +2894,7 @@
     "icon_filename": "utx_ico_skill_30052.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30052.png",
     "name": "Stamina Siphon",
-    "description": "Moderately steal endurance from runners ahead when positioned toward the back mid-race. (Long)",
+    "description": "Slightly steal endurance from runners ahead when positioned toward the back mid-race. (Long)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -2984,7 +2984,7 @@
     "icon_filename": "utx_ico_skill_20011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
     "name": "Leader's Pride",
-    "description": "Slightly avoid being passed early-race. (Front Runner)",
+    "description": "Slightly increase ability to pass or challenge another runner early-race or mid-race. (Front Runner)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3014,7 +3014,7 @@
     "icon_filename": "utx_ico_skill_20042.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png",
     "name": "Reignition",
-    "description": "Increase acceleration when positioned toward the back mid-race. (Front Runner)",
+    "description": "Increase acceleration when not in the lead mid-race. (Front Runner)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -3024,7 +3024,7 @@
     "icon_filename": "utx_ico_skill_20041.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png",
     "name": "Second Wind",
-    "description": "Slightly increase acceleration when positioned toward the back mid-race. (Front Runner)",
+    "description": "Slightly increase acceleration when not in the lead mid-race. (Front Runner)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3034,7 +3034,7 @@
     "icon_filename": "utx_ico_skill_30021.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30021.png",
     "name": "Restart",
-    "description": "Slightly startle runners ahead when failing to get a lead early-race. (Front Runner)",
+    "description": "Slightly dull movement for runners ahead when not in the lead early-race. (Front Runner)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3203,7 +3203,7 @@
     "id": 201391,
     "icon_filename": "utx_ico_skill_20011.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-    "name": "Later Surger Corners ◎",
+    "name": "Late Surger Corners ◎",
     "description": "Moderately increase velocity on a corner. (Late Surger)",
     "color_class": "dnlGQR",
     "rarity": "normal",
@@ -3224,7 +3224,7 @@
     "icon_filename": "utx_ico_skill_20042.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png",
     "name": "Hard Worker",
-    "description": "Moderately increase passing ability. (Late Surger)",
+    "description": "Moderately increase acceleration for a medium duration when trying to pass another runner. (Late Surger)",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -3234,7 +3234,7 @@
     "icon_filename": "utx_ico_skill_20041.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png",
     "name": "Fighter",
-    "description": "Slightly increase passing ability. (Late Surger)",
+    "description": "Slightly increase acceleration for a medium duration when trying to pass another runner. (Late Surger)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3684,7 +3684,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Nemesis",
-    "description": "Increase velocity with smoldering ambition when moving up from a position toward the back of the pack on the final corner.",
+    "description": "Increase velocity with smoldering ambition when moving up from midpack on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3694,7 +3694,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "SPARKLY☆STARDOM",
-    "description": "Become empowered against ceding the spotlight when about to lose the lead on a straight mid-race.",
+    "description": "Become empowered to keep the spotlight when positioned toward the front and close to the runner behind on a straight mid-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3724,7 +3724,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "Shadow Break",
-    "description": "Increase velocity with beastly strength when passing another runner on the outside on the final corner or later.",
+    "description": "Increase velocity with beastly strength when passing another runner on the outside on the final corner or later. If the skill user engaged in a challenge mid-race, greatly increase velocity instead.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3774,7 +3774,7 @@
     "icon_filename": "utx_ico_skill_20013.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
     "name": "You and Me! One-on-One!",
-    "description": "Increase velocity when passing another runner on the outside toward the back on the final straight.",
+    "description": "Increase velocity on the final straight after passing another runner on the outside toward the back on the final corner or later.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3784,7 +3784,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "Superior Heal",
-    "description": "Recover endurance with a gentle light when dropping down toward the back mid-race.",
+    "description": "Greatly recover endurance with a gentle light when overtaken toward the back mid-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3824,7 +3824,7 @@
     "icon_filename": "utx_ico_skill_20023.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
     "name": "Dazzl'n ♪ Diver",
-    "description": "Recover endurance by relaxing after activating 2 skills mid-race.",
+    "description": "Recover endurance by relaxing after activating 2 skills when positioned midpack mid-race.",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3954,7 +3954,7 @@
     "icon_filename": "utx_ico_skill_20132.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20132.png",
     "name": "Burning Spirit WIT",
-    "description": "Burn bright with team spirit, increasing strategic navigation in proportion to the total Wit of racing team members early-race.",
+    "description": "Burn bright with team spirit, increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race.",
     "color_class": "geDDHx",
     "rarity": "gold",
     "grade_symbol": null
@@ -3964,7 +3964,107 @@
     "icon_filename": "utx_ico_skill_20131.png",
     "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20131.png",
     "name": "Ignited Spirit WIT",
-    "description": "Burn bright with team spirit, slightly increasing strategic navigation in proportion to the total Wit of racing team members early-race.",
+    "description": "Burn bright with team spirit, slightly increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100281,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "YUMMY☆SPEED!",
+    "description": "Kick forward hard with renewed vigor when starting to get tired while well-positioned halfway through the race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100191,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "OMG! (ﾟ∀ﾟ)  The Final Sprint! ☆",
+    "description": "Increase velocity and navigation with the pure euphoria of being within breathing distance of precious waifus after passing another runner 2 times late-race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201592,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Superstan",
+    "description": "Increase velocity when close to many runners.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201681,
+    "icon_filename": "utx_ico_skill_20052.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20052.png",
+    "name": "Lead the Charge!",
+    "description": "Prepare to aim for the front late-race. (Dirt)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201682,
+    "icon_filename": "utx_ico_skill_20051.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20051.png",
+    "name": "Forward, March!",
+    "description": "Moderately prepare to aim for the front late-race. (Dirt)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110301,
+    "icon_filename": "utx_ico_skill_20023.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
+    "name": "Every Rose Has Its Fangs",
+    "description": "Suck endurance from runners ahead when well-positioned and pressured by another runner mid-race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110451,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Give Mummy a Hug ♡",
+    "description": "Increase ability to break out of the pack when well-positioned and close to the runner ahead on the final straight.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200772,
+    "icon_filename": "utx_ico_skill_30052.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30052.png",
+    "name": "Tantalizing Trick",
+    "description": "Increase fatigue for rushed runners behind when positioned toward the front mid-race.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201691,
+    "icon_filename": "utx_ico_skill_20022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
+    "name": "Lie in Wait",
+    "description": "Recover endurance when positioned toward the back upon approaching mid-race. (Late Surger)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201692,
+    "icon_filename": "utx_ico_skill_20021.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
+    "name": "Be Still",
+    "description": "Slightly recover endurance when positioned toward the back upon approaching mid-race. (Late Surger)",
     "color_class": "dnlGQR",
     "rarity": "normal",
     "grade_symbol": null
@@ -3987,6 +4087,1086 @@
     "description": "Greatly increase performance with the same ambition of days past.",
     "color_class": "geDDHx",
     "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 100391,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "A Princess Must Seize Victory!",
+    "description": "Increase velocity with pretty princess power when engaged in a challenge on the final straight.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100251,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Chasing After You",
+    "description": "Chase after an unseen friend when in midpack in the second half of the race, moderately increasing velocity steadily and very slightly intimidating runners ahead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201701,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Come What May",
+    "description": "Increase velocity when well-positioned on a straight in the last spurt. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201702,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "All I've Got",
+    "description": "Slightly increase velocity when well-positioned on a straight in the last spurt. (Medium)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110171,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Arrows Whistle, Shadows Disperse",
+    "description": "Increase velocity with a blazing spirit when pressured by another runner in the front part of the pack on the final corner or later.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110401,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Dancing in the Leaves",
+    "description": "Increase ability to break out of the pack when engaged in a challenge in midpack on the final corner.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200194,
+    "icon_filename": "utx_ico_skill_10012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+    "name": "Fall Frenzy",
+    "description": "Increase performance in fall, boosting Speed and Power.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 100481,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Pop & Polish",
+    "description": "Get hyped and increase velocity when pressured by or passing another runner while well-positioned on the final straight.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201801,
+    "icon_filename": "utx_ico_skill_10014.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+    "name": "♡ 3D Nail Art",
+    "description": "Moderately decrease performance on firm ground.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100591,
+    "icon_filename": "utx_ico_skill_20043.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20043.png",
+    "name": "Moving Past, and Beyond",
+    "description": "Having run the race calmly, increase acceleration with hardened determination when making a move mid-race, or on a crucial corner late-race whilst in midpack.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200064,
+    "icon_filename": "utx_ico_skill_10022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10022.png",
+    "name": "Yodo Invicta",
+    "description": "Increase performance at Kyoto Racecourse, boosting Stamina and Wit.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 110061,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Festive Miracle",
+    "description": "Control breathing and kick forward hard toward victory in the second half of the race after recovering endurance with skills at least 3 times.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110231,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Presents from X",
+    "description": "Increase velocity by deriving a path to victory mid-race after staying well-positioned from the start of the race up until the second half.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201201,
+    "icon_filename": "utx_ico_skill_20022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
+    "name": "VIP Pass",
+    "description": "Decrease fatigue when determined to pass another runner. (Long)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201902,
+    "icon_filename": "utx_ico_skill_20041.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png",
+    "name": "Head-On",
+    "description": "Slightly increase acceleration when positioned toward the front late-race. (Pace Chaser)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100221,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Fairy Tale",
+    "description": "Increase velocity with the excitement of running when engaged in a challenge while well-positioned in the second half of the race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202002,
+    "icon_filename": "utx_ico_skill_20021.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
+    "name": "Familiar Ground",
+    "description": "Slightly recover endurance when positioned toward the back mid-race. (Dirt)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100211,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "White Lightning Comin' Through!",
+    "description": "Bolt down the track like lightning when well-positioned or aiming for the front from midpack on a straight in the second half of the race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201612,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Tail Nine",
+    "description": "Increase velocity after activating many skills mid-race.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 300031,
+    "icon_filename": "utx_ico_skill_10011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+    "name": "Towards the Scenery I Seek",
+    "description": "Moderately increase performance in pursuit of that long sought-after scenery.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300041,
+    "icon_filename": "utx_ico_skill_10014.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+    "name": "Creeping Anxiety",
+    "description": "Moderately decrease performance due to Trainer's anxiety.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300051,
+    "icon_filename": "utx_ico_skill_20015.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20015.png",
+    "name": "Blatant Fear",
+    "description": "Greatly decrease velocity on a corner in the second half of the race due to Trainer's obvious anxiety.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 300061,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Dream Run",
+    "description": "Increase velocity on the final straight due to a strong desire to cross the finish line carrying everyone's hopes and dreams.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 300071,
+    "icon_filename": "utx_ico_skill_10011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+    "name": "Show Me What Lies Beyond!",
+    "description": "Moderately increase Silence Suzuka's performance thanks to the desire to see her running reach new heights.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300081,
+    "icon_filename": "utx_ico_skill_10021.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10021.png",
+    "name": "Hoiya! Have a Good Run!",
+    "description": "Moderately increase Silence Suzuka's performance thanks to a charm that guarantees a satisfying run.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300091,
+    "icon_filename": "utx_ico_skill_10031.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10031.png",
+    "name": "As a Friend and Rival",
+    "description": "Moderately increase Silence Suzuka's performance through the happiness felt seeing a friend find their running style.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300101,
+    "icon_filename": "utx_ico_skill_20022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
+    "name": "Cheers of a Fellow Dreamer",
+    "description": "Recover Silence Suzuka's endurance on a corner in the second half of the race through a friend's cheers of support.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 110151,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Barcarole of Blessings",
+    "description": "Increase velocity for a moderate duration when in the front part of the pack with 400m remaining. If at least 7 skills have been activated, greatly increase velocity for a moderate duration instead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110521,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "114th Time's the Charm",
+    "description": "Give max effort when far from the lead on the final corner, moderately increasing velocity steadily for a duration proportional to distance from the lead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202011,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Headliner",
+    "description": "Increase velocity when positioned toward the front upon approaching late-race. (Long)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202012,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Feature Act",
+    "description": "Slightly increase velocity when positioned toward the front upon approaching late-race. (Long)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202021,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Daring Strike",
+    "description": "Moderately increase velocity for a medium duration when positioned toward the back mid-race. (End Closer)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202022,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Early Start",
+    "description": "Very slightly increase velocity for a medium duration when positioned toward the back mid-race. (End Closer)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202031,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Nothing Ventured",
+    "description": "Greatly increase velocity in the second half of the race, but also greatly increase fatigue sometimes.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202032,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Risky Business",
+    "description": "Moderately increase velocity in the second half of the race, but also greatly increase fatigue sometimes.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 1000011,
+    "icon_filename": "utx_ico_skill_1010011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_1010011.png",
+    "name": "Carnival Bonus",
+    "description": "Increase attributes by +{0}％ in the Racing Carnival. {1}％ chance to also raise runner's mood to Great. This skill will disappear when the event ends.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100691,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Ambition to Surpass the Sakura",
+    "description": "Increase velocity with blossoming ambition when well-positioned and close to the runner ahead with 300m or less remaining.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200174,
+    "icon_filename": "utx_ico_skill_10012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+    "name": "Spring Spectacle",
+    "description": "Increase performance in spring, boosting Speed and Power.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 100711,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "A Lifelong Dream, A Moment's Flight",
+    "description": "Seize the moment when close to the runner behind on the final straight, slightly consuming endurance to greatly increase velocity for a moderate duration.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110261,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Operation Cacao",
+    "description": "Take a slight breather and increase velocity when in the front part of the pack and detecting another runner coming from behind on a corner mid-race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110371,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Guten Appetit ♪",
+    "description": "Increase velocity continuously with a patissiere's pride on the final straight after passing another runner 3 times on the final corner or later.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201103,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Flash Forward",
+    "description": "Increase velocity on a straight. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202041,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "In High Spirits",
+    "description": "Increase velocity when positioned toward the front upon approaching late-race. (Sprint)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202042,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Light as a Feather",
+    "description": "Slightly increase velocity when positioned toward the front upon approaching late-race. (Sprint)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100331,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Shooting Star of Dioskouroi",
+    "description": "Increase velocity with guidance from the stars when far from the lead on the final straight. If positioned around the very back, greatly increase velocity instead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 10621,
+    "icon_filename": "utx_ico_skill_20023.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
+    "name": "Ready, Go!",
+    "description": "Moderately recover endurance and slightly increase velocity with newfound resolve when in midpack around halfway through the race.",
+    "color_class": "bhlwbP",
+    "rarity": "unique",
+    "grade_symbol": null
+  },
+  {
+    "id": 100621,
+    "icon_filename": "utx_ico_skill_20023.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
+    "name": "Go, Go, Mun!",
+    "description": "Recover endurance and moderately increase velocity with newfound resolve when in midpack around halfway through the race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100681,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Victory Cheer!",
+    "description": "Moderately increase velocity when positioned toward the front on the third corner in the second half of the race. Or, kick forward hard when toward the front on the backstretch late-race.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200154,
+    "icon_filename": "utx_ico_skill_10032.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10032.png",
+    "name": "Firm Course Menace",
+    "description": "Increase performance on firm ground, boosting Power and Speed.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 201173,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Blast Forward",
+    "description": "Increase velocity on a straight. (Long)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202051,
+    "icon_filename": "utx_ico_skill_40012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_40012.png",
+    "name": "Runaway",
+    "description": "Attempt to gain an especially large lead and keep it until the finish. (Front Runner)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 210061,
+    "icon_filename": "utx_ico_skill_20142.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20142.png",
+    "name": "Radiant Star",
+    "description": "Control breathing and kick forward in the second half of the race. Effect is increased in proportion to number of career wins.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 210062,
+    "icon_filename": "utx_ico_skill_20141.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20141.png",
+    "name": "Glittering Star",
+    "description": "Very slightly control breathing and kick forward in the second half of the race. Effect is increased in proportion to number of career wins.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100671,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Eternal Encompassing Shine",
+    "description": "If well-positioned at the start of the final straight, her strong willpower to win increases velocity. If positioned near the front, greatly increase velocity instead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 200014,
+    "icon_filename": "utx_ico_skill_10012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+    "name": "Right-Handed Demon",
+    "description": "Increase proficiency in right-handed tracks, increasing Speed and Power.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 100741,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Lovely Spring Breeze",
+    "description": "From the midpack in the second half of the race, slightly increase velocity steadily for a duration based on remaining endurance.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202061,
+    "icon_filename": "utx_ico_skill_2010010.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_2010010.png",
+    "name": "Best in Japan",
+    "description": "Everyone's expectations strongly inspire the skill user, increasing velocity on the final corner. (Long)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202071,
+    "icon_filename": "utx_ico_skill_20022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
+    "name": "Of Calm Mind",
+    "description": "If positioned in the midpack around when the mid-race starts, slightly decrease velocity and greatly recover endurance. (Long)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202072,
+    "icon_filename": "utx_ico_skill_20021.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png",
+    "name": "Free-Spirited",
+    "description": "If positioned in the midpack around when the mid-race starts, slightly decrease velocity and moderately recover endurance. (Long)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300111,
+    "icon_filename": "utx_ico_skill_10011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+    "name": "Chin Up, Derby Umamusume!",
+    "description": "Feel closer to being Japan's top racer, moderately increasing performance.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300121,
+    "icon_filename": "utx_ico_skill_10022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10022.png",
+    "name": "For the Team",
+    "description": "The whole team feels super determined to win this special race, greatly increasing performance.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 110051,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Ravissant",
+    "description": "When passing another racer at the front part of the pack on the final corner or later, perform a dazzling display that greatly increases velocity for a moderate duration.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110201,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Break It Down!",
+    "description": "If positioned toward the front on a straight late-race, increase velocity with high spirits. If the straight is on the backstretch, also increase acceleration very slightly.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201271,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Top Runner",
+    "description": "Increase ability to pass or challenge another runner early-race or mid-race. (Front Runner)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202081,
+    "icon_filename": "utx_ico_skill_20042.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png",
+    "name": "From the Brink",
+    "description": "If positioned toward the back late-race, increase acceleration. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202082,
+    "icon_filename": "utx_ico_skill_20041.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png",
+    "name": "Take the Chance",
+    "description": "If positioned toward the back late-race, slightly increase acceleration. (Medium)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202091,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Burning Soul",
+    "description": "When engaged in a challenge midpack mid-race, moderately recover endurance and moderately increase velocity. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202092,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Fighting Spirit",
+    "description": "When engaged in a challenge midpack mid-race, very slightly recover endurance and slightly increase velocity. (Medium)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202101,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Elated",
+    "description": "When positioned toward the back mid-race, increase velocity. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202102,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Eager",
+    "description": "When positioned toward the back mid-race, slightly increase velocity. (Medium)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100511,
+    "icon_filename": "utx_ico_skill_20043.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20043.png",
+    "name": "Budding Blossom",
+    "description": "If the skill user engaged in a challenge on a mid-race corner, increase acceleration when well-positioned late-race at least halfway through the final corner.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201901,
+    "icon_filename": "utx_ico_skill_20042.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png",
+    "name": "Neck and Neck",
+    "description": "Increase acceleration when positioned toward the front late-race. (Pace Chaser)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 1000012,
+    "icon_filename": "utx_ico_skill_1010011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_1010011.png",
+    "name": "Carnival Bonus",
+    "description": "Increase attributes by +{0}％ in the Racing Carnival. {1}％ chance to also raise runner's mood to Great. This skill will disappear when the event ends.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100721,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Peerless Dance of Flowering Flames",
+    "description": "If the skill user passes another runner on the final corner or later, increase velocity with fiery fighting spirit when in the front part of the pack with 300m remaining.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110601,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Go☆Go☆Goal!",
+    "description": "If the skill user passes another runner on the final corner or later, increase velocity from the midpack onward on the final straight. If the skill user isn't one of the top favorites, muster resolve to keep steadily increasing velocity.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110611,
+    "icon_filename": "utx_ico_skill_20043.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20043.png",
+    "name": "Louder! Tracen Cheer!",
+    "description": "If the skill user stays toward the very back during the first half of the race without being rushed, unleash fighting spirit to increase acceleration on the final straight.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202111,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Full of Vigor",
+    "description": "When positioned toward the back on the final corner, increase velocity. (Mile)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202112,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Pumped",
+    "description": "When positioned toward the back on the final corner, slightly increase velocity. (Mile)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202121,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Dauntless",
+    "description": "When positioned in the midpack during the second half of the race, increase velocity and very slightly increase acceleration. (Late Surger)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202122,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Fearless",
+    "description": "When positioned in the midpack during the second half of the race, slightly increase velocity and very minimally increase acceleration. (Late Surger)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 1100011,
+    "icon_filename": "utx_ico_skill_20064.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20064.png",
+    "name": "Feelin' a Bit Silly",
+    "description": "Greatly decrease the racer's proficiency in starting races. Effects include slow starts and reduced starting acceleration. Removed at the end of the Career playthrough.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100311,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "All Charged! It's Go Time!",
+    "description": "Moderately increase velocity when positioned toward the front with about 300m remaining. If coming out of an uphill, greatly increase velocity instead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202131,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Wild Wind",
+    "description": "When positioned toward the front mid-race, increase velocity and slightly decrease the velocity of runners behind the skill user. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202132,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "With All My Soul",
+    "description": "When positioned toward the front mid-race, slightly increase velocity and minimally decrease the velocity of runners behind the skill user. (Medium)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100641,
+    "icon_filename": "utx_ico_skill_20023.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png",
+    "name": "Keep Pushing Ahead",
+    "description": "If positioned toward the front from the start of the race until the second half of the race, good vibes recover endurance and moderately increase velocity steadily.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201662,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "See Ya Later!",
+    "description": "Increase velocity when followed by another runner directly behind for a long time.",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 110221,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Best Day Ever",
+    "description": "If well-positioned late-race on the final corner or later, increase velocity. If there's a large distance left to the finish, also increase acceleration very slightly with perfect form.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110381,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "One True Color",
+    "description": "If positioned toward the front with 350m remaining and there is another Umamusume close behind, the determination to stay ahead makes it easier to break out of the pack.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202151,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Keep Going!",
+    "description": "Greatly consume endurance mid-race and greatly increase velocity. (Late Surger)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202152,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Full Throttle",
+    "description": "Greatly consume endurance mid-race and moderately increase velocity. (Late Surger)",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100341,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Now We're Cruisin'!",
+    "description": "When competing for the lead if positioned in the midpack or further for the first half of the race, show off some Edo spirit and greatly increase velocity.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202001,
+    "icon_filename": "utx_ico_skill_20022.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png",
+    "name": "Master of the Sands",
+    "description": "Recover endurance and increase velocity when positioned toward the back mid-race. (Dirt)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 100441,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Victory belongs to me—Strelitzia! ☆",
+    "description": "If positioned toward the back until the start of the final corner, when there are 300m remaining, cast a magic spell to increase velocity continuously.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202141,
+    "icon_filename": "utx_ico_skill_20064.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20064.png",
+    "name": "You're Not the Boss of Me!",
+    "description": "Increase time lost to slow starts and moderately decrease Wit.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202161,
+    "icon_filename": "utx_ico_skill_10051.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10051.png",
+    "name": "Restraint",
+    "description": "Increase Wit and moderately decrease the chance of being Rushed.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110101,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Joyful Voyage!",
+    "description": "If positioned toward the front with 200m remaining, increase velocity. Then, if also positioned near the leading Umamusume, gather strength to move slightly forward.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 110591,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Wherever This Wonder Leads",
+    "description": "If positioned midpack on a downhill just before late-race and there's a large distance left to the finish, enjoy the race to the fullest, increasing velocity.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 202172,
+    "icon_filename": "utx_ico_skill_20011.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png",
+    "name": "Downhill Speedster",
+    "description": "Slightly increase velocity on downhills.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 100361,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "trigger:BEAT",
+    "description": "When near the inner rail midpack on the final corner or later, calculate the path to victory, increasing velocity and ability to navigate smoothly on the final straight.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201453,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Moonlit Flash",
+    "description": "Increase velocity on straights. (End Closer)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 202181,
+    "icon_filename": "utx_ico_skill_10044.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10044.png",
+    "name": "99 Problems",
+    "description": "Get overwhelmed by powerful opponents, moderately decreasing Guts and Wit.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 120011,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Dreams Donned with Pride!",
+    "description": "If the skill user activates another skill on the final corner late-race, take the crowd's cheers to heart and moderately increase velocity. If racing at Nakayama Racecourse, greatly increase velocity instead.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 201113,
+    "icon_filename": "utx_ico_skill_20012.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png",
+    "name": "Refraction Arc",
+    "description": "Increase velocity on corners. (Medium)",
+    "color_class": "geDDHx",
+    "rarity": "gold",
+    "grade_symbol": null
+  },
+  {
+    "id": 300131,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Ruler of Japan",
+    "description": "I'll tackle this with everything I've got!",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 300141,
+    "icon_filename": "utx_ico_skill_20013.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png",
+    "name": "Indomitable",
+    "description": "I'll rise up to the challenge!",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 1200011,
+    "icon_filename": "utx_ico_skill_10051.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10051.png",
+    "name": "Medium Race Enthusiast",
+    "description": "Increase proficiency in Medium Turf races. This skill is exclusive to the event.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 1200021,
+    "icon_filename": "utx_ico_skill_10021.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10021.png",
+    "name": "Long Race Enthusiast",
+    "description": "Increase proficiency in Long Turf races. This skill is exclusive to the event.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
+    "grade_symbol": null
+  },
+  {
+    "id": 1200031,
+    "icon_filename": "utx_ico_skill_10031.png",
+    "icon_src": "https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10031.png",
+    "name": "Mile Race Enthusiast",
+    "description": "Increase proficiency in Mile Turf races. This skill is exclusive to the event.",
+    "color_class": "dnlGQR",
+    "rarity": "normal",
     "grade_symbol": null
   }
 ]

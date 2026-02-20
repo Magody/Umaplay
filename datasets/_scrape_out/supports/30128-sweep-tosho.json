@@ -1,0 +1,177 @@
+[
+  {
+    "type": "support",
+    "name": "Sweep Tosho WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Sweep Tosho WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Miracle ☆ Escape!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Wonderful ☆ Mistake!",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "skill_pts": 40
+            },
+            {
+              "energy": -20,
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Charming ○",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "むかし、袖を通した着物",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "hints": [
+                "Intense Gaze (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "wit": 15,
+              "hints": [
+                "Intense Gaze (+3)",
+                "Restraint (+1)"
+              ],
+              "bond": 10
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "いま、帯をしめる",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "みらい、鼻緒はきりりと",
+        "options": {
+          "1": [
+            {
+              "power": 7,
+              "wit": 7,
+              "hints": [
+                "Skill ID: 202491 (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "power": 15,
+              "wit": 15,
+              "hints": [
+                "Skill ID: 202491 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "202492",
+        "name": "Skill ID: 202492"
+      },
+      {
+        "id": "201472",
+        "name": "I Can See Right Through You"
+      },
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      },
+      {
+        "id": "201162",
+        "name": "Murmur"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201512",
+        "name": "Intense Gaze"
+      },
+      {
+        "id": "202161",
+        "name": "Restraint"
+      },
+      {
+        "id": "202491",
+        "name": "Skill ID: 202491"
+      }
+    ]
+  }
+]

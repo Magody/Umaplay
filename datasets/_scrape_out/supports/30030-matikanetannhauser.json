@@ -1,0 +1,151 @@
+[
+  {
+    "type": "support",
+    "name": "Matikanetannhauser GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Matikanetannhauser GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just Your Typical Hard Work!",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just A Typical Accident?!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Subdued Front Runners (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Seeking Uniqueness!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": "+10/+30",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Becoming a Prankster",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Unique Running?",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "skill_pts": 15,
+              "bond": 5,
+              "hints": [
+                "Unruffled (+3)"
+              ]
+            },
+            {
+              "power": 5,
+              "skill_pts": 10,
+              "bond": 5,
+              "hints": [
+                "Calm in a Crowd (+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200481",
+        "name": "Unruffled"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      },
+      {
+        "id": "200831",
+        "name": "Subdued Front Runners"
+      }
+    ]
+  }
+]

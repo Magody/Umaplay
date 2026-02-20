@@ -1,0 +1,79 @@
+[
+  {
+    "type": "support",
+    "name": "Sirius Symboli GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Sirius Symboli GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Want Me to Teach You?",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Want Me to Help You?",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "hints": [
+                "Disorient (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ]
+  }
+]

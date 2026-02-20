@@ -1,0 +1,206 @@
+[
+  {
+    "type": "support",
+    "name": "Tokai Teio SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Tokai Teio SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Way, Or...",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Weapon",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Pace Chaser Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "手のかかる子ほどなんとやら",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "speed": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "孝行はしたい時分に",
+        "options": {
+          "1": [
+            {
+              "speed": 25,
+              "power": 10,
+              "hints": [
+                "Skill ID: 203502 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "skill_pts": 20,
+              "hints": [
+                "Skill ID: 203432 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "まったり孝行日和",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "speed": 20,
+              "hints": [
+                "Skill ID: 204001 (+2)",
+                "Skill ID: 203421 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "speed": 15,
+              "stamina": 15,
+              "hints": [
+                "Skill ID: 204001 (+2)",
+                "Skill ID: 203441 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "203122",
+        "name": "Skill ID: 203122"
+      },
+      {
+        "id": "203232",
+        "name": "Skill ID: 203232"
+      },
+      {
+        "id": "203422",
+        "name": "Skill ID: 203422"
+      },
+      {
+        "id": "203642",
+        "name": "Skill ID: 203642"
+      },
+      {
+        "id": "203992",
+        "name": "Skill ID: 203992"
+      },
+      {
+        "id": "204002",
+        "name": "Skill ID: 204002"
+      },
+      {
+        "id": "201902",
+        "name": "Head-On"
+      },
+      {
+        "id": "203442",
+        "name": "Skill ID: 203442"
+      },
+      {
+        "id": "203712",
+        "name": "Skill ID: 203712"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203502",
+        "name": "Skill ID: 203502"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "204001",
+        "name": "Skill ID: 204001"
+      },
+      {
+        "id": "203421",
+        "name": "Skill ID: 203421"
+      },
+      {
+        "id": "203441",
+        "name": "Skill ID: 203441"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "type": "support",
+    "name": "Fenomeno STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Fenomeno STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "トレセン刑事熱血派",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "あぶないコワモテ刑事？",
+        "options": {
+          "1": [
+            {
+              "guts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202772 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202192",
+        "name": "Skill ID: 202192"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "202012",
+        "name": "Feature Act"
+      },
+      {
+        "id": "202662",
+        "name": "Skill ID: 202662"
+      },
+      {
+        "id": "203132",
+        "name": "Skill ID: 203132"
+      },
+      {
+        "id": "203412",
+        "name": "Skill ID: 203412"
+      },
+      {
+        "id": "203702",
+        "name": "Skill ID: 203702"
+      },
+      {
+        "id": "204012",
+        "name": "Skill ID: 204012"
+      },
+      {
+        "id": "202482",
+        "name": "Skill ID: 202482"
+      },
+      {
+        "id": "202772",
+        "name": "Skill ID: 202772"
+      },
+      {
+        "id": "203712",
+        "name": "Skill ID: 203712"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202772",
+        "name": "Skill ID: 202772"
+      }
+    ]
+  }
+]

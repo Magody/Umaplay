@@ -1,0 +1,152 @@
+[
+  {
+    "type": "support",
+    "name": "Tosen Jordan PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Tosen Jordan PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Doomscrolling the Time Away",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Sponsored Posts Can Be Low-Key Sus",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Lucky Seven (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "みんなのほうがアガるくね？",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "だってダチじゃん",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "ちょっとやる気でてきたかも",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "hints": [
+                "Dauntless (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "201692",
+        "name": "Be Still"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      },
+      {
+        "id": "203312",
+        "name": "Skill ID: 203312"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202121",
+        "name": "Dauntless"
+      },
+      {
+        "id": "201562",
+        "name": "Lucky Seven"
+      }
+    ]
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "type": "support",
+    "name": "Gold Ship SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Gold Ship SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Adventurer Gold Ship",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Revive the Brand! Golshi's Yakisoba",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "毎日がラストラン",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 15
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "hints": [
+                "Risky Business (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "悔いのない生き方",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "End Closer Corners ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "hints": [
+                "End Closer Straightaways ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 10,
+              "hints": [
+                "Superstan (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 3
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "未来の向こう岸",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "speed": 25,
+              "hints": [
+                "Superstan (+3)"
+              ],
+              "bond": 15
+            },
+            {
+              "energy": 10,
+              "speed": 15,
+              "hints": [
+                "Superstan (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      },
+      {
+        "id": "200622",
+        "name": "Standing By"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201592",
+        "name": "Superstan"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

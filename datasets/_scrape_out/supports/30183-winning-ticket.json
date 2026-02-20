@@ -1,0 +1,158 @@
+[
+  {
+    "type": "support",
+    "name": "Winning Ticket PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Winning Ticket PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Muscles!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Racing!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Late Surger Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "完売！？思い出の味！！",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "完敗！？全力クッキング！！",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202452 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "完成！！世界で1つのスイーツ！！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "power": 20,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 202451 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "power": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202451 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      },
+      {
+        "id": "202622",
+        "name": "Skill ID: 202622"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202452",
+        "name": "Skill ID: 202452"
+      },
+      {
+        "id": "202451",
+        "name": "Skill ID: 202451"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      }
+    ]
+  }
+]

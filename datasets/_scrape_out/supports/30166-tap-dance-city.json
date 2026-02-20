@@ -1,0 +1,163 @@
+[
+  {
+    "type": "support",
+    "name": "Tap Dance City GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Tap Dance City GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いざ守らん、Precious Venue",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いざ求めん、夢多きTreasure",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Leader's Pride (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Awesome!　山頂の景色",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 10,
+              "hints": [
+                "Moxie (+3)"
+              ],
+              "bond": 10
+            },
+            {
+              "speed": 5,
+              "guts": 5,
+              "hints": [
+                "Moxie (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Crisis!　はちみーのお店",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "See Ya!　夢追う友人",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "guts": 15,
+              "hints": [
+                "Unrestrained (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "guts": 15,
+              "hints": [
+                "Escape Artist (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200252",
+        "name": "Inner Post Proficiency ○"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200552",
+        "name": "Final Push"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200551",
+        "name": "Unrestrained"
+      },
+      {
+        "id": "200541",
+        "name": "Escape Artist"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      }
+    ]
+  }
+]

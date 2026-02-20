@@ -1,0 +1,233 @@
+[
+  {
+    "type": "support",
+    "name": "Gold Ship STA SR",
+    "rarity": "SR",
+    "attribute": "STA",
+    "id": "Gold Ship STA SR_STA_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Adventurer Gold Ship",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Revive the Brand! Golshi's Yakisoba",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "勝ち取れ、内定！",
+        "options": {
+          "1": [
+            {
+              "stamina": 7,
+              "guts": 7,
+              "hints": [
+                "Risky Business (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "hints": [
+                "End Closer Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "焼きそばは全てを救う",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Inside Scoop (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "hints": [
+                "After-School Stroll (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 3
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      },
+      {
+        "id": "200622",
+        "name": "Standing By"
+      },
+      {
+        "id": "201202",
+        "name": "Passing Pro"
+      },
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "202492",
+        "name": "Skill ID: 202492"
+      },
+      {
+        "id": "201472",
+        "name": "I Can See Right Through You"
+      },
+      {
+        "id": "201502",
+        "name": "Strategist"
+      },
+      {
+        "id": "201512",
+        "name": "Intense Gaze"
+      },
+      {
+        "id": "200791",
+        "name": "Frenzied Front Runners"
+      },
+      {
+        "id": "200801",
+        "name": "Frenzied Pace Chasers"
+      },
+      {
+        "id": "200811",
+        "name": "Frenzied Late Surgers"
+      },
+      {
+        "id": "200821",
+        "name": "Frenzied End Closers"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      },
+      {
+        "id": "201232",
+        "name": "Smoke Screen"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

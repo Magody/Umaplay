@@ -1,0 +1,83 @@
+[
+  {
+    "type": "support",
+    "name": "Verxina GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Verxina GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "女王様の意外な一面",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "女王様にふさわしいもの",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Productive Plan (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201292",
+        "name": "Second Wind"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "type": "support",
+    "name": "Matikanefukukitaru SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Matikanefukukitaru SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Maximum Spirituality",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "When Piety and Kindness Intersect",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "これぞ、思し召し？",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "これぞ、大吉なのですっ！",
+        "options": {
+          "1": [
+            {
+              "speed": 20,
+              "hints": [
+                "Non-Standard Distance ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201562",
+        "name": "Lucky Seven"
+      },
+      {
+        "id": "201571",
+        "name": "Triple 7s"
+      },
+      {
+        "id": "202072",
+        "name": "Free-Spirited"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      }
+    ]
+  }
+]

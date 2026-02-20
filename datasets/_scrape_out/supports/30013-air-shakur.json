@@ -1,0 +1,136 @@
+[
+  {
+    "type": "support",
+    "name": "Air Shakur WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Air Shakur WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Verification Required",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Absolute Desire",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Pace Strategy (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Block Out the Noise",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "wit": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Realist's Passion",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "wit": 5,
+              "skill_pts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "I'm the Strongest",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "wit": 15,
+              "skill_pts": 30,
+              "hints": [
+                "Unyielding (+2)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201492",
+        "name": "Levelheaded"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201502",
+        "name": "Strategist"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201512",
+        "name": "Intense Gaze"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "200731",
+        "name": "Unyielding"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      }
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "support",
+    "name": "Agnes Digital PWR SR",
+    "rarity": "SR",
+    "attribute": "PWR",
+    "id": "Agnes Digital PWR SR_PWR_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Umamusume Deficiency!",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Heavy Romance",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Rainy Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Wet Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Happy Otaku Life",
+        "options": {
+          "1": [
+            {
+              "power": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "My Love for Umamusume is Eternal!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 10,
+              "hints": [
+                "Frenzied End Closers (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201092",
+        "name": "Opening Gambit"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200821",
+        "name": "Frenzied End Closers"
+      },
+      {
+        "id": "200232",
+        "name": "Rainy Days ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      }
+    ]
+  }
+]

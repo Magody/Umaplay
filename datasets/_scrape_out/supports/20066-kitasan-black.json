@@ -1,0 +1,130 @@
+[
+  {
+    "type": "support",
+    "name": "Kitasan Black STA SR",
+    "rarity": "SR",
+    "attribute": "STA",
+    "id": "Kitasan Black STA SR_STA_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ah, Friendship",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "power": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ah, Home Sweet Home",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Practice Perfect ○",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "魔法の力、求める先は",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 5,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "あなたの言葉、魔法の言葉",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Long Corners ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "stamina": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "202462",
+        "name": "Skill ID: 202462"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      }
+    ]
+  }
+]

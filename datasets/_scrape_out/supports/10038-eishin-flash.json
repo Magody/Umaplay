@@ -1,0 +1,82 @@
+[
+  {
+    "type": "support",
+    "name": "Eishin Flash SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Eishin Flash SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Unforeseen Lunch",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Responding to the Unforeseen",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Target in Sight ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "200372",
+        "name": "Straightaway Acceleration"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      }
+    ]
+  }
+]

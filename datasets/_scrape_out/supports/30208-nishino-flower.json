@@ -1,0 +1,177 @@
+[
+  {
+    "type": "support",
+    "name": "Nishino Flower PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Nishino Flower PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Warmth, Love, and Lunch",
+        "options": {
+          "1": [
+            {
+              "status": "Charming ○",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Let's Bloom Beautifully ♪",
+        "options": {
+          "1": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "あの日の出会い",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "よすがを探して",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 203032 (+1)",
+                "Skill ID: 203042 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "憧れに手をのべて",
+        "options": {
+          "1": [
+            {
+              "power": 20,
+              "guts": 20,
+              "hints": [
+                "Skill ID: 203041 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "power": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 203041 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "power": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Skill ID: 203031 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "power": 5,
+              "hints": [
+                "Skill ID: 203031 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202802",
+        "name": "Skill ID: 202802"
+      },
+      {
+        "id": "203032",
+        "name": "Skill ID: 203032"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203032",
+        "name": "Skill ID: 203032"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "203041",
+        "name": "Skill ID: 203041"
+      },
+      {
+        "id": "203031",
+        "name": "Skill ID: 203031"
+      }
+    ]
+  }
+]

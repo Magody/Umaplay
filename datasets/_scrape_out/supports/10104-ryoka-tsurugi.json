@@ -1,0 +1,226 @@
+[
+  {
+    "type": "support",
+    "name": "Ryoka Tsurugi PAL R",
+    "rarity": "R",
+    "attribute": "PAL",
+    "id": "Ryoka Tsurugi PAL R_PAL_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "忙しいは楽しい！",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "撃ち抜いたのは……",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 20,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 30,
+              "power": 30,
+              "hints": [
+                "Competitive Spirit ○ (+5)"
+              ],
+              "bond": -5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "意外な素顔？",
+        "options": {
+          "1": [
+            {
+              "energy": 35,
+              "mood": 1,
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "『貴方のおっしゃる通りでした』",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "speed": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "貴方の胸にも灯を",
+        "options": {
+          "1": [
+            {
+              "energy": 50,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 45,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "きっと何色の未来でも",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "speed": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "その働きに敬意を",
+        "options": {
+          "1": [
+            {
+              "energy": 40,
+              "speed": 30,
+              "mood": 1,
+              "hints": [
+                "Skill ID: 202802 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 35,
+              "speed": 15,
+              "hints": [
+                "Skill ID: 202802 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "広がる笑顔",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "mood": 1,
+              "speed": 5,
+              "wit": 5,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "お疲れ様です！！",
+        "options": {
+          "1": [
+            {
+              "energy": 7,
+              "mood": 1,
+              "bond": 5
+            },
+            {
+              "energy": 7,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "涼花との絆・彼女の『強み』",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 10,
+              "mood": 1,
+              "speed": 10,
+              "hints": [
+                "Homestretch Haste (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "202802",
+        "name": "Skill ID: 202802"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      }
+    ]
+  }
+]

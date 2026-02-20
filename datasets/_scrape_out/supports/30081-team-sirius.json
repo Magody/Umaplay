@@ -1,0 +1,448 @@
+[
+  {
+    "type": "support",
+    "name": "Team Sirius GROUP SSR",
+    "rarity": "SSR",
+    "attribute": "GROUP",
+    "id": "Team Sirius GROUP SSR_GROUP_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Watch Where You're Going!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Extra Tank (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "So Many Options!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "On and On",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "What Should I Do?",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Left-Handed ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Maintain My Weight",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "To Reach the Greatest Heights",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page of Flower Shop Assistance",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page About Cloudy Weather",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Firm Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Muscles!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Racing!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Late Surger Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Student Council Member!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Lone Wolf",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "stamina": 3,
+              "power": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Lone Wolf (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "We're All First Magnitude Stars",
+        "options": {
+          "1": [
+            {
+              "speed": 6,
+              "stamina": 5,
+              "power": 5,
+              "status": "Unknown Status 100",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Teamwork Makes the Dream Work!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Every One of Us has a Dream",
+        "options": {
+          "1": [
+            {
+              "speed": 6,
+              "power": 6,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Second Serving of Training",
+        "options": {
+          "1": [
+            {
+              "stamina": 4,
+              "skill_pts": 4,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 4,
+              "skill_pts": 4,
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": 3,
+              "skill_pts": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 3
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Beyond the Dream's Horizon",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Another Day, Another Step Towards Our Dream",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Luckiest Umamusume in Japan",
+        "options": {
+          "1": [
+            {
+              "speed": 7,
+              "stamina": 7,
+              "power": 7,
+              "hints": [
+                "Corner Recovery ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      },
+      {
+        "id": "202061",
+        "name": "Best in Japan"
+      },
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      }
+    ]
+  }
+]

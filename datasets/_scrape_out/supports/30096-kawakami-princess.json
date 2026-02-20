@@ -1,0 +1,129 @@
+[
+  {
+    "type": "support",
+    "name": "Kawakami Princess PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Kawakami Princess PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Princess Punch!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Princess Escape!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Steadfast (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "OH! MY! Ghost Hunt!",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Allies Assemble! A Princess Must be Regal!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "power": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Together as One! Grand Ghost Hunting Finale!",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "power": 30,
+              "hints": [
+                "Unyielding (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201362",
+        "name": "Tactical Tweak"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200731",
+        "name": "Unyielding"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      }
+    ]
+  }
+]

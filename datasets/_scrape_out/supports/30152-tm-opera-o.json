@@ -1,0 +1,182 @@
+[
+  {
+    "type": "support",
+    "name": "TM Opera O WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "TM Opera O WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Etude to Victory",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "speed": 5,
+              "skill_pts": 30
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Beyond Our Limited Time",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 15
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Non-Standard Distance ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "開幕は突然に",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "イヌさんウサギさん、あとオペラオー",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "hints": [
+                "Deep Breaths (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "hints": [
+                "Corner Adept ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "輝きの影で",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "wit": 10,
+              "hints": [
+                "Skill ID: 202481 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "wit": 10,
+              "hints": [
+                "Beeline Burst (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200042",
+        "name": "Nakayama Racecourse ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "202012",
+        "name": "Feature Act"
+      },
+      {
+        "id": "202562",
+        "name": "Skill ID: 202562"
+      },
+      {
+        "id": "202482",
+        "name": "Skill ID: 202482"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "202481",
+        "name": "Skill ID: 202481"
+      },
+      {
+        "id": "200361",
+        "name": "Beeline Burst"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      }
+    ]
+  }
+]

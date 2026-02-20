@@ -1,0 +1,154 @@
+[
+  {
+    "type": "support",
+    "name": "Daitaku Helios WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Daitaku Helios WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Encounter With the Sun ☆",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Hot Topic",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Smiles Forever",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Long Shot ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "太陽、裏から見てみる？",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "メンブレところによりゲリラ旅行☆",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "hints": [
+                "Sympathy (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "やったる☆やっちゃんライブ！",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "wit": 5,
+              "hints": [
+                "Staggering Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200182",
+        "name": "Summer Runner ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202042",
+        "name": "Light as a Feather"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "200981",
+        "name": "Staggering Lead"
+      },
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      }
+    ]
+  }
+]

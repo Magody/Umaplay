@@ -1,0 +1,179 @@
+[
+  {
+    "type": "support",
+    "name": "Espoir City PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Espoir City PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ガチってんだよ！",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ぶちのめすぞ！！",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202842 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "威嚇上等",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "power": 10,
+              "bond": 15
+            },
+            {
+              "mood": 1,
+              "power": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "power": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "プライドと根性",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "メンツの問題",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "power": 20,
+              "hints": [
+                "Skill ID: 202331 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "power": 10,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 203181 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202252",
+        "name": "Skill ID: 202252"
+      },
+      {
+        "id": "202332",
+        "name": "Skill ID: 202332"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202262",
+        "name": "Skill ID: 202262"
+      },
+      {
+        "id": "202302",
+        "name": "Skill ID: 202302"
+      },
+      {
+        "id": "202952",
+        "name": "Skill ID: 202952"
+      },
+      {
+        "id": "203103",
+        "name": "Skill ID: 203103"
+      },
+      {
+        "id": "203182",
+        "name": "Skill ID: 203182"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202331",
+        "name": "Skill ID: 202331"
+      },
+      {
+        "id": "203181",
+        "name": "Skill ID: 203181"
+      },
+      {
+        "id": "202842",
+        "name": "Skill ID: 202842"
+      }
+    ]
+  }
+]

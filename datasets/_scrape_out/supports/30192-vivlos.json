@@ -1,0 +1,141 @@
+[
+  {
+    "type": "support",
+    "name": "Vivlos SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Vivlos SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつの間にかあまーい時間♪",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "power": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつの日にかキラキラセレブ♪",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Late Surger Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "お姉ちゃんにもご褒美を",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "この気持ち、受け取って？",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "言わなくても伝わっちゃうの♪",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Relax (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "200692",
+        "name": "Watchful Eye"
+      },
+      {
+        "id": "200612",
+        "name": "Outer Swell"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      },
+      {
+        "id": "201162",
+        "name": "Murmur"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201421",
+        "name": "Relax"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      }
+    ]
+  }
+]

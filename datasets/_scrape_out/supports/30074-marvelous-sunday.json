@@ -1,0 +1,157 @@
+[
+  {
+    "type": "support",
+    "name": "Marvelous Sunday PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Marvelous Sunday PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Marvelous, No Question ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "How To Be More Marvelous ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Marvelous Guidance ☆",
+        "options": {
+          "1": [
+            {
+              "speed": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Dazzling and Marvelous ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Cloudy Days ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Pure White Marvelousness ☆",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "skill_pts": 5,
+              "hints": [
+                "Fast & Furious (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 5,
+              "skill_pts": 10,
+              "hints": [
+                "Position Pilfer (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      },
+      {
+        "id": "200881",
+        "name": "Hesitant Pace Chasers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "200591",
+        "name": "Fast & Furious"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "type": "support",
+    "name": "Matikanetannhauser WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Matikanetannhauser WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just Your Typical Hard Work!",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just A Typical Accident?!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Subdued Front Runners (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "I'm Just Embarrassed",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "hints": [
+                "Ramp Up (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "I Just Need Practice",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "hints": [
+                "Flustered Late Surgers (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Just Another Way to Show Love",
+        "options": {
+          "1": [
+            {
+              "speed": 7,
+              "stamina": 7,
+              "power": 7,
+              "guts": 7,
+              "hints": [
+                "It's On! (+3)"
+              ],
+              "bond": 10
+            },
+            {
+              "speed": 7,
+              "power": 7,
+              "hints": [
+                "It's On! (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "hints": [
+                "It's On! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200442",
+        "name": "Lay Low"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "201621",
+        "name": "Shake It Out"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200901",
+        "name": "Flustered Late Surgers"
+      },
+      {
+        "id": "200461",
+        "name": "It's On!"
+      },
+      {
+        "id": "200831",
+        "name": "Subdued Front Runners"
+      }
+    ]
+  }
+]

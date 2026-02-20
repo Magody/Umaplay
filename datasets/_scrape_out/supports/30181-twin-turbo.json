@@ -1,0 +1,167 @@
+[
+  {
+    "type": "support",
+    "name": "Twin Turbo STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Twin Turbo STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just Start Running!",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "speed": 20
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "power": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I'm All Fired Up!",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Early Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "観察！ターボの愛され力！",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            },
+            {
+              "energy": -5,
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "発動！ターボのちょーのーりょく！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            },
+            {
+              "energy": -5,
+              "speed": 10,
+              "hints": [
+                "Leader's Pride (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "みんなで！いっしょに校内放送！",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "hints": [
+                "Top Runner (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      },
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "202392",
+        "name": "Skill ID: 202392"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200552",
+        "name": "Final Push"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "201271",
+        "name": "Top Runner"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ]
+  }
+]

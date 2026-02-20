@@ -1,0 +1,215 @@
+[
+  {
+    "type": "support",
+    "name": "Daiwa Scarlet WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Daiwa Scarlet WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I'm Going to Win Tomorrow!",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "This Is Nothing!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Stamina to Spare (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "納得するまでやるんだからっ！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Front Runner Straightaways ○ (+1)"
+              ],
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "たとえ子どもっぽくたって！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 20,
+              "hints": [
+                "Feature Act (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "skill_pts": 20,
+              "hints": [
+                "Fast-Paced (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "バブリー水泳競技会！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 10,
+              "wit": 20,
+              "hints": [
+                "Skill ID: 202821 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "wit": 10,
+              "hints": [
+                "Skill ID: 202821 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 20,
+              "skill_pts": 10,
+              "hints": [
+                "Top Runner (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "wit": 5,
+              "skill_pts": 5,
+              "hints": [
+                "Top Runner (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202802",
+        "name": "Skill ID: 202802"
+      },
+      {
+        "id": "202812",
+        "name": "Skill ID: 202812"
+      },
+      {
+        "id": "203272",
+        "name": "Skill ID: 203272"
+      },
+      {
+        "id": "202822",
+        "name": "Skill ID: 202822"
+      },
+      {
+        "id": "203262",
+        "name": "Skill ID: 203262"
+      },
+      {
+        "id": "201262",
+        "name": "Dodging Danger"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "202012",
+        "name": "Feature Act"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "202821",
+        "name": "Skill ID: 202821"
+      },
+      {
+        "id": "201271",
+        "name": "Top Runner"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      }
+    ]
+  }
+]

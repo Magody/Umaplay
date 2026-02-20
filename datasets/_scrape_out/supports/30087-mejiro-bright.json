@@ -1,0 +1,147 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Bright STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Mejiro Bright STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Slow and Leisurely",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Sure and Steady",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Deep Breaths (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "I'll Help Search!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 10,
+              "bond": 10
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 10,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "I'll Go on Stage!",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Early Start (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "I'll Win!",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Overwhelming Pressure (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "201202",
+        "name": "Passing Pro"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202022",
+        "name": "Early Start"
+      },
+      {
+        "id": "201211",
+        "name": "Overwhelming Pressure"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      }
+    ]
+  }
+]

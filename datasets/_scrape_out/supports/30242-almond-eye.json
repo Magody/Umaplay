@@ -1,0 +1,207 @@
+[
+  {
+    "type": "support",
+    "name": "Almond Eye SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Almond Eye SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "アーモンドアイは逸らさない",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "アーモンドアイは見逃さない",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202742 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "勝利を愛して",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "speed": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "アイは貪欲",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 20,
+              "power": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 30,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "果てしなきアーモンドアイ",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 25,
+              "power": 10,
+              "hints": [
+                "Skill ID: 202701 (+2)",
+                "Skill ID: 203431 (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "speed": 10,
+              "hints": [
+                "Skill ID: 202701 (+1)",
+                "Skill ID: 203431 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "speed": 20,
+              "skill_pts": 15,
+              "hints": [
+                "Beeline Burst (+2)",
+                "Professor of Curvature (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "speed": 5,
+              "hints": [
+                "Beeline Burst (+1)",
+                "Professor of Curvature (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202702",
+        "name": "Skill ID: 202702"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "202982",
+        "name": "Skill ID: 202982"
+      },
+      {
+        "id": "203122",
+        "name": "Skill ID: 203122"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "203442",
+        "name": "Skill ID: 203442"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202701",
+        "name": "Skill ID: 202701"
+      },
+      {
+        "id": "203431",
+        "name": "Skill ID: 203431"
+      },
+      {
+        "id": "200361",
+        "name": "Beeline Burst"
+      },
+      {
+        "id": "200331",
+        "name": "Professor of Curvature"
+      },
+      {
+        "id": "202742",
+        "name": "Skill ID: 202742"
+      }
+    ]
+  }
+]

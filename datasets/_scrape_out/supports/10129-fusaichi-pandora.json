@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "Fusaichi Pandora SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Fusaichi Pandora SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "能ある鷹はゆるふわです♡",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "この世はテイク＆テイクじゃね？",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 203172 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "202432",
+        "name": "Skill ID: 202432"
+      },
+      {
+        "id": "202982",
+        "name": "Skill ID: 202982"
+      },
+      {
+        "id": "201342",
+        "name": "Straight Descent"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203172",
+        "name": "Skill ID: 203172"
+      }
+    ]
+  }
+]

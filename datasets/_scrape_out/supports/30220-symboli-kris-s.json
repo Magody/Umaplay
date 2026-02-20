@@ -1,0 +1,147 @@
+[
+  {
+    "type": "support",
+    "name": "Symboli Kris S WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Symboli Kris S WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心情",
+        "options": {
+          "1": [
+            {
+              "guts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "仕事人の心得",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Cloudy Days ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Complete the mission",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Reciprocate Your Dreams",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "For You",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "skill_pts": 10,
+              "hints": [
+                "Innate Experience (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200751",
+        "name": "Innate Experience"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      }
+    ]
+  }
+]

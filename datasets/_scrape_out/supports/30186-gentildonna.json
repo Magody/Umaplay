@@ -1,0 +1,157 @@
+[
+  {
+    "type": "support",
+    "name": "Gentildonna SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Gentildonna SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "力 is Beautiful.",
+        "options": {
+          "1": [
+            {
+              "power": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "力 is Justice.",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Downhill Speedster (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "強き器に強き心",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Mile Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "強き器に気高き華",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "強き器に『心技脚』あり",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "hints": [
+                "It's On! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "200461",
+        "name": "It's On!"
+      },
+      {
+        "id": "202172",
+        "name": "Downhill Speedster"
+      }
+    ]
+  }
+]

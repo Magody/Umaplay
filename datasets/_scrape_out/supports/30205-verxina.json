@@ -1,0 +1,147 @@
+[
+  {
+    "type": "support",
+    "name": "Verxina SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Verxina SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "女王様の意外な一面",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "女王様にふさわしいもの",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Productive Plan (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "あの頂を越えるため",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "デカめのファイルをzip形式で",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "その一輪、凜と咲く",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "power": 5,
+              "hints": [
+                "Skill ID: 201033 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      },
+      {
+        "id": "201292",
+        "name": "Second Wind"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201033",
+        "name": "Skill ID: 201033"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      }
+    ]
+  }
+]

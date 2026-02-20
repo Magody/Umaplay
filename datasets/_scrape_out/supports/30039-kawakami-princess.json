@@ -1,0 +1,147 @@
+[
+  {
+    "type": "support",
+    "name": "Kawakami Princess SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Kawakami Princess SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Princess Punch!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Princess Escape!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Steadfast (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Modestly! Boldly!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "hints": [
+                "Tether (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Princess Power ☆ to the Max!",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Hit It! Princess Road!",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "guts": 15,
+              "hints": [
+                "Center Stage (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "skill_pts": 25
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201362",
+        "name": "Tactical Tweak"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201152",
+        "name": "Tether"
+      },
+      {
+        "id": "200451",
+        "name": "Center Stage"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      }
+    ]
+  }
+]

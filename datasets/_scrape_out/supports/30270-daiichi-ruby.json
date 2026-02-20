@@ -1,0 +1,128 @@
+[
+  {
+    "type": "support",
+    "name": "Daiichi Ruby GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Daiichi Ruby GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "華麗なる憂い？",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "華麗なる旋律",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Gap Closer (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "紅玉の誓約",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "power": 25,
+              "guts": 40,
+              "hints": [
+                "Skill ID: 203911 (+2)"
+              ],
+              "bond": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "202752",
+        "name": "Skill ID: 202752"
+      },
+      {
+        "id": "203042",
+        "name": "Skill ID: 203042"
+      },
+      {
+        "id": "203912",
+        "name": "Skill ID: 203912"
+      },
+      {
+        "id": "203922",
+        "name": "Skill ID: 203922"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "203452",
+        "name": "Skill ID: 203452"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203911",
+        "name": "Skill ID: 203911"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      }
+    ]
+  }
+]

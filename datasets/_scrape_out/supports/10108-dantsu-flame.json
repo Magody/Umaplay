@@ -1,0 +1,93 @@
+[
+  {
+    "type": "support",
+    "name": "Dantsu Flame WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Dantsu Flame WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつものわたしは",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202472 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつかのわたしは",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      },
+      {
+        "id": "201132",
+        "name": "Thunderbolt Step"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202472",
+        "name": "Skill ID: 202472"
+      }
+    ]
+  }
+]

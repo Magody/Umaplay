@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "Narita Top Road SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Narita Top Road SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Thorough Inspection",
+        "options": {
+          "1": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Diligent Effort",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Up-Tempo (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200252",
+        "name": "Inner Post Proficiency ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      }
+    ]
+  }
+]

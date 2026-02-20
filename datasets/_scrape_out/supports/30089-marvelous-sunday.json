@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Marvelous Sunday GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Marvelous Sunday GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Marvelous, No Question ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "How To Be More Marvelous ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Hanshin Racecourse ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Marvelous☆Dive!",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "guts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Marvelous☆School!",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Marvelous☆Victory!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 10,
+              "wit": 10,
+              "skill_pts": 20,
+              "hints": [
+                "Adrenaline Rush (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      },
+      {
+        "id": "200881",
+        "name": "Hesitant Pace Chasers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200761",
+        "name": "Adrenaline Rush"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      }
+    ]
+  }
+]

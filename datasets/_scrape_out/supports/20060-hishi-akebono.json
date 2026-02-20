@@ -1,0 +1,135 @@
+[
+  {
+    "type": "support",
+    "name": "Hishi Akebono PWR SR",
+    "rarity": "SR",
+    "attribute": "PWR",
+    "id": "Hishi Akebono PWR SR_PWR_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Eat Up ♪",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -5,
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Leave It to Me ♪",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -15,
+              "hints": [
+                "Sprinting Gear (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "ヒシアケボノ、プロレスを観る",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "ボーノの恩返し",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "guts": 10,
+              "hints": [
+                "Sprint Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "200992",
+        "name": "Countermeasure"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      }
+    ]
+  }
+]

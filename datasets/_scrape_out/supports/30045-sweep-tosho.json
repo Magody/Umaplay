@@ -1,0 +1,169 @@
+[
+  {
+    "type": "support",
+    "name": "Sweep Tosho SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Sweep Tosho SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Miracle ☆ Escape!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Wonderful ☆ Mistake!",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "skill_pts": 40
+            },
+            {
+              "energy": -20,
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Charming ○",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Fickle Genius Magical Girl Sweepy ☆",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "hints": [
+                "Straightaway Spurt (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "mood": -1,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Drop of Black Magic ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 20,
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Her Mood Like a Flower ☆",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "wit": 5,
+              "hints": [
+                "Crusader (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201482",
+        "name": "After-School Stroll"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "201472",
+        "name": "I Can See Right Through You"
+      },
+      {
+        "id": "200771",
+        "name": "Trick (Front)"
+      },
+      {
+        "id": "200781",
+        "name": "Trick (Rear)"
+      },
+      {
+        "id": "201162",
+        "name": "Murmur"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "201501",
+        "name": "Crusader"
+      }
+    ]
+  }
+]

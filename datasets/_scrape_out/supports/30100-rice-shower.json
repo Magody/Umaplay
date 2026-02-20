@@ -1,0 +1,150 @@
+[
+  {
+    "type": "support",
+    "name": "Rice Shower WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Rice Shower WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page of Flower Shop Assistance",
+        "options": {
+          "1": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Page About Cloudy Weather",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Firm Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Forever a Child in Our Eyes",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "They Grow Up So Fast",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "hints": [
+                "Kyoto Racecourse ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Hearts Full of Bittersweet Joy",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "wit": 25,
+              "hints": [
+                "Shatterproof (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "202012",
+        "name": "Feature Act"
+      },
+      {
+        "id": "201342",
+        "name": "Straight Descent"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      },
+      {
+        "id": "201361",
+        "name": "Shatterproof"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      }
+    ]
+  }
+]

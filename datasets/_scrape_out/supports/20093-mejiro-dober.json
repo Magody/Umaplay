@@ -1,0 +1,143 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Dober SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Mejiro Dober SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Give It a Try",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hope She'll Like It...",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Unyielding Spirit (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "クールの裏にあるもの",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "寂しさの隠し方",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Fearless (+1)"
+              ]
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "energy": 15,
+              "speed": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200202",
+        "name": "Winter Runner ○"
+      },
+      {
+        "id": "202112",
+        "name": "Pumped"
+      },
+      {
+        "id": "202642",
+        "name": "Skill ID: 202642"
+      },
+      {
+        "id": "202962",
+        "name": "Skill ID: 202962"
+      },
+      {
+        "id": "203552",
+        "name": "Skill ID: 203552"
+      },
+      {
+        "id": "203322",
+        "name": "Skill ID: 203322"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "201432",
+        "name": "Studious"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      }
+    ]
+  }
+]

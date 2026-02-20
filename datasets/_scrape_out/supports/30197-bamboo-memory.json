@@ -1,0 +1,143 @@
+[
+  {
+    "type": "support",
+    "name": "Bamboo Memory PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Bamboo Memory PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Overthrow the Rival!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "energy": -5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Tons of Trouble!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "hints": [
+                "Standard Distance ○ (+5)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "じっとしてるなんて……無理っス！",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "『みんな』でファイヤー！っス！",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "アンタに足りないのはコレっス！！",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Moonlit Flash (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200632",
+        "name": "Masterful Gambit"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "202382",
+        "name": "Skill ID: 202382"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201453",
+        "name": "Moonlit Flash"
+      },
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      }
+    ]
+  }
+]

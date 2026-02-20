@@ -1,0 +1,87 @@
+[
+  {
+    "type": "support",
+    "name": "K.S.Miracle GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "K.S.Miracle GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "やさしさくばり",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 2,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ぬれてもへいき",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Light as a Feather (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "200992",
+        "name": "Countermeasure"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202042",
+        "name": "Light as a Feather"
+      }
+    ]
+  }
+]

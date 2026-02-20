@@ -1,0 +1,163 @@
+[
+  {
+    "type": "support",
+    "name": "Narita Brian STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Narita Brian STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Student Council Member!",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Lone Wolf",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "stamina": 3,
+              "power": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Lone Wolf (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Target Across Time",
+        "options": {
+          "1": [
+            {
+              "stamina": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Lord of the Ducks",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "stamina": 10,
+              "hints": [
+                "Up-Tempo (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "guts": 10,
+              "bond": -5
+            }
+          ],
+          "2": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Battlefield Experience",
+        "options": {
+          "1": [
+            {
+              "energy": -5,
+              "stamina": 5,
+              "hints": [
+                "Beeline Burst (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200572",
+        "name": "Preferred Position"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200612",
+        "name": "Outer Swell"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "200361",
+        "name": "Beeline Burst"
+      },
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      }
+    ]
+  }
+]

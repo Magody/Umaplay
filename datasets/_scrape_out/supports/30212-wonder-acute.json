@@ -1,0 +1,139 @@
+[
+  {
+    "type": "support",
+    "name": "Wonder Acute STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Wonder Acute STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "りんご、お食べなさいな",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "編みぐるみ、あげようね",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202332 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "AIマスター・アキュート",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "チャンプへの道",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "困ったときはお互い様",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202281 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202252",
+        "name": "Skill ID: 202252"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "202842",
+        "name": "Skill ID: 202842"
+      },
+      {
+        "id": "202372",
+        "name": "Skill ID: 202372"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202281",
+        "name": "Skill ID: 202281"
+      },
+      {
+        "id": "202332",
+        "name": "Skill ID: 202332"
+      }
+    ]
+  }
+]

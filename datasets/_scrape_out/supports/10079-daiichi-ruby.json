@@ -1,0 +1,105 @@
+[
+  {
+    "type": "support",
+    "name": "Daiichi Ruby PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Daiichi Ruby PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "華麗なる憂い？",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "華麗なる旋律",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Gap Closer (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "200851",
+        "name": "Hesitant Front Runners"
+      },
+      {
+        "id": "201152",
+        "name": "Tether"
+      },
+      {
+        "id": "201092",
+        "name": "Opening Gambit"
+      },
+      {
+        "id": "200831",
+        "name": "Subdued Front Runners"
+      },
+      {
+        "id": "200841",
+        "name": "Flustered Front Runners"
+      },
+      {
+        "id": "201022",
+        "name": "Stop Right There!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200672",
+        "name": "Gap Closer"
+      }
+    ]
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "type": "support",
+    "name": "Mei Satake PAL R",
+    "rarity": "R",
+    "attribute": "PAL",
+    "id": "Mei Satake PAL R_PAL_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "サッカーしよう！",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 5,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "時には仕事を忘れて",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "mood": 1,
+              "guts": 5,
+              "status": "Unknown Status 26",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 35,
+              "mood": 1,
+              "status": "Unknown Status 26",
+              "bond": 10
+            },
+            {
+              "energy": -10,
+              "bond": 10,
+              "mood": 1
+            }
+          ],
+          "3": [
+            {
+              "speed": 30,
+              "wit": 20,
+              "hints": [
+                "Lone Wolf (+5)"
+              ],
+              "bond": -5
+            }
+          ]
+        },
+        "default_preference": 3
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "礼賛は雨のように",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "克服は近い未来に？",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "mood": 1,
+              "power": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "縁がいずれ行きつくは",
+        "options": {
+          "1": [
+            {
+              "energy": 35,
+              "guts": 15,
+              "mood": 1,
+              "status": "Unknown Status 25",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "status": "Unknown Status 26",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "憧憬は始まりの地に",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "guts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "結ぶは、星空の誓い",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "energy": 40,
+              "mood": 1,
+              "hints": [
+                "Skill ID: 202722 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "guts": 5,
+              "energy": 35,
+              "mood": 1,
+              "hints": [
+                "Skill ID: 202722 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "夢のトラブルシューター",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 15,
+              "skill_pts": 5,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "お疲れ様！！",
+        "options": {
+          "1": [
+            {
+              "guts": 3,
+              "mood": 1,
+              "bond": 2,
+              "skill_pts": 3
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "星の凱旋門",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "guts": 25,
+              "skill_pts": 30
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "祝杯の前払い",
+        "options": {
+          "1": [
+            {
+              "power": 12,
+              "guts": 18,
+              "skill_pts": 20
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "メイとの絆・『夢』は難しい",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 15,
+              "hints": [
+                "Straightaway Adept (+3)"
+              ],
+              "bond": 3
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "201641",
+        "name": "Lone Wolf"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      }
+    ]
+  }
+]

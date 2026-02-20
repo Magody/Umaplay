@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Sounds of Earth PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Sounds of Earth PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "突発アンサンブル",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "コン・フオーコなアモーレを君に",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202562 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "めくるめくミルテの花",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "愛を込めて、乾杯の歌を",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "そして私は、君を愛す",
+        "options": {
+          "1": [
+            {
+              "power": 20,
+              "hints": [
+                "Unruffled (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200481",
+        "name": "Unruffled"
+      },
+      {
+        "id": "202562",
+        "name": "Skill ID: 202562"
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "type": "support",
+    "name": "Curren Chan SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Curren Chan SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "#UrUniqueCuteness",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "#Cuteness4U ☆",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Intimidate (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "#AWildCurrenAppeared",
+        "options": {
+          "1": [
+            {
+              "speed": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 10,
+              "hints": [
+                "Shrewd Step (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "#CuteFluffyOverload",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Sprint Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      },
+      {
+        "id": "200911",
+        "name": "Hesitant Late Surgers"
+      },
+      {
+        "id": "201372",
+        "name": "Disorient"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201332",
+        "name": "Shrewd Step"
+      },
+      {
+        "id": "200972",
+        "name": "Sprint Corners ○"
+      },
+      {
+        "id": "201012",
+        "name": "Intimidate"
+      }
+    ]
+  }
+]

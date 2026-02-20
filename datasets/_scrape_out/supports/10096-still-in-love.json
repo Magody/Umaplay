@@ -1,0 +1,94 @@
+[
+  {
+    "type": "support",
+    "name": "Still in Love SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Still in Love SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "朧の夢",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "気配なき親切",
+        "options": {
+          "1": [
+            {
+              "speed": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202532 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "202742",
+        "name": "Skill ID: 202742"
+      },
+      {
+        "id": "202962",
+        "name": "Skill ID: 202962"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      }
+    ]
+  }
+]

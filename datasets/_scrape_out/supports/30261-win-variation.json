@@ -1,0 +1,184 @@
+[
+  {
+    "type": "support",
+    "name": "Win Variation WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Win Variation WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "パ・ド・ブレ～この道を～",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "グラン・ジュテ～いつの日か～",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Long Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "近似的ビッグシスター",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "wit": 15,
+              "bond": 10
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "潜在的ソウルメイト",
+        "options": {
+          "1": [
+            {
+              "wit": 15,
+              "hints": [
+                "Skill ID: 203502 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "大衆的チアフレンド",
+        "options": {
+          "1": [
+            {
+              "wit": 25,
+              "hints": [
+                "Skill ID: 203731 (+1)",
+                "Innate Experience (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200012",
+        "name": "Right-Handed ○"
+      },
+      {
+        "id": "200182",
+        "name": "Summer Runner ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "202582",
+        "name": "Skill ID: 202582"
+      },
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "202852",
+        "name": "Skill ID: 202852"
+      },
+      {
+        "id": "203562",
+        "name": "Skill ID: 203562"
+      },
+      {
+        "id": "203652",
+        "name": "Skill ID: 203652"
+      },
+      {
+        "id": "203732",
+        "name": "Skill ID: 203732"
+      },
+      {
+        "id": "203772",
+        "name": "Skill ID: 203772"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203502",
+        "name": "Skill ID: 203502"
+      },
+      {
+        "id": "203731",
+        "name": "Skill ID: 203731"
+      },
+      {
+        "id": "200751",
+        "name": "Innate Experience"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      }
+    ]
+  }
+]

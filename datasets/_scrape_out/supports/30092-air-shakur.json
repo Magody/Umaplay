@@ -1,0 +1,155 @@
+[
+  {
+    "type": "support",
+    "name": "Air Shakur SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Air Shakur SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Verification Required",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "//Absolute Desire",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Pace Strategy (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "High and Low at Once",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Eager (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "BPM in Sync",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "End Closer Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Connected EQs",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Serenity (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200622",
+        "name": "Standing By"
+      },
+      {
+        "id": "201492",
+        "name": "Levelheaded"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202102",
+        "name": "Eager"
+      },
+      {
+        "id": "201452",
+        "name": "End Closer Straightaways ○"
+      },
+      {
+        "id": "201491",
+        "name": "Serenity"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      }
+    ]
+  }
+]

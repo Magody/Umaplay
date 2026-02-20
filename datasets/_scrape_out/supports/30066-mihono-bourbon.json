@@ -1,0 +1,143 @@
+[
+  {
+    "type": "support",
+    "name": "Mihono Bourbon WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "Mihono Bourbon WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Do No Harm",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "stamina": 5,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Orders Must Be Followed",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Focus (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Status—Boring?",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "hints": [
+                "Moxie (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Status—As I Am",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "wit": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Status—Fun!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "wit": 10,
+              "hints": [
+                "Taking the Lead (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200242",
+        "name": "Snowy Days ○"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200531",
+        "name": "Taking the Lead"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Palmer STA SR",
+    "rarity": "SR",
+    "attribute": "STA",
+    "id": "Mejiro Palmer STA SR_STA_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "An Inescapable Choice?",
+        "options": {
+          "1": [
+            {
+              "energy": -15,
+              "guts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Optimistic Escapism",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Wet Conditions ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "耕せ！デリシャス・フィールド！",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "弾けろ！感謝のバーベキュー",
+        "options": {
+          "1": [
+            {
+              "stamina": 15,
+              "hints": [
+                "Skill ID: 202682 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "202582",
+        "name": "Skill ID: 202582"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "201192",
+        "name": "Keeping the Lead"
+      },
+      {
+        "id": "202012",
+        "name": "Feature Act"
+      },
+      {
+        "id": "202792",
+        "name": "Skill ID: 202792"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202682",
+        "name": "Skill ID: 202682"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      }
+    ]
+  }
+]

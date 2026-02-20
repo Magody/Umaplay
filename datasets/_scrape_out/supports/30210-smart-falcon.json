@@ -1,0 +1,176 @@
+[
+  {
+    "type": "support",
+    "name": "Smart Falcon SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Smart Falcon SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Chants Are the Life of a Concert ☆",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "If I'm Cute, Come to My Show! ☆",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "power": 10,
+              "hints": [
+                "Final Push (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "願うごとに☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "どんな時だってウマドル☆",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "speed": 30,
+              "hints": [
+                "Taking the Lead (+2)",
+                "Early Lead (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 5,
+              "speed": 10,
+              "hints": [
+                "Early Lead (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "幸運のウマドル☆",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 20,
+              "hints": [
+                "Taking the Lead (+2)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 15,
+              "hints": [
+                "Taking the Lead (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "202462",
+        "name": "Skill ID: 202462"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200531",
+        "name": "Taking the Lead"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "200552",
+        "name": "Final Push"
+      }
+    ]
+  }
+]

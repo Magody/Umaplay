@@ -1,0 +1,86 @@
+[
+  {
+    "type": "support",
+    "name": "Tanino Gimlet PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Tanino Gimlet PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "破壊の喜びを……！！",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "鮮烈なる今を……！！",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "skill_pts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "End Closer Savvy ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "202102",
+        "name": "Eager"
+      },
+      {
+        "id": "200642",
+        "name": "Straightaway Spurt"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201552",
+        "name": "End Closer Savvy ○"
+      }
+    ]
+  }
+]

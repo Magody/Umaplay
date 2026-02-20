@@ -1,0 +1,83 @@
+[
+  {
+    "type": "support",
+    "name": "Winning Ticket GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Winning Ticket GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Muscles!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Racing!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Late Surger Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "200612",
+        "name": "Outer Swell"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      }
+    ]
+  }
+]

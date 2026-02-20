@@ -1,0 +1,179 @@
+[
+  {
+    "type": "support",
+    "name": "Yamanin Zephyr GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Yamanin Zephyr GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、自由",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "guts": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy_max": 4,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "風は、果てなく",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "power": 3,
+              "guts": 3,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202412 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "風の呼ぶほうへ",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            },
+            {
+              "speed": 5,
+              "guts": 15,
+              "bond": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "味わい深く香る風",
+        "options": {
+          "1": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 5,
+              "guts": 5,
+              "hints": [
+                "Slipstream (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "いつか見た夢を",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "power": 3,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 202411 (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 7,
+              "power": 7,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 202411 (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202411",
+        "name": "Skill ID: 202411"
+      },
+      {
+        "id": "202412",
+        "name": "Skill ID: 202412"
+      }
+    ]
+  }
+]

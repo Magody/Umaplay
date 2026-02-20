@@ -1,0 +1,110 @@
+[
+  {
+    "type": "support",
+    "name": "Stay Gold GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Stay Gold GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "黄金を探し求めて",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Straightaway Adept (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "猛者たちの、さらに上",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "skill_pts": 40,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "202602",
+        "name": "Skill ID: 202602"
+      },
+      {
+        "id": "202722",
+        "name": "Skill ID: 202722"
+      },
+      {
+        "id": "203362",
+        "name": "Skill ID: 203362"
+      },
+      {
+        "id": "203502",
+        "name": "Skill ID: 203502"
+      },
+      {
+        "id": "203632",
+        "name": "Skill ID: 203632"
+      },
+      {
+        "id": "203852",
+        "name": "Skill ID: 203852"
+      },
+      {
+        "id": "203862",
+        "name": "Skill ID: 203862"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      }
+    ]
+  }
+]

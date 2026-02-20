@@ -1,0 +1,121 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Dober WIT SR",
+    "rarity": "SR",
+    "attribute": "WIT",
+    "id": "Mejiro Dober WIT SR_WIT_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Give It a Try",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Hope She'll Like It...",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Unyielding Spirit (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Don't Need to Be Complimented",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "guts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Don't Need to Be Seen",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "stamina": 5
+            },
+            {
+              "energy": 20,
+              "stamina": 15,
+              "hints": [
+                "Slick Surge (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200062",
+        "name": "Kyoto Racecourse ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      }
+    ]
+  }
+]

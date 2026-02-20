@@ -1,0 +1,84 @@
+[
+  {
+    "type": "support",
+    "name": "Biwa Hayahide PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Biwa Hayahide PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Last-Minute Modal Theory",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Step-Out-of-Your-Comfort-Zone Theory",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "hints": [
+                "Inside Scoop (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "stamina": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200262",
+        "name": "Outer Post Proficiency ○"
+      },
+      {
+        "id": "200052",
+        "name": "Hanshin Racecourse ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "200821",
+        "name": "Frenzied End Closers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200752",
+        "name": "Inside Scoop"
+      }
+    ]
+  }
+]

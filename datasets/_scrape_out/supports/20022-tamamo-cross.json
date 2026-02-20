@@ -1,0 +1,149 @@
+[
+  {
+    "type": "support",
+    "name": "Tamamo Cross GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "id": "Tamamo Cross GUTS SR_GUTS_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Tamamo's School Tour",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Battle I Can't Lose!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Calm in a Crowd (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Rhapsody of Kindness",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "The Path of Profit and People",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Pace Chaser Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Late Surger Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200712",
+        "name": "Rosy Outlook"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "201132",
+        "name": "Thunderbolt Step"
+      },
+      {
+        "id": "200811",
+        "name": "Frenzied Late Surgers"
+      },
+      {
+        "id": "200901",
+        "name": "Flustered Late Surgers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      },
+      {
+        "id": "201392",
+        "name": "Late Surger Corners ○"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      }
+    ]
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "type": "support",
+    "name": "Sasami Anshinzawa PAL SSR",
+    "rarity": "SSR",
+    "attribute": "PAL",
+    "id": "Sasami Anshinzawa PAL SSR_PAL_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Applications of Acupuncture",
+        "options": {
+          "1": [
+            {
+              "bond": 5,
+              "status": "Fast Learner"
+            },
+            {
+              "skill_pts": 50,
+              "status": "Obtain Wallflower",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Pleasant Practice Partner?",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "energy": 10,
+              "mood": 1,
+              "bond": 10
+            },
+            {
+              "skill_pts": 50,
+              "status": "Obtain Corner Recovery ×",
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "3": [
+            {
+              "energy": -10,
+              "skill_pts": 100,
+              "hints": [
+                "Risky Business (+1)"
+              ],
+              "status": "Obtain Running Idle",
+              "bond": -10
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Trusty Teamwork?!",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "mood": -1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Storied ☆ Sunglasses",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "mood": 1,
+              "bond": 5
+            },
+            {
+              "energy": 10,
+              "mood": -1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Final Race ☆ For a Worry-Free Future!",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "skill_pts": 20,
+              "hints": [
+                "Nothing Ventured (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "mood": -2,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "hints": [
+                "Nothing Ventured (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 20,
+              "hints": [
+                "Risky Business (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Just a Poke ☆",
+        "options": {
+          "1": [
+            {
+              "status": "Practice Perfect ○",
+              "bond": 5
+            },
+            {
+              "energy": -10,
+              "mood": -2,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Suspicious, But Safe?!",
+        "options": {
+          "1": [
+            {
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "An Accurate Acupuncturist ☆",
+        "options": {
+          "1": [
+            {
+              "energy": 2,
+              "bond": 5
+            },
+            {
+              "energy": -5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Healing Hot Spring Holiday ☆",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 45
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "An Encouraging Entrustment?!",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Bond Bolstered by Booze?",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Uma Stan (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [],
+    "event_skills": [
+      {
+        "id": "200283",
+        "name": "Wallflower"
+      },
+      {
+        "id": "200353",
+        "name": "Corner Recovery ×"
+      },
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "200521",
+        "name": "Running Idle"
+      },
+      {
+        "id": "202031",
+        "name": "Nothing Ventured"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      }
+    ]
+  }
+]

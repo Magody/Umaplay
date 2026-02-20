@@ -1,0 +1,99 @@
+[
+  {
+    "type": "support",
+    "name": "Mejiro Ramonu WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "id": "Mejiro Ramonu WIT R_WIT_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "一瞥にて",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "傅いて",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201702",
+        "name": "All I've Got"
+      },
+      {
+        "id": "202432",
+        "name": "Skill ID: 202432"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      }
+    ]
+  }
+]

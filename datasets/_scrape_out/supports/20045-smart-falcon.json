@@ -1,0 +1,141 @@
+[
+  {
+    "type": "support",
+    "name": "Smart Falcon GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "id": "Smart Falcon GUTS SR_GUTS_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Chants Are the Life of a Concert ☆",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "If I'm Cute, Come to My Show! ☆",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "power": 10,
+              "hints": [
+                "Final Push (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "What Is an Umadol?",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Leader's Pride (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "This Is an Umadol!",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "hints": [
+                "Top Pick (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200952",
+        "name": "Oi Racecourse ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201672",
+        "name": "Top Pick"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "201672",
+        "name": "Top Pick"
+      },
+      {
+        "id": "200552",
+        "name": "Final Push"
+      }
+    ]
+  }
+]

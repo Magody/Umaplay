@@ -1,0 +1,141 @@
+[
+  {
+    "type": "support",
+    "name": "Matikanefukukitaru GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Matikanefukukitaru GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Maximum Spirituality",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "When Piety and Kindness Intersect",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "流しのラッキー・フクキタ",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "七転び八起き六昆布",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 5,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "伝説再臨",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 201393 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201562",
+        "name": "Lucky Seven"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      },
+      {
+        "id": "201571",
+        "name": "Triple 7s"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "202542",
+        "name": "Skill ID: 202542"
+      },
+      {
+        "id": "202642",
+        "name": "Skill ID: 202642"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201393",
+        "name": "Skill ID: 201393"
+      }
+    ]
+  }
+]

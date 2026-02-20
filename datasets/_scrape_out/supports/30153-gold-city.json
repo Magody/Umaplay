@@ -1,0 +1,171 @@
+[
+  {
+    "type": "support",
+    "name": "Gold City GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Gold City GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "08:36 / Crap, I Overslept",
+        "options": {
+          "1": [
+            {
+              "mood": -1,
+              "skill_pts": 45,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "13:12 / Lunch Break, Gotta Get Myself Together",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "A Small Breather (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "リスケの嵐",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "仕方ない……のかな",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "skill_pts": 10,
+              "hints": [
+                "Shifting Gears (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 2,
+              "energy": 35,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "伝えるべき言葉は",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 200184 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 10,
+              "skill_pts": 15,
+              "hints": [
+                "Skill ID: 202671 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "202502",
+        "name": "Skill ID: 202502"
+      },
+      {
+        "id": "202402",
+        "name": "Skill ID: 202402"
+      },
+      {
+        "id": "202672",
+        "name": "Skill ID: 202672"
+      },
+      {
+        "id": "201092",
+        "name": "Opening Gambit"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "200184",
+        "name": "Skill ID: 200184"
+      },
+      {
+        "id": "202671",
+        "name": "Skill ID: 202671"
+      },
+      {
+        "id": "201422",
+        "name": "A Small Breather"
+      }
+    ]
+  }
+]

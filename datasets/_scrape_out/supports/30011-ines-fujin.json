@@ -1,0 +1,148 @@
+[
+  {
+    "type": "support",
+    "name": "Ines Fujin GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Ines Fujin GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "It's a Game of Tag!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Fast-Paced (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ten Minutes Left!",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "The Power of a Big Sister",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "speed": 5,
+              "stamina": 5,
+              "guts": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Take a Step",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 10,
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "Aim for That Sparkling Moment!",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "guts": 10,
+              "hints": [
+                "Restless (+1)",
+                "Moxie (+1)"
+              ]
+            },
+            {
+              "energy": -10,
+              "guts": 20,
+              "wit": 5,
+              "hints": [
+                "Restless (+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201651",
+        "name": "Slipstream"
+      },
+      {
+        "id": "201661",
+        "name": "Playtime's Over!"
+      },
+      {
+        "id": "201082",
+        "name": "Speed Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201281",
+        "name": "Restless"
+      },
+      {
+        "id": "201282",
+        "name": "Moxie"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "type": "support",
+    "name": "Kitasan Black SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "id": "Kitasan Black SPD SSR_SPD_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ah, Friendship",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "power": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Ah, Home Sweet Home",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "status": "Practice Perfect ○",
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Chasing Brilliance",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "speed": 2,
+              "power": 2,
+              "wit": 2,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Paying It Forward",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": "+5/+10",
+              "hints": [
+                "Straightaway Adept (+1",
+                "+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "We Walk Together",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "power": 5,
+              "bond": 5,
+              "hints": [
+                "Professor of Curvature (+1)"
+              ]
+            },
+            {
+              "speed": 10,
+              "power": 10,
+              "bond": 5,
+              "hints": [
+                "Professor of Curvature (+3)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "201262",
+        "name": "Dodging Danger"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200331",
+        "name": "Professor of Curvature"
+      }
+    ]
+  }
+]

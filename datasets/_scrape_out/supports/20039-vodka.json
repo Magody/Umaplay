@@ -1,0 +1,145 @@
+[
+  {
+    "type": "support",
+    "name": "Vodka SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Vodka SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "The Coolest Line",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Enemies on Main Street",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Nimble Navigator (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Slacking Off at Sundown",
+        "options": {
+          "1": [
+            {
+              "energy_max": 4,
+              "power": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "hints": [
+                "Mile Corners ○ (+1)"
+              ],
+              "bond": 5
+            },
+            {
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Persistence Pays Off",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "skill_pts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200032",
+        "name": "Tokyo Racecourse ○"
+      },
+      {
+        "id": "200382",
+        "name": "Straightaway Recovery"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "200372",
+        "name": "Straightaway Acceleration"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      }
+    ]
+  }
+]

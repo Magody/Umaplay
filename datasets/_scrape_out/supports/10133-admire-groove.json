@@ -1,0 +1,108 @@
+[
+  {
+    "type": "support",
+    "name": "Admire Groove SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Admire Groove SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "窓側が好きなお客さん",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "wit": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ひとりが好きなクラスメイトさん",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Take the Chance (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "skill_pts": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200192",
+        "name": "Fall Runner ○"
+      },
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "203572",
+        "name": "Skill ID: 203572"
+      },
+      {
+        "id": "203672",
+        "name": "Skill ID: 203672"
+      },
+      {
+        "id": "203842",
+        "name": "Skill ID: 203842"
+      },
+      {
+        "id": "203322",
+        "name": "Skill ID: 203322"
+      },
+      {
+        "id": "203832",
+        "name": "Skill ID: 203832"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202082",
+        "name": "Take the Chance"
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "type": "support",
+    "name": "Tokai Teio SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Tokai Teio SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Way, Or...",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "My Weapon",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Pace Chaser Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "201332",
+        "name": "Shrewd Step"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "201132",
+        "name": "Thunderbolt Step"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      }
+    ]
+  }
+]

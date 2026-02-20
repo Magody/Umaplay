@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Manhattan Cafe STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Manhattan Cafe STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Solo Nighttime Run",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Taste of Silence",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Non-Standard Distance ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "見えないものは、見なくてもいい",
+        "options": {
+          "1": [
+            {
+              "energy": 20,
+              "mood": 1,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "大きなことは、大きくない",
+        "options": {
+          "1": [
+            {
+              "energy": 25,
+              "stamina": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "解けないものは、解けないままでいい",
+        "options": {
+          "1": [
+            {
+              "energy": 30,
+              "stamina": 5,
+              "hints": [
+                "Of Calm Mind (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200742",
+        "name": "Deep Breaths"
+      },
+      {
+        "id": "201202",
+        "name": "Passing Pro"
+      },
+      {
+        "id": "201172",
+        "name": "Long Straightaways ○"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "201581",
+        "name": "Highlander"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202071",
+        "name": "Of Calm Mind"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      }
+    ]
+  }
+]

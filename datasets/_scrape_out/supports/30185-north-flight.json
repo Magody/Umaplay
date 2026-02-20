@@ -1,0 +1,142 @@
+[
+  {
+    "type": "support",
+    "name": "North Flight WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "id": "North Flight WIT SSR_WIT_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "わたしをデコレート",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "あなたのためのスタイリング",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 202672 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "『今』必要なもの",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "なくしてしまった楽しさ",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "忘れていた輝き",
+        "options": {
+          "1": [
+            {
+              "wit": 5,
+              "hints": [
+                "Changing Gears (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200132",
+        "name": "Standard Distance ○"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "201042",
+        "name": "Mile Corners ○"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201051",
+        "name": "Changing Gears"
+      },
+      {
+        "id": "202672",
+        "name": "Skill ID: 202672"
+      }
+    ]
+  }
+]

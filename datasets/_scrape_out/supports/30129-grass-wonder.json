@@ -1,0 +1,151 @@
+[
+  {
+    "type": "support",
+    "name": "Grass Wonder PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Grass Wonder PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Library Vexation",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Friendly Daytime Discussion",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Frenzied Pace Chasers (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Target in Sight ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "導き手の憂い",
+        "options": {
+          "1": [
+            {
+              "power": 10,
+              "hints": [
+                "Pressure (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "あの日の背比べ",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "背中合わせ",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 10,
+              "hints": [
+                "Cooldown (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200202",
+        "name": "Winter Runner ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "202192",
+        "name": "Skill ID: 202192"
+      },
+      {
+        "id": "201182",
+        "name": "Long Corners ○"
+      },
+      {
+        "id": "201222",
+        "name": "Stamina Eater"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201212",
+        "name": "Pressure"
+      },
+      {
+        "id": "200741",
+        "name": "Cooldown"
+      },
+      {
+        "id": "200801",
+        "name": "Frenzied Pace Chasers"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      }
+    ]
+  }
+]

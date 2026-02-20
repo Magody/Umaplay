@@ -1,0 +1,150 @@
+[
+  {
+    "type": "support",
+    "name": "Espoir City GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "Espoir City GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ガチってんだよ！",
+        "options": {
+          "1": [
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "speed": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ぶちのめすぞ！！",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202842 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "やるときゃやるっての！！",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "全力出せ！コラァ！！",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": 1,
+              "energy": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "別に嬉しくなんかねーし！！",
+        "options": {
+          "1": [
+            {
+              "guts": 15,
+              "hints": [
+                "Trending in the Charts! (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202343",
+        "name": "Skill ID: 202343"
+      },
+      {
+        "id": "202652",
+        "name": "Skill ID: 202652"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "201032",
+        "name": "Mile Straightaways ○"
+      },
+      {
+        "id": "202282",
+        "name": "Skill ID: 202282"
+      },
+      {
+        "id": "202302",
+        "name": "Skill ID: 202302"
+      },
+      {
+        "id": "203022",
+        "name": "Skill ID: 203022"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201671",
+        "name": "Trending in the Charts!"
+      },
+      {
+        "id": "202842",
+        "name": "Skill ID: 202842"
+      }
+    ]
+  }
+]

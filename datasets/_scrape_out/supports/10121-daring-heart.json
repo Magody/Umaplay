@@ -1,0 +1,95 @@
+[
+  {
+    "type": "support",
+    "name": "Daring Heart PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Daring Heart PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Queen's Heart",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Away in the Mountains",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Skill ID: 203222 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201631",
+        "name": "Sympathy"
+      },
+      {
+        "id": "200462",
+        "name": "Ramp Up"
+      },
+      {
+        "id": "200582",
+        "name": "Prepared to Pass"
+      },
+      {
+        "id": "200682",
+        "name": "Productive Plan"
+      },
+      {
+        "id": "201052",
+        "name": "Shifting Gears"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "203022",
+        "name": "Skill ID: 203022"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "203222",
+        "name": "Skill ID: 203222"
+      }
+    ]
+  }
+]

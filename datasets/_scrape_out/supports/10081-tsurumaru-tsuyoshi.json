@@ -1,0 +1,82 @@
+[
+  {
+    "type": "support",
+    "name": "Tsurumaru Tsuyoshi GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Tsurumaru Tsuyoshi GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Preparing to the MAX!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Helping Out to the MAX!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Fighter (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "202032",
+        "name": "Risky Business"
+      },
+      {
+        "id": "202092",
+        "name": "Fighting Spirit"
+      },
+      {
+        "id": "202152",
+        "name": "Full Throttle"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201402",
+        "name": "Fighter"
+      }
+    ]
+  }
+]

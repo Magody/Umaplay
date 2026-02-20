@@ -1,0 +1,167 @@
+[
+  {
+    "type": "support",
+    "name": "King Halo GUTS SSR",
+    "rarity": "SSR",
+    "attribute": "GUTS",
+    "id": "King Halo GUTS SSR_GUTS_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "You May Socialize With Me!",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "speed": 10,
+              "power": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "mood": -1,
+              "guts": 25,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "You May Advise Me!",
+        "options": {
+          "1": [
+            {
+              "guts": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Homestretch Haste (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "キングの流儀／クッキング編",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "キングの流儀／ドレスアップ編",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "power": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "guts": 10,
+              "skill_pts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "キングの流儀／相伝編",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "power": 15,
+              "hints": [
+                "Skill ID: 202541 (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 202751 (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200612",
+        "name": "Outer Swell"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "202122",
+        "name": "Fearless"
+      },
+      {
+        "id": "202542",
+        "name": "Skill ID: 202542"
+      },
+      {
+        "id": "202752",
+        "name": "Skill ID: 202752"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      },
+      {
+        "id": "201002",
+        "name": "Meticulous Measures"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202541",
+        "name": "Skill ID: 202541"
+      },
+      {
+        "id": "202751",
+        "name": "Skill ID: 202751"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      }
+    ]
+  }
+]

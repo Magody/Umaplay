@@ -1,0 +1,100 @@
+[
+  {
+    "type": "support",
+    "name": "Grass Wonder GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Grass Wonder GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Library Vexation",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Friendly Daytime Discussion",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Frenzied Pace Chasers (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Target in Sight ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200042",
+        "name": "Nakayama Racecourse ○"
+      },
+      {
+        "id": "200282",
+        "name": "Competitive Spirit ○"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200592",
+        "name": "Position Pilfer"
+      },
+      {
+        "id": "200602",
+        "name": "Slick Surge"
+      },
+      {
+        "id": "200702",
+        "name": "Updrafters"
+      },
+      {
+        "id": "201152",
+        "name": "Tether"
+      },
+      {
+        "id": "200871",
+        "name": "Flustered Pace Chasers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200801",
+        "name": "Frenzied Pace Chasers"
+      },
+      {
+        "id": "200292",
+        "name": "Target in Sight ○"
+      }
+    ]
+  }
+]

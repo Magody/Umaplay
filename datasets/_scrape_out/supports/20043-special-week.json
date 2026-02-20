@@ -1,0 +1,131 @@
+[
+  {
+    "type": "support",
+    "name": "Special Week PWR SR",
+    "rarity": "SR",
+    "attribute": "PWR",
+    "id": "Special Week PWR SR_PWR_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Watch Where You're Going!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Extra Tank (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "So Many Options!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "stamina": 15,
+              "skill_pts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Unspoken Feelings",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "mood": 1,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "A Small Thank You",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "hints": [
+                "Head-On (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "energy": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200562",
+        "name": "Stamina to Spare"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200732",
+        "name": "Steadfast"
+      },
+      {
+        "id": "201312",
+        "name": "Pace Chaser Straightaways ○"
+      },
+      {
+        "id": "201362",
+        "name": "Tactical Tweak"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201902",
+        "name": "Head-On"
+      },
+      {
+        "id": "200762",
+        "name": "Extra Tank"
+      }
+    ]
+  }
+]

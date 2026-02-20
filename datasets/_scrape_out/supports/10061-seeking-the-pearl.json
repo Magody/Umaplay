@@ -1,0 +1,95 @@
+[
+  {
+    "type": "support",
+    "name": "Seeking the Pearl GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "id": "Seeking the Pearl GUTS R_GUTS_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Passion!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "guts": 5,
+              "hints": [
+                "Skill ID: 202992 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Full-Power Thinking!",
+        "options": {
+          "1": [
+            {
+              "wit": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "hints": [
+                "Uma Stan (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200472",
+        "name": "Pace Strategy"
+      },
+      {
+        "id": "200692",
+        "name": "Watchful Eye"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "201072",
+        "name": "Unyielding Spirit"
+      },
+      {
+        "id": "200652",
+        "name": "Sprinting Gear"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202992",
+        "name": "Skill ID: 202992"
+      },
+      {
+        "id": "201591",
+        "name": "Uma Stan"
+      }
+    ]
+  }
+]

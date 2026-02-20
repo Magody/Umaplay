@@ -1,0 +1,174 @@
+[
+  {
+    "type": "support",
+    "name": "Buena Vista PWR SSR",
+    "rarity": "SSR",
+    "attribute": "PWR",
+    "id": "Buena Vista PWR SSR_PWR_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "ときめく彼女",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202612 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "きよらかな彼女",
+        "options": {
+          "1": [
+            {
+              "guts": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 10,
+              "power": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "パーソナルトレーナー、ブエナ",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "energy": 15,
+              "power": 20,
+              "bond": 15
+            },
+            {
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "以心伝心……？",
+        "options": {
+          "1": [
+            {
+              "mood": 1,
+              "stamina": 10,
+              "power": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "優しさのおすそ分け",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "power": 30,
+              "hints": [
+                "Skill ID: 202871 (+2)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 20,
+              "power": 20,
+              "hints": [
+                "Elated (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      },
+      {
+        "id": "201462",
+        "name": "End Closer Corners ○"
+      },
+      {
+        "id": "202102",
+        "name": "Eager"
+      },
+      {
+        "id": "202532",
+        "name": "Skill ID: 202532"
+      },
+      {
+        "id": "203172",
+        "name": "Skill ID: 203172"
+      },
+      {
+        "id": "203342",
+        "name": "Skill ID: 203342"
+      },
+      {
+        "id": "203432",
+        "name": "Skill ID: 203432"
+      },
+      {
+        "id": "203532",
+        "name": "Skill ID: 203532"
+      },
+      {
+        "id": "202872",
+        "name": "Skill ID: 202872"
+      },
+      {
+        "id": "203522",
+        "name": "Skill ID: 203522"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202871",
+        "name": "Skill ID: 202871"
+      },
+      {
+        "id": "202101",
+        "name": "Elated"
+      },
+      {
+        "id": "202612",
+        "name": "Skill ID: 202612"
+      }
+    ]
+  }
+]

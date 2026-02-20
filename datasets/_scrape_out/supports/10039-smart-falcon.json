@@ -1,0 +1,97 @@
+[
+  {
+    "type": "support",
+    "name": "Smart Falcon PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Smart Falcon PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Chants Are the Life of a Concert ☆",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "wit": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "If I'm Cute, Come to My Show! ☆",
+        "options": {
+          "1": [
+            {
+              "energy": -10,
+              "power": 10,
+              "hints": [
+                "Final Push (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200262",
+        "name": "Outer Post Proficiency ○"
+      },
+      {
+        "id": "200952",
+        "name": "Oi Racecourse ○"
+      },
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "201522",
+        "name": "Front Runner Savvy ○"
+      },
+      {
+        "id": "200352",
+        "name": "Corner Recovery ○"
+      },
+      {
+        "id": "201292",
+        "name": "Second Wind"
+      },
+      {
+        "id": "201302",
+        "name": "Restart"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200552",
+        "name": "Final Push"
+      }
+    ]
+  }
+]

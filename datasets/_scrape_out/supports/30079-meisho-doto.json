@@ -1,0 +1,157 @@
+[
+  {
+    "type": "support",
+    "name": "Meisho Doto STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Meisho Doto STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "I... Will Change",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "mood": 1,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "guts": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Please... Buy Some Carrots",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Pace Chaser Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Doomsday for the Overlord?!",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "hints": [
+                "Medium Corners ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Coupon Gone Wrong",
+        "options": {
+          "1": [
+            {
+              "speed": 3,
+              "stamina": 3,
+              "power": 3,
+              "skill_pts": 10
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "New Recruit",
+        "options": {
+          "1": [
+            {
+              "energy": -20,
+              "speed": 5,
+              "stamina": 10,
+              "hints": [
+                "Killer Tunes (+3)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200302",
+        "name": "Long Shot ○"
+      },
+      {
+        "id": "200142",
+        "name": "Non-Standard Distance ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200252",
+        "name": "Inner Post Proficiency ○"
+      },
+      {
+        "id": "201621",
+        "name": "Shake It Out"
+      },
+      {
+        "id": "201382",
+        "name": "Late Surger Straightaways ○"
+      },
+      {
+        "id": "201122",
+        "name": "Hawkeye"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "200721",
+        "name": "Killer Tunes"
+      },
+      {
+        "id": "201322",
+        "name": "Pace Chaser Corners ○"
+      }
+    ]
+  }
+]

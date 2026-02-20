@@ -1,0 +1,96 @@
+[
+  {
+    "type": "support",
+    "name": "Zenno Rob Roy STA R",
+    "rarity": "R",
+    "attribute": "STA",
+    "id": "Zenno Rob Roy STA R_STA_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Book-lover Quirks",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 10,
+              "power": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Tale Entrusted",
+        "options": {
+          "1": [
+            {
+              "stamina": 10,
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Medium Straightaways ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "201532",
+        "name": "Pace Chaser Savvy ○"
+      },
+      {
+        "id": "201542",
+        "name": "Late Surger Savvy ○"
+      },
+      {
+        "id": "200362",
+        "name": "Straightaway Adept"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "201332",
+        "name": "Shrewd Step"
+      },
+      {
+        "id": "200452",
+        "name": "Prudent Positioning"
+      },
+      {
+        "id": "200502",
+        "name": "Go with the Flow"
+      },
+      {
+        "id": "201432",
+        "name": "Studious"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201102",
+        "name": "Medium Straightaways ○"
+      }
+    ]
+  }
+]

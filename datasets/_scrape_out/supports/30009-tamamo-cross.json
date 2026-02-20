@@ -1,0 +1,145 @@
+[
+  {
+    "type": "support",
+    "name": "Tamamo Cross STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Tamamo Cross STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Tamamo's School Tour",
+        "options": {
+          "1": [
+            {
+              "wit": 10,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "guts": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "A Battle I Can't Lose!",
+        "options": {
+          "1": [
+            {
+              "hints": [
+                "Calm in a Crowd (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "Beef, Pork, Chicken, Curry!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "Got My Priorities Straight",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 5,
+              "guts": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "My Flaws Make Me Who I Am!",
+        "options": {
+          "1": [
+            {
+              "stamina": 5,
+              "power": 10,
+              "hints": [
+                "Fast & Furious (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200712",
+        "name": "Rosy Outlook"
+      },
+      {
+        "id": "201142",
+        "name": "Soft Step"
+      },
+      {
+        "id": "201112",
+        "name": "Medium Corners ○"
+      },
+      {
+        "id": "201412",
+        "name": "1,500,000 CC"
+      },
+      {
+        "id": "201132",
+        "name": "Thunderbolt Step"
+      },
+      {
+        "id": "200811",
+        "name": "Frenzied Late Surgers"
+      },
+      {
+        "id": "200901",
+        "name": "Flustered Late Surgers"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201611",
+        "name": "Tail Held High"
+      },
+      {
+        "id": "200591",
+        "name": "Fast & Furious"
+      },
+      {
+        "id": "200482",
+        "name": "Calm in a Crowd"
+      }
+    ]
+  }
+]

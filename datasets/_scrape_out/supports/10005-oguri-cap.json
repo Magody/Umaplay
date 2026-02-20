@@ -1,0 +1,100 @@
+[
+  {
+    "type": "support",
+    "name": "Oguri Cap PWR R",
+    "rarity": "R",
+    "attribute": "PWR",
+    "id": "Oguri Cap PWR R_PWR_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "How Should I Respond?",
+        "options": {
+          "1": [
+            {
+              "energy": 5,
+              "power": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -10,
+              "guts": 15
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "Conquering the Crowds",
+        "options": {
+          "1": [
+            {
+              "power": 5,
+              "skill_pts": 15
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Nakayama Racecourse ○ (+1)"
+              ]
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200222",
+        "name": "Cloudy Days ○"
+      },
+      {
+        "id": "201352",
+        "name": "Hydrate"
+      },
+      {
+        "id": "200332",
+        "name": "Corner Adept ○"
+      },
+      {
+        "id": "200512",
+        "name": "Homestretch Haste"
+      },
+      {
+        "id": "200722",
+        "name": "Up-Tempo"
+      },
+      {
+        "id": "200342",
+        "name": "Corner Acceleration ○"
+      },
+      {
+        "id": "200492",
+        "name": "Nimble Navigator"
+      },
+      {
+        "id": "201062",
+        "name": "Acceleration"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "200432",
+        "name": "Focus"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "200042",
+        "name": "Nakayama Racecourse ○"
+      }
+    ]
+  }
+]

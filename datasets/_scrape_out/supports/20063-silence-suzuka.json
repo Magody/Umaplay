@@ -1,0 +1,144 @@
+[
+  {
+    "type": "support",
+    "name": "Silence Suzuka SPD SR",
+    "rarity": "SR",
+    "attribute": "SPD",
+    "id": "Silence Suzuka SPD SR_SPD_SR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "On and On",
+        "options": {
+          "1": [
+            {
+              "speed": 10,
+              "stamina": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "What Should I Do?",
+        "options": {
+          "1": [
+            {
+              "speed": 5,
+              "stamina": 5,
+              "wit": 5,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Left-Handed ○ (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "空まで届け",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 15,
+              "hints": [
+                "Leader's Pride (+1)"
+              ],
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "快晴の心模様",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "hints": [
+                "Front Runner Corners ○ (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      },
+      {
+        "id": "200152",
+        "name": "Firm Conditions ○"
+      },
+      {
+        "id": "200212",
+        "name": "Sunny Days ○"
+      },
+      {
+        "id": "201621",
+        "name": "Shake It Out"
+      },
+      {
+        "id": "200542",
+        "name": "Fast-Paced"
+      },
+      {
+        "id": "201242",
+        "name": "Front Runner Straightaways ○"
+      },
+      {
+        "id": "202502",
+        "name": "Skill ID: 202502"
+      },
+      {
+        "id": "201302",
+        "name": "Restart"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201272",
+        "name": "Leader's Pride"
+      },
+      {
+        "id": "201252",
+        "name": "Front Runner Corners ○"
+      },
+      {
+        "id": "200022",
+        "name": "Left-Handed ○"
+      }
+    ]
+  }
+]

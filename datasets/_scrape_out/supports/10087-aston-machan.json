@@ -1,0 +1,90 @@
+[
+  {
+    "type": "support",
+    "name": "Aston Machan SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "id": "Aston Machan SPD R_SPD_R",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつもそばから見つめてる",
+        "options": {
+          "1": [
+            {
+              "energy": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": -5,
+              "speed": 20,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "いつも写真から見つめてる",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Light as a Feather (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "200162",
+        "name": "Wet Conditions ○"
+      },
+      {
+        "id": "200962",
+        "name": "Sprint Straightaways ○"
+      },
+      {
+        "id": "200532",
+        "name": "Early Lead"
+      },
+      {
+        "id": "201601",
+        "name": "Groundwork"
+      },
+      {
+        "id": "201262",
+        "name": "Dodging Danger"
+      },
+      {
+        "id": "201302",
+        "name": "Restart"
+      },
+      {
+        "id": "201022",
+        "name": "Stop Right There!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "202042",
+        "name": "Light as a Feather"
+      }
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "type": "support",
+    "name": "Hokko Tarumae STA SSR",
+    "rarity": "SSR",
+    "attribute": "STA",
+    "id": "Hokko Tarumae STA SSR_STA_SSR",
+    "choice_events": [
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "あなたに響け、とまこまい",
+        "options": {
+          "1": [
+            {
+              "speed": 15,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "power": 5,
+              "guts": 10,
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "random",
+        "chain_step": 1,
+        "name": "みんなに届け、とまこまい",
+        "options": {
+          "1": [
+            {
+              "skill_pts": 30,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Top Pick (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 1,
+        "name": "どーするロコドル！？",
+        "options": {
+          "1": [
+            {
+              "stamina": 20,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "energy": 25,
+              "hints": [
+                "Head-On (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 2
+      },
+      {
+        "type": "chain",
+        "chain_step": 2,
+        "name": "学べロコドル！！",
+        "options": {
+          "1": [
+            {
+              "energy": 10,
+              "skill_pts": 25,
+              "bond": 5
+            }
+          ],
+          "2": [
+            {
+              "hints": [
+                "Skill ID: 202831 (+1)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      },
+      {
+        "type": "chain",
+        "chain_step": 3,
+        "name": "進めロコドル！！",
+        "options": {
+          "1": [
+            {
+              "stamina": 25,
+              "guts": 15,
+              "hints": [
+                "Skill ID: 202831 (+3)"
+              ],
+              "bond": 5
+            },
+            {
+              "stamina": 15,
+              "guts": 10,
+              "hints": [
+                "Skill ID: 202831 (+2)"
+              ],
+              "bond": 5
+            }
+          ]
+        },
+        "default_preference": 1
+      }
+    ],
+    "hint_skills": [
+      {
+        "id": "202842",
+        "name": "Skill ID: 202842"
+      },
+      {
+        "id": "202262",
+        "name": "Skill ID: 202262"
+      },
+      {
+        "id": "202282",
+        "name": "Skill ID: 202282"
+      },
+      {
+        "id": "202832",
+        "name": "Skill ID: 202832"
+      },
+      {
+        "id": "202312",
+        "name": "Skill ID: 202312"
+      },
+      {
+        "id": "201682",
+        "name": "Forward, March!"
+      }
+    ],
+    "event_skills": [
+      {
+        "id": "201902",
+        "name": "Head-On"
+      },
+      {
+        "id": "202831",
+        "name": "Skill ID: 202831"
+      },
+      {
+        "id": "201672",
+        "name": "Top Pick"
+      }
+    ]
+  }
+]
