@@ -17,6 +17,15 @@ export default function AdvancedSettings() {
   const [topStats, setTopStats] = useState(a.topStatsFocus)
   const [externalUrl, setExternalUrl] = useState(a.externalProcessorUrl)
 
+  // Career Loop state
+  const [careerLoopEnabled, setCareerLoopEnabled] = useState(a.careerLoop?.enabled ?? true)
+  const [maxCareers, setMaxCareers] = useState(a.careerLoop?.maxCareers ?? 5)
+  const [preferredSupport, setPreferredSupport] = useState(a.careerLoop?.preferredSupport ?? 'Riko Kashimoto')
+  const [preferredLevel, setPreferredLevel] = useState(a.careerLoop?.preferredLevel ?? 50)
+  const [maxRefresh, setMaxRefresh] = useState(a.careerLoop?.maxRefresh ?? 5)
+  const [refreshWait, setRefreshWait] = useState(a.careerLoop?.refreshWait ?? 5.0)
+  const [errorThreshold, setErrorThreshold] = useState(a.careerLoop?.errorThreshold ?? 5)
+
   const autoRestMarks = useMemo(() => {
     const marks = [{ value: 1 }]
     for (let v = 5; v <= 70; v += 5) {
@@ -34,6 +43,13 @@ export default function AdvancedSettings() {
     setUndertrain(a.undertrainThreshold)
     setTopStats(a.topStatsFocus)
     setExternalUrl(a.externalProcessorUrl)
+    setCareerLoopEnabled(a.careerLoop?.enabled ?? true)
+    setMaxCareers(a.careerLoop?.maxCareers ?? 5)
+    setPreferredSupport(a.careerLoop?.preferredSupport ?? 'Riko Kashimoto')
+    setPreferredLevel(a.careerLoop?.preferredLevel ?? 50)
+    setMaxRefresh(a.careerLoop?.maxRefresh ?? 5)
+    setRefreshWait(a.careerLoop?.refreshWait ?? 5.0)
+    setErrorThreshold(a.careerLoop?.errorThreshold ?? 5)
   }, [
     a.autoRestMinimum,
     a.skillCheckInterval,
@@ -41,6 +57,7 @@ export default function AdvancedSettings() {
     a.undertrainThreshold,
     a.topStatsFocus,
     a.externalProcessorUrl,
+    a.careerLoop,
   ])
 
   const commitAdvanced = <K extends keyof typeof a>(key: K, value: (typeof a)[K]) => {
@@ -378,6 +395,258 @@ export default function AdvancedSettings() {
               commitAdvanced('topStatsFocus', next)
             },
           })}
+          sx={{ mt: 2 }}
+        />
+
+        <Divider sx={{ my: 3 }} />
+        <Typography variant="h6" sx={{ mb: 2 }}>Career Loop Automation</Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+          Automated career farming for unattended gameplay. Press F1 to start/stop career loop mode.
+        </Typography>
+
+        <FieldRow
+          label="Enable Career Loop"
+          control={
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={careerLoopEnabled}
+                  onChange={(e) => {
+                    const enabled = e.target.checked
+                    setCareerLoopEnabled(enabled)
+                    setGeneral({
+                      advanced: {
+                        ...a,
+                        careerLoop: {
+                          ...(a.careerLoop || {}),
+                          enabled,
+                          maxCareers: maxCareers || null,
+                          preferredSupport,
+                          preferredLevel,
+                          maxRefresh,
+                          refreshWait,
+                          errorThreshold,
+                        },
+                      },
+                    })
+                  }}
+                />
+              }
+              label={careerLoopEnabled ? 'Enabled' : 'Disabled'}
+            />
+          }
+          info="Enable automated career loop for farming multiple careers."
+        />
+
+        <FieldRow
+          label="Max Careers"
+          control={
+            <TextField
+              size="small"
+              type="number"
+              value={maxCareers || ''}
+              onChange={(e) => {
+                const val = e.target.value === '' ? 0 : parseInt(e.target.value, 10)
+                setMaxCareers(val)
+              }}
+              onBlur={() => {
+                setGeneral({
+                  advanced: {
+                    ...a,
+                    careerLoop: {
+                      ...(a.careerLoop || {}),
+                      enabled: careerLoopEnabled,
+                      maxCareers: maxCareers || 0,
+                      preferredSupport,
+                      preferredLevel,
+                      maxRefresh,
+                      refreshWait,
+                      errorThreshold,
+                    },
+                  },
+                })
+              }}
+              inputProps={{ min: 0, max: 999 }}
+              placeholder="0 = infinite"
+              sx={{ width: 120 }}
+            />
+          }
+          info="Number of careers to complete (0 or empty = infinite loop)."
+        />
+
+        <FieldRow
+          label="Preferred Support"
+          control={
+            <TextField
+              size="small"
+              fullWidth
+              value={preferredSupport}
+              onChange={(e) => setPreferredSupport(e.target.value)}
+              onBlur={() => {
+                setGeneral({
+                  advanced: {
+                    ...a,
+                    careerLoop: {
+                      ...(a.careerLoop || {}),
+                      enabled: careerLoopEnabled,
+                      maxCareers: maxCareers || null,
+                      preferredSupport,
+                      preferredLevel,
+                      maxRefresh,
+                      refreshWait,
+                      errorThreshold,
+                    },
+                  },
+                })
+              }}
+              placeholder="Riko Kashimoto"
+            />
+          }
+          info="Name of the preferred support card to select."
+        />
+
+        <FieldRow
+          label="Preferred Level"
+          control={renderSliderControl({
+            id: 'preferredLevel',
+            value: preferredLevel,
+            min: 1,
+            max: 100,
+            step: 1,
+            onChange: (_, v) => {
+              const next = Math.max(1, Math.min(100, Math.round(toNumber(v))))
+              setPreferredLevel(next)
+            },
+            onCommit: (_, v) => {
+              const next = Math.max(1, Math.min(100, Math.round(toNumber(v))))
+              setPreferredLevel(next)
+              setGeneral({
+                advanced: {
+                  ...a,
+                  careerLoop: {
+                    ...(a.careerLoop || {}),
+                    enabled: careerLoopEnabled,
+                    maxCareers: maxCareers || null,
+                    preferredSupport,
+                    preferredLevel: next,
+                    maxRefresh,
+                    refreshWait,
+                    errorThreshold,
+                  },
+                },
+              })
+            },
+          })}
+          info="Preferred support card level (1-100)."
+          sx={{ mt: 2 }}
+        />
+
+        <FieldRow
+          label="Max Support Refresh"
+          control={renderSliderControl({
+            id: 'maxRefresh',
+            value: maxRefresh,
+            min: 0,
+            max: 20,
+            step: 1,
+            onChange: (_, v) => {
+              const next = Math.max(0, Math.min(20, Math.round(toNumber(v))))
+              setMaxRefresh(next)
+            },
+            onCommit: (_, v) => {
+              const next = Math.max(0, Math.min(20, Math.round(toNumber(v))))
+              setMaxRefresh(next)
+              setGeneral({
+                advanced: {
+                  ...a,
+                  careerLoop: {
+                    ...(a.careerLoop || {}),
+                    enabled: careerLoopEnabled,
+                    maxCareers: maxCareers || null,
+                    preferredSupport,
+                    preferredLevel,
+                    maxRefresh: next,
+                    refreshWait,
+                    errorThreshold,
+                  },
+                },
+              })
+            },
+          })}
+          info="Maximum times to refresh the support list (0-20)."
+          sx={{ mt: 2 }}
+        />
+
+        <FieldRow
+          label="Refresh Wait (seconds)"
+          control={
+            <TextField
+              size="small"
+              type="number"
+              value={refreshWait}
+              onChange={(e) => {
+                const val = parseFloat(e.target.value)
+                if (!isNaN(val)) setRefreshWait(val)
+              }}
+              onBlur={() => {
+                const clamped = Math.max(1.0, Math.min(30.0, refreshWait))
+                setRefreshWait(clamped)
+                setGeneral({
+                  advanced: {
+                    ...a,
+                    careerLoop: {
+                      ...(a.careerLoop || {}),
+                      enabled: careerLoopEnabled,
+                      maxCareers: maxCareers || null,
+                      preferredSupport,
+                      preferredLevel,
+                      maxRefresh,
+                      refreshWait: clamped,
+                      errorThreshold,
+                    },
+                  },
+                })
+              }}
+              inputProps={{ min: 1.0, max: 30.0, step: 0.5 }}
+              sx={{ width: 120 }}
+            />
+          }
+          info="Wait time between support list refreshes (1.0-30.0 seconds)."
+        />
+
+        <FieldRow
+          label="Error Threshold"
+          control={renderSliderControl({
+            id: 'errorThreshold',
+            value: errorThreshold,
+            min: 1,
+            max: 20,
+            step: 1,
+            onChange: (_, v) => {
+              const next = Math.max(1, Math.min(20, Math.round(toNumber(v))))
+              setErrorThreshold(next)
+            },
+            onCommit: (_, v) => {
+              const next = Math.max(1, Math.min(20, Math.round(toNumber(v))))
+              setErrorThreshold(next)
+              setGeneral({
+                advanced: {
+                  ...a,
+                  careerLoop: {
+                    ...(a.careerLoop || {}),
+                    enabled: careerLoopEnabled,
+                    maxCareers: maxCareers || null,
+                    preferredSupport,
+                    preferredLevel,
+                    maxRefresh,
+                    refreshWait,
+                    errorThreshold: next,
+                  },
+                },
+              })
+            },
+          })}
+          info="Max consecutive errors before stopping the loop (1-20)."
           sx={{ mt: 2 }}
         />
       </Collapse>

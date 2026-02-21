@@ -559,7 +559,7 @@ class AgentURA(AgentScenario):
                 # For other outcomes ("INFIRMARY", "RESTED", "CONTINUE") we just loop
                 continue
 
-            if screen == "FinalScreen":
+            if screen == "FinalScreen" or screen == "CareerComplete":
                 self.claw_turn = 0
                 # Only if skill list defined
                 if len(self.skill_list) > 0 and self.lobby._go_skills():
@@ -573,26 +573,16 @@ class AgentURA(AgentScenario):
                         final_result.status.value,
                         final_result.exit_recovered,
                     )
-                    
-                    # pick = det_filter(dets, ["lobby_skills"])[-1]
-                    # x1 = pick["xyxy"][0]
-                    # y1 = pick["xyxy"][1]
-                    # x2 = pick["xyxy"][2]
-                    # y2 = pick["xyxy"][3]
 
-                    # btn_width = abs(x2 - x1)
-                    # x1 += btn_width + btn_width // 10
-                    # x2 += btn_width + btn_width // 10
-                    # self.ctrl.click_xyxy_center((x1, y1, x2, y2), clicks=1, jitter=1)
                 self.is_running = False  # end of career
                 logger_uma.info("Detected end of career")
+                
                 try:
                     self.skill_memory.reset(persist=True)
                     logger_uma.info("[skill_memory] Reset after career completion")
                 except Exception as exc:
                     logger_uma.error("[skill_memory] reset failed: %s", exc)
                 continue
-
 
             if screen == "ClawMachine":
                 self.claw_turn += 1

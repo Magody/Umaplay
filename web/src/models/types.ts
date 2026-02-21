@@ -59,6 +59,16 @@ export interface GeneralConfig {
     // Skills optimization (Raceday auto-buy gating)
     skillCheckInterval: number // Check skills every N turns (1 = every turn)
     skillPtsDelta: number // Only check if points increased by at least this amount
+    // Career Loop automation settings
+    careerLoop?: {
+      enabled: boolean
+      maxCareers: number | null // null or 0 = infinite
+      preferredSupport: string
+      preferredLevel: number // 1-100
+      maxRefresh: number // 0-20
+      refreshWait: number // 1.0-30.0 seconds
+      errorThreshold: number // 1-20
+    }
   }
 }
 

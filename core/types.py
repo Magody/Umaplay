@@ -30,6 +30,7 @@ class DetectionDict(TypedDict):
 
 
 ScreenName = Literal[
+    "CareerComplete",
     "Raceday",
     "RaceLobby",
     "Inspiration",

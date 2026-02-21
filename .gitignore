@@ -48,6 +48,7 @@ datasets/uma_unity_cup/*
 !datasets/uma_unity_cup/raw
 datasets/uma_unity_cup/raw/*
 !datasets/uma_unity_cup/raw/gitkeep.txt
+datasets/_scrape_out/
 
 README.ai.md
 README.train.md

@@ -68,7 +68,7 @@ def main():
     )
     parser.add_argument(
         "--mode",
-        choices=["steam", "bluestack", "scrcpy"],
+        choices=["steam", "bluestack", "scrcpy", "adb"],
         default=Settings.MODE,
         help="Capture mode / target window type",
     )

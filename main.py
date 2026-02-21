@@ -25,6 +25,7 @@ from core.agent_scenario import AgentScenario
 from core.utils.logger import logger_uma, setup_uma_logging
 from core.settings import Settings
 from core.agent_nav import AgentNav
+from core.agent_career_loop import AgentCareerLoop
 from core.utils.hotkey_manager import get_hotkey_manager
 
 from server.main import app
@@ -96,8 +97,8 @@ def make_controller_from_settings() -> IController:
 
 
 def make_ocr_yolo_from_settings(
-    ctrl: IController, weights: str | Path | None = None
-) -> tuple[OCRInterface, IDetector]:
+    ctrl: IController, weights: str | Path | None = None, career_loop_weights: str | Path | None = None
+) -> tuple[OCRInterface, IDetector, IDetector]:
     """Build fresh OCR and YOLO engines based on current Settings."""
     resolved_weights = weights if weights is not None else Settings.ACTIVE_YOLO_WEIGHTS
     weights_str = str(resolved_weights) if resolved_weights is not None else None
@@ -125,7 +126,15 @@ def make_ocr_yolo_from_settings(
             yolo_engine = RemoteYOLOEngine(
                 ctrl=ctrl, base_url=Settings.EXTERNAL_PROCESSOR_URL
             )
-        return ocr, yolo_engine
+        if career_loop_weights:
+            career_loop_engine = RemoteYOLOEngine(
+                ctrl=ctrl, base_url=Settings.EXTERNAL_PROCESSOR_URL, weights=career_loop_weights
+            )
+        else:
+            career_loop_engine = RemoteYOLOEngine(
+                ctrl=ctrl, base_url=Settings.EXTERNAL_PROCESSOR_URL, weights=Settings.YOLO_WEIGHTS_CAREER_LOOP
+            )
+        return ocr, yolo_engine, career_loop_engine
 
     logger_uma.info("[PERCEPTION] Using internal processors")
     from core.perception.ocr.ocr_local import LocalOCREngine
@@ -140,7 +149,12 @@ def make_ocr_yolo_from_settings(
     else:
         yolo_engine = LocalYOLOEngine(ctrl=ctrl)
 
-    return ocr, yolo_engine
+    if career_loop_weights:
+        career_loop_engine = LocalYOLOEngine(ctrl=ctrl, weights=career_loop_weights)
+    else:
+        career_loop_engine = LocalYOLOEngine(ctrl=ctrl, weights=Settings.YOLO_WEIGHTS_CAREER_LOOP)
+
+    return ocr, yolo_engine, career_loop_engine
 
 
 # ---------------------------
@@ -237,7 +251,7 @@ class BotState:
         self.running: bool = False
         self._lock = threading.Lock()
 
-    def start(self):
+    def start(self, career_loop_mode: False):
         """
         Reload config.json -> Settings.apply_config -> build fresh controller + OCR/YOLO -> run Player.
         This guarantees we always reflect the latest UI changes at start time.
@@ -285,7 +299,7 @@ class BotState:
                     )
                 return
 
-            ocr, yolo_engine = make_ocr_yolo_from_settings(ctrl)
+            ocr, yolo_engine, career_loop_engine = make_ocr_yolo_from_settings(ctrl)
 
             # 4) Extract preset-specific runtime opts (skill_list / plan_races / select_style)
             preset_opts = Settings.extract_runtime_preset(cfg or {})
@@ -334,9 +348,53 @@ class BotState:
             def _runner():
                 re_init = False
                 try:
-                    logger_uma.info("[BOT] Started.")
+                    if career_loop_mode:
+                        logger_uma.info("[BOT] Started in Career Loop Mode.")
+                    else:
+                        logger_uma.info("[BOT] Started.")
+                    
+
+                    if career_loop_mode:
+                        logger_uma.info("[BOT] Career Loop Mode: Creating AgentCareerLoop wrapper...")
+                        # Create Waiter instance for career loop flows
+                        from core.utils.waiter import Waiter, PollConfig
+                        waiter_config = PollConfig(
+                            imgsz=Settings.YOLO_IMGSZ,
+                            conf=Settings.YOLO_CONF,
+                            iou=Settings.YOLO_IOU,
+                            poll_interval_s=0.5,
+                            timeout_s=4.0,
+                            tag="career_loop",
+                            agent="career_loop",
+                        )
+                        waiter = Waiter(ctrl=ctrl, ocr=ocr, yolo_engine=career_loop_engine, config=waiter_config)
+                        
+                        # Create AgentCareerLoop with all required dependencies
+                        career_loop = AgentCareerLoop(
+                            ctrl=ctrl,
+                            ocr=ocr,
+                            yolo_engine=career_loop_engine,
+                            waiter=waiter,
+                            agent_scenario=self.agent_scenario,
+                            preferred_support=Settings.CAREER_LOOP_PREFERRED_SUPPORT,
+                            preferred_level=Settings.CAREER_LOOP_PREFERRED_LEVEL,
+                            max_refresh_attempts=Settings.CAREER_LOOP_MAX_REFRESH,
+                            refresh_wait_seconds=Settings.CAREER_LOOP_REFRESH_WAIT,
+                            max_careers=Settings.CAREER_LOOP_MAX_CAREERS,
+                            error_threshold=Settings.CAREER_LOOP_ERROR_THRESHOLD,
+                        )
+                        
+                        logger_uma.info(
+                            "[BOT] Career Loop Mode: Starting loop (max_careers=%s, support=%s Lv%d)...",
+                            Settings.CAREER_LOOP_MAX_CAREERS or "infinite",
+                            Settings.CAREER_LOOP_PREFERRED_SUPPORT,
+                            Settings.CAREER_LOOP_PREFERRED_LEVEL,
+                        )
+
+                        # Run the career loop
+                        career_loop.run()
                     # if not none
-                    if self.agent_scenario:
+                    elif self.agent_scenario:
                         self.agent_scenario.run(
                             delay=getattr(Settings, "MAIN_LOOP_DELAY", 0.4),
                             max_iterations=getattr(Settings, "MAX_ITERATIONS", None),
@@ -512,8 +570,9 @@ class NavState:
 # ---------------------------
 def hotkey_loop(bot_state: BotState, nav_state: NavState):
     # Support configured hotkey and F2 as backup for Player; F7/F8 for AgentNav
-    configured = str(getattr(Settings, "HOTKEY", "F2") or "F2").upper()
-    keys_bot = [configured]
+    configured = str(getattr(Settings, "HOTKEY", "F2")).upper()
+    keys_bot = sorted(set([configured, "F2"]))
+    keys_career_loop = ["F1"]
     keys_nav = ["F7", "F8", "F9"]
     logger_uma.info(f"[HOTKEY] Run bot in Scenario (e.g. URA, Unity Cup): press {', '.join(keys_bot)} to start/stop.")
     logger_uma.info("[HOTKEY] AgentNav: press F7=TeamTrials, F8=DailyRaces")
@@ -526,6 +585,7 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
     # Debounce across both hook & poll paths - INCREASED to prevent race condition
     # between hook (trigger_on_release) and polling (while key pressed)
     last_ts_toggle = 0.0
+    last_ts_career_loop = 0.0
     last_ts_team = 0.0
     last_ts_daily = 0.0
     last_ts_roulette = 0.0
@@ -691,6 +751,38 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
         if was_running:
             _show_scenario_stopped_overlay_if_needed()
 
+    def _debounced_career_loop(source: str):
+        nonlocal last_ts_career_loop
+        now = time.time()
+        if now - last_ts_career_loop < 0.8:
+            logger_uma.debug(f"[HOTKEY] Debounced career-loop from {source}.")
+            return
+        last_ts_career_loop = now
+
+        # Check if career loop is enabled in settings
+        if not bot_state.running and not Settings.CAREER_LOOP_ENABLED:
+            logger_uma.warning(
+                "[HOTKEY] Career Loop Mode is disabled in settings. "
+                "Enable it in the Web UI (config.json: careerLoop.enabled = true) to use F1."
+            )
+            return
+
+        if not bot_state.running:
+            # Starting career loop mode
+            if not _select_scenario_before_start():
+                return
+            
+            logger_uma.info("[HOTKEY] Career Loop Mode: Starting...")
+            _show_preset_overlay_if_needed()
+            
+            # Start in career loop mode (start() will set running flag internally)
+            bot_state.start(career_loop_mode=True)
+        else:
+            # Stopping career loop mode
+            logger_uma.info("[HOTKEY] Career Loop Mode: Stopping...")
+            bot_state.stop()
+        
+
     def _debounced_team(source: str):
         nonlocal last_ts_team
         now = time.time()
@@ -756,8 +848,31 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
         else:
             nav_state.start(action="roulette")
 
+
     # Try to register hooks
     hotkey_mgr = get_hotkey_manager()
+    
+    # F1 for Career Loop Mode
+    for k in keys_career_loop:
+        try:
+            logger_uma.debug(f"[HOTKEY] Registering hook for {k}…")
+            success = hotkey_mgr.add_hotkey(
+                k,
+                lambda key=k: event_q.put(("career_loop", f"hook:{key}")),
+                suppress=False,
+                trigger_on_release=True,
+            )
+            if success:
+                hooked_keys.add(k)
+                logger_uma.info(f"[HOTKEY] Hook active for '{k}' (Career Loop Mode).")
+        except PermissionError as e:
+            logger_uma.warning(
+                f"[HOTKEY] PermissionError registering '{k}'. On Windows you may need to run as Administrator. {e}"
+            )
+        except Exception as e:
+            logger_uma.warning(f"[HOTKEY] Could not register '{k}': {e}")
+
+    # Try to register hooks
     
     for k in keys_bot:
         try:
@@ -810,7 +925,10 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
             try:
                 while True:
                     ev, source = event_q.get_nowait()
-                    if ev == "toggle":
+                    logger_uma.debug(f"[HOTKEY] Poll detected '{ev}' from {source}.")
+                    if ev == "career_loop":
+                        _debounced_career_loop(source)
+                    elif ev == "toggle":
                         _debounced_toggle(source)
                     elif ev == "team":
                         _debounced_team(source)
@@ -822,6 +940,16 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
                 pass
 
             fired = False
+            # F1 for Career Loop Mode
+            for k in keys_career_loop:
+                try:
+                    if hotkey_mgr.is_pressed(k):
+                        logger_uma.debug(f"[HOTKEY] Poll detected '{k}'.")
+                        _debounced_career_loop(f"poll:{k}")
+                        fired = True
+                        time.sleep(0.20)
+                except Exception as e:
+                    logger_uma.debug(f"[HOTKEY] Poll error on '{k}': {e}")
             for k in keys_bot:
                 try:
                     if hotkey_mgr.is_pressed(k):
