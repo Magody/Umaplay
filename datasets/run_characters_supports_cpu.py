@@ -320,6 +320,7 @@ def run_scrape_skills(json_url: str):
         "scrape_skills.py",
         "--url-json", json_url,
         "--out", str(out_path),
+        "--images",
         "--debug",
     ]
 

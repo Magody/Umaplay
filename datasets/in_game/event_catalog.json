@@ -4222,7 +4222,7 @@
           "power": 5,
           "guts": 5,
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ],
           "bond": 5
         }
@@ -6055,7 +6055,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202412 (+1)"
+            "Ambitions (+1)"
           ],
           "bond": 5
         }
@@ -6258,7 +6258,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -6459,7 +6459,7 @@
         {
           "mood": 1,
           "hints": [
-            "Skill ID: 202262 (+1)"
+            "Promising Omen (+1)"
           ],
           "bond": 5
         }
@@ -6519,7 +6519,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202332 (+1)"
+            "Skillful Step (+1)"
           ],
           "bond": 5
         }
@@ -6781,7 +6781,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202532 (+1)"
+            "Graceful Step (+1)"
           ],
           "bond": 5
         }
@@ -6917,7 +6917,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202562 (+1)"
+            "Lock On (+1)"
           ],
           "bond": 5
         }
@@ -7117,7 +7117,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202602 (+1)"
+            "Ignition (+1)"
           ],
           "bond": 5
         }
@@ -7177,7 +7177,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ],
           "bond": 5
         }
@@ -7249,7 +7249,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202522 (+1)"
+            "Mold Breaker (+1)"
           ],
           "bond": 5
         }
@@ -7381,7 +7381,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202762 (+1)"
+            "Toward Victory (+1)"
           ],
           "bond": 5
         }
@@ -7480,7 +7480,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202622 (+1)"
+            "On the Move (+1)"
           ],
           "bond": 5
         }
@@ -7581,7 +7581,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ],
           "bond": 5
         }
@@ -7793,7 +7793,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202842 (+1)"
+            "Dust Off (+1)"
           ],
           "bond": 5
         }
@@ -8062,7 +8062,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202712 (+1)"
+            "Satisfying Pace (+1)"
           ],
           "bond": 5
         }
@@ -8229,7 +8229,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "bond": 5
         }
@@ -8323,7 +8323,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202902 (+1)"
+            "Sufficient Thrust (+1)"
           ],
           "bond": 5
         }
@@ -8396,7 +8396,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203362 (+1)"
+            "Forward Step by Step (+1)"
           ],
           "bond": 5
         }
@@ -8458,7 +8458,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ],
           "bond": 5
         }
@@ -8524,7 +8524,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202742 (+1)"
+            "Refined Conduct (+1)"
           ],
           "bond": 5
         }
@@ -8591,7 +8591,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203142 (+1)"
+            "Self-Restraint (+1)"
           ],
           "bond": 5
         }
@@ -8767,7 +8767,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203122 (+1)"
+            "To Greater Heights (+1)"
           ],
           "bond": 5
         }
@@ -9038,7 +9038,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203172 (+1)"
+            "Switch Over Pro (+1)"
           ],
           "bond": 5
         }
@@ -9311,7 +9311,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203112 (+1)"
+            "Frontal Breakthrough (+1)"
           ],
           "bond": 5
         }
@@ -9381,7 +9381,7 @@
           "energy": 10,
           "speed": 5,
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ],
           "bond": 5
         }
@@ -9454,7 +9454,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203582 (+1)"
+            "Capture (+1)"
           ],
           "bond": 5
         }
@@ -9594,7 +9594,7 @@
           "mood": 1,
           "status": "Unknown Status 32",
           "hints": [
-            "Skill ID: 202802 (+5)"
+            "Opening Leg Adept (+5)"
           ],
           "bond": 5
         }
@@ -9695,7 +9695,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202772 (+1)"
+            "Honing In (+1)"
           ],
           "bond": 5
         }
@@ -9706,6 +9706,209 @@
     "phash64": 10171685662812022670,
     "image_variants": [
       "web\\public\\events\\support\\Fenomeno STA R_STA_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Forever Young WIT R/WIT/R/見つけた！ブルーオーシャン",
+    "key_step": "support/Forever Young WIT R/WIT/R/見つけた！ブルーオーシャン#s1",
+    "type": "support",
+    "name": "Forever Young WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "event_name": "見つけた！ブルーオーシャン",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": 10,
+          "guts": 10,
+          "wit": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 20,
+          "skill_pts": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "見つけた！ブルーオーシャン",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT R_WIT_R.png",
+    "phash64": 13556000040409394140,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT R_WIT_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Forever Young WIT R/WIT/R/やっちゃお！イノベーション！",
+    "key_step": "support/Forever Young WIT R/WIT/R/やっちゃお！イノベーション！#s1",
+    "type": "support",
+    "name": "Forever Young WIT R",
+    "rarity": "R",
+    "attribute": "WIT",
+    "event_name": "やっちゃお！イノベーション！",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "wit": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "With a Light in My Heart (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "やっちゃお！イノベーション！",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT R_WIT_R.png",
+    "phash64": 13556000040409394140,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT R_WIT_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Red Desire GUTS R/GUTS/R/聖なる浄化の力を以て",
+    "key_step": "support/Red Desire GUTS R/GUTS/R/聖なる浄化の力を以て#s1",
+    "type": "support",
+    "name": "Red Desire GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "event_name": "聖なる浄化の力を以て",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10,
+          "wit": 10,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "power": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "聖なる浄化の力を以て",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS R_GUTS_R.png",
+    "phash64": 16803435709385712294,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS R_GUTS_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Red Desire GUTS R/GUTS/R/滅する破邪の力を以て",
+    "key_step": "support/Red Desire GUTS R/GUTS/R/滅する破邪の力を以て#s1",
+    "type": "support",
+    "name": "Red Desire GUTS R",
+    "rarity": "R",
+    "attribute": "GUTS",
+    "event_name": "滅する破邪の力を以て",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "skill_pts": 15,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Simmering Heat (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "滅する破邪の力を以て",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS R_GUTS_R.png",
+    "phash64": 16803435709385712294,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS R_GUTS_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Victoire Pisa SPD R/SPD/R/すべての心が温もりに包まれますように",
+    "key_step": "support/Victoire Pisa SPD R/SPD/R/すべての心が温もりに包まれますように#s1",
+    "type": "support",
+    "name": "Victoire Pisa SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "event_name": "すべての心が温もりに包まれますように",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "skill_pts": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "stamina": 5,
+          "power": 15,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "すべての心が温もりに包まれますように",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD R_SPD_R.png",
+    "phash64": 10280276935036643159,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD R_SPD_R.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Victoire Pisa SPD R/SPD/R/優しさは陽だまりのように",
+    "key_step": "support/Victoire Pisa SPD R/SPD/R/優しさは陽だまりのように#s1",
+    "type": "support",
+    "name": "Victoire Pisa SPD R",
+    "rarity": "R",
+    "attribute": "SPD",
+    "event_name": "優しさは陽だまりのように",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 15,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Intrigued (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "優しさは陽だまりのように",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD R_SPD_R.png",
+    "phash64": 10280276935036643159,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD R_SPD_R.png"
     ],
     "event_kind": "random"
   },
@@ -12167,7 +12370,7 @@
           "power": 5,
           "guts": 5,
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ],
           "bond": 5
         }
@@ -14964,7 +15167,7 @@
           "speed": 7,
           "power": 7,
           "hints": [
-            "Skill ID: 202392 (+3)"
+            "Frantic State (+3)"
           ],
           "bond": 5
         }
@@ -15032,7 +15235,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -15905,7 +16108,7 @@
         {
           "mood": 1,
           "hints": [
-            "Skill ID: 202262 (+1)"
+            "Promising Omen (+1)"
           ],
           "bond": 5
         }
@@ -15934,7 +16137,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202242 (+1)"
+            "Tight Turns ○ (+1)"
           ],
           "bond": 5
         }
@@ -15943,7 +16146,7 @@
         {
           "power": 10,
           "hints": [
-            "Skill ID: 202343 (+1)"
+            "Mud Play ○ (+1)"
           ],
           "bond": 5
         }
@@ -16815,7 +17018,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202472 (+2)"
+            "Tooth and Tail (+2)"
           ]
         }
       ],
@@ -17051,7 +17254,7 @@
           "stamina": 10,
           "guts": 5,
           "hints": [
-            "Skill ID: 202882 (+1)"
+            "Boiling Blood (+1)"
           ],
           "bond": 5
         }
@@ -17086,7 +17289,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ],
           "bond": 5
         }
@@ -17154,7 +17357,7 @@
           "speed": 5,
           "wit": 10,
           "hints": [
-            "Skill ID: 202432 (+1)"
+            "Firm Step (+1)"
           ],
           "bond": 5
         }
@@ -17460,7 +17663,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ],
           "bond": 5
         }
@@ -17695,7 +17898,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203142 (+1)"
+            "Self-Restraint (+1)"
           ],
           "bond": 5
         }
@@ -17936,7 +18139,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ],
           "bond": 5
         }
@@ -17971,7 +18174,7 @@
         {
           "power": 15,
           "hints": [
-            "Skill ID: 203162 (+1)"
+            "Fearless Advance (+1)"
           ],
           "bond": 5
         }
@@ -18011,7 +18214,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203122 (+1)"
+            "To Greater Heights (+1)"
           ],
           "bond": 5
         }
@@ -18342,7 +18545,7 @@
         {
           "speed": 15,
           "hints": [
-            "Skill ID: 203632 (+1)"
+            "Dream-Fulfilling Challenge (+1)"
           ],
           "bond": 5
         }
@@ -18666,6 +18869,239 @@
       "web\\public\\events\\support\\Satono Diamond STA SR_STA_SR.png"
     ],
     "event_kind": "random"
+  },
+  {
+    "key": "support/Red Desire GUTS SR/GUTS/SR/聖なる浄化の力を以て",
+    "key_step": "support/Red Desire GUTS SR/GUTS/SR/聖なる浄化の力を以て#s1",
+    "type": "support",
+    "name": "Red Desire GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "聖なる浄化の力を以て",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10,
+          "wit": 10,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "power": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "聖なる浄化の力を以て",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png",
+    "phash64": 15553201136944823326,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Red Desire GUTS SR/GUTS/SR/滅する破邪の力を以て",
+    "key_step": "support/Red Desire GUTS SR/GUTS/SR/滅する破邪の力を以て#s1",
+    "type": "support",
+    "name": "Red Desire GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "滅する破邪の力を以て",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "skill_pts": 15,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Simmering Heat (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "滅する破邪の力を以て",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png",
+    "phash64": 15553201136944823326,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Red Desire GUTS SR/GUTS/SR/聖女の心眼を信ずるならば",
+    "key_step": "support/Red Desire GUTS SR/GUTS/SR/聖女の心眼を信ずるならば#s1",
+    "type": "support",
+    "name": "Red Desire GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "聖女の心眼を信ずるならば",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "guts": 15,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 15,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "聖女の心眼を信ずるならば",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png",
+    "phash64": 15553201136944823326,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Red Desire GUTS SR/GUTS/SR/聖女の誓いは鋼より固く",
+    "key_step": "support/Red Desire GUTS SR/GUTS/SR/聖女の誓いは鋼より固く#s2",
+    "type": "support",
+    "name": "Red Desire GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "聖女の誓いは鋼より固く",
+    "chain_step": 2,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "skill_pts": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 15,
+          "guts": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "聖女の誓いは鋼より固く",
+    "image_path": "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png",
+    "phash64": 15553201136944823326,
+    "image_variants": [
+      "web\\public\\events\\support\\Red Desire GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Taiki Shuttle GUTS SR/GUTS/SR/Yes! Let's Hug ☆",
+    "key_step": "support/Taiki Shuttle GUTS SR/GUTS/SR/Yes! Let's Hug ☆#s1",
+    "type": "support",
+    "name": "Taiki Shuttle GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "Yes! Let's Hug ☆",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10
+        }
+      ],
+      "2": [
+        {
+          "speed": 5,
+          "power": 5
+        }
+      ]
+    },
+    "title_norm": "yes! let's hug *",
+    "image_path": "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png",
+    "phash64": 13600639514487069996,
+    "image_variants": [
+      "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Taiki Shuttle GUTS SR/GUTS/SR/Yeehaw! Party Tonight ☆",
+    "key_step": "support/Taiki Shuttle GUTS SR/GUTS/SR/Yeehaw! Party Tonight ☆#s1",
+    "type": "support",
+    "name": "Taiki Shuttle GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "Yeehaw! Party Tonight ☆",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": -10,
+          "speed": 5,
+          "power": 10
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Prepared to Pass (+1)"
+          ]
+        }
+      ]
+    },
+    "title_norm": "yeehaw! party tonight *",
+    "image_path": "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png",
+    "phash64": 13600639514487069996,
+    "image_variants": [
+      "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Taiki Shuttle GUTS SR/GUTS/SR/料理はラブ＆パワーwithスマイル",
+    "key_step": "support/Taiki Shuttle GUTS SR/GUTS/SR/料理はラブ＆パワーwithスマイル#s2",
+    "type": "support",
+    "name": "Taiki Shuttle GUTS SR",
+    "rarity": "SR",
+    "attribute": "GUTS",
+    "event_name": "料理はラブ＆パワーwithスマイル",
+    "chain_step": 2,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "guts": 5,
+          "skill_pts": 15,
+          "hints": [
+            "Resolute Stance (+1)"
+          ],
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "guts": 35,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "料理はラブ＆パワーwithスマイル",
+    "image_path": "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png",
+    "phash64": 13600639514487069996,
+    "image_variants": [
+      "web\\public\\events\\support\\Taiki Shuttle GUTS SR_GUTS_SR.png"
+    ],
+    "event_kind": "chain"
   },
   {
     "key": "support/Special Week GUTS SSR/GUTS/SSR/Watch Where You're Going!",
@@ -28718,7 +29154,7 @@
           "power": 5,
           "guts": 5,
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ],
           "bond": 5
         }
@@ -31404,7 +31840,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202412 (+1)"
+            "Ambitions (+1)"
           ],
           "bond": 5
         }
@@ -33243,7 +33679,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -33874,7 +34310,7 @@
           "stamina": 10,
           "wit": 10,
           "hints": [
-            "Skill ID: 202481 (+1)"
+            "Monster (+1)"
           ],
           "bond": 5
         }
@@ -34019,7 +34455,7 @@
           "wit": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 200184 (+1)"
+            "Summer Gale (+1)"
           ],
           "bond": 5
         }
@@ -34029,7 +34465,7 @@
           "guts": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202671 (+1)"
+            "High Voltage (+1)"
           ],
           "bond": 5
         }
@@ -34135,7 +34571,7 @@
           "stamina": 3,
           "power": 3,
           "hints": [
-            "Skill ID: 202681 (+1)"
+            "Seriously☆Good↑Vibes (+1)"
           ]
         }
       ]
@@ -34261,7 +34697,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202332 (+1)"
+            "Skillful Step (+1)"
           ],
           "bond": 5
         }
@@ -34308,7 +34744,7 @@
           "power": 5,
           "guts": 10,
           "hints": [
-            "Skill ID: 202301 (+1)"
+            "Leisurely Dust Bath (+1)"
           ],
           "bond": 5
         }
@@ -34339,7 +34775,7 @@
           "guts": 10,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 202301 (+3)"
+            "Leisurely Dust Bath (+3)"
           ],
           "bond": 5
         }
@@ -34518,7 +34954,7 @@
           "stamina": 20,
           "wit": 10,
           "hints": [
-            "Skill ID: 202421 (+2)"
+            "Lose Yourself (+2)"
           ],
           "bond": 5
         }
@@ -34596,7 +35032,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -34626,14 +35062,14 @@
           "speed": 10,
           "guts": 30,
           "hints": [
-            "Skill ID: 202621 (+3)"
+            "Blitzing Spirit (+3)"
           ],
           "bond": 5
         },
         {
           "guts": 20,
           "hints": [
-            "Skill ID: 202621 (+2)"
+            "Blitzing Spirit (+2)"
           ],
           "bond": 5
         }
@@ -34969,7 +35405,7 @@
           "speed": 20,
           "stamina": 20,
           "hints": [
-            "Skill ID: 202711 (+3)"
+            "Check (+3)"
           ],
           "bond": 5
         },
@@ -34977,7 +35413,7 @@
           "speed": 10,
           "stamina": 5,
           "hints": [
-            "Skill ID: 202711 (+1)"
+            "Check (+1)"
           ],
           "bond": 5
         }
@@ -35234,7 +35670,7 @@
           "energy": 20,
           "power": 15,
           "hints": [
-            "Skill ID: 201463 (+2)"
+            "Moonlight Slash (+2)"
           ],
           "bond": 5
         }
@@ -35868,7 +36304,7 @@
           "speed": 15,
           "power": 15,
           "hints": [
-            "Skill ID: 202541 (+1)"
+            "Dignified (+1)"
           ],
           "bond": 5
         }
@@ -35878,7 +36314,7 @@
           "energy": 15,
           "guts": 15,
           "hints": [
-            "Skill ID: 202751 (+1)"
+            "Unyielding Tenacity (+1)"
           ]
         }
       ]
@@ -35976,14 +36412,14 @@
           "wit": 30,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202761 (+3)"
+            "Send It Flying! (+3)"
           ],
           "bond": 5
         },
         {
           "wit": 20,
           "hints": [
-            "Skill ID: 202761 (+1)"
+            "Send It Flying! (+1)"
           ],
           "bond": 5
         }
@@ -36065,7 +36501,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202562 (+1)"
+            "Lock On (+1)"
           ],
           "bond": 5
         }
@@ -36450,7 +36886,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202622 (+2)"
+            "On the Move (+2)"
           ],
           "bond": 5
         }
@@ -36557,7 +36993,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202602 (+1)"
+            "Ignition (+1)"
           ],
           "bond": 5
         }
@@ -36594,7 +37030,7 @@
           "speed": 7,
           "power": 7,
           "hints": [
-            "Skill ID: 202721 (+1)"
+            "Never Give Up (+1)"
           ],
           "bond": 5
         }
@@ -37056,7 +37492,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202831 (+1)"
+            "Call & Response (+1)"
           ],
           "bond": 5
         }
@@ -37116,7 +37552,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ],
           "bond": 5
         }
@@ -37291,7 +37727,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202522 (+1)"
+            "Mold Breaker (+1)"
           ],
           "bond": 5
         }
@@ -37353,7 +37789,7 @@
         {
           "guts": 20,
           "hints": [
-            "Skill ID: 202552 (+1)"
+            "Rapid (+1)"
           ],
           "bond": 5
         }
@@ -37361,7 +37797,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202551 (+1)"
+            "Divine Speed (+1)"
           ],
           "bond": 5
         }
@@ -37631,7 +38067,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202602 (+1)"
+            "Ignition (+1)"
           ],
           "bond": 5
         }
@@ -37699,7 +38135,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202562 (+1)"
+            "Lock On (+1)"
           ],
           "bond": 5
         }
@@ -37862,7 +38298,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202762 (+1)"
+            "Toward Victory (+1)"
           ],
           "bond": 5
         }
@@ -38209,7 +38645,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202412 (+1)"
+            "Ambitions (+1)"
           ],
           "bond": 5
         }
@@ -38270,7 +38706,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202622 (+1)"
+            "On the Move (+1)"
           ],
           "bond": 5
         }
@@ -38444,7 +38880,7 @@
         {
           "stamina": 20,
           "hints": [
-            "Skill ID: 202562 (+1)"
+            "Lock On (+1)"
           ],
           "bond": 5
         }
@@ -38486,7 +38922,7 @@
         {
           "stamina": 10,
           "hints": [
-            "Skill ID: 202561 (+1)"
+            "One-shot (+1)"
           ],
           "bond": 5
         }
@@ -38683,7 +39119,7 @@
           "energy": 10,
           "guts": 10,
           "hints": [
-            "Skill ID: 202402 (+2)"
+            "Mighty Leap (+2)"
           ],
           "bond": 5
         }
@@ -38692,7 +39128,7 @@
         {
           "guts": 15,
           "hints": [
-            "Skill ID: 202401 (+1)"
+            "Lightning Speed (+1)"
           ],
           "bond": 5
         }
@@ -38760,7 +39196,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -38890,7 +39326,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202692 (+2)"
+            "Early Bird (+2)"
           ],
           "bond": 5
         }
@@ -38900,7 +39336,7 @@
           "stamina": 5,
           "power": 10,
           "hints": [
-            "Skill ID: 202691 (+1)"
+            "Further Than Anyone (+1)"
           ],
           "bond": 5
         }
@@ -39202,7 +39638,7 @@
           "power": 20,
           "guts": 20,
           "hints": [
-            "Skill ID: 203041 (+3)"
+            "Fluttering Heart (+3)"
           ],
           "bond": 5
         },
@@ -39210,7 +39646,7 @@
           "power": 10,
           "guts": 5,
           "hints": [
-            "Skill ID: 203041 (+1)"
+            "Fluttering Heart (+1)"
           ],
           "bond": 5
         }
@@ -39221,7 +39657,7 @@
           "power": 10,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 203031 (+3)"
+            "Frontal Attack (+3)"
           ],
           "bond": 5
         },
@@ -39229,7 +39665,7 @@
           "energy": 10,
           "power": 5,
           "hints": [
-            "Skill ID: 203031 (+1)"
+            "Frontal Attack (+1)"
           ],
           "bond": 5
         }
@@ -39257,7 +39693,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ],
           "bond": 5
         }
@@ -39363,7 +39799,7 @@
           "stamina": 10,
           "guts": 10,
           "hints": [
-            "Skill ID: 203052 (+2)"
+            "Unshakeable Faith (+2)"
           ],
           "bond": 5
         }
@@ -39373,7 +39809,7 @@
           "stamina": 10,
           "guts": 5,
           "hints": [
-            "Skill ID: 203051 (+1)"
+            "Unwavering Ambition (+1)"
           ],
           "bond": 5
         }
@@ -39511,7 +39947,7 @@
         {
           "mood": 1,
           "hints": [
-            "Skill ID: 202262 (+1)"
+            "Promising Omen (+1)"
           ],
           "bond": 5
         }
@@ -39541,13 +39977,13 @@
           "energy": 10,
           "wit": 10,
           "hints": [
-            "Skill ID: 202952 (+3)"
+            "Pioneer (+3)"
           ],
           "bond": 5
         },
         {
           "hints": [
-            "Skill ID: 202952 (+2)"
+            "Pioneer (+2)"
           ],
           "bond": 5
         }
@@ -39557,13 +39993,13 @@
           "energy": 10,
           "wit": 10,
           "hints": [
-            "Skill ID: 202842 (+3)"
+            "Dust Off (+3)"
           ],
           "bond": 5
         },
         {
           "hints": [
-            "Skill ID: 202842 (+2)"
+            "Dust Off (+2)"
           ],
           "bond": 5
         }
@@ -39593,7 +40029,7 @@
           "wit": 30,
           "speed": 10,
           "hints": [
-            "Skill ID: 202951 (+2)"
+            "Pioneer of the Sands (+2)"
           ],
           "bond": 5
         }
@@ -39604,7 +40040,7 @@
           "wit": 15,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 202841 (+2)"
+            "Sand Virtuoso (+2)"
           ],
           "bond": 5
         }
@@ -39664,7 +40100,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202332 (+1)"
+            "Skillful Step (+1)"
           ],
           "bond": 5
         }
@@ -39875,7 +40311,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202532 (+1)"
+            "Graceful Step (+1)"
           ],
           "bond": 5
         }
@@ -39905,7 +40341,7 @@
           "energy": 5,
           "speed": 15,
           "hints": [
-            "Skill ID: 203152 (+3)"
+            "Bare Passion (+3)"
           ],
           "bond": 5
         }
@@ -39915,7 +40351,7 @@
           "energy": 5,
           "power": 15,
           "hints": [
-            "Skill ID: 203142 (+3)"
+            "Self-Restraint (+3)"
           ],
           "bond": 5
         }
@@ -39952,7 +40388,7 @@
           "speed": 25,
           "power": 15,
           "hints": [
-            "Skill ID: 203151 (+2)"
+            "Pure Instincts (+2)"
           ],
           "bond": 5
         }
@@ -39962,7 +40398,7 @@
           "speed": 25,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203141 (+2)"
+            "Sharp-Witted Composure (+2)"
           ],
           "bond": 5
         }
@@ -39996,7 +40432,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "bond": 5
         }
@@ -40096,7 +40532,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202712 (+1)"
+            "Satisfying Pace (+1)"
           ],
           "bond": 5
         }
@@ -40191,7 +40627,7 @@
           "speed": 10,
           "wit": 10,
           "hints": [
-            "Skill ID: 203162 (+2)"
+            "Fearless Advance (+2)"
           ],
           "bond": 5
         }
@@ -40200,7 +40636,7 @@
         {
           "wit": 15,
           "hints": [
-            "Skill ID: 203161 (+1)"
+            "Peerless Boldness (+1)"
           ],
           "bond": 5
         }
@@ -40300,7 +40736,7 @@
           "power": 5,
           "guts": 5,
           "hints": [
-            "Skill ID: 202982 (+2)"
+            "Leap Premonition (+2)"
           ],
           "bond": 5
         }
@@ -40311,7 +40747,7 @@
           "power": 5,
           "guts": 5,
           "hints": [
-            "Skill ID: 202981 (+1)"
+            "Gamma Ray Burst (+1)"
           ],
           "bond": 5
         }
@@ -40342,7 +40778,7 @@
           "power": 10,
           "guts": 10,
           "hints": [
-            "Skill ID: 202981 (+3)"
+            "Gamma Ray Burst (+3)"
           ],
           "bond": 5
         }
@@ -40516,7 +40952,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202842 (+1)"
+            "Dust Off (+1)"
           ],
           "bond": 5
         }
@@ -40587,7 +41023,7 @@
           "stamina": 20,
           "power": 20,
           "hints": [
-            "Skill ID: 202331 (+2)"
+            "Outstanding Step (+2)"
           ],
           "bond": 5
         }
@@ -40598,7 +41034,7 @@
           "power": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203181 (+2)"
+            "Embracing Virtue and Vice (+2)"
           ],
           "bond": 5
         }
@@ -40868,8 +41304,8 @@
         {
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 203242 (+2)",
-            "Skill ID: 203252 (+2)"
+            "Fuse (+2)",
+            "Surprise Attack (+2)"
           ],
           "bond": 5
         }
@@ -40904,7 +41340,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203241 (+2)"
+            "Chain Reaction (+2)"
           ],
           "bond": 5
         }
@@ -40914,7 +41350,7 @@
           "energy": 15,
           "stamina": 25,
           "hints": [
-            "Skill ID: 203251 (+2)"
+            "Like a Blaze (+2)"
           ],
           "bond": 5
         }
@@ -41053,7 +41489,7 @@
           "speed": 10,
           "wit": 20,
           "hints": [
-            "Skill ID: 202821 (+3)"
+            "One Sky, One Goal (+3)"
           ],
           "bond": 5
         },
@@ -41061,7 +41497,7 @@
           "energy": 5,
           "wit": 10,
           "hints": [
-            "Skill ID: 202821 (+1)"
+            "One Sky, One Goal (+1)"
           ],
           "bond": 5
         }
@@ -41210,7 +41646,7 @@
         {
           "energy": 10,
           "hints": [
-            "Skill ID: 202422 (+2)"
+            "Devil-May-Care (+2)"
           ],
           "bond": 5
         }
@@ -41219,7 +41655,7 @@
         {
           "stamina": 10,
           "hints": [
-            "Skill ID: 202642 (+2)"
+            "From the First Step (+2)"
           ],
           "bond": 5
         }
@@ -41249,7 +41685,7 @@
           "stamina": 30,
           "power": 10,
           "hints": [
-            "Skill ID: 202421 (+2)"
+            "Lose Yourself (+2)"
           ],
           "bond": 5
         }
@@ -41259,7 +41695,7 @@
           "power": 25,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202641 (+2)"
+            "Thousand-Mile Journey (+2)"
           ],
           "bond": 5
         }
@@ -41472,7 +41908,7 @@
           "speed": 5,
           "power": 5,
           "hints": [
-            "Skill ID: 202622 (+2)"
+            "On the Move (+2)"
           ],
           "bond": 5
         }
@@ -41481,7 +41917,7 @@
         {
           "speed": 15,
           "hints": [
-            "Skill ID: 202621 (+1)"
+            "Blitzing Spirit (+1)"
           ],
           "bond": 5
         }
@@ -41685,7 +42121,7 @@
         {
           "guts": 10,
           "hints": [
-            "Skill ID: 203422 (+2)"
+            "Believe in Yourself (+2)"
           ],
           "bond": 5
         }
@@ -41715,7 +42151,7 @@
           "speed": 5,
           "power": 5,
           "hints": [
-            "Skill ID: 203412 (+2)"
+            "Steady Effort (+2)"
           ],
           "bond": 5
         }
@@ -41751,7 +42187,7 @@
         {
           "guts": 40,
           "hints": [
-            "Skill ID: 203411 (+2)"
+            "Fruits of Labor (+2)"
           ],
           "bond": 5
         }
@@ -41763,7 +42199,7 @@
           "guts": 10,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 203421 (+2)"
+            "Forthright (+2)"
           ],
           "bond": 5
         }
@@ -41855,7 +42291,7 @@
         {
           "energy": 5,
           "hints": [
-            "Skill ID: 202712 (+1)"
+            "Satisfying Pace (+1)"
           ],
           "bond": 5
         }
@@ -41901,13 +42337,13 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202711 (+3)"
+            "Check (+3)"
           ],
           "bond": 5
         },
         {
           "hints": [
-            "Skill ID: 202711 (+1)"
+            "Check (+1)"
           ],
           "bond": 5
         }
@@ -41918,7 +42354,7 @@
           "wit": 20,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 201652 (+3)"
+            "In the Right Place! (+3)"
           ],
           "bond": 5
         },
@@ -41926,7 +42362,7 @@
           "speed": 5,
           "wit": 10,
           "hints": [
-            "Skill ID: 201652 (+1)"
+            "In the Right Place! (+1)"
           ],
           "bond": 5
         }
@@ -42024,7 +42460,7 @@
           "stamina": 20,
           "power": 20,
           "hints": [
-            "Skill ID: 202741 (+2)"
+            "Pure Perfection (+2)"
           ],
           "bond": 5
         }
@@ -42034,7 +42470,7 @@
           "power": 25,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203131 (+2)"
+            "Curtain Closer (+2)"
           ],
           "bond": 5
         }
@@ -42145,7 +42581,7 @@
         {
           "speed": 30,
           "hints": [
-            "Skill ID: 202802 (+1)"
+            "Opening Leg Adept (+1)"
           ],
           "bond": 5
         }
@@ -42211,7 +42647,7 @@
           "power": 10,
           "guts": 20,
           "hints": [
-            "Skill ID: 203491 (+2)"
+            "Fierce Clash (+2)"
           ],
           "bond": 5
         }
@@ -42455,7 +42891,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202422 (+1)"
+            "Devil-May-Care (+1)"
           ],
           "bond": 5
         }
@@ -42657,7 +43093,7 @@
         {
           "power": 5,
           "hints": [
-            "Skill ID: 202802 (+1)"
+            "Opening Leg Adept (+1)"
           ],
           "bond": 5
         }
@@ -42766,7 +43202,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202742 (+1)"
+            "Refined Conduct (+1)"
           ],
           "bond": 5
         }
@@ -42839,8 +43275,8 @@
           "speed": 25,
           "power": 10,
           "hints": [
-            "Skill ID: 202701 (+2)",
-            "Skill ID: 203431 (+2)"
+            "Singularity (+2)",
+            "Brilliant Mind (+2)"
           ],
           "bond": 5
         },
@@ -42848,8 +43284,8 @@
           "energy": 5,
           "speed": 10,
           "hints": [
-            "Skill ID: 202701 (+1)",
-            "Skill ID: 203431 (+1)"
+            "Singularity (+1)",
+            "Brilliant Mind (+1)"
           ],
           "bond": 5
         }
@@ -43031,7 +43467,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202902 (+1)"
+            "Sufficient Thrust (+1)"
           ],
           "bond": 5
         }
@@ -43074,7 +43510,7 @@
         {
           "energy": 5,
           "hints": [
-            "Skill ID: 202382 (+2)"
+            "Breakthrough Plan (+2)"
           ],
           "bond": 5
         }
@@ -43104,8 +43540,8 @@
           "energy": 5,
           "speed": 20,
           "hints": [
-            "Skill ID: 202881 (+1)",
-            "Skill ID: 202931 (+1)"
+            "Complete Combustion (+1)",
+            "Relentless Approach (+1)"
           ],
           "bond": 5
         }
@@ -43207,7 +43643,7 @@
           "energy": 5,
           "speed": 10,
           "hints": [
-            "Skill ID: 201183 (+1)"
+            "Wind Slash (+1)"
           ],
           "bond": 5
         }
@@ -43280,7 +43716,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203362 (+1)"
+            "Forward Step by Step (+1)"
           ],
           "bond": 5
         }
@@ -43412,7 +43848,7 @@
         {
           "guts": 15,
           "hints": [
-            "Skill ID: 202952 (+1)"
+            "Pioneer (+1)"
           ],
           "bond": 5
         }
@@ -43454,7 +43890,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "bond": 5
         }
@@ -43517,7 +43953,7 @@
           "stamina": 10,
           "power": 30,
           "hints": [
-            "Skill ID: 202871 (+2)"
+            "Reign (+2)"
           ],
           "bond": 5
         }
@@ -43594,7 +44030,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202842 (+1)"
+            "Dust Off (+1)"
           ],
           "bond": 5
         }
@@ -43761,7 +44197,7 @@
           "energy": 15,
           "guts": 25,
           "hints": [
-            "Skill ID: 203381 (+2)"
+            "The Fight's Not Over Yet! (+2)"
           ],
           "bond": 5
         }
@@ -43935,7 +44371,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ],
           "bond": 5
         }
@@ -43971,7 +44407,7 @@
           "energy": 10,
           "wit": 20,
           "hints": [
-            "Skill ID: 202502 (+3)"
+            "Rushing in Blind (+3)"
           ],
           "bond": 5
         }
@@ -43981,7 +44417,7 @@
           "speed": 5,
           "wit": 25,
           "hints": [
-            "Skill ID: 202501 (+1)"
+            "Reckless (+1)"
           ],
           "bond": 5
         }
@@ -44287,7 +44723,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203172 (+1)"
+            "Switch Over Pro (+1)"
           ],
           "bond": 5
         }
@@ -44528,7 +44964,7 @@
         {
           "wit": 15,
           "hints": [
-            "Skill ID: 203502 (+1)"
+            "Peerless (+1)"
           ],
           "bond": 5
         }
@@ -44764,7 +45200,7 @@
         {
           "energy": 10,
           "hints": [
-            "Skill ID: 203502 (+1)"
+            "Peerless (+1)"
           ],
           "bond": 5
         }
@@ -44800,15 +45236,15 @@
         {
           "energy": 10,
           "hints": [
-            "Skill ID: 202721 (+2)",
-            "Skill ID: 203851 (+2)"
+            "Never Give Up (+2)",
+            "Curiosity (+2)"
           ],
           "bond": 5
         },
         {
           "hints": [
-            "Skill ID: 202721 (+1)",
-            "Skill ID: 203851 (+1)"
+            "Never Give Up (+1)",
+            "Curiosity (+1)"
           ],
           "bond": 5
         }
@@ -44819,8 +45255,8 @@
           "stamina": 15,
           "guts": 20,
           "hints": [
-            "Skill ID: 202721 (+2)",
-            "Skill ID: 203861 (+2)"
+            "Never Give Up (+2)",
+            "Freewheeling (+2)"
           ],
           "bond": 5
         },
@@ -44828,8 +45264,8 @@
           "stamina": 5,
           "guts": 10,
           "hints": [
-            "Skill ID: 202721 (+1)",
-            "Skill ID: 203861 (+1)"
+            "Never Give Up (+1)",
+            "Freewheeling (+1)"
           ],
           "bond": 5
         }
@@ -44934,7 +45370,7 @@
         {
           "speed": 15,
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "bond": 5
         }
@@ -44996,7 +45432,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203112 (+1)"
+            "Frontal Breakthrough (+1)"
           ],
           "bond": 5
         }
@@ -45130,7 +45566,7 @@
           "energy": 10,
           "speed": 5,
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ],
           "bond": 5
         }
@@ -45203,7 +45639,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203582 (+1)"
+            "Capture (+1)"
           ],
           "bond": 5
         }
@@ -45232,7 +45668,7 @@
         {
           "wit": 15,
           "hints": [
-            "Skill ID: 202402 (+1)"
+            "Mighty Leap (+1)"
           ],
           "bond": 5
         }
@@ -45241,7 +45677,7 @@
         {
           "energy": 15,
           "hints": [
-            "Skill ID: 203762 (+1)"
+            "Give Chase (+1)"
           ],
           "bond": 5
         }
@@ -45279,7 +45715,7 @@
           "wit": 20,
           "hints": [
             "Moonlit Flash (+1)",
-            "Skill ID: 202401 (+1)"
+            "Lightning Speed (+1)"
           ],
           "bond": 5
         }
@@ -45290,7 +45726,7 @@
           "wit": 10,
           "hints": [
             "Moonlit Flash (+1)",
-            "Skill ID: 203761 (+1)"
+            "Swift Decision (+1)"
           ],
           "bond": 5
         }
@@ -45318,7 +45754,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ],
           "bond": 5
         }
@@ -45622,7 +46058,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203122 (+1)"
+            "To Greater Heights (+1)"
           ],
           "bond": 5
         }
@@ -45796,7 +46232,7 @@
           "mood": 1,
           "status": "Unknown Status 32",
           "hints": [
-            "Skill ID: 202802 (+5)"
+            "Opening Leg Adept (+5)"
           ],
           "bond": 5
         }
@@ -46003,7 +46439,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202772 (+1)"
+            "Honing In (+1)"
           ],
           "bond": 5
         }
@@ -46031,7 +46467,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203412 (+1)"
+            "Steady Effort (+1)"
           ],
           "stamina": 15,
           "bond": 10
@@ -46106,7 +46542,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202522 (+1)"
+            "Mold Breaker (+1)"
           ],
           "bond": 5
         }
@@ -46306,7 +46742,7 @@
         {
           "stamina": 15,
           "hints": [
-            "Skill ID: 202592 (+1)"
+            "Great Haste (+1)"
           ],
           "bond": 10
         }
@@ -46413,7 +46849,7 @@
           "power": 20,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203032 (+1)"
+            "An Honest Step (+1)"
           ],
           "bond": 5
         }
@@ -46452,8 +46888,8 @@
           "power": 5,
           "skill_pts": 10,
           "hints": [
-            "Skill ID: 202761 (+1)",
-            "Skill ID: 204071 (+1)"
+            "Send It Flying! (+1)",
+            "Smooth Sailing (+1)"
           ],
           "bond": 5
         }
@@ -46461,9 +46897,9 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 204072 (+5)",
-            "Skill ID: 210101 (+5)",
-            "Skill ID: 210262 (+5)"
+            "With Feelings Aboard (+5)",
+            "Essence of Racing・Stamina (+5)",
+            "Blessing of the Sun (+5)"
           ],
           "bond": 5
         }
@@ -46657,7 +47093,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202622 (+1)"
+            "On the Move (+1)"
           ],
           "bond": 5
         }
@@ -46741,7 +47177,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203362 (+1)"
+            "Forward Step by Step (+1)"
           ],
           "bond": 5
         }
@@ -46823,6 +47259,377 @@
       "web\\public\\events\\support\\Silence Suzuka WIT SSR_WIT_SSR.png"
     ],
     "event_kind": "random"
+  },
+  {
+    "key": "support/Forever Young WIT SSR/WIT/SSR/見つけた！ブルーオーシャン",
+    "key_step": "support/Forever Young WIT SSR/WIT/SSR/見つけた！ブルーオーシャン#s1",
+    "type": "support",
+    "name": "Forever Young WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "event_name": "見つけた！ブルーオーシャン",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": 10,
+          "guts": 10,
+          "wit": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 20,
+          "skill_pts": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "見つけた！ブルーオーシャン",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png",
+    "phash64": 11797444397829932487,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Forever Young WIT SSR/WIT/SSR/やっちゃお！イノベーション！",
+    "key_step": "support/Forever Young WIT SSR/WIT/SSR/やっちゃお！イノベーション！#s1",
+    "type": "support",
+    "name": "Forever Young WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "event_name": "やっちゃお！イノベーション！",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "wit": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "With a Light in My Heart (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "やっちゃお！イノベーション！",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png",
+    "phash64": 11797444397829932487,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Forever Young WIT SSR/WIT/SSR/Young & Unstoppable",
+    "key_step": "support/Forever Young WIT SSR/WIT/SSR/Young & Unstoppable#s1",
+    "type": "support",
+    "name": "Forever Young WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "event_name": "Young & Unstoppable",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "mood": 1,
+          "energy": 20,
+          "wit": 10,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "mood": 1,
+          "wit": 5,
+          "hints": [
+            "Vitality (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "young & unstoppable",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png",
+    "phash64": 11797444397829932487,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Forever Young WIT SSR/WIT/SSR/Only Thing That Matters",
+    "key_step": "support/Forever Young WIT SSR/WIT/SSR/Only Thing That Matters#s2",
+    "type": "support",
+    "name": "Forever Young WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "event_name": "Only Thing That Matters",
+    "chain_step": 2,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "mood": 1,
+          "energy": 25,
+          "wit": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "wit": 35,
+          "skill_pts": 10,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "only thing that matters",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png",
+    "phash64": 11797444397829932487,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Forever Young WIT SSR/WIT/SSR/Dreams are Forever",
+    "key_step": "support/Forever Young WIT SSR/WIT/SSR/Dreams are Forever#s3",
+    "type": "support",
+    "name": "Forever Young WIT SSR",
+    "rarity": "SSR",
+    "attribute": "WIT",
+    "event_name": "Dreams are Forever",
+    "chain_step": 3,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "hints": [
+            "Backup Planning (+5)",
+            "Skill ID: 204192 (+5)",
+            "Call & Response (+2)",
+            "Skill ID: 204191 (+2)"
+          ],
+          "bond": 5
+        },
+        {
+          "hints": [
+            "Backup Planning (+1)",
+            "Skill ID: 204192 (+1)",
+            "Call & Response (+1)",
+            "Skill ID: 204191 (+1)"
+          ],
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 10,
+          "speed": 10,
+          "wit": 25,
+          "hints": [
+            "Tail Nine (+2)",
+            "Skill ID: 204181 (+2)"
+          ],
+          "bond": 5
+        },
+        {
+          "speed": 5,
+          "wit": 10,
+          "hints": [
+            "Tail Nine (+1)",
+            "Skill ID: 204181 (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "dreams are forever",
+    "image_path": "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png",
+    "phash64": 11797444397829932487,
+    "image_variants": [
+      "web\\public\\events\\support\\Forever Young WIT SSR_WIT_SSR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Victoire Pisa SPD SSR/SPD/SSR/すべての心が温もりに包まれますように",
+    "key_step": "support/Victoire Pisa SPD SSR/SPD/SSR/すべての心が温もりに包まれますように#s1",
+    "type": "support",
+    "name": "Victoire Pisa SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "event_name": "すべての心が温もりに包まれますように",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "skill_pts": 20,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "stamina": 5,
+          "power": 15,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "すべての心が温もりに包まれますように",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png",
+    "phash64": 12457970168204947507,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Victoire Pisa SPD SSR/SPD/SSR/優しさは陽だまりのように",
+    "key_step": "support/Victoire Pisa SPD SSR/SPD/SSR/優しさは陽だまりのように#s1",
+    "type": "support",
+    "name": "Victoire Pisa SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "event_name": "優しさは陽だまりのように",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 15,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Intrigued (+1)"
+          ],
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "優しさは陽だまりのように",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png",
+    "phash64": 12457970168204947507,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png"
+    ],
+    "event_kind": "random"
+  },
+  {
+    "key": "support/Victoire Pisa SPD SSR/SPD/SSR/天使の導き",
+    "key_step": "support/Victoire Pisa SPD SSR/SPD/SSR/天使の導き#s1",
+    "type": "support",
+    "name": "Victoire Pisa SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "event_name": "天使の導き",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "speed": 10,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 10,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "天使の導き",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png",
+    "phash64": 12457970168204947507,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Victoire Pisa SPD SSR/SPD/SSR/導きはグルグル回ル",
+    "key_step": "support/Victoire Pisa SPD SSR/SPD/SSR/導きはグルグル回ル#s2",
+    "type": "support",
+    "name": "Victoire Pisa SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "event_name": "導きはグルグル回ル",
+    "chain_step": 2,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": 5,
+          "speed": 5,
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "skill_pts": 10,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "導きはグルグル回ル",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png",
+    "phash64": 12457970168204947507,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png"
+    ],
+    "event_kind": "chain"
+  },
+  {
+    "key": "support/Victoire Pisa SPD SSR/SPD/SSR/繋がりは輪になって",
+    "key_step": "support/Victoire Pisa SPD SSR/SPD/SSR/繋がりは輪になって#s3",
+    "type": "support",
+    "name": "Victoire Pisa SPD SSR",
+    "rarity": "SSR",
+    "attribute": "SPD",
+    "event_name": "繋がりは輪になって",
+    "chain_step": 3,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "speed": 15,
+          "hints": [
+            "Pathfinder (+1)"
+          ],
+          "bond": 5
+        }
+      ],
+      "2": [
+        {
+          "mood": 1,
+          "speed": 20,
+          "bond": 5
+        }
+      ]
+    },
+    "title_norm": "繋がりは輪になって",
+    "image_path": "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png",
+    "phash64": 12457970168204947507,
+    "image_variants": [
+      "web\\public\\events\\support\\Victoire Pisa SPD SSR_SPD_SSR.png"
+    ],
+    "event_kind": "chain"
   },
   {
     "key": "trainee/Special Week/None/None/How Should I Pose?",
@@ -55966,7 +56773,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202372 (+1)"
+            "Attack Stance (+1)"
           ]
         },
         {
@@ -56006,7 +56813,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+2)"
+            "Tooth and Tail (+2)"
           ],
           "status": "Charming ○"
         }
@@ -66476,7 +67283,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203132 (+1)"
+            "Decisive Blow (+1)"
           ]
         }
       ],
@@ -66484,7 +67291,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ]
         }
       ]
@@ -66551,14 +67358,14 @@
           "guts": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 202982 (+1)"
+            "Leap Premonition (+1)"
           ],
           "status": "Fast Learner"
         },
         {
           "guts": 5,
           "hints": [
-            "Skill ID: 202982 (+1)"
+            "Leap Premonition (+1)"
           ]
         }
       ]
@@ -83444,7 +84251,7 @@
         {
           "guts": 10,
           "hints": [
-            "Skill ID: 202592 (+1)"
+            "Great Haste (+1)"
           ]
         }
       ]
@@ -105554,7 +106361,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 202302 (+2)"
+            "Dust Bath ○ (+2)"
           ],
           "status": "Charming ○"
         }
@@ -116986,7 +117793,7 @@
         {
           "wit": 5,
           "hints": [
-            "Skill ID: 202192 (+1)"
+            "Faultless (+1)"
           ],
           "status": "Fast Learner"
         }
@@ -133331,7 +134138,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202672 (+2)"
+            "High Hopes (+2)"
           ],
           "status": "Charming ○"
         }
@@ -137064,7 +137871,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202772 (+3)"
+            "Honing In (+3)"
           ],
           "status": "Hot Topic"
         }
@@ -140810,19 +141617,19 @@
           "speed": 5,
           "stamina": 10,
           "hints": [
-            "Skill ID: 203392 (+3)"
+            "Unprecedented (+3)"
           ]
         },
         {
           "hints": [
-            "Skill ID: 203392 (+1)"
+            "Unprecedented (+1)"
           ]
         }
       ],
       "2": [
         {
           "hints": [
-            "Skill ID: 203392 (+1)"
+            "Unprecedented (+1)"
           ]
         }
       ]
@@ -147066,7 +147873,7 @@
         {
           "speed": 20,
           "hints": [
-            "Skill ID: 202882 (+2)"
+            "Boiling Blood (+2)"
           ]
         }
       ],
@@ -153393,7 +154200,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202452 (+2)"
+            "Razor-Sharp Stride (+2)"
           ],
           "status": "Charming ○"
         }
@@ -168302,7 +169109,7 @@
         {
           "guts": 10,
           "hints": [
-            "Skill ID: 202622 (+1)"
+            "On the Move (+1)"
           ]
         }
       ],
@@ -168310,7 +169117,7 @@
         {
           "energy": 10,
           "hints": [
-            "Skill ID: 202622 (+1)"
+            "On the Move (+1)"
           ]
         }
       ],
@@ -174636,7 +175443,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ]
         }
       ]
@@ -184537,7 +185344,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202262 (+1)"
+            "Promising Omen (+1)"
           ],
           "status": "Fast Learner"
         }
@@ -184546,7 +185353,7 @@
         {
           "energy": 15,
           "hints": [
-            "Skill ID: 202262 (+1)"
+            "Promising Omen (+1)"
           ],
           "status": "Fast Learner"
         }
@@ -185884,7 +186691,7 @@
       "3": [
         {
           "hints": [
-            "Skill ID: 202412 (+2)"
+            "Ambitions (+2)"
           ]
         }
       ]
@@ -187112,7 +187919,7 @@
       "3": [
         {
           "hints": [
-            "Skill ID: 202412 (+2)"
+            "Ambitions (+2)"
           ]
         }
       ]
@@ -190547,7 +191354,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203632 (+2)"
+            "Dream-Fulfilling Challenge (+2)"
           ],
           "status": "Charming ○"
         }
@@ -190555,7 +191362,7 @@
       "3": [
         {
           "hints": [
-            "Skill ID: 203562 (+2)"
+            "Fierce Struggle (+2)"
           ],
           "status": "Charming ○"
         }
@@ -190582,13 +191389,13 @@
         {
           "energy": 10,
           "hints": [
-            "Skill ID: 202662 (+2)"
+            "Rising Passion (+2)"
           ]
         },
         {
           "energy": 5,
           "hints": [
-            "Skill ID: 202662 (+1)"
+            "Rising Passion (+1)"
           ]
         }
       ],
@@ -199409,7 +200216,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202412 (+2)"
+            "Ambitions (+2)"
           ],
           "status": "Hot Topic"
         }
@@ -227883,7 +228690,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+2)"
+            "Tooth and Tail (+2)"
           ],
           "status": "Practice Perfect ○"
         }
@@ -230289,7 +231096,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202742 (+1)"
+            "Refined Conduct (+1)"
           ]
         }
       ]
@@ -230315,7 +231122,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202502 (+1)"
+            "Rushing in Blind (+1)"
           ],
           "status": "Unknown Status 32"
         }
@@ -230324,7 +231131,7 @@
         {
           "wit": 10,
           "hints": [
-            "Skill ID: 203052 (+1)"
+            "Unshakeable Faith (+1)"
           ],
           "status": "Unknown Status 32"
         }
@@ -235201,7 +236008,7 @@
         {
           "power": 15,
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ]
         }
       ],
@@ -235209,7 +236016,7 @@
         {
           "wit": 15,
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ]
         }
       ]
@@ -240049,7 +240856,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 202622 (+2)"
+            "On the Move (+2)"
           ],
           "status": "Fast Learner"
         }
@@ -243783,7 +244590,7 @@
         {
           "guts": 15,
           "hints": [
-            "Skill ID: 202462 (+1)"
+            "Steadfast (+1)"
           ]
         },
         {
@@ -248815,7 +249622,7 @@
         {
           "guts": 5,
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "status": "Practice Perfect ○"
         }
@@ -248824,7 +249631,7 @@
         {
           "energy": 15,
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "status": "Practice Perfect ○"
         }
@@ -255285,7 +256092,7 @@
           "mood": 1,
           "skill_pts": 25,
           "hints": [
-            "Skill ID: 202662 (+2)"
+            "Rising Passion (+2)"
           ]
         }
       ]
@@ -260014,7 +260821,7 @@
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 203242 (+1)"
+            "Fuse (+1)"
           ]
         }
       ]
@@ -260040,7 +260847,7 @@
         {
           "stamina": 10,
           "hints": [
-            "Skill ID: 203562 (+1)"
+            "Fierce Struggle (+1)"
           ],
           "status": "Unknown Status 25"
         }
@@ -260049,7 +260856,7 @@
         {
           "power": 10,
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ],
           "status": "Unknown Status 25"
         }
@@ -261388,7 +262195,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202662 (+1)"
+            "Rising Passion (+1)"
           ]
         }
       ]
@@ -262525,7 +263332,7 @@
         {
           "power": 20,
           "hints": [
-            "Skill ID: 202982 (+2)"
+            "Leap Premonition (+2)"
           ]
         }
       ]
@@ -262611,7 +263418,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202662 (+1)"
+            "Rising Passion (+1)"
           ]
         }
       ]
@@ -264951,7 +265758,7 @@
         {
           "wit": 10,
           "hints": [
-            "Skill ID: 203162 (+1)"
+            "Fearless Advance (+1)"
           ],
           "status": "Unknown Status 32"
         }
@@ -266258,7 +267065,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203182 (+1)"
+            "Contradicting Emotions (+1)"
           ]
         }
       ]
@@ -267505,7 +268312,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202832 (+1)"
+            "Backup Planning (+1)"
           ]
         }
       ]
@@ -268678,7 +269485,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202832 (+1)"
+            "Backup Planning (+1)"
           ]
         }
       ]
@@ -269937,7 +270744,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203602 (+1)"
+            "Sand Stride (+1)"
           ]
         }
       ]
@@ -269974,7 +270781,7 @@
         {
           "mood": 1,
           "hints": [
-            "Skill ID: 202502 (+1)"
+            "Rushing in Blind (+1)"
           ]
         }
       ]
@@ -271184,7 +271991,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202372 (+1)"
+            "Attack Stance (+1)"
           ]
         }
       ]
@@ -280937,7 +281744,7 @@
           "guts": 10,
           "wit": 10,
           "hints": [
-            "Skill ID: 203232 (+1)"
+            "Restless Step (+1)"
           ]
         }
       ],
@@ -280945,7 +281752,7 @@
         {
           "energy": 20,
           "hints": [
-            "Skill ID: 203232 (+1)"
+            "Restless Step (+1)"
           ]
         }
       ]
@@ -284780,7 +285587,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ]
         }
       ]
@@ -286034,7 +286841,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ]
         }
       ]
@@ -289710,7 +290517,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203032 (+1)"
+            "An Honest Step (+1)"
           ]
         }
       ]
@@ -290958,7 +291765,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ]
         }
       ]
@@ -292054,7 +292861,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202472 (+1)"
+            "Tooth and Tail (+1)"
           ]
         }
       ]
@@ -292141,7 +292948,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202612 (+1)"
+            "Overflowing Passion (+1)"
           ]
         }
       ]
@@ -297087,7 +297894,7 @@
           "guts": 20,
           "hints": [
             "Take the Chance (+1)",
-            "Skill ID: 202452 (+1)"
+            "Razor-Sharp Stride (+1)"
           ]
         },
         {
@@ -297101,7 +297908,7 @@
         {
           "guts": 5,
           "hints": [
-            "Skill ID: 202452 (+1)"
+            "Razor-Sharp Stride (+1)"
           ]
         }
       ]
@@ -298311,7 +299118,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203712 (+1)"
+            "One Brave Step (+1)"
           ]
         }
       ]
@@ -300769,7 +301576,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203332 (+1)"
+            "Preliminary Preparation (+1)"
           ]
         }
       ]
@@ -302037,7 +302844,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202332 (+1)"
+            "Skillful Step (+1)"
           ]
         }
       ]
@@ -303132,7 +303939,7 @@
       "1": [
         {
           "hints": [
-            "Skill ID: 203103 (+1)"
+            "Dirt Corners ○ (+1)"
           ],
           "status": "Unknown Status 26"
         }
@@ -303147,7 +303954,7 @@
         {
           "energy": 15,
           "hints": [
-            "Skill ID: 203103 (+1)"
+            "Dirt Corners ○ (+1)"
           ],
           "status": "Unknown Status 26"
         }
@@ -303238,7 +304045,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202332 (+1)"
+            "Skillful Step (+1)"
           ]
         }
       ]
@@ -304449,7 +305256,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202312 (+1)"
+            "Full of Zeal (+1)"
           ]
         }
       ]
@@ -305669,7 +306476,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202312 (+1)"
+            "Full of Zeal (+1)"
           ]
         }
       ]
@@ -306917,7 +307724,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202343 (+1)"
+            "Mud Play ○ (+1)"
           ]
         }
       ]
@@ -308148,7 +308955,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202343 (+1)"
+            "Mud Play ○ (+1)"
           ]
         }
       ]
@@ -309386,7 +310193,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202642 (+1)"
+            "From the First Step (+1)"
           ]
         }
       ]
@@ -310509,7 +311316,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202642 (+1)"
+            "From the First Step (+1)"
           ]
         }
       ]
@@ -311718,7 +312525,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203422 (+1)"
+            "Believe in Yourself (+1)"
           ]
         }
       ]
@@ -311745,12 +312552,12 @@
           "wit": 20,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 204072 (+3)"
+            "With Feelings Aboard (+3)"
           ]
         },
         {
           "hints": [
-            "Skill ID: 204072 (+1)"
+            "With Feelings Aboard (+1)"
           ]
         }
       ],
@@ -322807,7 +323614,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202932 (+1)"
+            "Shadowstepper (+1)"
           ]
         }
       ]
@@ -324016,7 +324823,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ]
         }
       ]
@@ -325143,14 +325950,14 @@
           "speed": 25,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203472 (+2)"
+            "Overflowing Fighting Spirit (+2)"
           ]
         },
         {
           "speed": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203472 (+1)"
+            "Overflowing Fighting Spirit (+1)"
           ]
         },
         {
@@ -325163,13 +325970,13 @@
           "speed": 10,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203472 (+1)"
+            "Overflowing Fighting Spirit (+1)"
           ]
         },
         {
           "speed": 10,
           "hints": [
-            "Skill ID: 203472 (+1)"
+            "Overflowing Fighting Spirit (+1)"
           ]
         }
       ],
@@ -325301,7 +326108,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202672 (+1)"
+            "High Hopes (+1)"
           ]
         }
       ]
@@ -326543,7 +327350,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202452 (+1)"
+            "Razor-Sharp Stride (+1)"
           ]
         }
       ]
@@ -327672,7 +328479,7 @@
           "stamina": 10,
           "power": 10,
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ]
         }
       ],
@@ -327680,7 +328487,7 @@
         {
           "energy": 20,
           "hints": [
-            "Skill ID: 203222 (+1)"
+            "Aggressive (+1)"
           ]
         }
       ]
@@ -327801,7 +328608,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202452 (+1)"
+            "Razor-Sharp Stride (+1)"
           ]
         }
       ]
@@ -331512,7 +332319,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 203522 (+1)"
+            "Glimpse of Light (+1)"
           ]
         }
       ]
@@ -332754,7 +333561,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202662 (+1)"
+            "Rising Passion (+1)"
           ]
         }
       ]
@@ -332793,7 +333600,7 @@
       "3": [
         {
           "hints": [
-            "Skill ID: 202922 (+2)"
+            "No Reluctance (+2)"
           ]
         }
       ],
@@ -335218,7 +336025,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202892 (+1)"
+            "Immovable Spirit (+1)"
           ]
         }
       ]
@@ -335245,7 +336052,7 @@
           "speed": 5,
           "skill_pts": 25,
           "hints": [
-            "Skill ID: 202522 (+2)"
+            "Mold Breaker (+2)"
           ]
         }
       ],
@@ -336461,7 +337268,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202922 (+1)"
+            "No Reluctance (+1)"
           ]
         }
       ]
@@ -337571,20 +338378,20 @@
           "stamina": 20,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203582 (+1)"
+            "Capture (+1)"
           ],
           "status": "Unknown Status 26"
         },
         {
           "stamina": 5,
           "hints": [
-            "Skill ID: 203582 (+1)"
+            "Capture (+1)"
           ]
         },
         {
           "energy": -5,
           "hints": [
-            "Skill ID: 203582 (+1)"
+            "Capture (+1)"
           ]
         }
       ]
@@ -337712,7 +338519,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202922 (+1)"
+            "No Reluctance (+1)"
           ]
         }
       ]
@@ -338962,7 +339769,7 @@
       "2": [
         {
           "hints": [
-            "Skill ID: 202992 (+1)"
+            "Straight Course ○ (+1)"
           ]
         }
       ]
@@ -342546,18 +343353,18 @@
           "power": 10,
           "guts": 10,
           "hints": [
-            "Skill ID: 203422 (+1)"
+            "Believe in Yourself (+1)"
           ]
         },
         {
           "guts": 10,
           "hints": [
-            "Skill ID: 203422 (+1)"
+            "Believe in Yourself (+1)"
           ]
         },
         {
           "hints": [
-            "Skill ID: 203422 (+1)"
+            "Believe in Yourself (+1)"
           ]
         }
       ],
@@ -342565,7 +343372,7 @@
         {
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203422 (+1)"
+            "Believe in Yourself (+1)"
           ]
         }
       ]
@@ -342597,7 +343404,7 @@
         {
           "guts": 5,
           "hints": [
-            "Skill ID: 203712 (+1)"
+            "One Brave Step (+1)"
           ],
           "status": "Charming ○"
         }
@@ -343952,12 +344759,12 @@
           "stamina": 15,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203412 (+3)"
+            "Steady Effort (+3)"
           ]
         },
         {
           "hints": [
-            "Skill ID: 203412 (+1)"
+            "Steady Effort (+1)"
           ]
         }
       ],
@@ -343966,12 +344773,12 @@
           "power": 15,
           "skill_pts": 15,
           "hints": [
-            "Skill ID: 203132 (+3)"
+            "Decisive Blow (+3)"
           ]
         },
         {
           "hints": [
-            "Skill ID: 203132 (+1)"
+            "Decisive Blow (+1)"
           ]
         }
       ],
@@ -345026,6 +345833,1254 @@
     "event_kind": "special"
   },
   {
+    "key": "trainee/Almond Eye/None/None/輝きは永遠のように",
+    "key_step": "trainee/Almond Eye/None/None/輝きは永遠のように#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "輝きは永遠のように",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "power": 20
+        }
+      ],
+      "2": [
+        {
+          "stamina": 20
+        }
+      ]
+    },
+    "title_norm": "輝きは永遠のように",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/ぱかプチの達人",
+    "key_step": "trainee/Almond Eye/None/None/ぱかプチの達人#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "ぱかプチの達人",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 20
+        }
+      ],
+      "2": [
+        {
+          "wit": 20
+        }
+      ]
+    },
+    "title_norm": "ぱかプチの達人",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/優等生と、甘え上手と",
+    "key_step": "trainee/Almond Eye/None/None/優等生と、甘え上手と#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "優等生と、甘え上手と",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "stamina": 10,
+          "guts": 10,
+          "status": "Fast Learner"
+        }
+      ],
+      "2": [
+        {
+          "speed": 20,
+          "status": "Fast Learner"
+        }
+      ]
+    },
+    "title_norm": "優等生と、甘え上手と",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/ナチュラルボーン・キャプテン",
+    "key_step": "trainee/Almond Eye/None/None/ナチュラルボーン・キャプテン#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "ナチュラルボーン・キャプテン",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10
+        }
+      ],
+      "2": [
+        {
+          "power": 10
+        }
+      ]
+    },
+    "title_norm": "ナチュラルボーン・キャプテン",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/お風呂の極意",
+    "key_step": "trainee/Almond Eye/None/None/お風呂の極意#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "お風呂の極意",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10
+        }
+      ],
+      "2": [
+        {
+          "stamina": 5,
+          "power": 5
+        }
+      ]
+    },
+    "title_norm": "お風呂の極意",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/ため息の理由は――",
+    "key_step": "trainee/Almond Eye/None/None/ため息の理由は――#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "ため息の理由は――",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "power": 10,
+          "guts": 5
+        }
+      ],
+      "2": [
+        {
+          "hints": [
+            "Inquisitive Mind (+1)"
+          ]
+        }
+      ]
+    },
+    "title_norm": "ため息の理由は--",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/“アイ”の才能",
+    "key_step": "trainee/Almond Eye/None/None/“アイ”の才能#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "“アイ”の才能",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "status": "Unknown Status 32"
+        }
+      ],
+      "2": [
+        {
+          "guts": 5,
+          "hints": [
+            "Stamina to Spare (+1)"
+          ]
+        }
+      ],
+      "3": [
+        {
+          "energy": -10,
+          "skill_pts": 30
+        }
+      ]
+    },
+    "title_norm": "“アイ”の才能",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/いつかのためのモグモグ",
+    "key_step": "trainee/Almond Eye/None/None/いつかのためのモグモグ#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "いつかのためのモグモグ",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": 10,
+          "skill_pts": 5
+        }
+      ],
+      "2": [
+        {
+          "energy": 30,
+          "skill_pts": 10
+        },
+        {
+          "energy": 30,
+          "skill_pts": 10,
+          "speed": -5,
+          "power": 5,
+          "status": "Slow Metabolism"
+        }
+      ]
+    },
+    "title_norm": "いつかのためのモグモグ",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/“しっかり”の根にあるもの",
+    "key_step": "trainee/Almond Eye/None/None/“しっかり”の根にあるもの#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "“しっかり”の根にあるもの",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "wit": 10
+        }
+      ],
+      "2": [
+        {
+          "power": 10
+        }
+      ]
+    },
+    "title_norm": "“しっかり”の根にあるもの",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/迷宮の落とし穴",
+    "key_step": "trainee/Almond Eye/None/None/迷宮の落とし穴#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "迷宮の落とし穴",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "guts": 10
+        }
+      ],
+      "2": [
+        {
+          "speed": 10
+        }
+      ]
+    },
+    "title_norm": "迷宮の落とし穴",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/浜辺の頂上決戦",
+    "key_step": "trainee/Almond Eye/None/None/浜辺の頂上決戦#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "浜辺の頂上決戦",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "speed": 10
+        }
+      ],
+      "2": [
+        {
+          "stamina": 10
+        }
+      ],
+      "3": [
+        {
+          "power": 10
+        }
+      ]
+    },
+    "title_norm": "浜辺の頂上決戦",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/たとえ遊びでも！",
+    "key_step": "trainee/Almond Eye/None/None/たとえ遊びでも！#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "たとえ遊びでも！",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "guts": 10
+        }
+      ],
+      "2": [
+        {
+          "power": 10
+        }
+      ]
+    },
+    "title_norm": "たとえ遊びでも！",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/『頑張り屋』の休日",
+    "key_step": "trainee/Almond Eye/None/None/『頑張り屋』の休日#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "『頑張り屋』の休日",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "stamina": 10
+        }
+      ],
+      "2": [
+        {
+          "wit": 10
+        }
+      ]
+    },
+    "title_norm": "『頑張り屋』の休日",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "random"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Failed training (Get Well Soon!)",
+    "key_step": "trainee/Almond Eye/None/None/Failed training (Get Well Soon!)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Failed training (Get Well Soon!)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "mood": -1,
+          "status": "Practice Poor"
+        },
+        {
+          "mood": -1
+        }
+      ],
+      "2": [
+        {
+          "mood": -1,
+          "status": "Practice Poor"
+        },
+        {
+          "status": "Practice Perfect ○"
+        }
+      ]
+    },
+    "title_norm": "failed training (get well soon!)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Failed training (Don't Overdo It!)",
+    "key_step": "trainee/Almond Eye/None/None/Failed training (Don't Overdo It!)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Failed training (Don't Overdo It!)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": 10,
+          "mood": -2,
+          "status": "Practice Poor"
+        },
+        {
+          "energy": 10,
+          "mood": -2
+        }
+      ],
+      "2": [
+        {
+          "mood": -3,
+          "status": "Practice Poor"
+        },
+        {
+          "energy": 10,
+          "status": "Practice Perfect ○"
+        }
+      ]
+    },
+    "title_norm": "failed training (don't overdo it!)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Extra Training",
+    "key_step": "trainee/Almond Eye/None/None/Extra Training#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Extra Training",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": -5,
+          "status": "Heal a negative status effect",
+          "bond": 5,
+          "character": "yayoi"
+        },
+        {
+          "energy": -5,
+          "bond": 5,
+          "character": "yayoi"
+        }
+      ],
+      "2": [
+        {
+          "energy": 5
+        }
+      ]
+    },
+    "title_norm": "extra training",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/At Summer Camp (Year 2)",
+    "key_step": "trainee/Almond Eye/None/None/At Summer Camp (Year 2)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "At Summer Camp (Year 2)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "power": 10
+        }
+      ],
+      "2": [
+        {
+          "guts": 10
+        }
+      ]
+    },
+    "title_norm": "at summer camp (year 2)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Dance Lesson",
+    "key_step": "trainee/Almond Eye/None/None/Dance Lesson#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Dance Lesson",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "power": 10
+        }
+      ],
+      "2": [
+        {
+          "guts": 10
+        }
+      ]
+    },
+    "title_norm": "dance lesson",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/New Year's Resolutions",
+    "key_step": "trainee/Almond Eye/None/None/New Year's Resolutions#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "New Year's Resolutions",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "guts": 10
+        }
+      ],
+      "2": [
+        {
+          "energy": 20
+        }
+      ],
+      "3": [
+        {
+          "skill_pts": 20
+        }
+      ]
+    },
+    "title_norm": "new year's resolutions",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/New Year's Shrine Visit",
+    "key_step": "trainee/Almond Eye/None/None/New Year's Shrine Visit#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "New Year's Shrine Visit",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": 30
+        }
+      ],
+      "2": [
+        {
+          "stats": 5
+        }
+      ],
+      "3": [
+        {
+          "skill_pts": 35
+        }
+      ]
+    },
+    "title_norm": "new year's shrine visit",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Acupuncture (Just an Acupuncturist, No Worries! ☆)",
+    "key_step": "trainee/Almond Eye/None/None/Acupuncture (Just an Acupuncturist, No Worries! ☆)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Acupuncture (Just an Acupuncturist, No Worries! ☆)",
+    "chain_step": 1,
+    "default_preference": 5,
+    "options": {
+      "1": [
+        {
+          "random_chance": 30,
+          "stats": 20
+        },
+        {
+          "random_chance": 70,
+          "mood": -2,
+          "stats": -15,
+          "status": "Night Owl"
+        }
+      ],
+      "2": [
+        {
+          "random_chance": 45,
+          "stats": 20,
+          "hints": [
+            "Corner Recovery ○",
+            "Straightaway Recovery"
+          ]
+        },
+        {
+          "random_chance": 55,
+          "energy": -20,
+          "mood": -2
+        }
+      ],
+      "3": [
+        {
+          "random_chance": 70,
+          "energy_max": 12,
+          "energy": 40,
+          "status": "heal"
+        },
+        {
+          "random_chance": 30,
+          "mood": -2,
+          "energy": -20,
+          "status": "Practice Poor"
+        }
+      ],
+      "4": [
+        {
+          "random_chance": 85,
+          "mood": 1,
+          "energy": 20,
+          "status": "Charming"
+        },
+        {
+          "random_chance": 15,
+          "mood": -1,
+          "energy": -20,
+          "status": "Practice Poor"
+        }
+      ],
+      "5": [
+        {
+          "energy": 10
+        }
+      ]
+    },
+    "title_norm": "acupuncture (just an acupuncturist, no worries! *)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Victory! (G1)",
+    "key_step": "trainee/Almond Eye/None/None/Victory! (G1)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Victory! (G1)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -15,
+          "stats": 10,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -5,
+          "stats": 10,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -20,
+          "stats": 10,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "victory! (g1)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Victory! (G2/G3)",
+    "key_step": "trainee/Almond Eye/None/None/Victory! (G2/G3)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Victory! (G2/G3)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -15,
+          "stats": 8,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -5,
+          "stats": 8,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -20,
+          "stats": 8,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "victory! (g2/g3)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Victory! (Pre/OP)",
+    "key_step": "trainee/Almond Eye/None/None/Victory! (Pre/OP)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Victory! (Pre/OP)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -15,
+          "stats": 5,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -5,
+          "stats": 5,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -20,
+          "stats": 5,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "victory! (pre/op)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Solid Showing (G1)",
+    "key_step": "trainee/Almond Eye/None/None/Solid Showing (G1)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Solid Showing (G1)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -20,
+          "stats": 8,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -10,
+          "stats": 8,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -30,
+          "stats": 8,
+          "skill_pts": 45,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "solid showing (g1)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Solid Showing (G2/G3)",
+    "key_step": "trainee/Almond Eye/None/None/Solid Showing (G2/G3)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Solid Showing (G2/G3)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -20,
+          "stats": 5,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -10,
+          "stats": 5,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -30,
+          "stats": 5,
+          "skill_pts": 35,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "solid showing (g2/g3)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Solid Showing (Pre/OP)",
+    "key_step": "trainee/Almond Eye/None/None/Solid Showing (Pre/OP)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Solid Showing (Pre/OP)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -20,
+          "stats": 3,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -10,
+          "stats": 3,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -30,
+          "stats": 3,
+          "skill_pts": 30,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "solid showing (pre/op)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Defeat (G1)",
+    "key_step": "trainee/Almond Eye/None/None/Defeat (G1)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Defeat (G1)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "stats": 4,
+          "skill_pts": 25,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -15,
+          "stats": 4,
+          "skill_pts": 25,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -35,
+          "stats": 4,
+          "skill_pts": 25,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "defeat (g1)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Defeat (G2/G3)",
+    "key_step": "trainee/Almond Eye/None/None/Defeat (G2/G3)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Defeat (G2/G3)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "stats": 3,
+          "skill_pts": 20,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -15,
+          "stats": 3,
+          "skill_pts": 20,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -35,
+          "stats": 3,
+          "skill_pts": 20,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "defeat (g2/g3)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Defeat (Pre/OP)",
+    "key_step": "trainee/Almond Eye/None/None/Defeat (Pre/OP)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Defeat (Pre/OP)",
+    "chain_step": 1,
+    "default_preference": 1,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "skill_pts": 10,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "energy": -15,
+          "skill_pts": 10,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        },
+        {
+          "energy": -35,
+          "skill_pts": 10,
+          "hints": [
+            "Hint for a skill related to the race"
+          ]
+        }
+      ]
+    },
+    "title_norm": "defeat (pre/op)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (G1)",
+    "key_step": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (G1)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Etsuko's Exhaustive Coverage (G1)",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "mood": -1,
+          "stats": 4,
+          "skill_pts": 25,
+          "bond": -10,
+          "character": "etsuko"
+        },
+        {
+          "energy": -15,
+          "mood": 1,
+          "stats": 4,
+          "skill_pts": 25,
+          "bond": 15,
+          "character": "etsuko"
+        }
+      ],
+      "2": [
+        {
+          "energy": -20,
+          "stats": 4,
+          "skill_pts": 25,
+          "bond": 10,
+          "character": "etsuko"
+        }
+      ]
+    },
+    "title_norm": "etsuko's exhaustive coverage (g1)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (G2/G3)",
+    "key_step": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (G2/G3)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Etsuko's Exhaustive Coverage (G2/G3)",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "mood": -1,
+          "stats": 3,
+          "skill_pts": 20,
+          "bond": -10,
+          "character": "etsuko"
+        },
+        {
+          "energy": -15,
+          "mood": 1,
+          "stats": 3,
+          "skill_pts": 20,
+          "bond": 15,
+          "character": "etsuko"
+        }
+      ],
+      "2": [
+        {
+          "energy": -20,
+          "stats": 3,
+          "skill_pts": 20,
+          "bond": 10,
+          "character": "etsuko"
+        }
+      ]
+    },
+    "title_norm": "etsuko's exhaustive coverage (g2/g3)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
+    "key": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (Pre/OP)",
+    "key_step": "trainee/Almond Eye/None/None/Etsuko's Exhaustive Coverage (Pre/OP)#s1",
+    "type": "trainee",
+    "name": "Almond Eye",
+    "rarity": "None",
+    "attribute": "None",
+    "event_name": "Etsuko's Exhaustive Coverage (Pre/OP)",
+    "chain_step": 1,
+    "default_preference": 2,
+    "options": {
+      "1": [
+        {
+          "energy": -25,
+          "mood": -1,
+          "skill_pts": 10,
+          "bond": -10,
+          "character": "etsuko"
+        },
+        {
+          "energy": -15,
+          "mood": 1,
+          "skill_pts": 10,
+          "bond": 15,
+          "character": "etsuko"
+        }
+      ],
+      "2": [
+        {
+          "energy": -20,
+          "skill_pts": 10,
+          "bond": 10,
+          "character": "etsuko"
+        }
+      ]
+    },
+    "title_norm": "etsuko's exhaustive coverage (pre/op)",
+    "image_path": null,
+    "phash64": null,
+    "image_variants": [],
+    "event_kind": "special"
+  },
+  {
     "key": "trainee/Gran Alegria/None/None/マイルールは誰のため？",
     "key_step": "trainee/Gran Alegria/None/None/マイルールは誰のため？#s1",
     "type": "trainee",
@@ -345215,7 +347270,7 @@
         {
           "guts": 20,
           "hints": [
-            "Skill ID: 203352 (+1)"
+            "High Pitch (+1)"
           ]
         },
         {
@@ -345226,7 +347281,7 @@
         {
           "guts": 20,
           "hints": [
-            "Skill ID: 203352 (+1)"
+            "High Pitch (+1)"
           ]
         },
         {
@@ -345237,7 +347292,7 @@
         {
           "guts": 20,
           "hints": [
-            "Skill ID: 203352 (+1)"
+            "High Pitch (+1)"
           ]
         },
         {
@@ -346479,7 +348534,7 @@
         {
           "stamina": 5,
           "hints": [
-            "Skill ID: 203592 (+1)"
+            "Pushing Through! (+1)"
           ]
         }
       ],
