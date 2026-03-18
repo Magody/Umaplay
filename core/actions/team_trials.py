@@ -17,6 +17,7 @@ except Exception:
 from core.perception.ocr.interface import OCRInterface
 from core.perception.yolo.interface import IDetector
 from core.types import DetectionDict
+from core.utils.abort import abort_requested
 from core.utils.logger import logger_uma
 from core.utils.waiter import Waiter
 from core.utils import nav
@@ -93,7 +94,8 @@ class TeamTrialsFlow:
           - start race (RACE!)
           - advance through post-race, handle shop if it appears, then try 'RACE AGAIN'
         """
-        sleep(1.0)
+        if not nav.cooperative_sleep(1.0):
+            return
         img, dets = nav.collect_snapshot(
             self.waiter, self.yolo_engine, tag="team_trials_banners"
         )
@@ -124,8 +126,12 @@ class TeamTrialsFlow:
         logger_uma.info(
             f"[TeamTrials] Clicked opponent banner (slot={preferred_index + 1})"
         )
-        sleep(5)
-        sleep(4)
+        nav.wait_until_seen(
+            self.waiter,
+            classes=("button_green", "button_white"),
+            tag="team_trials_after_banner_ready",
+            timeout_s=9.0,
+        )
 
         # Pre-start: a few green clicks (progression prompts)
         pre = nav.click_button_loop(
@@ -151,7 +157,8 @@ class TeamTrialsFlow:
                 logger_uma.warning("[TeamTrials] Could not press Start button of race in second intent")
                 return
         logger_uma.debug(f"[TeamTrials] pre-start greens: {pre}")
-        sleep(1.8)
+        if not nav.cooperative_sleep(1.8):
+            return
         # Try to hit 'RACE!' (avoid CANCEL)
         started = self.waiter.click_when(
             classes=("button_green",),
@@ -165,7 +172,8 @@ class TeamTrialsFlow:
         )
         if not started:
             logger_uma.warning("[TeamTrials] Couldn't press 'RACE!'")
-        sleep(1)
+        if not nav.cooperative_sleep(1.0):
+            return
         self._handle_post_race_sequence(ensure_enter_shop=True)
 
     def resume(self, *, max_steps: int = 8) -> bool:
@@ -175,7 +183,10 @@ class TeamTrialsFlow:
         """
         handled_any = False
         for _ in range(max_steps):
-            sleep(0.8)
+            if abort_requested():
+                break
+            if not nav.cooperative_sleep(0.8):
+                break
             img, dets = nav.collect_snapshot(
                 self.waiter, self.yolo_engine, tag="team_trials_resume"
             )
@@ -199,7 +210,10 @@ class TeamTrialsFlow:
             elif state is TeamTrialsState.STALE:
                 self._handle_stale_screen()
 
-            sleep(1.0)
+            if abort_requested():
+                break
+            if not nav.cooperative_sleep(1.0):
+                break
 
         return handled_any
 
@@ -263,13 +277,21 @@ class TeamTrialsFlow:
             self.ctrl,
             tag_prefix="team_trials_shop_resume",
             ensure_enter=False,
+            should_stop=abort_requested,
         ):
             logger_uma.info("[TeamTrials] Completed shop exchange flow")
         else:
             logger_uma.warning("[TeamTrials] Unable to process shop exchange")
 
     def _handle_post_race_sequence(self, *, ensure_enter_shop: bool) -> None:
-        sleep(10)
+        nav.wait_until_seen(
+            self.waiter,
+            classes=("button_advance", "button_skip", "button_green", "button_white"),
+            tag="team_trials_post_race_ready",
+            timeout_s=10.0,
+        )
+        if abort_requested():
+            return
         adv = nav.advance_sequence_with_mid_taps(
             self.waiter,
             self.yolo_engine,
@@ -285,7 +307,7 @@ class TeamTrialsFlow:
         logger_uma.debug(f"[TeamTrials] advances performed: {adv}")
         skip_clicks = 0
         t0 = time.time()
-        while (time.time() - t0) < 5.0 and skip_clicks < 1:
+        while (time.time() - t0) < 5.0 and skip_clicks < 1 and not abort_requested():
             if self.waiter.click_when(
                 classes=("button_skip",),
                 prefer_bottom=True,
@@ -294,9 +316,11 @@ class TeamTrialsFlow:
                 tag="team_trials_skip",
             ):
                 skip_clicks += 1
-            sleep(0.12)
+            if not nav.cooperative_sleep(0.12):
+                return
 
-        sleep(2)
+        if not nav.cooperative_sleep(2.0):
+            return
 
         if skip_clicks > 0:
             logger_uma.debug(f"[TeamTrials] Completed skip sequence (clicks={skip_clicks})")
@@ -307,16 +331,27 @@ class TeamTrialsFlow:
                 timeout_s=2.0,
                 tag="team_trials_next",
             ):
-                sleep(5)
+                nav.wait_until_seen(
+                    self.waiter,
+                    classes=("race_after_next", "button_green", "button_white"),
+                    tag="team_trials_after_next_ready",
+                    timeout_s=5.0,
+                )
                 if self.waiter.click_when(
                     classes=("race_after_next",),
                     allow_greedy_click=True,
                     tag="team_trials_race_after_next",
                 ):
                     logger_uma.debug("[TeamTrials] Clicked race_after_next")
-                    sleep(3)
+                    if not nav.cooperative_sleep(3.0):
+                        return
         else:
-            sleep(5)
+            nav.wait_until_seen(
+                self.waiter,
+                classes=("button_advance", "button_green", "button_white", "shop_exchange"),
+                tag="team_trials_results_ready",
+                timeout_s=5.0,
+            )
 
         img, dets = nav.collect_snapshot(
             self.waiter, self.yolo_engine, tag="team_trials_midtap"
@@ -324,7 +359,14 @@ class TeamTrialsFlow:
         nav.random_center_tap(
             self.ctrl, img, clicks=random.randint(4, 5), dev_frac=0.01
         )
-        sleep(4.2)
+        nav.wait_until_seen(
+            self.waiter,
+            classes=("button_advance", "button_green", "button_pink", "shop_exchange", "shop_clock"),
+            tag="team_trials_reward_ready",
+            timeout_s=4.2,
+        )
+        if abort_requested():
+            return
         img, dets = nav.collect_snapshot(
             self.waiter, self.yolo_engine, tag="team_trials_especial_reward"
         )
@@ -348,7 +390,8 @@ class TeamTrialsFlow:
                 clicks=1,
                 tag="team_trials_reward_next_green",
             )
-            sleep(0.5)
+            if not nav.cooperative_sleep(0.5):
+                return
 
         did_shop = nav.handle_shop_exchange(
             self.waiter,
@@ -356,6 +399,7 @@ class TeamTrialsFlow:
             self.ctrl,
             tag_prefix="team_trials_shop",
             ensure_enter=ensure_enter_shop,
+            should_stop=abort_requested,
         )
         if did_shop:
             logger_uma.info("[TeamTrials] Completed shop exchange flow")

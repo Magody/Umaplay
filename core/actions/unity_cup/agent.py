@@ -189,7 +189,7 @@ class AgentUnityCup(AgentScenario):
                 else:
                     self.patience += 1
 
-                    if self.patience > 10 == 0:
+                    if self.patience > 10 and self.patience % 10 == 0:
                         # try single clean click
                         screen_width = img.width
                         screen_height = img.height
@@ -1100,8 +1100,30 @@ class AgentUnityCup(AgentScenario):
                                         clicks=3,
                                         tag="race_kashimoto_after_flow_next_2",
                                     )
-                                    # song...
-                                    sleep(80)
+                                    # Wait for the long showdown/song sequence, but remain interruptible
+                                    wait_deadline = time.time() + 80.0
+                                    while time.time() < wait_deadline:
+                                        if abort_requested():
+                                            logger_uma.info("[race kashimoto] Abort requested during showdown wait.")
+                                            break
+                                        if (
+                                            self.waiter.seen(
+                                                classes=("button_white",),
+                                                texts=("CLOSE",),
+                                                tag="race_kashimoto_wait_close_seen",
+                                            )
+                                            or self.waiter.seen(
+                                                classes=("race_after_next",),
+                                                tag="race_kashimoto_wait_after_next_seen",
+                                            )
+                                            or self.waiter.seen(
+                                                classes=("button_green",),
+                                                texts=("NEXT",),
+                                                tag="race_kashimoto_wait_next_seen",
+                                            )
+                                        ):
+                                            break
+                                        time.sleep(0.5)
                                     logger_uma.debug("[race kashimoto] Looking for CLOSE button.")
                                     self.waiter.click_when(
                                         classes=("button_white",),

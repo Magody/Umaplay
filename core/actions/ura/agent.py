@@ -170,7 +170,7 @@ class AgentURA(AgentScenario):
                 else:
                     self.patience += 1
 
-                    if self.patience > 10 == 0:
+                    if self.patience > 10 and self.patience % 10 == 0:
                         # try single clean click
                         screen_width = img.width
                         screen_height = img.height

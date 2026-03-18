@@ -5,6 +5,7 @@ import numpy as np
 import importlib
 import os
 import re
+import threading
 from typing import Any, Dict, List, cast
 from core.perception.ocr.interface import OCRInterface
 from core.types import OCRItem
@@ -18,6 +19,9 @@ import paddle
 
 from core.utils.img import to_bgr
 from core.utils.logger import logger_uma
+
+_OCR_READER_CACHE: Dict[tuple, PaddleOCR] = {}
+_OCR_READER_CACHE_LOCK = threading.Lock()
 
 
 class LocalOCREngine(OCRInterface):
@@ -89,59 +93,93 @@ class LocalOCREngine(OCRInterface):
         )
         if not text_detection_model_name and not text_recognition_model_name:
             init_kwargs["lang"] = self.lang
-        try:
-            # Newer API (device=...)
-            self.reader = PaddleOCR(device=self.device, enable_hpi=False, **init_kwargs)
-        except TypeError:
-            # Older API style (use_gpu flag)
-            use_gpu = self.device.startswith("gpu")
-            try:
-                self.reader = PaddleOCR(lang=self.lang, use_gpu=use_gpu)
-            except Exception as e:
-                logger_uma.exception(
-                    "OCRInterface: failed to initialize PaddleOCR (use_gpu=%s). Error: %s",
-                    use_gpu,
-                    e,
-                )
-                raise
-        except Exception as e:
-            # If 'device' fails for any other reason, try CPU as last resort
-            logger_uma.warning(
-                "OCRInterface: device='%s' failed (%s). Retrying with CPU.",
-                self.device,
-                e,
-            )
-            try:
-                self.reader = PaddleOCR(lang=self.lang, device="cpu", enable_hpi=False)
-                self.device = "cpu"
-            except Exception as e2:
-                # Helpful guidance if it's the well-known Paddle/PaddleX mismatch
-                msg = str(e2)
-                if "set_optimization_level" in msg or "AnalysisConfig" in msg:
-                    try:
-                        paddle_ver = importlib.import_module("paddle").__version__
-                    except Exception:
-                        paddle_ver = "unknown"
-                    try:
-                        paddlex_ver = importlib.import_module("paddlex").__version__
-                    except Exception:
-                        paddlex_ver = "unknown"
-                    try:
-                        import paddleocr as _pocr
+        cache_key = (
+            text_detection_model_name,
+            text_recognition_model_name,
+            self.lang,
+            self.device,
+            bool(use_doc_orientation_classify),
+            bool(use_doc_unwarping),
+            bool(use_textline_orientation),
+            bool(return_word_box),
+        )
 
-                        paddleocr_ver = getattr(_pocr, "__version__", "unknown")
-                    except Exception:
-                        paddleocr_ver = "unknown"
-                    logger_uma.error(
-                        "Paddle/PaddleOCR/PaddleX possible version mismatch. "
-                        "Installed: paddle=%s, paddleocr=%s, paddlex=%s. "
-                        "PaddleOCR 3.x + PaddleX 3.x require PaddlePaddle >= 3.0.",
-                        paddle_ver,
-                        paddleocr_ver,
-                        paddlex_ver,
+        with _OCR_READER_CACHE_LOCK:
+            cached_reader = _OCR_READER_CACHE.get(cache_key)
+            if cached_reader is not None:
+                self.reader = cached_reader
+                logger_uma.info(
+                    "Reusing cached OCR reader | lang=%s device=%s",
+                    self.lang,
+                    self.device,
+                )
+            else:
+                try:
+                    # Newer API (device=...)
+                    self.reader = PaddleOCR(device=self.device, enable_hpi=False, **init_kwargs)
+                except TypeError:
+                    # Older API style (use_gpu flag)
+                    use_gpu = self.device.startswith("gpu")
+                    try:
+                        self.reader = PaddleOCR(lang=self.lang, use_gpu=use_gpu)
+                    except Exception as e:
+                        logger_uma.exception(
+                            "OCRInterface: failed to initialize PaddleOCR (use_gpu=%s). Error: %s",
+                            use_gpu,
+                            e,
+                        )
+                        raise
+                except Exception as e:
+                    # If 'device' fails for any other reason, try CPU as last resort
+                    logger_uma.warning(
+                        "OCRInterface: device='%s' failed (%s). Retrying with CPU.",
+                        self.device,
+                        e,
                     )
-                logger_uma.exception("OCRInterface: CPU fallback also failed: %s", e2)
-                raise
+                    try:
+                        self.reader = PaddleOCR(lang=self.lang, device="cpu", enable_hpi=False)
+                        self.device = "cpu"
+                    except Exception as e2:
+                        # Helpful guidance if it's the well-known Paddle/PaddleX mismatch
+                        msg = str(e2)
+                        if "set_optimization_level" in msg or "AnalysisConfig" in msg:
+                            try:
+                                paddle_ver = importlib.import_module("paddle").__version__
+                            except Exception:
+                                paddle_ver = "unknown"
+                            try:
+                                paddlex_ver = importlib.import_module("paddlex").__version__
+                            except Exception:
+                                paddlex_ver = "unknown"
+                            try:
+                                import paddleocr as _pocr
+
+                                paddleocr_ver = getattr(_pocr, "__version__", "unknown")
+                            except Exception:
+                                paddleocr_ver = "unknown"
+                            logger_uma.error(
+                                "Paddle/PaddleOCR/PaddleX possible version mismatch. "
+                                "Installed: paddle=%s, paddleocr=%s, paddlex=%s. "
+                                "PaddleOCR 3.x + PaddleX 3.x require PaddlePaddle >= 3.0.",
+                                paddle_ver,
+                                paddleocr_ver,
+                                paddlex_ver,
+                            )
+                        logger_uma.exception("OCRInterface: CPU fallback also failed: %s", e2)
+                        raise
+
+                if self.reader is not None:
+                    final_cache_key = (
+                        text_detection_model_name,
+                        text_recognition_model_name,
+                        self.lang,
+                        self.device,
+                        bool(use_doc_orientation_classify),
+                        bool(use_doc_unwarping),
+                        bool(use_textline_orientation),
+                        bool(return_word_box),
+                    )
+                    _OCR_READER_CACHE[final_cache_key] = self.reader
 
         logger_uma.info(
             "OCRInterface initialized | lang=%s device=%s", self.lang, self.device
