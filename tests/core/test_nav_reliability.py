@@ -289,6 +289,41 @@ def test_agent_nav_classify_team_trials_race_again_screen() -> None:
     assert screen == "TeamTrialsRaceAgain"
 
 
+def test_agent_nav_classify_team_trials_race_again_with_advance_button() -> None:
+    class OCRStub:
+        def text(self, img, joiner=" ", min_conf=0.2):
+            return "NEXT"
+
+    agent = AgentNav.__new__(AgentNav)
+    agent.action = "team_trials"
+    agent._thr = {
+        "race_team_trials": 0.50,
+        "race_daily_races": 0.50,
+        "banner_opponent": 0.50,
+        "race_daily_races_monies_row": 0.70,
+        "race_team_trials_go": 0.45,
+        "button_pink": 0.35,
+        "button_advance": 0.35,
+        "shop_clock": 0.35,
+        "shop_exchange": 0.35,
+        "button_back": 0.35,
+        "button_green": 0.35,
+        "button_white": 0.35,
+        "roulette_button": 0.60,
+    }
+    agent.ocr = OCRStub()
+
+    img = Image.new("RGB", (40, 40), "white")
+    dets = [
+        _det("button_pink", (0, 20, 20, 40), conf=0.9),
+        _det("button_advance", (20, 20, 40, 40), conf=0.9),
+    ]
+
+    screen, _info = agent.classify_nav_screen(img, dets)
+
+    assert screen == "TeamTrialsRaceAgain"
+
+
 def test_agent_nav_classify_team_trials_sale_prompt() -> None:
     class OCRStub:
         def text(self, img, joiner=" ", min_conf=0.2):

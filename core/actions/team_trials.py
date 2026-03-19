@@ -239,8 +239,9 @@ class TeamTrialsFlow:
         if nav.has(dets, "race_team_trials", conf_min=self._thr["race_team_trials"]):
             return TeamTrialsState.HOME
 
-        if nav.has(dets, "button_pink", conf_min=self._thr["button_pink"]) and nav.has(
-            dets, "button_green", conf_min=self._thr["button_green"]
+        if nav.has(dets, "button_pink", conf_min=self._thr["button_pink"]) and (
+            nav.has(dets, "button_green", conf_min=self._thr["button_green"])
+            or nav.has(dets, "button_advance", conf_min=self._thr["button_advance"])
         ):
             return TeamTrialsState.LOOP_CHOICES
 
