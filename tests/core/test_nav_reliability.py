@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 from PIL import Image
@@ -9,10 +10,13 @@ import core.agent_nav as agent_nav_module
 import core.perception.ocr.ocr_local as ocr_local_module
 import core.perception.yolo.yolo_local as yolo_local_module
 import core.utils.nav as nav_module
+from core.actions.race import RaceFailureReason
 from core.actions.lobby import LobbyFlow
+from core.agent_scenario import AgentScenario
 from core.agent_nav import AgentNav
 from core.perception.ocr.ocr_local import LocalOCREngine
 from core.perception.yolo.yolo_local import LocalYOLOEngine
+from core.utils.logger import logger_uma, setup_uma_logging, start_run_logging, stop_run_logging
 
 
 class DummyWaiter:
@@ -59,6 +63,14 @@ class DummyLobbyFlow(LobbyFlow):
 
     def _process_turns_left(self, img, dets):
         return None
+
+
+class DummyScenario(AgentScenario):
+    def run(self, *, delay: float = 0.4, max_iterations: int | None = None) -> None:
+        raise NotImplementedError
+
+    def handle_training(self) -> None:
+        raise NotImplementedError
 
 
 def _make_lobby_flow(waiter: DummyWaiter) -> DummyLobbyFlow:
@@ -269,3 +281,46 @@ def test_local_ocr_engine_reuses_cached_reader(monkeypatch) -> None:
 
     assert len(created) == 1
     assert first.reader is second.reader
+
+
+def test_unknown_recovery_extends_patience_budget() -> None:
+    scenario = object.__new__(DummyScenario)
+    scenario.patience = 12
+    scenario._unknown_recovery_context = None
+    scenario._unknown_recovery_patience_limit = 0
+    scenario._unknown_recovery_iterations = 0
+
+    scenario.arm_unknown_recovery(
+        "normal_race:lobby_flow_failed",
+        patience_limit=80,
+    )
+
+    assert scenario.patience == 0
+    assert scenario.in_unknown_recovery() is True
+    assert scenario.unknown_patience_limit(0.4) == 80
+    assert scenario.is_recoverable_race_failure(RaceFailureReason.LOBBY_FLOW_FAILED)
+    assert not scenario.is_recoverable_race_failure(RaceFailureReason.NO_RACE_SQUARE)
+
+    scenario.record_unknown_recovery_iteration()
+    scenario.record_unknown_recovery_iteration()
+    assert scenario._unknown_recovery_iterations == 2
+
+    scenario.clear_unknown_recovery(resolved_screen="RaceLobby")
+    assert scenario.in_unknown_recovery() is False
+
+
+def test_start_run_logging_creates_distinct_files(tmp_path: Path) -> None:
+    setup_uma_logging(debug=False, debug_dir=str(tmp_path))
+    first = start_run_logging(debug_dir=str(tmp_path), run_kind="bot", context="unity_cup")
+    logger_uma.info("first run marker")
+    stop_run_logging()
+
+    second = start_run_logging(debug_dir=str(tmp_path), run_kind="bot", context="unity_cup")
+    logger_uma.info("second run marker")
+    stop_run_logging()
+
+    assert first != second
+    assert Path(first).exists()
+    assert Path(second).exists()
+    assert "first run marker" in Path(first).read_text(encoding="utf-8")
+    assert "second run marker" in Path(second).read_text(encoding="utf-8")

@@ -166,28 +166,55 @@ class AgentUnityCup(AgentScenario):
                         )
                         continue
 
+                recovery_active = self.in_unknown_recovery()
                 threshold = 0.65
                 if self.patience > 20:
                     # try to auto recover
                     threshold = 0.55
                 # Prefer green NEXT/OK/CLOSE/RACE; no busy loops scattered elsewhere
-                if self.waiter.click_when(
+                advanced = self.waiter.click_when(
                     classes=(
                         "button_green",
                         "race_after_next",
                         "button_white",
                     ),  # improve the model. TODO: add text exception for this function
-                    texts=("NEXT", "OK", "CLOSE", "PROCEED", "CANCEL"),
-                    prefer_bottom=False,
+                    texts=("NEXT", "OK", "CLOSE", "PROCEED", "CANCEL", "VIEW RESULTS"),
+                    prefer_bottom=recovery_active,
                     allow_greedy_click=False,
                     forbid_texts=("complete", "career", "RACE", "try again"),
                     timeout_s=delay,
                     tag="agent_unknown_advance",
                     threshold=threshold,
-                ):
+                )
+                if not advanced and recovery_active and self.patience >= 5:
+                    advanced = self.waiter.click_when(
+                        classes=("button_green", "race_after_next", "button_white"),
+                        prefer_bottom=True,
+                        allow_greedy_click=True,
+                        forbid_texts=("complete", "career", "RACE", "try again"),
+                        timeout_s=min(0.8, max(0.4, delay)),
+                        tag="agent_unknown_recovery",
+                        threshold=threshold,
+                    )
+                    if advanced:
+                        logger_uma.info(
+                            "[agent] Unknown-screen recovery clicked a fallback button (context=%s)",
+                            self._unknown_recovery_context,
+                        )
+                if advanced:
                     self.patience = 0
                 else:
                     self.patience += 1
+                    self.record_unknown_recovery_iteration()
+
+                    patience_limit = self.unknown_patience_limit(delay)
+                    if recovery_active and self.patience % 5 == 0:
+                        logger_uma.info(
+                            "[agent] Unknown-screen recovery waiting context=%s patience=%d/%d",
+                            self._unknown_recovery_context,
+                            self.patience,
+                            patience_limit,
+                        )
 
                     if self.patience > 10 and self.patience % 10 == 0:
                         # try single clean click
@@ -198,14 +225,18 @@ class AgentUnityCup(AgentScenario):
 
                         self.ctrl.click_xyxy_center((cx, y, cx, y), clicks=1)
                         pass
-                    pat = int(delay * 100)
-                    if self.patience >= pat:
+                    if self.patience >= patience_limit:
                         logger_uma.warning(
-                            "Stopping the algorithm just for safeness, nothing happened in 20 iterations"
+                            "Stopping the algorithm just for safeness, nothing happened in %d iterations (context=%s)",
+                            patience_limit,
+                            self._unknown_recovery_context or "default",
                         )
                         self.is_running = False
                         break
                 continue
+
+            if self.in_unknown_recovery():
+                self.clear_unknown_recovery(resolved_screen=screen)
 
             if screen == "EventStale":
                 # Single event option detected (slow-rendering UI)
@@ -331,6 +362,7 @@ class AgentUnityCup(AgentScenario):
                 if not self.race.lobby():
                     logger_uma.warning(
                         "[UnityCup] RaceLobby resume failed; continuing main loop.")
+                    self.arm_unknown_recovery("race_lobby_resume_failed", patience_limit=80)
                 continue
 
             if screen == "Raceday":
@@ -438,6 +470,11 @@ class AgentUnityCup(AgentScenario):
                             "[race] Couldn't race on pre-debut day (failure=%s)",
                             getattr(reason_tag, "value", str(reason_tag) or "unknown"),
                         )
+                        if self.is_recoverable_race_failure(reason_tag):
+                            self.arm_unknown_recovery(
+                                f"predebut_race:{getattr(reason_tag, 'value', reason_tag)}",
+                                patience_limit=80,
+                            )
                         continue
                     # Mark raced on current date-key to avoid double-race if date OCR doesn't tick
                     self.lobby.mark_raced_today(self._today_date_key())
@@ -455,6 +492,11 @@ class AgentUnityCup(AgentScenario):
                             "[race] Couldn't race on normal race day (failure=%s)",
                             getattr(reason_tag, "value", str(reason_tag) or "unknown"),
                         )
+                        if self.is_recoverable_race_failure(reason_tag):
+                            self.arm_unknown_recovery(
+                                f"normal_race:{getattr(reason_tag, 'value', reason_tag)}",
+                                patience_limit=80,
+                            )
                         continue
                     self.lobby.mark_raced_today(self._today_date_key())
                     continue

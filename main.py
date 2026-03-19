@@ -16,7 +16,12 @@ import queue
 from core.actions.ura.agent import AgentURA
 from core.actions.unity_cup.agent import AgentUnityCup
 from core.agent_scenario import AgentScenario
-from core.utils.logger import logger_uma, setup_uma_logging
+from core.utils.logger import (
+    logger_uma,
+    setup_uma_logging,
+    start_run_logging,
+    stop_run_logging,
+)
 from core.settings import Settings
 from core.agent_nav import AgentNav
 
@@ -255,7 +260,7 @@ class BotState:
                 pass
 
             # 2) Configure logging using (possibly updated) Settings.DEBUG
-            setup_uma_logging(debug=Settings.DEBUG)
+            setup_uma_logging(debug=Settings.DEBUG, debug_dir=str(Settings.DEBUG_DIR))
 
             # 3) Build fresh controller & perception engines using the *current* settings
             ctrl = make_controller_from_settings()
@@ -277,6 +282,12 @@ class BotState:
                         f"[BOT] Could not find/focus the {miss} window (title='{Settings.resolve_window_title(mode)}')."
                     )
                 return
+
+            start_run_logging(
+                debug_dir=str(Settings.DEBUG_DIR),
+                run_kind="bot",
+                context=Settings.ACTIVE_SCENARIO,
+            )
 
             ocr, yolo_engine = make_ocr_yolo_from_settings(ctrl)
 
@@ -352,6 +363,7 @@ class BotState:
                         with self._lock:
                             self.running = False
                             logger_uma.info("[BOT] Stopped.")
+                            stop_run_logging()
 
             self.thread = threading.Thread(target=_runner, daemon=True)
             self.running = True
@@ -414,7 +426,7 @@ class NavState:
             except Exception:
                 pass
             
-            setup_uma_logging(debug=Settings.DEBUG)
+            setup_uma_logging(debug=Settings.DEBUG, debug_dir=str(Settings.DEBUG_DIR))
 
             ctrl = make_controller_from_settings()
             if not ctrl.focus():
@@ -435,6 +447,12 @@ class NavState:
                     )
                 return
 
+            start_run_logging(
+                debug_dir=str(Settings.DEBUG_DIR),
+                run_kind="nav",
+                context=action,
+            )
+
             # OCR from settings, YOLO engine for NAV specifically
             ocr, yolo_engine_nav = make_ocr_yolo_from_settings(
                 ctrl, weights=Settings.YOLO_WEIGHTS_NAV
@@ -454,6 +472,7 @@ class NavState:
                         self.running = False
                         self.current_action = None
                         logger_uma.info("[AgentNav] Stopped.")
+                        stop_run_logging()
 
             self.thread = threading.Thread(target=_runner, daemon=True)
             self.running = True
@@ -843,7 +862,7 @@ if __name__ == "__main__":
     except Exception:
         pass
     
-    setup_uma_logging(debug=Settings.DEBUG)
+    setup_uma_logging(debug=Settings.DEBUG, debug_dir=str(Settings.DEBUG_DIR))
 
     try:
         cleanup_debug_training_if_needed()
