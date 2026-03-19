@@ -359,6 +359,34 @@ def test_agent_nav_classify_team_trials_sale_prompt() -> None:
     assert screen == "TeamTrialsSalePrompt"
 
 
+def test_agent_nav_classify_team_trials_final_next_only() -> None:
+    agent = AgentNav.__new__(AgentNav)
+    agent.action = "team_trials"
+    agent._thr = {
+        "race_team_trials": 0.50,
+        "race_daily_races": 0.50,
+        "banner_opponent": 0.50,
+        "race_daily_races_monies_row": 0.70,
+        "race_team_trials_go": 0.45,
+        "button_pink": 0.35,
+        "button_advance": 0.35,
+        "shop_clock": 0.35,
+        "shop_exchange": 0.35,
+        "button_back": 0.35,
+        "button_green": 0.35,
+        "button_white": 0.35,
+        "roulette_button": 0.60,
+    }
+    agent.ocr = None
+
+    img = Image.new("RGB", (40, 40), "white")
+    dets = [_det("button_advance", (20, 20, 40, 40), conf=0.9)]
+
+    screen, _info = agent.classify_nav_screen(img, dets)
+
+    assert screen == "TeamTrialsFinalNext"
+
+
 def test_local_yolo_engine_reuses_cached_model(monkeypatch) -> None:
     created: List[str] = []
 

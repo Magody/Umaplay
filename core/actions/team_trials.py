@@ -32,6 +32,7 @@ class TeamTrialsState(Enum):
     SHOP = "shop"
     STALE = "stale"
     LOOP_CHOICES = "loop_choices"
+    FINAL_NEXT = "final_next"
 
 
 class TeamTrialsFlow:
@@ -212,6 +213,8 @@ class TeamTrialsFlow:
                 self._handle_stale_screen()
             elif state is TeamTrialsState.LOOP_CHOICES:
                 self.handle_race_again_screen()
+            elif state is TeamTrialsState.FINAL_NEXT:
+                self.handle_final_next_screen()
 
             if abort_requested():
                 break
@@ -244,6 +247,13 @@ class TeamTrialsFlow:
             or nav.has(dets, "button_advance", conf_min=self._thr["button_advance"])
         ):
             return TeamTrialsState.LOOP_CHOICES
+
+        if nav.has(dets, "button_advance", conf_min=self._thr["button_advance"]) and not nav.has(
+            dets, "button_pink", conf_min=self._thr["button_pink"]
+        ) and not nav.has(
+            dets, "button_white", conf_min=self._thr["button_white"]
+        ):
+            return TeamTrialsState.FINAL_NEXT
 
         if nav.has(dets, "button_pink", conf_min=self._thr["button_pink"]) or nav.has(
             dets, "button_advance", conf_min=self._thr["button_advance"]
@@ -376,6 +386,26 @@ class TeamTrialsFlow:
             classes=("race_team_trials_go", "banner_opponent", "button_green", "button_white"),
             tag="team_trials_loop_followup",
             timeout_s=5.0,
+        )
+        return True
+
+    def handle_final_next_screen(self) -> bool:
+        logger_uma.info("[TeamTrials] Final next-only screen detected; clicking 'Next'.")
+        clicked = self.waiter.click_when(
+            classes=("button_advance",),
+            prefer_bottom=True,
+            allow_greedy_click=True,
+            timeout_s=2.0,
+            tag="team_trials_final_next",
+        )
+        if not clicked:
+            logger_uma.warning("[TeamTrials] Final next-only button not found")
+            return False
+        nav.wait_until_seen(
+            self.waiter,
+            classes=("button_green", "button_white", "shop_exchange", "shop_clock", "race_team_trials_go"),
+            tag="team_trials_final_next_followup",
+            timeout_s=4.0,
         )
         return True
 

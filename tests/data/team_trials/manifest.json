@@ -29,5 +29,13 @@
       "button_green": "SHOP"
     },
     "notes": "Optional Daily Sale prompt shown before entering the Team Trials shop."
+  },
+  {
+    "id": "team_trials_final_next_only_01",
+    "filename": "team_trials_final_next_only_01.png",
+    "expected_screen": "TeamTrialsFinalNext",
+    "detections": ["button_advance"],
+    "ocr_text": {},
+    "notes": "Last Team Trials result screen when no Race Again option remains and only Next is available."
   }
 ]

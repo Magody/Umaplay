@@ -142,6 +142,13 @@ class AgentNav:
             ):
                 return "TeamTrialsRaceAgain", {"counts": dict(counts)}
 
+            if nav.has(dets, "button_advance", conf_min=self._thr["button_advance"]) and not nav.has(
+                dets, "button_pink", conf_min=self._thr["button_pink"]
+            ) and not nav.has(
+                dets, "button_white", conf_min=self._thr["button_white"]
+            ):
+                return "TeamTrialsFinalNext", {"counts": dict(counts)}
+
             if self._button_text_seen(
                 img,
                 dets,
@@ -228,6 +235,13 @@ class AgentNav:
                 or nav.has(dets, "button_advance", conf_min=self._thr["button_advance"])
             ):
                 return "TeamTrialsRaceAgain", {"counts": dict(counts)}
+
+            if nav.has(dets, "button_advance", conf_min=self._thr["button_advance"]) and not nav.has(
+                dets, "button_pink", conf_min=self._thr["button_pink"]
+            ) and not nav.has(
+                dets, "button_white", conf_min=self._thr["button_white"]
+            ):
+                return "TeamTrialsFinalNext", {"counts": dict(counts)}
 
             if self._button_text_seen(
                 img,
@@ -355,6 +369,10 @@ class AgentNav:
             elif self.action == "team_trials" and screen == "TeamTrialsRaceAgain":
                 logger_uma.info("[AgentNav] TeamTrials race-again screen detected")
                 self.team_trials.handle_race_again_screen()
+
+            elif self.action == "team_trials" and screen == "TeamTrialsFinalNext":
+                logger_uma.info("[AgentNav] TeamTrials final next-only screen detected")
+                self.team_trials.handle_final_next_screen()
 
             elif self.action == "team_trials" and screen == "TeamTrialsSalePrompt":
                 logger_uma.info("[AgentNav] TeamTrials sale prompt detected")
