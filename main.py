@@ -288,6 +288,12 @@ class BotState:
                 run_kind="bot",
                 context=Settings.ACTIVE_SCENARIO,
             )
+            logger_uma.info(
+                "[VERSION] runtime_head=%s mode=%s scenario=%s",
+                current_workspace_head(),
+                Settings.MODE,
+                Settings.ACTIVE_SCENARIO,
+            )
 
             ocr, yolo_engine = make_ocr_yolo_from_settings(ctrl)
 
@@ -451,6 +457,12 @@ class NavState:
                 debug_dir=str(Settings.DEBUG_DIR),
                 run_kind="nav",
                 context=action,
+            )
+            logger_uma.info(
+                "[VERSION] runtime_head=%s mode=%s nav_action=%s",
+                current_workspace_head(),
+                Settings.MODE,
+                action,
             )
 
             # OCR from settings, YOLO engine for NAV specifically
@@ -820,6 +832,21 @@ def hotkey_loop(bot_state: BotState, nav_state: NavState):
                 time.sleep(0.08)
     except KeyboardInterrupt:
         pass
+
+
+def current_workspace_head() -> str:
+    try:
+        return (
+            subprocess.check_output(
+                ["git", "rev-parse", "--short", "HEAD"],
+                cwd=Path(__file__).resolve().parent,
+                text=True,
+                stderr=subprocess.DEVNULL,
+            )
+            .strip()
+        )
+    except Exception:
+        return "unknown"
     finally:
         try:
             keyboard.unhook_all_hotkeys()
