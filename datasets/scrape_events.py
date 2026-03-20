@@ -55,6 +55,9 @@ STAT_WEIGHTS = {  # same as your working script
 BASE_URL = "https://gametora.com"
 SUPPORT_BASE_URL = BASE_URL + "/umamusume/supports/"
 CHARACTER_BASE_URL = BASE_URL + "/umamusume/characters/"
+EXCEPTION_SUPPORT_SLUGS: set[str] = {
+    "30076-silence-suzuka",
+}
 
 def dbg(on: bool, *args, **kwargs):
     if on:
@@ -66,6 +69,42 @@ def T(s: str) -> str:
 def ensure_requests():
     if not requests:
         raise SystemExit("This mode requires `requests`. Please: pip install requests")
+
+_WIN_FORBIDDEN = r'<>:"/\|?*'
+_RE_BADFILE = re.compile(rf"[{re.escape(_WIN_FORBIDDEN)}]")
+
+def safe_filename(s: str) -> str:
+    s = (s or "").strip()
+    s = _RE_BADFILE.sub("_", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def uniquify_key(base: str, counts: Dict[str, int]) -> str:
+    base = (base or "").strip() or "Unknown"
+    n = counts.get(base, 0) + 1
+    counts[base] = n
+    return base if n == 1 else f"{base}__{n}"
+
+def uniquify_path(path: str, path_counts: Dict[str, int]) -> str:
+    base = os.path.normpath(path)
+    n = path_counts.get(base, 0) + 1
+    path_counts[base] = n
+
+    if n == 1 and not os.path.exists(base):
+        return base
+
+    root, ext = os.path.splitext(base)
+    cand = f"{root}__{n}{ext}"
+    while os.path.exists(cand):
+        n += 1
+        path_counts[base] = n
+        cand = f"{root}__{n}{ext}"
+    return cand
+
+def apply_support_slug_exception(slug: str, display_name: str) -> str:
+    if slug in EXCEPTION_SUPPORT_SLUGS:
+        return f"{display_name}(Duplicate)"
+    return display_name
 
 # =============== Value helpers (covers '5/10' strings safely) ===============
 _SPLIT = re.compile(r"/")
@@ -823,17 +862,30 @@ def parse_events_from_json_data(event_data: Dict[str, Any], debug: bool, skill_m
             parse_block(events_struct.get(extra_key, []), 'random')
     return out
 
-def fetch_and_parse_cards(slugs: List[str], card_type: str, skill_lookup: Dict[str, str], status_lookup: Dict[str, str], period: str, img_dir: Optional[str], download_images: bool, debug: bool, shared_events_path: Optional[str] = None) -> List[Dict[str, Any]]:
+def fetch_and_parse_cards(
+    slugs: List[str],
+    card_type: str,
+    skill_lookup: Dict[str, str],
+    status_lookup: Dict[str, str],
+    period: str,
+    img_dir: Optional[str],
+    download_images: bool,
+    debug: bool,
+    shared_events_path: Optional[str] = None,
+    id_counts: Optional[Dict[str, int]] = None,
+    img_path_counts: Optional[Dict[str, int]] = None,
+) -> List[Dict[str, Any]]:
     ensure_requests()
     results: List[Dict[str, Any]] = []
-    if not slugs: return results
+    if not slugs:
+        return results
 
-    # Prepare image dir if requested
+    id_counts = id_counts or {}
+    img_path_counts = img_path_counts or {}
+
     if download_images and img_dir:
-        if not os.path.exists(img_dir):
-            os.makedirs(img_dir, exist_ok=True)
+        os.makedirs(img_dir, exist_ok=True)
 
-    # img class patterns on Gametora
     SUPPORT_IMG_CLASS_PATTERN = re.compile(r"^supports_infobox_top_image__")
     CHARACTER_IMG_CLASS_PATTERN = re.compile(r"^characters_infobox_character_image__")
 
@@ -841,29 +893,29 @@ def fetch_and_parse_cards(slugs: List[str], card_type: str, skill_lookup: Dict[s
         url = (SUPPORT_BASE_URL if card_type == "support" else CHARACTER_BASE_URL) + slug
         dbg(debug, f"[DEBUG] Fetching {card_type} URL: {url}")
         try:
-            r = requests.get(url, timeout=20); r.raise_for_status()
+            r = requests.get(url, timeout=20)
+            r.raise_for_status()
         except Exception as e:
-            print(f"[WARN] Failed to fetch {slug}: {e}", file=sys.stderr); continue
+            print(f"[WARN] Failed to fetch {slug}: {e}", file=sys.stderr)
+            continue
 
-        soup = BeautifulSoup(r.content, 'html.parser')
+        soup = BeautifulSoup(r.content, "html.parser")
         next_tag = soup.find(id="__NEXT_DATA__")
         if not next_tag:
-            print(f"[WARN] __NEXT_DATA__ not found for {slug}", file=sys.stderr); continue
+            print(f"[WARN] __NEXT_DATA__ not found for {slug}", file=sys.stderr)
+            continue
 
         try:
             data = json.loads(next_tag.decode_contents())
-
-            # Dump data to a temp file for debugging
-            with open('temp.json', 'w', encoding='utf-8') as f:
+            with open("temp.json", "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-            
-            page_props = data['props']['pageProps']
-            item_data  = page_props['itemData']
-            event_data = page_props['eventData']
+            page_props = data["props"]["pageProps"]
+            item_data = page_props["itemData"]
+            event_data = page_props["eventData"]
         except Exception as e:
-            print(f"[ERROR] JSON parse error for {slug}: {e}", file=sys.stderr); continue
+            print(f"[ERROR] JSON parse error for {slug}: {e}", file=sys.stderr)
+            continue
 
-        # Meta
         name = item_data.get("char_name", "Unknown") if card_type == "support" else item_data.get("name_en", "Unknown")
         rarity_code = item_data.get("rarity")
         rarity = "SSR" if rarity_code == 3 else "SR" if rarity_code == 2 else "R" if rarity_code == 1 else "None"
@@ -871,60 +923,66 @@ def fetch_and_parse_cards(slugs: List[str], card_type: str, skill_lookup: Dict[s
         raw_attr = (item_data.get("type", "unknown") or "").lower()
         attribute = ATTRIBUTE_MAP.get(raw_attr, raw_attr.upper() if raw_attr else "None")
 
-        # Image (optional)
+        if card_type == "support":
+            display_name = f"{name} {attribute} {rarity}".strip()
+            display_name = apply_support_slug_exception(slug, display_name)
+            base_id = f"{display_name}_{attribute}_{rarity}".strip("_")
+        else:
+            display_name = f"{name} ({(version or '').replace('_', ' ').title()})" if version else name
+            base_id = f"{display_name}_profile"
+
+        unique_id = uniquify_key(base_id, id_counts)
+
         if download_images and img_dir:
-            img_tag = soup.find("img", class_=SUPPORT_IMG_CLASS_PATTERN) if card_type == "support" else soup.find("div", class_=CHARACTER_IMG_CLASS_PATTERN)
+            img_tag = (
+                soup.find("img", class_=SUPPORT_IMG_CLASS_PATTERN)
+                if card_type == "support"
+                else soup.find("div", class_=CHARACTER_IMG_CLASS_PATTERN)
+            )
             if img_tag and card_type == "trainee":
                 img_tag = img_tag.find("span").find("img") if img_tag.find("span") else None
-            img_url = None
-            if img_tag and img_tag.get('src'):
-                cleaned_src = str(img_tag['src']).lstrip('/')
-                img_url = BASE_URL + '/' + cleaned_src
+            if img_tag and img_tag.get("src"):
+                cleaned_src = str(img_tag["src"]).lstrip("/")
+                img_url = BASE_URL + "/" + cleaned_src
                 try:
-                    ir = requests.get(img_url, timeout=12); ir.raise_for_status()
-                    ext = os.path.splitext(img_url.split('?')[0])[-1] or ".png"
-                    fname = f"{name}_{attribute}_{rarity}{ext}" if card_type == "support" else f"{name} ({(version or '').replace('_',' ').title()})_profile{ext}"
+                    ir = requests.get(img_url, timeout=12)
+                    ir.raise_for_status()
+                    ext = os.path.splitext(img_url.split("?")[0])[-1] or ".png"
+                    if card_type == "support":
+                        base_fname = f"{safe_filename(display_name)}_{attribute}_{rarity}{ext}"
+                    else:
+                        base_fname = f"{safe_filename(display_name)}_profile{ext}"
                     sub = os.path.join(img_dir, card_type)
                     os.makedirs(sub, exist_ok=True)
-                    with open(os.path.join(sub, fname), "wb") as f:
+                    target_path = uniquify_path(os.path.join(sub, base_fname), img_path_counts)
+                    with open(target_path, "wb") as f:
                         f.write(ir.content)
-                    dbg(debug, f"[INFO] Downloaded image: {os.path.join(sub, fname)}")
+                    dbg(debug, f"[INFO] Downloaded image: {target_path}")
                 except Exception as e:
                     print(f"[WARN] Image download failed for {slug}: {e}", file=sys.stderr)
 
-        # Events
         events = parse_events_from_json_data(event_data, debug, skill_lookup, status_lookup, period)
-        
-        # For trainees, merge with shared events and apply overrides
+
         if card_type == "trainee" and shared_events_path:
             shared_events = load_shared_events(shared_events_path, debug)
             if shared_events:
-                # Extract override data from event_data
                 try:
-                    events_struct = json.loads(event_data.get('en' if 'en' in event_data else 'ja', '{}'))
+                    events_struct = json.loads(event_data.get("en" if "en" in event_data else "ja", "{}"))
                     nyear_stat = events_struct.get("nyear")
                     dance_stats = events_struct.get("dance")
-                    
-                    # Apply trainee-specific overrides to shared events
                     customized_shared = apply_trainee_overrides(shared_events, nyear_stat, dance_stats)
-                    
-                    # Merge: card events first, then shared events (card events override)
                     events = merge_shared_events(events, customized_shared)
-                    dbg(debug, f"[INFO] Merged {len(customized_shared)} shared events for trainee '{name}'.")
+                    dbg(debug, f"[INFO] Merged {len(customized_shared)} shared events for trainee '{display_name}'.")
                 except Exception as e:
-                    dbg(debug, f"[WARN] Failed to apply shared events for '{name}': {e}")
+                    dbg(debug, f"[WARN] Failed to apply shared events for '{display_name}': {e}")
 
-        # Skill metadata
         def skill_payload(ids: Optional[List[Any]]) -> List[Dict[str, str]]:
             payload: List[Dict[str, str]] = []
             if not ids:
                 return payload
             for raw_id in ids:
                 sid = str(raw_id)
-                payload.append({
-                    "id": sid,
-                    "name": skill_lookup.get(sid, f"Skill ID: {sid}")
-                })
+                payload.append({"id": sid, "name": skill_lookup.get(sid, f"Skill ID: {sid}")})
             return payload
 
         hint_skills = skill_payload((item_data.get("hints", {}) or {}).get("hint_skills"))
@@ -932,13 +990,12 @@ def fetch_and_parse_cards(slugs: List[str], card_type: str, skill_lookup: Dict[s
 
         obj = {
             "type": "support" if card_type == "support" else "trainee",
-            "name": name if card_type == "support" else (f"{name} ({(version or '').replace('_',' ').title()})" if version else name),
+            "name": display_name,
             "rarity": rarity if card_type == "support" else "None",
             "attribute": attribute if card_type == "support" else "None",
-            "id": f"{name}_{attribute}_{rarity}".strip("_") if card_type == "support" else f"{name}_profile",
-            "choice_events": events
+            "id": unique_id,
+            "choice_events": events,
         }
-        # Only include skill arrays if they have content or it's a support card
         if card_type == "support" or hint_skills:
             obj["hint_skills"] = hint_skills
         if card_type == "support" or event_skills:
@@ -969,6 +1026,8 @@ def main():
     args = ap.parse_args()
 
     all_entries: List[Dict[str, Any]] = []
+    id_counts: Dict[str, int] = {}
+    img_path_counts: Dict[str, int] = {}
 
     # ---------- HTML path ----------
     if args.html_file or args.url:
@@ -978,34 +1037,38 @@ def main():
         defaults = parse_support_defaults(args.support_defaults)
 
         for idx, item in enumerate(support_items):
-            name = extract_support_name(item, args.debug)
-            if not name:
-                dbg(args.debug, f"[WARN] Support[{idx}] has no name; skipping."); continue
-            rarity, attr = defaults.get(name.lower(), ("", ""))
+            base_name = extract_support_name(item, args.debug)
+            if not base_name:
+                dbg(args.debug, f"[WARN] Support[{idx}] has no name; skipping.")
+                continue
+            rarity, attr = defaults.get(base_name.lower(), ("", ""))
             if not rarity or not attr:
-                dbg(args.debug, f"[WARN] No defaults for '{name}'. Supply via --support-defaults 'Name-RAR-ATTR|...'")
+                dbg(args.debug, f"[WARN] No defaults for '{base_name}'. Supply via --support-defaults 'Name-RAR-ATTR|...'")
+            rar = (rarity or "None").strip()
+            att = (attr or "None").strip()
+            display_name = f"{base_name} {att} {rar}".strip()
+            unique_id = uniquify_key(f"{display_name}_{att}_{rar}".strip("_"), id_counts)
             events = parse_events_in_card(item, args.debug)
-            entry = {
+            all_entries.append({
                 "type": "support",
-                "name": name,
-                "rarity": rarity or "None",
-                "attribute": attr or "None",
-                "id": f"{name}_{attr}_{rarity}".strip("_"),
+                "name": display_name,
+                "rarity": rar,
+                "attribute": att,
+                "id": unique_id,
                 "choice_events": events
-            }
-            all_entries.append(entry)
+            })
 
         for idx, item in enumerate(trainee_items):
             name_full = extract_trainee_name(item, args.debug) or ""
-            # strip "(Original)" suffix if any
             name = re.sub(r'\s*\(Original\)\s*$', '', name_full, flags=re.IGNORECASE).strip() or name_full
+            unique_id = uniquify_key(f"{name}_profile", id_counts)
             events = parse_events_in_card(item, args.debug)
             all_entries.append({
                 "type": "trainee",
                 "name": name,
                 "rarity": "None",
                 "attribute": "None",
-                "id": f"{name}_profile",
+                "id": unique_id,
                 "choice_events": events
             })
 
@@ -1016,9 +1079,7 @@ def main():
     if supports_slugs or character_slugs:
         skill_lookup  = load_skill_data(args.skills, args.debug)
         status_lookup = load_status_data(args.status, args.debug)
-        # Determine shared events path
         shared_events_path = os.path.join(os.path.dirname(args.skills), "shared_events.json")
-        # Clear images dir if requested
         if args.images and args.img_dir and args.clear_images and os.path.exists(args.img_dir):
             print(f"[INFO] Clearing existing content in {args.img_dir}...")
             for item in os.listdir(args.img_dir):
@@ -1028,9 +1089,36 @@ def main():
                     elif os.path.isdir(p): shutil.rmtree(p)
                 except Exception as e:
                     print(f"[WARN] Failed to delete {p}: {e}", file=sys.stderr)
-        # Fetch & parse
-        all_entries.extend(fetch_and_parse_cards(supports_slugs, "support",  skill_lookup, status_lookup, args.period, args.img_dir, args.images, args.debug, None))
-        all_entries.extend(fetch_and_parse_cards(character_slugs, "trainee", skill_lookup, status_lookup, args.period, args.img_dir, args.images, args.debug, shared_events_path))
+        all_entries.extend(
+            fetch_and_parse_cards(
+                supports_slugs,
+                "support",
+                skill_lookup,
+                status_lookup,
+                args.period,
+                args.img_dir,
+                args.images,
+                args.debug,
+                None,
+                id_counts=id_counts,
+                img_path_counts=img_path_counts,
+            )
+        )
+        all_entries.extend(
+            fetch_and_parse_cards(
+                character_slugs,
+                "trainee",
+                skill_lookup,
+                status_lookup,
+                args.period,
+                args.img_dir,
+                args.images,
+                args.debug,
+                shared_events_path,
+                id_counts=id_counts,
+                img_path_counts=img_path_counts,
+            )
+        )
 
     if not all_entries:
         raise SystemExit("No entries were parsed. Provide HTML (--html-file/--url) and/or JSON slugs (--supports-card/--characters-card).")
@@ -1038,7 +1126,7 @@ def main():
     # ---------- Write ----------
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(all_entries, f, ensure_ascii=False, indent=2)
-    print(f"[OK] Wrote {len(all_entries)} entries → {args.out}")
+    print(f"[OK] Wrote {len(all_entries)} entries -> {args.out}")
 
 if __name__ == "__main__":
     main()
