@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from core.actions.claw import ClawGame
 from core.actions.events import EventFlow
 from core.actions.lobby import LobbyFlow
-from core.actions.race import RaceFlow
+from core.actions.race import RaceFlow, RaceFailureReason
 from core.actions.skills import SkillsFlow, SkillsBuyResult, SkillsBuyStatus
 
 from core.controllers.base import IController
@@ -133,6 +133,9 @@ class AgentScenario(ABC):
         # EventStale loop detection
         self._consecutive_event_stale_clicks: int = 0
         self._force_unknown_once: bool = False
+        self._unknown_recovery_context: Optional[str] = None
+        self._unknown_recovery_patience_limit: int = 0
+        self._unknown_recovery_iterations: int = 0
 
     # --------------------------
     # Skill memory helpers
@@ -214,6 +217,69 @@ class AgentScenario(ABC):
             self.lobby.state.planned_race_name = str(raw_race)
             return str(raw_race)
         return None
+
+    # --------------------------
+    # Unknown-screen recovery
+    # --------------------------
+    def arm_unknown_recovery(
+        self,
+        context: str,
+        *,
+        patience_limit: int = 80,
+    ) -> None:
+        patience_limit = max(20, int(patience_limit))
+        self.patience = 0
+        self._unknown_recovery_context = str(context)
+        self._unknown_recovery_patience_limit = max(
+            self._unknown_recovery_patience_limit,
+            patience_limit,
+        )
+        self._unknown_recovery_iterations = 0
+        logger_uma.warning(
+            "[agent] Armed unknown-screen recovery context=%s patience_limit=%d",
+            self._unknown_recovery_context,
+            self._unknown_recovery_patience_limit,
+        )
+
+    def clear_unknown_recovery(self, *, resolved_screen: Optional[str] = None) -> None:
+        if self._unknown_recovery_patience_limit <= 0:
+            return
+
+        if resolved_screen:
+            logger_uma.info(
+                "[agent] Unknown-screen recovery resolved on screen=%s context=%s after %d iterations",
+                resolved_screen,
+                self._unknown_recovery_context,
+                self._unknown_recovery_iterations,
+            )
+        else:
+            logger_uma.debug(
+                "[agent] Clearing unknown-screen recovery context=%s after %d iterations",
+                self._unknown_recovery_context,
+                self._unknown_recovery_iterations,
+            )
+
+        self._unknown_recovery_context = None
+        self._unknown_recovery_patience_limit = 0
+        self._unknown_recovery_iterations = 0
+
+    def in_unknown_recovery(self) -> bool:
+        return self._unknown_recovery_patience_limit > 0
+
+    def record_unknown_recovery_iteration(self) -> None:
+        if self.in_unknown_recovery():
+            self._unknown_recovery_iterations += 1
+
+    def unknown_patience_limit(self, delay: float) -> int:
+        base_limit = max(20, int(delay * 100))
+        return max(base_limit, self._unknown_recovery_patience_limit)
+
+    @staticmethod
+    def is_recoverable_race_failure(reason: Optional[RaceFailureReason]) -> bool:
+        return reason in {
+            RaceFailureReason.LOBBY_FLOW_FAILED,
+            RaceFailureReason.PRE_LOBBY_TIMEOUT,
+        }
 
     def _today_date_key(self) -> Optional[str]:
         di = getattr(self.lobby.state, "date_info", None)

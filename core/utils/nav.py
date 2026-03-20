@@ -2,8 +2,9 @@
 from __future__ import annotations
 
 import random
+import time
 from time import sleep
-from typing import List, Sequence, Tuple, Dict, Optional, Iterable
+from typing import Callable, List, Sequence, Tuple, Dict, Optional, Iterable
 
 from PIL import Image
 
@@ -11,6 +12,7 @@ from core.controllers.base import IController
 from core.perception.yolo.interface import IDetector
 from core.settings import Settings
 from core.types import DetectionDict
+from core.utils.abort import abort_requested
 from core.utils.logger import logger_uma
 from core.utils.pointer import smart_scroll_small
 from core.utils.waiter import Waiter
@@ -86,6 +88,51 @@ def random_center_tap(
     cx = W * 0.5 + random.uniform(-W * dev_frac, W * dev_frac)
     cy = H * 0.5 + random.uniform(-H * dev_frac, H * dev_frac)
     ctrl.click_xyxy_center((cx, cy, cx, cy), clicks=clicks)
+
+
+def cooperative_sleep(
+    seconds: float,
+    *,
+    step_s: float = 0.10,
+    should_stop: Optional[Callable[[], bool]] = None,
+) -> bool:
+    """Sleep in short slices so long waits can be interrupted quickly."""
+    deadline = time.monotonic() + max(0.0, float(seconds))
+    while time.monotonic() < deadline:
+        if abort_requested() or (should_stop is not None and should_stop()):
+            return False
+        remaining = deadline - time.monotonic()
+        sleep(min(step_s, max(0.0, remaining)))
+    return True
+
+
+def wait_until_seen(
+    waiter: Waiter,
+    *,
+    classes: Optional[Sequence[str]] = None,
+    texts: Optional[Sequence[str]] = None,
+    tag: str,
+    timeout_s: float = 4.0,
+    poll_interval_s: float = 0.20,
+    conf_min: float = 0.0,
+    threshold: float = 0.58,
+    should_stop: Optional[Callable[[], bool]] = None,
+) -> bool:
+    """Poll current UI until the requested state is visible or a stop is requested."""
+    deadline = time.monotonic() + max(0.0, float(timeout_s))
+    while time.monotonic() < deadline:
+        if abort_requested() or (should_stop is not None and should_stop()):
+            return False
+        if waiter.seen(
+            classes=classes,
+            texts=texts,
+            tag=tag,
+            conf_min=conf_min,
+            threshold=threshold,
+        ):
+            return True
+        sleep(max(0.01, float(poll_interval_s)))
+    return False
 
 
 def click_button_loop(
@@ -265,6 +312,7 @@ def handle_shop_exchange(
     tag_prefix: str = "shop",
     ensure_enter: bool = True,
     max_cycles: int = 6,
+    should_stop: Optional[Callable[[], bool]] = None,
 ) -> bool:
     prefs_enabled = list(_shop_item_order())
     if not prefs_enabled:
@@ -284,29 +332,46 @@ def handle_shop_exchange(
         )
         if not shop_appeared:
             return False
-        sleep(2.5)
+        if not cooperative_sleep(2.5, should_stop=should_stop):
+            logger_uma.info("[nav] shop: aborted while entering")
+            return False
     else:
-        sleep(1.0)
+        if not cooperative_sleep(1.0, should_stop=should_stop):
+            logger_uma.info("[nav] shop: aborted before scan")
+            return False
 
     attempts = 0
     any_purchased = False
-
-    all_purchased = True
+    stagnant_attempts = 0
     while attempts < max_cycles:
+        if abort_requested() or (should_stop is not None and should_stop()):
+            logger_uma.info("[nav] shop: abort requested during exchange loop")
+            break
         attempts += 1
+        logger_uma.debug(
+            "[nav] shop: scan attempt %d/%d (prefs=%s)",
+            attempts,
+            max_cycles,
+            [pref_key for _, pref_key in prefs_enabled],
+        )
         img, dets = collect_snapshot(waiter, yolo_engine, tag=f"{tag_prefix}_scan")
 
         rows = rows_top_to_bottom(dets, "shop_row")
         if not rows:
             logger_uma.debug("[nav] shop: no shop_row detected, retry scrolling")
             smart_scroll_small(ctrl, steps_android=1, steps_pc=1)
-            sleep(1.0)
+            if not cooperative_sleep(1.0, should_stop=should_stop):
+                logger_uma.info("[nav] shop: abort requested while recovering rows")
+                break
             continue
 
-        any_purchased = False
+        progress_this_cycle = False
         expected_purchases = len(prefs_enabled)
         for det_name, pref_key in prefs_enabled:
             for row in rows:
+                if abort_requested() or (should_stop is not None and should_stop()):
+                    logger_uma.info("[nav] shop: abort requested while evaluating rows")
+                    break
                 items = _detections_in_row(dets, row, det_name)
                 if not items:
                     continue
@@ -323,7 +388,9 @@ def handle_shop_exchange(
                 logger_uma.info(
                     f"[nav] shop: clicked exchange for '{det_name}' (pref={pref_key})"
                 )
-                sleep(0.5)
+                if not cooperative_sleep(0.5, should_stop=should_stop):
+                    logger_uma.info("[nav] shop: abort requested before confirmation")
+                    break
 
                 confirmed = _confirm_exchange_dialog(waiter, tag_prefix)
                 if confirmed:
@@ -331,6 +398,7 @@ def handle_shop_exchange(
                         f"[nav] shop: completed exchange for {pref_key}"
                     )
                     any_purchased = True
+                    progress_this_cycle = True
                     expected_purchases -= 1
                 else:
                     logger_uma.debug(
@@ -339,17 +407,33 @@ def handle_shop_exchange(
                 if pref_key != "star_pieces":
                     # if star pieces we may need to look in other rows
                     break
+            if abort_requested() or (should_stop is not None and should_stop()):
+                break
 
         if expected_purchases > 0:
+            stagnant_attempts = stagnant_attempts + 1 if not progress_this_cycle else 0
+            if stagnant_attempts >= 3:
+                logger_uma.info(
+                    "[nav] shop: no progress for %d scans, exiting early",
+                    stagnant_attempts,
+                )
+                break
             smart_scroll_small(ctrl, steps_android=1, steps_pc=1)
-            sleep(1.0)
-        elif any_purchased:
+            if not cooperative_sleep(1.0, should_stop=should_stop):
+                logger_uma.info("[nav] shop: abort requested while scrolling")
+                break
+        elif progress_this_cycle:
             # everything purchased at first glance
             end_sale_dialog(waiter, tag_prefix)
             return True
 
     if any_purchased:
         end_sale_dialog(waiter, tag_prefix)
+        return True
+
+    exited = end_sale_dialog(waiter, tag_prefix)
+    if exited:
+        logger_uma.info("[nav] shop: exited shop after incomplete scan")
         return True
 
     logger_uma.info("[nav] shop: preferences not satisfied after scroll attempts")

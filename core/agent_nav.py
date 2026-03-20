@@ -18,6 +18,7 @@ from core.settings import Settings
 from core.types import DetectionDict
 from core.utils import nav
 from core.utils.logger import logger_uma
+from core.utils.text import fuzzy_contains
 from core.utils.waiter import PollConfig, Waiter
 
 
@@ -85,8 +86,33 @@ class AgentNav:
     # Screen classification
     # --------------------------
 
+    def _button_text_seen(
+        self,
+        img: Image.Image,
+        dets: List[DetectionDict],
+        *,
+        cls_name: str,
+        target_text: str,
+        conf_min: float = 0.0,
+        threshold: float = 0.58,
+    ) -> bool:
+        if self.ocr is None:
+            return False
+        for det in dets:
+            if det.get("name") != cls_name or float(det.get("conf", 0.0)) < conf_min:
+                continue
+            try:
+                x1, y1, x2, y2 = det["xyxy"]
+                crop = img.crop((x1, y1, x2, y2))
+                txt = (self.ocr.text(crop) or "").strip()
+                if txt and fuzzy_contains(txt, target_text, threshold=threshold):
+                    return True
+            except Exception:
+                continue
+        return False
+
     def classify_nav_screen(
-        self, dets: List[DetectionDict]
+        self, img: Image.Image, dets: List[DetectionDict]
     ) -> Tuple[ScreenName, ScreenInfo]:
         counts = Counter(d["name"] for d in dets)
 
@@ -101,12 +127,45 @@ class AgentNav:
             if nav.has(dets, "banner_opponent", conf_min=self._thr["banner_opponent"]):
                 return "TeamTrialsBanners", {"counts": dict(counts)}
 
-            if self.waiter.seen(
-                classes=("button_green",),
-                texts=("RESTORE",),
-                tag="agent_nav_team_trials_restore_seen",
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="RESTORE",
+                conf_min=self._thr["button_green"],
             ):
                 return "TeamTrialsFinished", {"counts": dict(counts)}
+
+            if nav.has(dets, "button_pink", conf_min=self._thr["button_pink"]) and (
+                nav.has(dets, "button_green", conf_min=self._thr["button_green"])
+                or nav.has(dets, "button_advance", conf_min=self._thr["button_advance"])
+            ):
+                return "TeamTrialsRaceAgain", {"counts": dict(counts)}
+
+            if nav.has(dets, "button_advance", conf_min=self._thr["button_advance"]) and not nav.has(
+                dets, "button_pink", conf_min=self._thr["button_pink"]
+            ) and not nav.has(
+                dets, "button_white", conf_min=self._thr["button_white"]
+            ):
+                return "TeamTrialsFinalNext", {"counts": dict(counts)}
+
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="SHOP",
+                conf_min=self._thr["button_green"],
+            ) and nav.has(dets, "button_white", conf_min=self._thr["button_white"]):
+                return "TeamTrialsSalePrompt", {"counts": dict(counts)}
+
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="NEXT",
+                conf_min=self._thr["button_green"],
+            ):
+                return "TeamTrialsContinue", {"counts": dict(counts)}
 
             if nav.has(
                 dets, "race_team_trials_go", conf_min=self._thr["race_team_trials_go"]
@@ -162,12 +221,45 @@ class AgentNav:
             if nav.has(dets, "banner_opponent", conf_min=self._thr["banner_opponent"]):
                 return "TeamTrialsBanners", {"counts": dict(counts)}
 
-            if self.waiter.seen(
-                classes=("button_green",),
-                texts=("RESTORE",),
-                tag="agent_nav_team_trials_restore_seen",
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="RESTORE",
+                conf_min=self._thr["button_green"],
             ):
                 return "TeamTrialsFinished", {"counts": dict(counts)}
+
+            if nav.has(dets, "button_pink", conf_min=self._thr["button_pink"]) and (
+                nav.has(dets, "button_green", conf_min=self._thr["button_green"])
+                or nav.has(dets, "button_advance", conf_min=self._thr["button_advance"])
+            ):
+                return "TeamTrialsRaceAgain", {"counts": dict(counts)}
+
+            if nav.has(dets, "button_advance", conf_min=self._thr["button_advance"]) and not nav.has(
+                dets, "button_pink", conf_min=self._thr["button_pink"]
+            ) and not nav.has(
+                dets, "button_white", conf_min=self._thr["button_white"]
+            ):
+                return "TeamTrialsFinalNext", {"counts": dict(counts)}
+
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="SHOP",
+                conf_min=self._thr["button_green"],
+            ) and nav.has(dets, "button_white", conf_min=self._thr["button_white"]):
+                return "TeamTrialsSalePrompt", {"counts": dict(counts)}
+
+            if self._button_text_seen(
+                img,
+                dets,
+                cls_name="button_green",
+                target_text="NEXT",
+                conf_min=self._thr["button_green"],
+            ):
+                return "TeamTrialsContinue", {"counts": dict(counts)}
 
             if nav.has(
                 dets,
@@ -229,7 +321,7 @@ class AgentNav:
             img, dets = nav.collect_snapshot(
                 self.waiter, self.yolo_engine, agent=self.agent_name, tag="screen_detector"
             )
-            screen, info = self.classify_nav_screen(dets)
+            screen, info = self.classify_nav_screen(img, dets)
             logger_uma.debug(f"[AgentNav] screen={screen} | info={info}")
 
             if screen == "RaceScreen":
@@ -269,6 +361,22 @@ class AgentNav:
                     f"[AgentNav] TeamTrials recovery state detected: {screen}"
                 )
                 self.team_trials.resume()
+
+            elif self.action == "team_trials" and screen == "TeamTrialsContinue":
+                logger_uma.info("[AgentNav] TeamTrials continue screen detected")
+                self.team_trials.handle_continue_screen()
+
+            elif self.action == "team_trials" and screen == "TeamTrialsRaceAgain":
+                logger_uma.info("[AgentNav] TeamTrials race-again screen detected")
+                self.team_trials.handle_race_again_screen()
+
+            elif self.action == "team_trials" and screen == "TeamTrialsFinalNext":
+                logger_uma.info("[AgentNav] TeamTrials final next-only screen detected")
+                self.team_trials.handle_final_next_screen()
+
+            elif self.action == "team_trials" and screen == "TeamTrialsSalePrompt":
+                logger_uma.info("[AgentNav] TeamTrials sale prompt detected")
+                self.team_trials.handle_sale_prompt()
 
             elif self.action == "team_trials" and screen == "TeamTrialsFinished":
                 logger_uma.info("[AgentNav] TeamTrials finished detected")

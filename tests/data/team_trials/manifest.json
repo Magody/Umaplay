@@ -1,0 +1,41 @@
+[
+  {
+    "id": "team_trials_race_finished_next_01",
+    "filename": "team_trials_race_finished_next_01.png",
+    "expected_screen": "TeamTrialsContinue",
+    "detections": ["button_green"],
+    "ocr_text": {
+      "button_green": "NEXT"
+    },
+    "notes": "Intermediate RACE FINISHED screen with a single green Next button."
+  },
+  {
+    "id": "team_trials_race_again_next_01",
+    "filename": "team_trials_race_again_next_01.png",
+    "expected_screen": "TeamTrialsRaceAgain",
+    "detections": ["button_pink", "button_advance"],
+    "ocr_text": {
+      "button_advance": "NEXT"
+    },
+    "notes": "Loop-choice screen where Race Again appears as pink and Next is detected as button_advance."
+  },
+  {
+    "id": "team_trials_daily_sale_prompt_01",
+    "filename": "team_trials_daily_sale_prompt_01.png",
+    "expected_screen": "TeamTrialsSalePrompt",
+    "detections": ["button_white", "button_green"],
+    "ocr_text": {
+      "button_white": "CANCEL",
+      "button_green": "SHOP"
+    },
+    "notes": "Optional Daily Sale prompt shown before entering the Team Trials shop."
+  },
+  {
+    "id": "team_trials_final_next_only_01",
+    "filename": "team_trials_final_next_only_01.png",
+    "expected_screen": "TeamTrialsFinalNext",
+    "detections": ["button_advance"],
+    "ocr_text": {},
+    "notes": "Last Team Trials result screen when no Race Again option remains and only Next is available."
+  }
+]

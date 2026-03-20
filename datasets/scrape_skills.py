@@ -34,6 +34,7 @@ import argparse
 import json
 import re
 import sys
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
@@ -41,6 +42,7 @@ from bs4 import BeautifulSoup, Tag
 
 BASE_URL = "https://gametora.com"
 ICON_BASE_URL = f"{BASE_URL}/images/umamusume/skill_icons/"
+DEFAULT_IMAGES_DIR = Path("..") / "web" / "public" / "icons" / "skills"
 
 # -------------------- Debug helper --------------------
 def dbg(on: bool, *args, **kwargs):
@@ -72,6 +74,63 @@ def grade_symbol_from_name(name: str) -> Optional[str]:
             return sym
     return None
 
+def _coerce_int(v: Any) -> Optional[int]:
+    try:
+        if v is None or isinstance(v, bool):
+            return None
+        return int(v)
+    except Exception:
+        return None
+
+def ensure_dir(path: Path) -> None:
+    path.mkdir(parents=True, exist_ok=True)
+
+def download_icon(icon_src: str, dest_path: Path, debug: bool) -> bool:
+    if not icon_src:
+        return False
+    if dest_path.exists():
+        dbg(debug, f"[IMG] exists, skipping: {dest_path}")
+        return False
+
+    try:
+        dbg(debug, f"[IMG] downloading: {icon_src}")
+        r = requests.get(icon_src, timeout=30)
+        r.raise_for_status()
+        dest_path.write_bytes(r.content)
+        dbg(debug, f"[IMG] saved: {dest_path}")
+        return True
+    except requests.RequestException as e:
+        print(f"[IMG ERROR] Failed to download {icon_src}: {e}", file=sys.stderr)
+        return False
+
+def maybe_download_all_icons(skills: List[Dict[str, Any]], images_dir: Path, debug: bool) -> None:
+    ensure_dir(images_dir)
+
+    downloaded = 0
+    skipped = 0
+    failed = 0
+
+    for sk in skills:
+        icon_src = sk.get("icon_src")
+        icon_filename = sk.get("icon_filename")
+        if not icon_src or not icon_filename:
+            skipped += 1
+            continue
+
+        dest = images_dir / icon_filename
+        ok = download_icon(icon_src, dest, debug)
+        if ok:
+            downloaded += 1
+        elif dest.exists():
+            skipped += 1
+        else:
+            failed += 1
+
+    dbg(
+        debug,
+        f"[IMG] done. downloaded={downloaded} skipped={skipped} failed={failed} dir={images_dir}"
+    )
+
 # -------------------- JSON MODE --------------------
 def fetch_json_skills(url: str, debug: bool) -> List[Dict[str, Any]]:
     dbg(debug, f"[DEBUG] Fetching JSON: {url}")
@@ -90,35 +149,64 @@ def fetch_json_skills(url: str, debug: bool) -> List[Dict[str, Any]]:
 
     skills: List[Dict[str, Any]] = []
     for sk in raw:
-        skill_id   = sk.get("id")
-        name_en    = sk.get("name_en") or ""
-        desc_en    = sk.get("desc_en") or ""
-        iconid     = sk.get("iconid")
-        rarity_code= sk.get("rarity")
+        skill_id = sk.get("id")
+        name_en = sk.get("name_en") or sk.get("enname") or ""
+        desc_en = sk.get("desc_en") or sk.get("endesc") or ""
+        iconid = sk.get("iconid")
+        rarity_code = sk.get("rarity")
+        sk_type = sk.get("type")
+        activation = sk.get("activation")
+        condition_groups = sk.get("condition_groups")
+        cost = sk.get("cost")
 
-        if skill_id is None or not name_en or not desc_en or iconid is None:
+        if skill_id is None or not name_en or not desc_en:
             continue
+
+        iconid_int = _coerce_int(iconid)
 
         if rarity_code in RARITY_MAP_JSON:
             rarity, color_class = RARITY_MAP_JSON[rarity_code]
-        elif skill_id >= 900000:
+        elif isinstance(skill_id, int) and skill_id >= 900000:
             rarity, color_class = RARITY_MAP_JSON["inherited"]
         else:
             rarity, color_class = RARITY_MAP_JSON[1]
 
-        icon_filename = f"utx_ico_skill_{iconid}.png"
-        icon_src      = ICON_BASE_URL + icon_filename
+        icon_filename: Optional[str] = None
+        icon_src: Optional[str] = None
+        if iconid_int is not None:
+            icon_filename = f"utx_ico_skill_{iconid_int}.png"
+            icon_src = ICON_BASE_URL + icon_filename
 
-        skills.append({
+        out: Dict[str, Any] = {
             "id": skill_id,
+            "iconid": iconid_int,
             "icon_filename": icon_filename,
             "icon_src": icon_src,
             "name": name_en,
             "description": desc_en,
             "color_class": color_class,
             "rarity": rarity,
-            "grade_symbol": grade_symbol_from_name(name_en)
-        })
+            "grade_symbol": grade_symbol_from_name(name_en),
+            "type": sk_type if isinstance(sk_type, list) else (sk_type if sk_type is not None else None),
+            "activation": activation if isinstance(activation, (dict, list)) else (activation if activation is not None else None),
+            "condition_groups": condition_groups if isinstance(condition_groups, list) else (condition_groups if condition_groups is not None else None),
+            "cost": _coerce_int(cost),
+            "jpname": sk.get("jpname"),
+            "enname": sk.get("enname"),
+            "name_en": sk.get("name_en"),
+            "desc_en": sk.get("desc_en"),
+        }
+
+        for k in (
+            "char", "char_e", "sce_e",
+            "sup_e", "sup_hint",
+            "gene_version", "versions",
+            "pre_evo", "evo", "evo_cond",
+        ):
+            if k in sk:
+                out[k] = sk.get(k)
+
+        skills.append(out)
 
     dbg(debug, f"[DEBUG] JSON-mode: collected {len(skills)} skills")
     return skills
@@ -183,13 +271,22 @@ def parse_html_skills_from_str(html: str, debug: bool) -> List[Dict[str, Any]]:
 
         out.append({
             "id": None,
+            "iconid": None,
             "icon_filename": icon_filename,
             "icon_src": icon_src,
             "name": name,
             "description": desc,
             "color_class": color_class,
             "rarity": rarity,
-            "grade_symbol": grade_symbol_from_name(name)
+            "grade_symbol": grade_symbol_from_name(name),
+            "type": None,
+            "activation": None,
+            "condition_groups": None,
+            "cost": None,
+            "jpname": None,
+            "enname": None,
+            "name_en": None,
+            "desc_en": None,
         })
 
     dbg(debug, f"[DEBUG] HTML-mode: collected {len(out)} skills")
@@ -268,6 +365,13 @@ def main():
     ap.add_argument("--url-html", help="Public skills page https://gametora.com/umamusume/skills")
     ap.add_argument("--html-file", help="Saved HTML of the skills page (offline parsing)")
     ap.add_argument("--out", default="in_game/skills.json", help="Output JSON path (default: %(default)s)")
+    ap.add_argument(
+        "--images",
+        nargs="?",
+        const=str(DEFAULT_IMAGES_DIR),
+        default=None,
+        help=r"Download icons to directory (default: ..\web\public\icons\skills). Usage: --images or --images PATH",
+    )
     ap.add_argument("--debug", action="store_true", help="Verbose debug logging to stderr")
     args = ap.parse_args()
 
@@ -285,12 +389,12 @@ def main():
             html_list = parse_html_skills_from_str(html, args.debug)
             # If no rows (CSR), try to auto-discover the skills.*.json and fetch it
             if not html_list:
-                dbg(args.debug, "[DEBUG] No rows found in static HTML; attempting JSON discovery…")
+                dbg(args.debug, "[DEBUG] No rows found in static HTML; attempting JSON discovery...")
                 discovered = discover_json_from_html(html, args.debug)
                 if discovered:
-                    # Merge whatever we found from rows (likely 0) with discovered JSON
                     discovered_json = fetch_json_skills(discovered, args.debug)
-                    json_list = discovered_json if discovered_json else json_list
+                    if discovered_json:
+                        json_list = discovered_json
 
     # 3) If we still have nothing, bail
     if not json_list and not html_list:
@@ -302,10 +406,13 @@ def main():
     # 4) Prefer JSON entries (IDs) and merge with HTML (if any)
     final_list = merge_and_dedupe(html_list, json_list, args.debug)
 
+    if args.images is not None:
+        maybe_download_all_icons(final_list, Path(args.images), args.debug)
+
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(final_list, f, ensure_ascii=False, indent=2)
 
-    print(f"[OK] Wrote {len(final_list)} skill entries → {args.out}")
+    print(f"[OK] Wrote {len(final_list)} skill entries -> {args.out}")
 
 if __name__ == "__main__":
     main()

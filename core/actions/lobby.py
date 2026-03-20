@@ -28,6 +28,7 @@ from core.constants import CLASS_UI_TURNS, CLASS_UI_GOAL
 from core.utils.pal_memory import PalMemoryManager
 from core.actions.events import _count_chain_steps
 from core.utils.event_processor import predict_next_chain_has_energy_from_raw
+from core.utils.abort import abort_requested
 
 from core.utils.date_uma import (
     DateInfo,
@@ -1435,7 +1436,30 @@ class LobbyFlow(ABC):
             timeout_s=2.5,
             tag="lobby_training",
         )
-        clicked = True
+        if not clicked:
+            logger_uma.warning("[lobby] Training button click failed")
+            return False
+
+        confirmed = False
+        deadline = time.time() + 2.5
+        while time.time() < deadline:
+            if abort_requested():
+                logger_uma.info("[lobby] Training confirmation aborted")
+                return False
+            if self.waiter.seen(
+                classes=("training_button",),
+                conf_min=0.35,
+                tag="lobby_training_confirm",
+            ):
+                confirmed = True
+                break
+            time.sleep(0.15)
+
+        if not confirmed:
+            logger_uma.warning("[lobby] Training screen not confirmed after click")
+            return False
+
+        logger_uma.info("[lobby] Training screen confirmed")
         if clicked:
             # This replaces a time.sleep... time.sleep(1.2)
             # If the machine is ultra powerful, then you should neet a time.sleep(1.2)

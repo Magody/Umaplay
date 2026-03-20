@@ -15,6 +15,7 @@ except Exception:
 from core.perception.ocr.interface import OCRInterface
 from core.perception.yolo.interface import IDetector
 from core.types import DetectionDict
+from core.utils.abort import abort_requested
 from core.utils.logger import logger_uma
 from core.utils.waiter import Waiter
 from core.utils import nav
@@ -49,7 +50,8 @@ class DailyRaceFlow:
         )
         if not ok:
             return False
-        sleep(1.7)
+        if not nav.cooperative_sleep(1.7):
+            return False
         # Often need to click the 'monies' card
         self.waiter.click_when(
             classes=("race_daily_races_monies",),
@@ -78,7 +80,8 @@ class DailyRaceFlow:
         """
         NEXT -> RACE
         """
-        sleep(1.5)
+        if not nav.cooperative_sleep(1.5):
+            return False
         ok = self.waiter.click_when(
             classes=("button_green",),
             prefer_bottom=False,
@@ -99,7 +102,8 @@ class DailyRaceFlow:
                 timeout_s=2.0,
                 tag="daily_race_cancel",
             ):
-                sleep(1.5)
+                if not nav.cooperative_sleep(1.5):
+                    return False
                 img, dets = nav.collect_snapshot(
                     self.waiter, self.yolo_engine, tag="daily_race_cancel"
                 )
@@ -110,10 +114,11 @@ class DailyRaceFlow:
                     timeout_s=3.0,
                     tag="daily_race_ui_home",
                 )
-                sleep(1.5)
+                nav.cooperative_sleep(1.5)
                 logger_uma.debug("[DailyRace] Canceling races")
                 return False
-        sleep(1.5)
+        if not nav.cooperative_sleep(1.5):
+            return False
         if self.waiter.click_when(
             classes=("button_green",),
             prefer_bottom=True,
@@ -133,12 +138,16 @@ class DailyRaceFlow:
         finalized = False
         counter = 5
         while race_again and counter > 0:
-            sleep(3)
+            if abort_requested():
+                break
+            if not nav.cooperative_sleep(3.0):
+                break
             if isinstance(self.ctrl, ScrcpyController) or (
                 BlueStacksController is not None
                 and isinstance(self.ctrl, BlueStacksController)
             ):
-                sleep(1.5)
+                if not nav.cooperative_sleep(1.5):
+                    break
             if self.waiter.click_when(
                 classes=("button_green",),
                 prefer_bottom=True,
@@ -149,7 +158,8 @@ class DailyRaceFlow:
             else:
                 race_again = False
                 continue
-            sleep(1.5)
+            if not nav.cooperative_sleep(1.5):
+                break
 
             if self.waiter.click_when(
                 classes=("button_green",),
@@ -162,7 +172,8 @@ class DailyRaceFlow:
                 race_again = False
                 continue
             counter -= 1
-            sleep(2.0)
+            if not nav.cooperative_sleep(2.0):
+                break
             # After race, click 'View Results' / proceed with white button spamming
             img, _ = nav.collect_snapshot(
                 self.waiter, self.yolo_engine, tag="daily_race_view_results"
@@ -177,7 +188,8 @@ class DailyRaceFlow:
                 clicks=1,
                 tag="daily_race_view_results_white",
             )
-            sleep(2.0)
+            if not nav.cooperative_sleep(2.0):
+                break
             # nav.random_center_tap(
             #     self.ctrl, img, clicks=random.randint(3, 4), dev_frac=0.20
             # )
@@ -199,6 +211,7 @@ class DailyRaceFlow:
                 self.ctrl,
                 tag_prefix="daily_race_shop",
                 ensure_enter=True,
+                should_stop=abort_requested,
             )
             if did_shop:
                 logger_uma.info("[DailyRace] Completed shop exchange flow")
@@ -218,7 +231,8 @@ class DailyRaceFlow:
                     finalized = True
                     break
                 else:
-                    sleep(2.0)
+                    if not nav.cooperative_sleep(2.0):
+                        break
                     if self.waiter.seen(
                         classes=("button_green",),
                         texts=("OK",),
@@ -232,7 +246,8 @@ class DailyRaceFlow:
                             timeout_s=2.0,
                             tag="daily_race_ok",
                         )
-                        sleep(2)
+                        if not nav.cooperative_sleep(2.0):
+                            break
                         # Click in button_advance using the waiter
                         self.waiter.click_when(
                             classes=("button_advance",),
@@ -240,12 +255,14 @@ class DailyRaceFlow:
                             timeout_s=4,
                             tag="daily_race_advance",
                         )
-                        sleep(2)
+                        if not nav.cooperative_sleep(2.0):
+                            break
                         if isinstance(self.ctrl, ScrcpyController) or (
                             BlueStacksController is not None
                             and isinstance(self.ctrl, BlueStacksController)
                         ):
-                            sleep(4.0)
+                            if not nav.cooperative_sleep(4.0):
+                                break
                         # Click object with class ui_home
                         self.waiter.click_when(
                             classes=("ui_home",),

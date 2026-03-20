@@ -1,6 +1,7 @@
 # core/perception/yolo/yolo_local.py
 from __future__ import annotations
 
+import threading
 from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 from PIL import Image
@@ -13,6 +14,9 @@ from core.settings import Settings
 from core.types import DetectionDict
 from core.utils.img import pil_to_bgr
 from core.utils.logger import logger_uma
+
+_YOLO_MODEL_CACHE: Dict[Tuple[str, bool], YOLO] = {}
+_YOLO_MODEL_CACHE_LOCK = threading.Lock()
 
 
 class LocalYOLOEngine(IDetector):
@@ -31,14 +35,25 @@ class LocalYOLOEngine(IDetector):
         self.ctrl = ctrl
         self.weights_path = str(weights or Settings.YOLO_WEIGHTS_URA)
         self.use_gpu = Settings.USE_GPU if use_gpu is None else bool(use_gpu)
+        cache_key = (self.weights_path, self.use_gpu)
 
-        logger_uma.info(f"Loading YOLO weights from: {self.weights_path}")
-        self.model = YOLO(self.weights_path)
-        if self.use_gpu:
-            try:
-                self.model.to("cuda:0")
-            except Exception as e:
-                logger_uma.error(f"Couldn't set YOLO model to CUDA: {e}")
+        with _YOLO_MODEL_CACHE_LOCK:
+            cached_model = _YOLO_MODEL_CACHE.get(cache_key)
+            if cached_model is None:
+                logger_uma.info(f"Loading YOLO weights from: {self.weights_path}")
+                cached_model = YOLO(self.weights_path)
+                if self.use_gpu:
+                    try:
+                        cached_model.to("cuda:0")
+                    except Exception as e:
+                        logger_uma.error(f"Couldn't set YOLO model to CUDA: {e}")
+                _YOLO_MODEL_CACHE[cache_key] = cached_model
+            else:
+                logger_uma.info(
+                    "Reusing cached YOLO weights from: %s", self.weights_path
+                )
+
+        self.model = cached_model
 
     # ---------- internals ----------
     @staticmethod
@@ -186,5 +201,12 @@ class LocalYOLOEngine(IDetector):
         else:
             img = self.ctrl.screenshot(region=region)
 
-        meta, dets = self.detect_pil(img, imgsz=imgsz, conf=conf, iou=iou, agent=agent)
+        meta, dets = self.detect_pil(
+            img,
+            imgsz=imgsz,
+            conf=conf,
+            iou=iou,
+            tag=tag,
+            agent=agent,
+        )
         return img, meta, dets
