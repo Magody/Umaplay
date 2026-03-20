@@ -829,7 +829,7 @@ def build_catalog() -> None:
     with CATALOG_JSON.open("w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    print(f"[build_catalog] Wrote {len(records)} events → {CATALOG_JSON}")
+    print(f"[build_catalog] Wrote {len(records)} events -> {CATALOG_JSON}")
 
 
 # -----------------------------
