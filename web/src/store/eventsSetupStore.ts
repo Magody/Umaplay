@@ -9,6 +9,7 @@ import type {
   SupportPriority,
   RewardCategory,
 } from '@/types/events'
+import { canonicalizeEventSetupSupports, canonicalizeSupportName } from '@/utils/supportNames'
 
 type State = {
   // internal revision to trigger subscribers (e.g., to sync into preset)
@@ -112,7 +113,7 @@ const pickSupport = (
   )
   return {
     slot,
-    name: (raw as any).name,
+    name: canonicalizeSupportName((raw as any).name, (raw as any).rarity, (raw as any).attribute),
     rarity: (raw as any).rarity,
     attribute: (raw as any).attribute,
     priority,
@@ -257,7 +258,9 @@ export const useEventsSetupStore = create<State>()(
         const supports = s.supports.slice()
         if (ref) {
           const prev = supports[idx]
-          const isSameCard = prev?.name === ref.name && prev?.rarity === ref.rarity && prev?.attribute === ref.attribute
+          const canonicalName = canonicalizeSupportName(ref.name, ref.rarity, ref.attribute)
+          const isSameCard =
+            prev?.name === canonicalName && prev?.rarity === ref.rarity && prev?.attribute === ref.attribute
           const globalFallback = s.prefs?.rewardPriority ?? DEFAULT_REWARD_PRIORITY
           const fallbackPriority = isSameCard
             ? (prev?.rewardPriority ?? globalFallback)
@@ -272,7 +275,7 @@ export const useEventsSetupStore = create<State>()(
           )
           supports[idx] = {
             slot: idx,
-            name: ref.name,
+            name: canonicalName,
             rarity: ref.rarity,
             attribute: ref.attribute,
             priority: nextPriority,
@@ -416,7 +419,18 @@ export const useEventsSetupStore = create<State>()(
     })),
     {
       name: 'uma_event_setup_v1',          // LocalStorage key
-      version: 1,
+      version: 2,
+      migrate: (persistedState) => {
+        if (!persistedState || typeof persistedState !== 'object') {
+          return persistedState
+        }
+        return {
+          ...persistedState,
+          setup:
+            canonicalizeEventSetupSupports((persistedState as { setup?: EventSetup | null }).setup) ??
+            JSON.parse(JSON.stringify(EMPTY)),
+        }
+      },
       partialize: (s) => ({ setup: s.setup }), // only persist the data (not revision)
     }
   )

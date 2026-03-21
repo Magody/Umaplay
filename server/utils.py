@@ -21,6 +21,11 @@ NAV_PATH = PREFS_DIR / "nav.json"
 SAMPLE_NAV_PATH = PREFS_DIR / "nav.sample.json"
 
 _DATASET_CACHE: Dict[str, Tuple[float, object]] = {}
+_VALID_SUPPORT_RARITIES = {"SSR", "SR", "R"}
+_VALID_SUPPORT_ATTRIBUTES = {"SPD", "STA", "PWR", "GUTS", "WIT", "PAL"}
+_LEGACY_SUPPORT_NAME_ALIASES = {
+    "Aoi Kiryuuin": "Aoi Kiryuin",
+}
 
 
 def _repo_root() -> Path:
@@ -86,17 +91,160 @@ def _ensure_bool(value: Any, default: bool = True) -> bool:
         return bool(value)
     return default
 
+def _collapse_spaces(value: str) -> str:
+    return " ".join(value.strip().split())
+
+def _apply_legacy_support_alias(name: str) -> str:
+    normalized = _collapse_spaces(name)
+    for legacy, canonical in _LEGACY_SUPPORT_NAME_ALIASES.items():
+        if normalized == legacy or normalized.startswith(f"{legacy} "):
+            return f"{canonical}{normalized[len(legacy):]}"
+    return normalized
+
+def _canonicalize_support_name(name: Any, rarity: Any, attribute: Any) -> Optional[str]:
+    if not isinstance(name, str):
+        return None
+
+    normalized = _apply_legacy_support_alias(name)
+    if not normalized:
+        return None
+
+    if not isinstance(rarity, str) or not isinstance(attribute, str):
+        return normalized
+
+    attr = attribute.strip().upper()
+    rar = rarity.strip().upper()
+    if attr not in _VALID_SUPPORT_ATTRIBUTES or rar not in _VALID_SUPPORT_RARITIES:
+        return normalized
+
+    suffix = f"{attr} {rar}"
+    if normalized.endswith(suffix) or normalized.endswith(f"{suffix}(Duplicate)"):
+        return normalized
+
+    return f"{normalized} {suffix}"
+
+def _canonicalize_support_event_key(key: Any) -> Any:
+    if not isinstance(key, str):
+        return key
+
+    parts = key.split("/", 4)
+    if len(parts) != 5 or parts[0] != "support":
+        return key
+
+    canonical_name = _canonicalize_support_name(parts[1], parts[3], parts[2])
+    if not canonical_name:
+        return key
+
+    return f"support/{canonical_name}/{parts[2]}/{parts[3]}/{parts[4]}"
+
+def _canonicalize_event_setup(raw: Any) -> Any:
+    if not isinstance(raw, dict):
+        return raw
+
+    result = dict(raw)
+    supports = raw.get("supports")
+    if isinstance(supports, list):
+        normalized_supports = []
+        for entry in supports:
+            if not isinstance(entry, dict):
+                normalized_supports.append(entry)
+                continue
+
+            support = dict(entry)
+            canonical_name = _canonicalize_support_name(
+                support.get("name"),
+                support.get("rarity"),
+                support.get("attribute"),
+            )
+            if canonical_name:
+                support["name"] = canonical_name
+            normalized_supports.append(support)
+
+        result["supports"] = normalized_supports
+
+    prefs = raw.get("prefs")
+    if not isinstance(prefs, dict):
+        return result
+
+    prefs_out = dict(prefs)
+    overrides = prefs.get("overrides")
+    if isinstance(overrides, dict):
+        prefs_out["overrides"] = {
+            _canonicalize_support_event_key(key): value
+            for key, value in overrides.items()
+        }
+
+    patterns = prefs.get("patterns")
+    if isinstance(patterns, list):
+        normalized_patterns = []
+        for entry in patterns:
+            if not isinstance(entry, dict):
+                normalized_patterns.append(entry)
+                continue
+            pattern = entry.get("pattern")
+            normalized_patterns.append(
+                {
+                    **entry,
+                    "pattern": _canonicalize_support_event_key(pattern),
+                }
+                if isinstance(pattern, str)
+                else entry
+            )
+        prefs_out["patterns"] = normalized_patterns
+
+    result["prefs"] = prefs_out
+    return result
+
+def _canonicalize_config_event_setups(data: Any) -> Any:
+    if not isinstance(data, dict):
+        return data
+
+    result = dict(data)
+    presets = result.get("presets")
+    if isinstance(presets, list):
+        result["presets"] = [
+            {**preset, "event_setup": _canonicalize_event_setup(preset.get("event_setup"))}
+            if isinstance(preset, dict)
+            else preset
+            for preset in presets
+        ]
+
+    scenarios = result.get("scenarios")
+    if not isinstance(scenarios, dict):
+        return result
+
+    normalized_scenarios = {}
+    for key, branch in scenarios.items():
+        if not isinstance(branch, dict):
+            normalized_scenarios[key] = branch
+            continue
+
+        branch_out = dict(branch)
+        branch_presets = branch.get("presets")
+        if isinstance(branch_presets, list):
+            branch_out["presets"] = [
+                {**preset, "event_setup": _canonicalize_event_setup(preset.get("event_setup"))}
+                if isinstance(preset, dict)
+                else preset
+                for preset in branch_presets
+            ]
+        normalized_scenarios[key] = branch_out
+
+    result["scenarios"] = normalized_scenarios
+    return result
+
 def _normalize_support(entry: Any, slot: int, fallback_priority: Optional[List[str]] = None) -> Optional[Dict[str, Any]]:
     if not isinstance(entry, dict):
         return None
     name = entry.get("name")
     rarity = entry.get("rarity")
     attribute = entry.get("attribute")
-    if not (isinstance(name, str) and isinstance(rarity, str) and isinstance(attribute, str)):
+    canonical_name = _canonicalize_support_name(name, rarity, attribute)
+    if not (canonical_name and isinstance(rarity, str) and isinstance(attribute, str)):
         return None
     result = {
         "slot": slot,
-        "name": name,
+        "name": canonical_name,
         "rarity": rarity,
         "attribute": attribute,
     }
@@ -132,6 +280,8 @@ def _normalize_entity(entry: Any, fallback_priority: Optional[List[str]] = None)
 def load_event_setup_defaults(raw: Any) -> Dict[str, Any]:
     if not isinstance(raw, dict):
         raw = {}
+    else:
+        raw = _canonicalize_event_setup(raw)
 
     prefs_raw = raw.get("prefs")
     prefs_in = prefs_raw if isinstance(prefs_raw, dict) else {}
@@ -185,6 +335,8 @@ def load_config() -> dict:
 
     if not isinstance(data, dict):
         data = {}
+
+    data = _canonicalize_config_event_setups(data)
 
     general = data.get("general")
     if not isinstance(general, dict):
@@ -251,8 +403,9 @@ def load_config() -> dict:
 
 
 def save_config(data: dict):
+    normalized = _canonicalize_config_event_setups(data)
     with open(CONFIG_PATH, "w") as f:
-        json.dump(data, f, indent=2)
+        json.dump(normalized, f, indent=2)
 
 
 def load_nav_prefs() -> Dict[str, Dict[str, Any]]:
