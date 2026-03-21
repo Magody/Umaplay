@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { appConfigSchema, defaultAppConfig, defaultGeneral, defaultPreset, defaultEventSetup, defaultUnityCupAdvanced, unityCupAdvancedSchema } from '@/models/config.schema'
 import type { AppConfig, GeneralConfig, Preset, ScenarioConfig, UnityCupAdvancedSettings } from '@/models/types'
+import { canonicalizeEventSetupSupports } from '@/utils/supportNames'
 
 const LS_KEY = 'uma:config:v1'
 
@@ -71,7 +72,7 @@ function normalizePreset(raw: any, general: Partial<GeneralConfig> | undefined, 
       typeof raw?.prioritizeHint === 'boolean'
         ? raw.prioritizeHint
         : !!(general as any)?.prioritizeHint,
-    event_setup: raw?.event_setup ?? base.event_setup,
+    event_setup: canonicalizeEventSetupSupports(raw?.event_setup ?? base.event_setup) ?? base.event_setup,
     unityCupAdvanced: unityCupAdvanced ?? base.unityCupAdvanced,
   }
 }
@@ -408,6 +409,9 @@ export const useConfigStore = create<State & Actions>((set, get) => ({
   patchPreset: (id, keyPatch, value) =>
     set((s) => {
       const { key, branch, map } = resolveScenario(s.config, s.uiScenarioKey)
+      const normalizedValue = keyPatch === 'event_setup'
+        ? (canonicalizeEventSetupSupports(value as Preset['event_setup']) as Preset[typeof keyPatch])
+        : value
       return {
         config: {
           ...s.config,
@@ -415,7 +419,7 @@ export const useConfigStore = create<State & Actions>((set, get) => ({
             ...map,
             [key]: {
               ...branch,
-              presets: branch.presets.map((p) => (p.id === id ? { ...p, [keyPatch]: value } : p)),
+              presets: branch.presets.map((p) => (p.id === id ? { ...p, [keyPatch]: normalizedValue } : p)),
             },
           },
         },

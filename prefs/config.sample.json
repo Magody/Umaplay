@@ -70,37 +70,37 @@
         "supports": [
           {
             "slot": 0,
-            "name": "Silence Suzuka",
+            "name": "Silence Suzuka SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 1,
-            "name": "Nishino Flower",
+            "name": "Nishino Flower SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 2,
-            "name": "Gold Ship",
+            "name": "Gold Ship STA SSR",
             "rarity": "SSR",
             "attribute": "STA"
           },
           {
             "slot": 3,
-            "name": "Tokai Teio",
+            "name": "Tokai Teio SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 4,
-            "name": "Mayano Top Gun",
+            "name": "Mayano Top Gun STA SR",
             "rarity": "SR",
             "attribute": "STA"
           },
           {
             "slot": 5,
-            "name": "Kitasan Black",
+            "name": "Kitasan Black SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           }
@@ -113,8 +113,8 @@
         },
         "prefs": {
           "overrides": {
-            "support/Silence Suzuka/SPD/SSR/What Should I Do?#s1": 2,
-            "support/Kitasan Black/SPD/SSR/Ah, Home Sweet Home#s1": 1
+            "support/Silence Suzuka SPD SSR/SPD/SSR/What Should I Do?#s1": 2,
+            "support/Kitasan Black SPD SSR/SPD/SSR/Ah, Home Sweet Home#s1": 1
           },
           "patterns": [],
           "defaults": {
@@ -168,31 +168,31 @@
         "supports": [
           {
             "slot": 0,
-            "name": "Silence Suzuka",
+            "name": "Silence Suzuka SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 1,
-            "name": "Eishin Flash",
+            "name": "Eishin Flash SPD SR",
             "rarity": "SR",
             "attribute": "SPD"
           },
           {
             "slot": 2,
-            "name": "Shinko Windy",
+            "name": "Shinko Windy SPD SR",
             "rarity": "SR",
             "attribute": "SPD"
           },
           {
             "slot": 3,
-            "name": "Kitasan Black",
+            "name": "Kitasan Black SPD R",
             "rarity": "R",
             "attribute": "SPD"
           },
           {
             "slot": 4,
-            "name": "Twin Turbo",
+            "name": "Twin Turbo SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
@@ -264,37 +264,37 @@
         "supports": [
           {
             "slot": 0,
-            "name": "Tokai Teio",
+            "name": "Tokai Teio SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 1,
-            "name": "Nishino Flower",
+            "name": "Nishino Flower SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           },
           {
             "slot": 2,
-            "name": "Sweep Tosho",
+            "name": "Sweep Tosho SPD SR",
             "rarity": "SR",
             "attribute": "SPD"
           },
           {
             "slot": 3,
-            "name": "Mayano Top Gun",
+            "name": "Mayano Top Gun STA SR",
             "rarity": "SR",
             "attribute": "STA"
           },
           {
             "slot": 4,
-            "name": "Zenno Rob Roy",
+            "name": "Zenno Rob Roy STA SR",
             "rarity": "SR",
             "attribute": "STA"
           },
           {
             "slot": 5,
-            "name": "Kitasan Black",
+            "name": "Kitasan Black SPD SSR",
             "rarity": "SSR",
             "attribute": "SPD"
           }
@@ -307,9 +307,9 @@
         },
         "prefs": {
           "overrides": {
-            "support/Tokai Teio/SPD/SSR/My Weapon#s1": 2,
-            "support/Sweep Tosho/SPD/SR/Premeditated Mischief#s2": 1,
-            "support/Kitasan Black/SPD/SSR/Ah, Home Sweet Home#s1": 1
+            "support/Tokai Teio SPD SSR/SPD/SSR/My Weapon#s1": 2,
+            "support/Sweep Tosho SPD SR/SPD/SR/Premeditated Mischief#s2": 1,
+            "support/Kitasan Black SPD SSR/SPD/SSR/Ah, Home Sweet Home#s1": 1
           },
           "patterns": [],
           "defaults": {
@@ -411,13 +411,13 @@
         "supports": [
           {
             "slot": 0,
-            "name": "Aoi Kiryuuin",
+            "name": "Aoi Kiryuin PAL SR",
             "rarity": "SR",
             "attribute": "PAL"
           },
           {
             "slot": 1,
-            "name": "Mejiro Dober",
+            "name": "Mejiro Dober WIT SSR",
             "rarity": "SSR",
             "attribute": "WIT"
           },
