@@ -1,0 +1,1 @@
+- [Auto Scrape Missing Supports Documentation](docs/AUTO_SCRAPE_SUPPORT.md) — Detailed guide for the automated support card scraping script

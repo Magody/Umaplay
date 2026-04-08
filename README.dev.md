@@ -82,6 +82,36 @@ The updated build will include the refreshed catalog for distribution.
 - If the new trainees have unique portraits, download them from their GameTora detail pages and place the images under `web/public/events/trainee/` using the naming pattern `<Name>_profile.png` (e.g., `Special Week (Summer)_profile.png`).
 - Launch the bot or web UI locally to confirm the catalog surfaces the new events correctly.
 
+## Automation Options
+
+For automated detection of missing support cards:
+
+### Auto-Scrape Missing Supports
+```bash
+# Check specific supports for missing data
+python datasets/auto_scrape_missing_supports.py --support-list "30036-riko-kashimoto,30034-rice-shower"
+
+# Dry run to see what would be scraped
+python datasets/auto_scrape_missing_supports.py --support-list "30036-riko-kashimoto,30034-rice-shower" --dry-run
+
+# Force rescan all supports (ignore registry)
+python datasets/auto_scrape_missing_supports.py --support-list "30036-riko-kashimoto,30034-rice-shower" --force-rescan
+
+# Enable verbose logging
+python datasets/auto_scrape_missing_supports.py --support-list "30036-riko-kashimoto,30034-rice-shower" --debug
+
+# Automatically discover all Global version supports from Gametora
+python datasets/auto_scrape_missing_supports.py --discover-all --dry-run
+
+# Discover all Global supports and scrape missing ones
+python datasets/auto_scrape_missing_supports.py --discover-all --force-rescan
+
+# Combine discovery with specific support list
+python datasets/auto_scrape_missing_supports.py --discover-all --support-list "30036-riko-kashimoto" --dry-run
+```
+
+See `docs/AUTOMATION_GUIDE.md` for full details.
+
 ---
 
 ## Reference / Troubleshooting

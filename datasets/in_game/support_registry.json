@@ -1,0 +1,9 @@
+{
+  "last_updated": "2026-04-08T22:15:11.092820",
+  "version": "global",
+  "supports": [],
+  "metadata": {
+    "description": "Registry of scraped support cards to prevent duplicate scraping",
+    "format_version": "1.0"
+  }
+}

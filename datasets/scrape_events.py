@@ -51,6 +51,15 @@ STAT_WEIGHTS = {  # same as your working script
     "guts": 1.0,
 }
 
+# ============================ Version detection constants ======================
+GLOBAL_VERSION_INDICATORS = {
+    'global', 'en', 'english', 'international'
+}
+
+JP_VERSION_INDICATORS = {
+    'jp', 'ja', 'japanese', '日本'
+}
+
 # ================================ Utils =====================================
 BASE_URL = "https://gametora.com"
 SUPPORT_BASE_URL = BASE_URL + "/umamusume/supports/"
@@ -1039,6 +1048,63 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(all_entries, f, ensure_ascii=False, indent=2)
     print(f"[OK] Wrote {len(all_entries)} entries → {args.out}")
+
+
+# ============================ Version detection functions ======================
+def is_global_version(event_data: Dict[str, Any]) -> bool:
+    """
+    Determine if event data is from Global version (not JP-only).
+    Checks various indicators in the data structure.
+    """
+    # Check explicit version field if present
+    version_field = event_data.get('version', '').lower()
+    if version_field:
+        if any(indicator in version_field for indicator in GLOBAL_VERSION_INDICATORS):
+            return True
+        if any(indicator in version_field for indicator in JP_VERSION_INDICATORS):
+            return False
+
+    # Check event names for language indicators
+    event_data_field = event_data.get('eventData', {})
+    if isinstance(event_data_field, dict):
+        # If we have English event data, it's likely Global
+        if 'en' in event_data_field:
+            return True
+
+    # Check for Global-specific events in the data structure
+    # This would need to be customized based on actual Gametora data patterns
+
+    # Default assumption: if we can't determine, assume it's Global (safer for missing data detection)
+    return True
+
+
+def extract_version_indicators_from_gametora_response(data: Dict[str, Any]) -> List[str]:
+    """
+    Extract version indicators from Gametora's __NEXT_DATA__ response.
+    """
+    indicators = []
+
+    # Check pageProps for version info
+    page_props = data.get('props', {}).get('pageProps', {})
+
+    # Look for version fields
+    version_fields = ['version', 'locale', 'language', 'region']
+    for field in version_fields:
+        value = str(page_props.get(field, '')).lower()
+        if value:
+            indicators.append(value)
+
+    # Check itemData for version info
+    item_data = page_props.get('itemData', {})
+    version_field = str(item_data.get('version', '')).lower()
+    if version_field:
+        indicators.append(version_field)
+
+    # Check for Global-specific content markers
+    # This would need to be customized based on actual patterns observed
+
+    return list(set(indicators))  # Remove duplicates
+
 
 if __name__ == "__main__":
     main()

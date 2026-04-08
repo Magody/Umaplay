@@ -449,6 +449,23 @@ All contributions are welcome!
 
 ---
 
+## 📊 Updating Support Card Data
+
+Use the automated scraper to detect and add missing Global version support cards from Gametora:
+
+```bash
+# Discover all Global supports and see what's missing (recommended first step)
+python datasets/auto_scrape_missing_supports.py --discover-all --dry-run
+
+# If results look good, proceed with scraping missing supports
+python datasets/auto_scrape_missing_supports.py --discover-all --force-rescan
+
+# Then follow the prompts to:
+# 1. Review and merge scraped data into datasets/in_game/events.json
+# 2. Run: python build_catalog.py
+# 3. The support registry will be updated automatically
+```
+
 ## 💖 Support the Project
 
 If you find this project helpful and would like to support its development, consider making a donation. Your support motivates further improvements! Also let me know on discord if you have a very specific requirement.
